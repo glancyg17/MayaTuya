@@ -1,0 +1,622 @@
+{
+ "11": {
+  "title": "Booking Form - From the Walls to the Table (#11)",
+  "button": "Check Availability",
+  "success": "Thank you, [Name]. We'll confirm availability and get back to you personally within 24 hours — by email and WhatsApp. If you have any urgent questions: hola@mayatuya.com or +52 938 184 2944.",
+  "redirect": "",
+  "fields": [
+   {
+    "type": "text",
+    "name": "first_name",
+    "label": "First Name",
+    "required": false,
+    "placeholder": "Enter Your First Name"
+   },
+   {
+    "type": "text",
+    "name": "last_name",
+    "label": "Last Name",
+    "required": false,
+    "placeholder": "Enter Your Last Name"
+   },
+   {
+    "name": "email",
+    "label": "Email",
+    "required": true,
+    "placeholder": "Email Address",
+    "type": "email"
+   },
+   {
+    "name": "phone",
+    "label": "Phone / WhatsApp",
+    "required": true,
+    "placeholder": "",
+    "type": "tel",
+    "min": null,
+    "max": null
+   },
+   {
+    "type": "hidden",
+    "name": "experience",
+    "value": "From the Walls to the Table"
+   },
+   {
+    "name": "preferred_date",
+    "label": "Preferred date",
+    "required": true,
+    "placeholder": "",
+    "type": "date"
+   },
+   {
+    "name": "guests",
+    "label": "Number of People",
+    "required": true,
+    "placeholder": "",
+    "type": "number",
+    "min": "2",
+    "max": "10"
+   },
+   {
+    "name": "heard_from",
+    "label": "How did you hear about us?",
+    "required": false,
+    "placeholder": "Select",
+    "type": "select",
+    "options": [
+     {
+      "label": "Google",
+      "value": "Google"
+     },
+     {
+      "label": "GetYourGuide",
+      "value": "GetYourGuide"
+     },
+     {
+      "label": "Airbnb Experiences",
+      "value": "Airbnb Experiences"
+     },
+     {
+      "label": "From a friend",
+      "value": "From a friend"
+     },
+     {
+      "label": "A.I. (ChatGPT/Claude/Gemini...etc)",
+      "value": "A.I. (ChatGPT/Claude/Gemini...etc)"
+     },
+     {
+      "label": "Other",
+      "value": "Other"
+     }
+    ]
+   },
+   {
+    "name": "message",
+    "label": "Questions or special requests",
+    "required": false,
+    "placeholder": "",
+    "type": "textarea"
+   }
+  ]
+ },
+ "12": {
+  "title": "Booking Form - De las Murallas a la Mesa (#12)",
+  "button": "Consultar disponibilidad",
+  "success": "Gracias, [Name]. Confirmaremos disponibilidad y nos pondremos en contacto contigo personalmente en menos de 24 horas — por email y WhatsApp. Si tienes alguna pregunta urgente: hola@mayatuya.com o +52 938 184 2944.",
+  "redirect": "",
+  "fields": [
+   {
+    "type": "text",
+    "name": "first_name",
+    "label": "Nombre",
+    "required": true,
+    "placeholder": ""
+   },
+   {
+    "type": "text",
+    "name": "last_name",
+    "label": "Apellido",
+    "required": true,
+    "placeholder": ""
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": true,
+    "placeholder": "Correo electrónico",
+    "type": "email"
+   },
+   {
+    "name": "phone",
+    "label": "Teléfono / WhatsApp",
+    "required": true,
+    "placeholder": "",
+    "type": "tel",
+    "min": null,
+    "max": null
+   },
+   {
+    "type": "hidden",
+    "name": "experience",
+    "value": "De Las Murallas a la Mesa"
+   },
+   {
+    "name": "preferred_date",
+    "label": "Fecha preferida",
+    "required": true,
+    "placeholder": "",
+    "type": "date"
+   },
+   {
+    "name": "guests",
+    "label": "Número de personas",
+    "required": true,
+    "placeholder": "",
+    "type": "number",
+    "min": "2",
+    "max": "10"
+   },
+   {
+    "name": "heard_from",
+    "label": "¿Cómo nos conociste?",
+    "required": false,
+    "placeholder": "Selecciona",
+    "type": "select",
+    "options": [
+     {
+      "label": "Google",
+      "value": "Google"
+     },
+     {
+      "label": "GetYourGuide",
+      "value": "GetYourGuide"
+     },
+     {
+      "label": "Airbnb Experiences",
+      "value": "Airbnb Experiences"
+     },
+     {
+      "label": "A.I. (ChatGPT/Claude/Gemini...etc)",
+      "value": "A.I. (ChatGPT/Claude/Gemini...etc)"
+     },
+     {
+      "label": "Por un amigo",
+      "value": "Por un amigo"
+     },
+     {
+      "label": "Otro",
+      "value": "Otro"
+     }
+    ]
+   },
+   {
+    "name": "message",
+    "label": "Preguntas o peticiones especiales",
+    "required": false,
+    "placeholder": "",
+    "type": "textarea"
+   }
+  ]
+ },
+ "13": {
+  "title": "Booking Form - The Gates and The Night (#13)",
+  "button": "Check Availability",
+  "success": "Thank you, [Name]. We'll confirm availability and get back to you personally within 24 hours — by email and WhatsApp. If you have any urgent questions: hola@mayatuya.com or +52 938 184 2944.",
+  "redirect": "",
+  "fields": [
+   {
+    "type": "text",
+    "name": "first_name",
+    "label": "First Name",
+    "required": false,
+    "placeholder": "Enter Your First Name"
+   },
+   {
+    "type": "text",
+    "name": "last_name",
+    "label": "Last Name",
+    "required": false,
+    "placeholder": "Enter Your Last Name"
+   },
+   {
+    "name": "email",
+    "label": "Email",
+    "required": true,
+    "placeholder": "Email Address",
+    "type": "email"
+   },
+   {
+    "name": "phone",
+    "label": "Phone / WhatsApp",
+    "required": true,
+    "placeholder": "",
+    "type": "tel",
+    "min": null,
+    "max": null
+   },
+   {
+    "type": "hidden",
+    "name": "experience",
+    "value": "The Gates and The Night"
+   },
+   {
+    "name": "preferred_date",
+    "label": "Preferred date",
+    "required": true,
+    "placeholder": "",
+    "type": "date"
+   },
+   {
+    "name": "guests",
+    "label": "Number of People",
+    "required": true,
+    "placeholder": "",
+    "type": "number",
+    "min": "2",
+    "max": "10"
+   },
+   {
+    "name": "heard_from",
+    "label": "How did you hear about us?",
+    "required": false,
+    "placeholder": "Select",
+    "type": "select",
+    "options": [
+     {
+      "label": "Google",
+      "value": "Google"
+     },
+     {
+      "label": "GetYourGuide",
+      "value": "GetYourGuide"
+     },
+     {
+      "label": "Airbnb Experiences",
+      "value": "Airbnb Experiences"
+     },
+     {
+      "label": "From a friend",
+      "value": "From a friend"
+     },
+     {
+      "label": "A.I. (ChatGPT/Claude/Gemini...etc)",
+      "value": "A.I. (ChatGPT/Claude/Gemini...etc)"
+     },
+     {
+      "label": "Other",
+      "value": "Other"
+     }
+    ]
+   },
+   {
+    "name": "message",
+    "label": "Questions or special requests",
+    "required": false,
+    "placeholder": "",
+    "type": "textarea"
+   }
+  ]
+ },
+ "14": {
+  "title": "Booking Form - Las Puertas y La Noche (#14)",
+  "button": "Consultar disponibilidad",
+  "success": "Gracias, [Name]. Confirmaremos disponibilidad y nos pondremos en contacto contigo personalmente en menos de 24 horas — por email y WhatsApp. Si tienes alguna pregunta urgente: hola@mayatuya.com o +52 938 184 2944.",
+  "redirect": "",
+  "fields": [
+   {
+    "type": "text",
+    "name": "first_name",
+    "label": "Nombre",
+    "required": true,
+    "placeholder": ""
+   },
+   {
+    "type": "text",
+    "name": "last_name",
+    "label": "Apellido",
+    "required": true,
+    "placeholder": ""
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": true,
+    "placeholder": "Correo electrónico",
+    "type": "email"
+   },
+   {
+    "name": "phone",
+    "label": "Teléfono / WhatsApp",
+    "required": true,
+    "placeholder": "",
+    "type": "tel",
+    "min": null,
+    "max": null
+   },
+   {
+    "type": "hidden",
+    "name": "experience",
+    "value": "De Las Murallas a la Mesa"
+   },
+   {
+    "name": "preferred_date",
+    "label": "Fecha preferida",
+    "required": true,
+    "placeholder": "",
+    "type": "date"
+   },
+   {
+    "name": "guests",
+    "label": "Número de personas",
+    "required": true,
+    "placeholder": "",
+    "type": "number",
+    "min": "2",
+    "max": "10"
+   },
+   {
+    "name": "heard_from",
+    "label": "¿Cómo nos conociste?",
+    "required": false,
+    "placeholder": "Selecciona",
+    "type": "select",
+    "options": [
+     {
+      "label": "Google",
+      "value": "Google"
+     },
+     {
+      "label": "GetYourGuide",
+      "value": "GetYourGuide"
+     },
+     {
+      "label": "Airbnb Experiences",
+      "value": "Airbnb Experiences"
+     },
+     {
+      "label": "A.I. (ChatGPT/Claude/Gemini...etc)",
+      "value": "A.I. (ChatGPT/Claude/Gemini...etc)"
+     },
+     {
+      "label": "Por un amigo",
+      "value": "Por un amigo"
+     },
+     {
+      "label": "Otro",
+      "value": "Otro"
+     }
+    ]
+   },
+   {
+    "name": "message",
+    "label": "Preguntas o peticiones especiales",
+    "required": false,
+    "placeholder": "",
+    "type": "textarea"
+   }
+  ]
+ },
+ "15": {
+  "title": "Booking Form - Open Heart, Open Table (#15)",
+  "button": "Check Availability",
+  "success": "Thank you, [Name]. We'll confirm availability and get back to you personally within 24 hours — by email and WhatsApp. If you have any urgent questions: hola@mayatuya.com or +52 938 184 2944.",
+  "redirect": "",
+  "fields": [
+   {
+    "type": "text",
+    "name": "first_name",
+    "label": "First Name",
+    "required": false,
+    "placeholder": "Enter Your First Name"
+   },
+   {
+    "type": "text",
+    "name": "last_name",
+    "label": "Last Name",
+    "required": false,
+    "placeholder": "Enter Your Last Name"
+   },
+   {
+    "name": "email",
+    "label": "Email",
+    "required": true,
+    "placeholder": "Email Address",
+    "type": "email"
+   },
+   {
+    "name": "phone",
+    "label": "Phone / WhatsApp",
+    "required": true,
+    "placeholder": "",
+    "type": "tel",
+    "min": null,
+    "max": null
+   },
+   {
+    "type": "hidden",
+    "name": "experience",
+    "value": "Open Heart Open Table"
+   },
+   {
+    "name": "preferred_date",
+    "label": "Preferred date",
+    "required": true,
+    "placeholder": "",
+    "type": "date"
+   },
+   {
+    "name": "guests",
+    "label": "Number of People",
+    "required": true,
+    "placeholder": "",
+    "type": "number",
+    "min": "2",
+    "max": "10"
+   },
+   {
+    "name": "heard_from",
+    "label": "How did you hear about us?",
+    "required": false,
+    "placeholder": "Select",
+    "type": "select",
+    "options": [
+     {
+      "label": "Google",
+      "value": "Google"
+     },
+     {
+      "label": "GetYourGuide",
+      "value": "GetYourGuide"
+     },
+     {
+      "label": "Airbnb Experiences",
+      "value": "Airbnb Experiences"
+     },
+     {
+      "label": "From a friend",
+      "value": "From a friend"
+     },
+     {
+      "label": "A.I. (ChatGPT/Claude/Gemini...etc)",
+      "value": "A.I. (ChatGPT/Claude/Gemini...etc)"
+     },
+     {
+      "label": "Other",
+      "value": "Other"
+     }
+    ]
+   },
+   {
+    "name": "message",
+    "label": "Questions or special requests",
+    "required": false,
+    "placeholder": "",
+    "type": "textarea"
+   },
+   {
+    "name": "health_confirmation",
+    "label": "",
+    "required": true,
+    "placeholder": "",
+    "type": "checkbox",
+    "options": [
+     {
+      "label": "I confirm that I am not currently taking SSRIs, MAOIs, or other medications that may interact with ceremonial cacao. I understand that if I have any health concerns, I should consult a doctor before participating, and I can request a reduced dose by noting it in the special requests field.",
+      "value": "I confirm that I am not currently taking SSRIs, MAOIs, or other medications that may interact with ceremonial cacao. I understand that if I have any health concerns, I should consult a doctor before participating, and I can request a reduced dose by noting it in the special requests field."
+     }
+    ]
+   }
+  ]
+ },
+ "16": {
+  "title": "Booking Form - Corazon Abierto, Mesa Abierta (#16)",
+  "button": "Consultar disponibilidad",
+  "success": "Gracias, [Name]. Confirmaremos disponibilidad y nos pondremos en contacto contigo personalmente en menos de 24 horas — por email y WhatsApp. Si tienes alguna pregunta urgente: hola@mayatuya.com o +52 938 184 2944.",
+  "redirect": "",
+  "fields": [
+   {
+    "type": "text",
+    "name": "first_name",
+    "label": "Nombre",
+    "required": true,
+    "placeholder": ""
+   },
+   {
+    "type": "text",
+    "name": "last_name",
+    "label": "Apellido",
+    "required": true,
+    "placeholder": ""
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": true,
+    "placeholder": "Correo electrónico",
+    "type": "email"
+   },
+   {
+    "name": "phone",
+    "label": "Teléfono / WhatsApp",
+    "required": true,
+    "placeholder": "",
+    "type": "tel",
+    "min": null,
+    "max": null
+   },
+   {
+    "type": "hidden",
+    "name": "experience",
+    "value": "Corazon Abierto Mesa Abierta"
+   },
+   {
+    "name": "preferred_date",
+    "label": "Fecha preferida",
+    "required": true,
+    "placeholder": "",
+    "type": "date"
+   },
+   {
+    "name": "guests",
+    "label": "Número de personas",
+    "required": true,
+    "placeholder": "",
+    "type": "number",
+    "min": "2",
+    "max": "10"
+   },
+   {
+    "name": "heard_from",
+    "label": "¿Cómo nos conociste?",
+    "required": false,
+    "placeholder": "Selecciona",
+    "type": "select",
+    "options": [
+     {
+      "label": "Google",
+      "value": "Google"
+     },
+     {
+      "label": "GetYourGuide",
+      "value": "GetYourGuide"
+     },
+     {
+      "label": "Airbnb Experiences",
+      "value": "Airbnb Experiences"
+     },
+     {
+      "label": "A.I. (ChatGPT/Claude/Gemini...etc)",
+      "value": "A.I. (ChatGPT/Claude/Gemini...etc)"
+     },
+     {
+      "label": "Por un amigo",
+      "value": "Por un amigo"
+     },
+     {
+      "label": "Otro",
+      "value": "Otro"
+     }
+    ]
+   },
+   {
+    "name": "message",
+    "label": "Preguntas o peticiones especiales",
+    "required": false,
+    "placeholder": "",
+    "type": "textarea"
+   },
+   {
+    "name": "health_confirmation",
+    "label": "",
+    "required": true,
+    "placeholder": "",
+    "type": "checkbox",
+    "options": [
+     {
+      "label": "Confirmo que no estoy tomando actualmente SSRIs, inhibidores MAO u otros medicamentos que puedan interactuar con el cacao ceremonial. Entiendo que si tengo alguna duda de salud, debo consultar con un médico antes de participar, y que puedo solicitar una dosis reducida en el campo de notas.",
+      "value": "Confirmo que no estoy tomando actualmente SSRIs, inhibidores MAO u otros medicamentos que puedan interactuar con el cacao ceremonial. Entiendo que si tengo alguna duda de salud, debo consultar con un médico antes de participar, y que puedo solicitar una dosis reducida en el campo de notas."
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "home-en", "lang": "en", "url": "/", "content": "home-en.html", "pair": "home-es",
+    "title": "Maya Tuya — Curated Experiences Along the Tren Maya Route",
+    "description": "Curated experiences in Campeche, built around local businesses with roots. Slow travel on the Tren Maya route — designed, not improvised.",
+    "og_image": "Untitled-design-10.png"
+  },
+  {
+    "id": "home-es", "lang": "es", "url": "/inicio/", "content": "home-es.html", "pair": "home-en",
+    "title": "Maya Tuya — Experiencias curadas en la ruta del Tren Maya",
+    "description": "Experiencias curadas en Campeche, hechas con negocios locales con raíces. Viaje lento en la ruta del Tren Maya: diseñado, no improvisado.",
+    "og_image": "Untitled-design-10.png"
+  },
+  {
+    "id": "exp-walls-en", "lang": "en", "url": "/experiences/fromthewallstothetable/", "content": "exp-walls-en.html",
+    "pair": "exp-walls-es", "pair_url": "/inicio/experiencias/delasmurallasalamesa/",
+    "title": "From the Walls to the Table — A Morning in Campeche | Maya Tuya",
+    "description": "A curated morning inside Campeche's walled city: a private chocolate workshop, a local artisan and an all-inclusive organic brunch. Bilingual guide.",
+    "og_image": "Campeche-Walls-e1776555524400.jpg"
+  }
+]
