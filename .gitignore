@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+# Original WordPress exports contain private data — keep them out of the repo
+*.xml
+fluentform-export*.json
+wc-product-export*.csv
