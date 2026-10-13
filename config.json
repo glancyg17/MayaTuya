@@ -1,52 +1,129 @@
 {
+  "mode": "staging",
   "domain": "https://mayatuya.com",
+  "staging_domain": "https://new.mayatuya.com",
   "site_name": "Maya Tuya",
   "email": "hola@mayatuya.com",
   "whatsapp": "https://wa.me/529381842944",
-
   "form_endpoint": "https://api.web3forms.com/submit",
   "form_access_key": "PLACEHOLDER_WEB3FORMS_ACCESS_KEY",
-
   "stripe": {
     "destacado_monthly": "PLACEHOLDER_STRIPE_DESTACADO_MONTHLY",
     "destacado_annual": "PLACEHOLDER_STRIPE_DESTACADO_ANNUAL",
     "fundador": "PLACEHOLDER_STRIPE_FUNDADOR",
-    "tu_negocio_mejor": "PLACEHOLDER_STRIPE_TU_NEGOCIO_MEJOR",
     "guide_campeche": "PLACEHOLDER_STRIPE_GUIDE_CAMPECHE",
     "contribution": "PLACEHOLDER_STRIPE_CONTRIBUTION"
   },
-
-  "logos": { "en": "Logo-EN-1-e1776037490997.png", "es": "Logo-ES-1-e1776037333928.png" },
-  "favicon": "cropped-Logo-emblem.png",
-  "lang_home": { "en": "/", "es": "/inicio/" },
-  "lang_switch": {
-    "en": { "label": "ES", "hreflang": "es", "flag": "es", "title": "Ver en español" },
-    "es": { "label": "EN", "hreflang": "en", "flag": "gb", "title": "View in English" }
+  "logos": {
+    "en": "Logo-EN-1-e1776037490997.png",
+    "es": "Logo-ES-1-e1776037333928.png"
   },
-
+  "favicon": "cropped-Logo-emblem.png",
+  "lang_home": {
+    "en": "/",
+    "es": "/inicio/"
+  },
+  "lang_switch": {
+    "en": {
+      "label": "ES",
+      "hreflang": "es",
+      "flag": "es",
+      "title": "Ver en español"
+    },
+    "es": {
+      "label": "EN",
+      "hreflang": "en",
+      "flag": "gb",
+      "title": "View in English"
+    }
+  },
   "nav": {
     "en": [
-      { "label": "Experiences", "href": "/experiences/" },
-      { "label": "Campeche", "href": "/destinations/campeche/" },
-      { "label": "Aliados", "href": "/aliados/", "children": [
-          { "label": "Aliados", "href": "/aliados/" },
-          { "label": "Directory", "href": "/aliados/directory/" },
-          { "label": "Hazte Aliado", "href": "/inicio/hazte-aliado/" } ] },
-      { "label": "Guides", "href": "/guides/" },
-      { "label": "Our Story", "href": "/about/" }
+      {
+        "label": "Experiences",
+        "href": "/experiences/"
+      },
+      {
+        "label": "Campeche",
+        "href": "/destinations/campeche/"
+      },
+      {
+        "label": "Aliados",
+        "href": "/aliados/",
+        "children": [
+          {
+            "label": "Aliados",
+            "href": "/aliados/"
+          },
+          {
+            "label": "Directory",
+            "href": "/aliados/directory/"
+          },
+          {
+            "label": "Hazte Aliado",
+            "href": "/inicio/hazte-aliado/"
+          }
+        ]
+      },
+      {
+        "label": "Guides",
+        "href": "/guides/"
+      },
+      {
+        "label": "Our Story",
+        "href": "/about/"
+      }
     ],
     "es": [
-      { "label": "Experiencias", "href": "/inicio/experiencias/" },
-      { "label": "Campeche", "href": "/inicio/destinos/campeche/" },
-      { "label": "Aliados", "href": "/inicio/aliados/", "children": [
-          { "label": "Aliados", "href": "/inicio/aliados/" },
-          { "label": "Directorio", "href": "/inicio/aliados/directorio/" },
-          { "label": "Hazte Aliado", "href": "/inicio/hazte-aliado/" } ] },
-      { "label": "Guías", "href": "/inicio/guias/" },
-      { "label": "Nuestra Historia", "href": "/inicio/acercade/" }
+      {
+        "label": "Experiencias",
+        "href": "/inicio/experiencias/"
+      },
+      {
+        "label": "Campeche",
+        "href": "/inicio/destinos/campeche/"
+      },
+      {
+        "label": "Aliados",
+        "href": "/inicio/aliados/",
+        "children": [
+          {
+            "label": "Aliados",
+            "href": "/inicio/aliados/"
+          },
+          {
+            "label": "Directorio",
+            "href": "/inicio/aliados/directorio/"
+          },
+          {
+            "label": "Hazte Aliado",
+            "href": "/inicio/hazte-aliado/"
+          }
+        ]
+      },
+      {
+        "label": "Guías",
+        "href": "/inicio/guias/"
+      },
+      {
+        "label": "Nuestra Historia",
+        "href": "/inicio/acercade/"
+      }
     ]
   },
-
-  "skip_link": { "en": "Skip to content", "es": "Saltar al contenido" },
-  "menu_label": { "en": "Menu", "es": "Menú" }
+  "skip_link": {
+    "en": "Skip to content",
+    "es": "Saltar al contenido"
+  },
+  "menu_label": {
+    "en": "Menu",
+    "es": "Menú"
+  },
+  "default_og": "Untitled-design-4.png",
+  "stripe_live_reference": {
+    "_note": "Existing live links, kept for reference only. Not used by the build. Swap into 'stripe' at launch.",
+    "destacado_monthly": "https://buy.stripe.com/14AbJ1eZT4gvfQmfYD2cg04",
+    "destacado_annual": "https://buy.stripe.com/7sY14ndVP7sHeMi9Af2cg05",
+    "fundador": "https://buy.stripe.com/00wcN52d75kz9rYaEj2cg06"
+  }
 }

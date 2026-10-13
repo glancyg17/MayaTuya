@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aliados Directory — Verified Local Businesses | Maya Tuya</title>
+<meta name="description" content="Filter Campeche&#x27;s verified local businesses by place and category: restaurants, wellness, craft, chocolate and more.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://new.mayatuya.com/aliados/directory/">
+<link rel="alternate" hreflang="en" href="https://new.mayatuya.com/aliados/directory/">
+<link rel="alternate" hreflang="es" href="https://new.mayatuya.com/inicio/aliados/directorio/">
+<link rel="alternate" hreflang="x-default" href="https://new.mayatuya.com/aliados/directory/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maya Tuya">
+<meta property="og:title" content="Aliados Directory — Verified Local Businesses | Maya Tuya">
+<meta property="og:description" content="Filter Campeche&#x27;s verified local businesses by place and category: restaurants, wellness, craft, chocolate and more.">
+<meta property="og:url" content="https://new.mayatuya.com/aliados/directory/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://new.mayatuya.com/assets/img/Untitled-design-4.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/cropped-Logo-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+.mt-dir-hero{
+  --green:#013220;--gold:#c89e4b;--gold-d:#9a7828;
+  --cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;
+  background:transparent;
+  padding:48px 0 36px;
+  position:relative;
+  border-bottom:2px solid var(--green);
+}
+/* Gold accent line — top */
+.mt-dir-hero::after{
+  content:'';
+  position:absolute;top:0;left:0;
+  width:48px;height:3px;
+  background:var(--gold);
+}
+.mt-dir-hero-inner{
+  position:relative;
+  max-width:860px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:32px;
+  align-items:center;
+}
+.mt-dir-hero-eyebrow{
+  font-family:'Lato',sans-serif;
+  font-size:9px;
+  letter-spacing:0.55em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  display:block;
+  margin-bottom:12px;
+  opacity:0.75;
+}
+.mt-dir-hero-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(28px,4.5vw,46px);
+  font-weight:400;
+  color:var(--ink);
+  line-height:1.1;
+  display:block;
+  margin-bottom:14px;
+  letter-spacing:0.02em;
+}
+/* Green accent on second line */
+.mt-dir-hero-title em{
+  font-style:normal;
+  color:var(--green);
+}
+.mt-dir-hero-rule{
+  width:36px;height:2px;
+  background:var(--gold);
+  margin-bottom:14px;
+}
+.mt-dir-hero-sub{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:clamp(15px,2vw,19px);
+  color:var(--muted);
+  line-height:1.6;
+  display:block;
+  max-width:540px;
+}
+.mt-dir-hero-badge{
+  width:300px;height:300px;
+  border-radius:50%;
+  overflow:hidden;
+  border:1.5px solid rgba(1,50,32,0.15);
+  flex-shrink:0;
+  opacity:0.88;
+}
+.mt-dir-hero-badge img{width:100%;height:100%;object-fit:cover;}
+@media(max-width:600px){
+  .mt-dir-hero{padding:36px 0 28px;}
+  .mt-dir-hero-badge{width:90px;height:90px;}
+}
+</style>
+<style>
+/* ── Scoped entirely inside #mtdir ── */
+#mtdir {
+  font-family: 'Lato', sans-serif;
+  color: #0c0b09;
+  --g: #013220;
+  --gold: #c89e4b;
+  --gold-d: #9a7828;
+  --cream: #f2e9d0;
+  --muted: #5a5040;
+  --rule: rgba(1,50,32,0.12);
+  --rule-gold: rgba(200,158,75,0.25);
+}
+#mtdir * { box-sizing: border-box; }
+
+/* Filter bar */
+#mtdir .f-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  padding: 20px 0 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+/* Left group: label + selects */
+#mtdir .f-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  flex: 1;
+}
+#mtdir .f-label {
+  font-size: 8px;
+  letter-spacing: 0.48em;
+  text-transform: uppercase;
+  color: var(--gold-d);
+  opacity: 0.65;
+  flex-shrink: 0;
+  margin-right: 18px;
+  padding-bottom: 12px;
+}
+/* Each select wrapped in a styled pill */
+#mtdir .f-select-wrap {
+  position: relative;
+  margin-right: 2px;
+  margin-bottom: 12px;
+}
+#mtdir .f-select-wrap::after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--gold-d);
+  opacity: 0.6;
+  pointer-events: none;
+}
+#mtdir select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 1px solid var(--rule-gold);
+  border-radius: 0;
+  color: #0c0b09;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: 8px 32px 8px 14px;
+  cursor: pointer;
+  outline: none;
+  min-width: 0;
+  width: auto;
+  transition: border-color 0.2s;
+}
+#mtdir select:hover,
+#mtdir select:focus {
+  border-color: var(--gold);
+}
+/* Right: count */
+#mtdir .f-count {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--muted);
+  padding-bottom: 12px;
+  white-space: nowrap;
+  padding-left: 20px;
+  border-left: 1px solid var(--rule);
+  margin-left: 18px;
+}
+#mtdir .f-count strong { color: var(--g); font-style: normal; font-family: 'Playfair Display SC', serif; font-size: 16px; }
+
+/* Stack of cards */
+#mtdir .cards { display: block; }
+
+/* One card entry = banner (optional) + card */
+#mtdir .entry { display: block; margin-bottom: 2px; }
+
+/* Featured banner */
+#mtdir .banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--g);
+  padding: 7px 14px;
+}
+#mtdir .b-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+#mtdir .b-lbl { font-size: 8px; letter-spacing: 0.45em; text-transform: uppercase; color: var(--gold); opacity: 0.9; }
+#mtdir .b-gap { flex: 1; }
+#mtdir .b-badge { width: 20px; height: 20px; border-radius: 50%; overflow: hidden; border: 1px solid rgba(200,158,75,0.3); }
+#mtdir .b-badge img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Card */
+#mtdir .card {
+  background: #fffdf7;
+  border: 1px solid var(--rule);
+  border-left: 3px solid transparent;
+  overflow: hidden;
+  transition: border-left-color 0.2s, box-shadow 0.2s;
+}
+#mtdir .entry.has-banner .card { border-top: none; border-left-color: var(--gold); }
+#mtdir .card:hover { border-left-color: var(--gold); box-shadow: 0 4px 20px rgba(1,50,32,0.08); }
+
+/* Card inner: image | body — percentage columns, no fixed px */
+#mtdir .card-row {
+  display: table;
+  width: 100%;
+  min-height: 200px;
+}
+#mtdir .card-img-cell {
+  display: table-cell;
+  width: 30%;
+  min-width: 200px;
+  max-width: 280px;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+#mtdir .card-img-cell img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: saturate(0.88);
+  transition: filter 0.3s, transform 0.45s;
+  display: block;
+}
+#mtdir .card:hover .card-img-cell img { filter: saturate(1); transform: scale(1.03); }
+#mtdir .card-body-cell {
+  display: table-cell;
+  vertical-align: top;
+  padding: 18px 22px;
+}
+
+/* Body content */
+#mtdir .card-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 9px; flex-wrap: wrap; }
+#mtdir .tag {
+  font-size: 8px; letter-spacing: 0.38em; text-transform: uppercase;
+  color: var(--gold-d); border: 1px solid var(--rule-gold); padding: 3px 8px;
+}
+#mtdir .loc { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); opacity: 0.65; }
+#mtdir .card-name { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #0c0b09; line-height: 1.15; display: block; margin-bottom: 7px; }
+#mtdir .card-desc { font-size: 12.5px; color: var(--muted); line-height: 1.65; display: block; margin-bottom: 10px; }
+#mtdir .card-why {
+  font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: 13.5px; color: var(--g); line-height: 1.5;
+  border-left: 2px solid var(--rule-gold); padding-left: 9px;
+  display: block; margin-bottom: 14px;
+}
+#mtdir .card-actions { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid var(--rule); }
+#mtdir .btn-p {
+  font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase;
+  padding: 8px 18px; background: var(--g); color: var(--cream);
+  text-decoration: none; display: inline-block; transition: background 0.2s;
+}
+#mtdir .btn-p:hover { background: #024a30; }
+#mtdir .btn-o {
+  font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase;
+  padding: 8px 18px; background: transparent; color: var(--muted);
+  border: 1px solid var(--rule-gold); text-decoration: none; display: inline-block; transition: all 0.2s;
+}
+#mtdir .btn-o:hover { border-color: var(--gold); color: #0c0b09; }
+
+#mtdir .cycle-note {
+  font-size: 9px; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--muted); opacity: 0.4; text-align: right;
+  padding-top: 8px; display: block;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #mtdir .card-row { display: block; }
+  #mtdir .card-img-cell {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    min-width: 0;
+  }
+  #mtdir .card-body-cell { display: block; width: 100%; padding: 16px 18px; }
+  #mtdir .card-name { font-size: 18px; }
+  #mtdir .f-bar { flex-direction: column; align-items: flex-start; gap: 12px; }
+  #mtdir .f-left { gap: 8px; }
+  #mtdir .f-label { margin-right: 0; padding-bottom: 0; }
+  #mtdir .f-select-wrap { margin-bottom: 0; }
+  #mtdir select { font-size: 12px; }
+  #mtdir .f-count { border-left: none; margin-left: 0; padding-left: 0; padding-top: 4px; }
+}
+</style>
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;font-family:'Lato',sans-serif;color:var(--ink);}
+
+/* ── Desktop: full-bleed image with overlay ── */
+.mt-exp-nudge{
+  position:relative;
+  overflow:hidden;
+  min-height:320px;
+  display:flex;align-items:center;
+  border-top:1px solid rgba(1,50,32,.12);
+}
+.mt-exp-nudge-img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;object-position:center top;
+  display:block;
+  filter:saturate(.78) brightness(.5);
+}
+.mt-exp-nudge-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(1,25,12,.95) 0%,rgba(1,25,12,.6) 55%,rgba(1,25,12,.2) 100%);
+}
+.mt-exp-nudge-content{
+  position:relative;z-index:2;
+  padding:clamp(32px,5vw,56px) clamp(24px,6vw,64px);
+  max-width:600px;
+}
+.mt-exp-nudge-eyebrow{
+  font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;
+  text-transform:uppercase;color:var(--gold);opacity:.75;
+  display:block;margin-bottom:14px;
+}
+.mt-exp-nudge-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(22px,3.8vw,40px);
+  font-weight:400;color:#fff;line-height:1.1;
+  display:block;margin-bottom:14px;
+}
+.mt-exp-nudge-rule{width:36px;height:2px;background:var(--gold);opacity:.55;display:block;margin-bottom:16px;}
+.mt-exp-nudge-sub{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(16px,2vw,19px);
+  color:rgba(242,233,208,.65);line-height:1.6;
+  display:block;margin-bottom:26px;
+}
+.mt-exp-nudge-btn{
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.35em;
+  text-transform:uppercase;padding:13px 30px;
+  background:var(--gold);color:#fff;
+  text-decoration:none;display:inline-block;
+  transition:background .2s;
+}
+.mt-exp-nudge-btn:hover{background:var(--gold-d);color:#fff;}
+
+/* ── Mobile: image top, dark panel below ── */
+@media(max-width:600px){
+  .mt-exp-nudge{display:block;min-height:unset;overflow:visible;}
+  .mt-exp-nudge-img{position:static;width:100%;height:220px;object-fit:cover;object-position:center top;display:block;}
+  .mt-exp-nudge-overlay{display:none;}
+  .mt-exp-nudge-content{position:static;background:var(--g);padding:32px 24px;max-width:100%;}
+}
+</style>
+<style>
+#mtfoot-en {
+  --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;
+  --cream:#f2e9d0;--muted:#5a5040;
+  --rule:rgba(200,158,75,0.15);
+  background:var(--g);
+  padding:52px clamp(22px,6vw,64px) 36px;
+  font-family:'Lato',sans-serif;
+}
+#mtfoot-en * { box-sizing:border-box; }
+#mtfoot-en a { text-decoration:none;color:inherit; }
+
+/* Brand row */
+#mtfoot-en .foot-brand {
+  display:table;width:100%;
+  padding-bottom:32px;margin-bottom:32px;
+  border-bottom:1px solid var(--rule);
+}
+#mtfoot-en .foot-brand-left { display:table-cell;vertical-align:middle; }
+#mtfoot-en .foot-brand-right {
+  display:table-cell;vertical-align:middle;
+  text-align:right;white-space:nowrap;padding-left:24px;
+}
+
+/* Logo */
+#mtfoot-en .foot-logo {
+  width:auto;height:48px;
+  display:block;margin-bottom:14px;
+  object-fit:contain;object-position:left center;
+  opacity:.9;
+}
+#mtfoot-en .foot-tagline {
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(13px,1.6vw,16px);
+  color:rgba(242,233,208,0.42);line-height:1.55;
+  display:block;max-width:300px;
+}
+
+/* Contact */
+#mtfoot-en .foot-contact-label {
+  font-size:8px;letter-spacing:0.45em;text-transform:uppercase;
+  color:var(--gold);opacity:0.65;
+  display:block;margin-bottom:5px;
+}
+#mtfoot-en .foot-contact-link {
+  font-size:13px;color:rgba(242,233,208,0.55);
+  display:block;transition:color 0.2s;line-height:1.7;
+}
+#mtfoot-en .foot-contact-link:hover { color:var(--cream); }
+
+/* Grid */
+#mtfoot-en .foot-grid {
+  display:table;width:100%;
+}
+#mtfoot-en .foot-col {
+  display:table-cell;vertical-align:top;
+  padding-right:28px;width:20%;
+}
+#mtfoot-en .foot-col:last-child { padding-right:0; }
+#mtfoot-en .foot-col-title {
+  font-size:8px;letter-spacing:0.5em;text-transform:uppercase;
+  color:var(--gold);opacity:0.72;
+  display:block;margin-bottom:14px;
+  padding-bottom:10px;border-bottom:1px solid var(--rule);
+}
+#mtfoot-en .footer-link {
+  font-size:12.5px;color:rgba(242,233,208,0.5);
+  display:block;padding:5px 0;
+  transition:color 0.2s;line-height:1.4;
+}
+#mtfoot-en .footer-link:hover { color:var(--cream); }
+#mtfoot-en .footer-link-free {
+  font-size:9px;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--gold);opacity:0.55;margin-left:5px;
+}
+#mtfoot-en .footer-link-soon {
+  font-size:12.5px;color:rgba(242,233,208,0.2);
+  display:block;padding:5px 0;cursor:default;line-height:1.4;
+}
+#mtfoot-en .footer-link-all {
+  font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
+  color:var(--gold);opacity:0.6;
+  display:block;padding:8px 0 4px;
+  margin-top:4px;border-top:1px solid var(--rule);
+  transition:opacity 0.2s;
+}
+#mtfoot-en .footer-link-all:hover { opacity:1; }
+
+/* Bottom bar */
+#mtfoot-en .foot-bottom {
+  margin-top:36px;padding-top:20px;
+  border-top:1px solid var(--rule);
+  display:table;width:100%;
+}
+#mtfoot-en .foot-bottom-left { display:table-cell;vertical-align:middle; }
+#mtfoot-en .foot-bottom-right {
+  display:table-cell;vertical-align:middle;text-align:right;
+}
+#mtfoot-en .foot-copy {
+  font-size:10px;color:rgba(242,233,208,0.22);letter-spacing:0.12em;
+}
+#mtfoot-en .foot-legal {
+  display:flex;gap:20px;justify-content:flex-end;flex-wrap:wrap;
+}
+#mtfoot-en .foot-legal a {
+  font-size:9px;color:rgba(242,233,208,0.25);
+  letter-spacing:0.2em;text-transform:uppercase;transition:color 0.2s;
+}
+#mtfoot-en .foot-legal a:hover { color:rgba(242,233,208,0.6); }
+
+/* Mobile */
+@media(max-width:680px){
+  #mtfoot-en .foot-brand,
+  #mtfoot-en .foot-grid,
+  #mtfoot-en .foot-bottom { display:block; }
+  #mtfoot-en .foot-brand-left,
+  #mtfoot-en .foot-brand-right,
+  #mtfoot-en .foot-col,
+  #mtfoot-en .foot-bottom-left,
+  #mtfoot-en .foot-bottom-right {
+    display:block;width:100%;text-align:left;
+    white-space:normal;padding-right:0;
+  }
+  #mtfoot-en .foot-brand-right { margin-top:20px;padding-left:0; }
+  #mtfoot-en .foot-col { margin-bottom:28px; }
+  #mtfoot-en .foot-bottom-right { margin-top:12px; }
+  #mtfoot-en .foot-legal { justify-content:flex-start; }
+}
+</style>
+</head>
+<body class="lang-en page-directory-en">
+<a class="mt-skip" href="#content">Skip to content</a>
+<header class="mt-header" id="masthead">
+<div class="mt-header-inner">
+<a class="mt-logo" href="/"><img src="/assets/img/Logo-EN-1-e1776037490997.png" alt="Maya Tuya" width="120" height="56"></a>
+<button class="mt-nav-toggle" type="button" aria-expanded="false" aria-controls="mt-nav">Menu</button>
+<nav class="mt-nav" id="mt-nav" aria-label="Main"><ul><li><a href="/experiences/">Experiences</a></li><li><a href="/destinations/campeche/">Campeche</a></li><li class="has-sub"><a href="/aliados/" aria-haspopup="true">Aliados</a><ul class="sub"><li><a href="/aliados/">Aliados</a></li><li><a href="/aliados/directory/" aria-current="page">Directory</a></li><li><a href="/inicio/hazte-aliado/">Hazte Aliado</a></li></ul></li><li><a href="/guides/">Guides</a></li><li><a href="/about/">Our Story</a></li></ul></nav>
+<a class="mt-lang-switch" href="/inicio/aliados/directorio/" hreflang="es" lang="es" title="Ver en español">
+<img class="mt-lang-flag" src="https://flagcdn.com/20x15/es.png" width="20" height="15" alt="">
+<span class="mt-lang-divider"></span><span class="mt-lang-code">ES</span></a>
+</div>
+</header>
+<main id="content">
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+
+
+<div class="mt-dir-hero">
+  <div class="mt-dir-hero-inner">
+    <div class="mt-dir-hero-text">
+      <span class="mt-dir-hero-eyebrow">Aliados · Tren Maya Route · Campeche</span>
+      <span class="mt-dir-hero-title">Local Businesses.<br><em>Verified.</em></span>
+      <div class="mt-dir-hero-rule"></div>
+      <span class="mt-dir-hero-sub">Every Aliado Verificado has been chosen by hand — for what they are, not what they spend. Use the filters below to find what you're looking for.</span>
+    </div>
+    <div class="mt-dir-hero-badge">
+      <img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado Maya Tuya">
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+
+
+<div id="mtdir">
+  
+  <div class="f-bar">
+    <div class="f-left">
+      <span class="f-label">Filter by</span>
+      <div class="f-select-wrap">
+        <select id="mtdir-loc" onchange="mtdirRender()">
+          <option value="all">All locations</option>
+          <option value="campeche">Campeche</option>
+          <option value="merida">Mérida</option>
+          <option value="valladolid">Valladolid</option>
+        </select>
+      </div>
+      <div class="f-select-wrap">
+        <select id="mtdir-cat" onchange="mtdirRender()">
+          <option value="all">All categories</option>
+          <option value="restaurante">Restaurant</option>
+          <option value="bienestar">Wellness</option>
+          <option value="artesania">Craft &amp; Jewellery</option>
+          <option value="chocolate">Chocolate &amp; Cacao</option>
+          <option value="espacio">Space &amp; Events</option>
+          <option value="ceremonias">Ceremonies &amp; Workshops</option>
+        </select>
+      </div>
+    </div>
+    <span class="f-count"><strong id="mtdir-n">—</strong> Aliados</span>
+  </div>
+
+  
+  <div class="cards" id="mtdir-cards"></div>
+  <span class="cycle-note" id="mtdir-note"></span>
+</div>
+
+<script>
+(function () {
+  var CYCLE_HOURS   = 1;
+  var FEATURED_SHOW = 2;
+  var LANG          = 'en';
+  var BADGE         = '/assets/img/Aliado-Verificado-Badge-Digital-scaled.png';
+  var TIER = { fundador: 'Aliado Fundador', selecto: 'Aliado Selecto' };
+  var STR  = { contact: 'Contact', map: 'Map', profile: 'View profile', note: 'Featured Aliados rotate every hour.' };
+
+  /* ── DATA ── edit this array to manage Aliados ── */
+  var ALIADOS = [
+  // ── ADD / EDIT ALIADOS HERE ─────────────────────────────────────────────
+  // To add a new Aliado: copy one block below, paste before the final ];
+  // To remove: delete from /* ── NAME */ to the closing },
+  // To feature: set featured: true, tier: "fundador" or "selecto"
+  // To demote:  set featured: false, tier: "basico"
+  // profile_url: "" hides the profile button (use for Básico)
+  // ─────────────────────────────────────────────────────────────────────────
+
+  /* ── CASA VIEJA DEL RIO ─────────────────────── */
+  {
+    id:          "casavieja",
+    loc:         "campeche",
+    cat:         "restaurante",
+    featured:    true,
+    tier:        "selecto",
+    img:         "/assets/img/577806754_1394944679302666_1464355943699789243_n.jpg",
+    name:        "Casa Vieja del Rio",
+    tag_en:      "Restaurant · Cocktails",
+    tag_es:      "Restaurante · Coctelería",
+    loc_label:   "Campeche",
+    desc_en:     "Balcony and rooftop over the Cathedral and Plaza de Independencia. Regional cuisine and the Margarita Campechana that becomes the memory of Campeche.",
+    desc_es:     "Balcón y terraza sobre la Catedral y la Plaza de Independencia. Cocina regional y la Margarita Campechana que se convierte en el recuerdo de Campeche.",
+    why_en:      "One of the very few places in Campeche where you see the city the way it deserves to be seen.",
+    why_es:      "Uno de los pocos lugares en Campeche donde puedes ver la ciudad como merece verse.",
+    contact_url: "mailto:casaviejadelosarcos@gmail.com",
+    map_url:     "https://maps.google.com/?q=Casa+Vieja+del+Rio+Campeche",
+    profile_url: "/aliados/casa-vieja-del-rio"
+  },
+
+  /* ── BASTIÓN ─────────────────────────────────── */
+  {
+    id:          "bastion",
+    loc:         "campeche",
+    cat:         "chocolate",
+    featured:    false,
+    tier:        "basico",
+    img:         "/assets/img/Photos-Soon-EN.jpg",
+    name:        "Bastión",
+    tag_en:      "Restaurant · Artisan Chocolate",
+    tag_es:      "Restaurante · Chocolate Artesanal",
+    loc_label:   "Campeche",
+    desc_en:     "Facing the main square, working Chiapas cacao with real seriousness. The chocolate workshop is one of the most unexpected stops in the historic centre.",
+    desc_es:     "Frente a la plaza principal, trabaja cacao de Chiapas con seriedad. El taller es una de las paradas más inesperadas del centro histórico.",
+    why_en:      "Cacao is part of this territory. Bastión treats it that way.",
+    why_es:      "El cacao es parte de este territorio. Bastión lo trata como tal.",
+    contact_url: "https://wa.me/52981 816 2128",
+    map_url:     "https://maps.app.goo.gl/ntHSwDJHh1kpaTvNA",
+    profile_url: ""
+  },
+
+  /* ── CORAZÓN CONTENTO ────────────────────────── */
+  {
+    id:          "corazoncontento",
+    loc:         "campeche",
+    cat:         "restaurante",
+    featured:    true,
+    tier:        "selecto",
+    img:         "/assets/img/Corazon-Contento-Pagina-Hero-2.jpg",
+    name:        "Corazón Contento",
+    tag_en:      "Organic Kitchen · 2 locations",
+    tag_es:      "Cocina Orgánica · 2 ubicaciones",
+    loc_label:   "Campeche",
+    desc_en:     "Seasonal ingredients, known provenance, presentation that tells you someone thought carefully. The direct answer to: where do I eat well here?",
+    desc_es:     "Ingredientes de temporada, origen conocido, presentación que demuestra que alguien pensó. La respuesta directa a: ¿dónde como bien aquí?",
+    why_en:      "Full without advertising. That's the only recommendation that holds.",
+    why_es:      "Lleno sin anunciarse. Esa es la única recomendación que aguanta.",
+    contact_url: "https://wa.me/52981 135 4554",
+    map_url:     "https://maps.app.goo.gl/9tkAaNqvMJR7ApV27",
+    profile_url: "/aliados/corazon-contento"
+  },
+
+  /* ── EL PATRÓN PASTOR Y SIRLOIN ──────────────── */
+  {
+    id:          "elpatron",
+    loc:         "campeche",
+    cat:         "restaurante",
+    featured:    false,
+    tier:        "basico",
+    img:         "/assets/img/Photos-Soon-EN.jpg",
+    name:        "El Patrón Pastor y Sirloin",
+    tag_en:      "Restaurant · Bar",
+    tag_es:      "Restaurante · Bar",
+    loc_label:   "Campeche",
+    desc_en:     "Open 8am to 2am. Inside and outside seating, sea views. One of the few places in Campeche that works at every hour of the day.",
+    desc_es:     "Abierto de 8am a 2am. Mesas dentro y fuera, vista al mar. Uno de los pocos lugares de Campeche que funciona a cualquier hora.",
+    why_en:      "A place that lives the city at every hour. Rarer than it sounds.",
+    why_es:      "Un negocio que vive la ciudad a todas horas. Más raro de lo que parece.",
+    contact_url: "https://wa.me/529812087910",
+    map_url:     "https://maps.app.goo.gl/TZkKQVYuWbLovr5V9",
+    profile_url: ""
+  },
+
+  /* ── PÉTALOS DE SHAKTI ───────────────────────── */
+  {
+    id:          "petalos",
+    loc:         "campeche",
+    cat:         "bienestar",
+    featured:    false,
+    tier:        "basico",
+    img:         "/assets/img/WhatsApp-Image-2026-04-25-at-17.16.51-1.jpeg",
+    name:        "Pétalos de Shakti",
+    tag_en:      "Wellness · Therapies",
+    tag_es:      "Bienestar · Terapias",
+    loc_label:   "Campeche",
+    desc_en:     "Holistic therapies and yoga in Campeche. A genuine practice space where sessions carry real intention — not a hotel spa.",
+    desc_es:     "Terapias holísticas y yoga en Campeche. Un espacio de práctica genuina donde las sesiones tienen intención real — no un spa de hotel.",
+    why_en:      "For the traveller who came looking for more than sightseeing.",
+    why_es:      "Para el viajero que llegó buscando algo más que turismo.",
+    contact_url: "https://wa.me/529811210784",
+    map_url:     "https://maps.app.goo.gl/G1p2naMYdDZPEXAp6",
+    profile_url: ""
+  },
+
+  /* ── CASA MENTA ──────────────────────────────── */
+  {
+    id:          "casamenta",
+    loc:         "campeche",
+    cat:         "espacio",
+    featured:    true,
+    tier:        "selecto",
+    img:         "/assets/img/Casa-Menta-Pagina-Hero-e1776797089175.jpg",
+    name:        "Casa Menta",
+    tag_en:      "Space · Events · Accommodation",
+    tag_es:      "Espacio · Eventos · Hospedaje",
+    loc_label:   "Campeche",
+    desc_en:     "Versatile space in the historic centre — events, accommodation, food, drink. Flexible enough for a curated experience, intimate enough to feel personal.",
+    desc_es:     "Espacio versátil en el centro histórico — eventos, hospedaje, comida, bebida. Flexible para una experiencia curada, íntimo para sentirse personal.",
+    why_en:      "A structural node in the network — a space with judgement.",
+    why_es:      "Un nodo estructural en la red — un espacio con criterio.",
+    contact_url: "https://wa.me/52981 816 8131",
+    map_url:     "https://maps.app.goo.gl/dc5aqKN9uGYe5zBu6",
+    profile_url: "/aliados/casa-menta"
+  },
+
+  /* ── CASA MAYIS ──────────────────────────────── */
+  {
+    id:          "casamayis",
+    loc:         "campeche",
+    cat:         "ceremonias",
+    featured:    true,
+    tier:        "fundador",
+    img:         "/assets/img/Casa-Mayis-Pagina-Hero-1-e1776119710800.jpg",
+    name:        "Casa Mayis",
+    tag_en:      "Ceremonies · Circles · Workshops",
+    tag_es:      "Ceremonias · Círculos · Talleres",
+    loc_label:   "Campeche",
+    desc_en:     "Circles, ceremonies and personal connection workshops. No fixed space — the location follows the intention.",
+    desc_es:     "Círculos, ceremonias y talleres de conexión personal. Sin espacio fijo — el lugar sigue la intención.",
+    why_en:      "For the traveller looking for a real encounter, not a wellness product.",
+    why_es:      "Para el viajero que busca un encuentro real, no un producto de bienestar.",
+    contact_url: "https://wa.me/529381341778",
+    map_url:     "https://maps.app.goo.gl/yE7P2Lp4MDJHQ6Qy9",
+    profile_url: "/aliados/casa-mayis"
+  },
+
+  /* ── TANART ──────────────────────────────────── */
+  {
+    id:          "tanart",
+    loc:         "campeche",
+    cat:         "artesania",
+    featured:    false,
+    tier:        "basico",
+    img:         "/assets/img/WhatsApp-Image-2026-04-29-at-12.51.05-2.jpeg",
+    name:        "Tanart",
+    tag_en:      "Jewellery · Craft",
+    tag_es:      "Joyería · Artesanía",
+    loc_label:   "Campeche",
+    desc_en:     "Handmade jewellery with local materials. No fixed shop, no intermediaries. Each piece has a process and a provenance.",
+    desc_es:     "Joyería hecha a mano con materiales locales. Sin tienda fija, sin intermediarios. Cada pieza tiene un proceso y un origen.",
+    why_en:      "Pieces with history, made by who designed them.",
+    why_es:      "Piezas con historia, hechas por quien las diseñó.",
+    contact_url: "https://wa.me/52981 126 5124",
+    map_url:     "https://maps.app.goo.gl/84eY32a9uKNEEBF77",
+    profile_url: ""
+  }
+
+  // ── TO ADD A NEW ALIADO ───────────────────────────────────────────────────
+  // 1. Add a comma after the last }, above
+  // 2. Paste this block and fill in the values:
+  //
+  // /* ── NEW ALIADO NAME ─────────────────────────── */
+  // {
+  //   id:          "unique-id",
+  //   loc:         "campeche",         // campeche | merida | valladolid
+  //   cat:         "restaurante",      // restaurante | bienestar | artesania | chocolate | espacio | ceremonias
+  //   featured:    false,              // true = eligible for featured rotation
+  //   tier:        "basico",           // basico | selecto | fundador
+  //   img:         "/assets/img/PHOTO.jpg",
+  //   name:        "Nombre del Negocio",
+  //   tag_en:      "Category · Subcategory",
+  //   tag_es:      "Categoría · Subcategoría",
+  //   loc_label:   "Campeche",
+  //   desc_en:     "2-3 line editorial description in English.",
+  //   desc_es:     "Descripción editorial de 2-3 líneas en español.",
+  //   why_en:      "One line — why this business is an Aliado.",
+  //   why_es:      "Una línea — por qué este negocio es Aliado.",
+  //   contact_url: "https://wa.me/52XXXXXXXXXX",
+  //   map_url:     "https://maps.google.com/?q=NEGOCIO+CAMPECHE",
+  //   profile_url: ""                  // "" hides the profile button (Básico)
+  // }
+  // ─────────────────────────────────────────────────────────────────────────
+];
+
+  /* ── Deterministic shuffle ── */
+  function rng(n) { var x = Math.sin(n + 1) * 10000; return x - Math.floor(x); }
+  function shuffle(arr, seed) {
+    var a = arr.slice(), i, j, t;
+    for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(rng(seed + i) * (i + 1));
+      t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  /* ── Render ── */
+  function render() {
+    var loc   = (document.getElementById('mtdir-loc') || {}).value || 'all';
+    var cat   = (document.getElementById('mtdir-cat') || {}).value || 'all';
+    var slot  = Math.floor(Date.now() / (CYCLE_HOURS * 3600000));
+
+    var featured = ALIADOS.filter(function (a) { return a.featured; });
+    var basic    = ALIADOS.filter(function (a) { return !a.featured; });
+    var sf       = shuffle(featured, slot);
+    var active   = sf.slice(0, FEATURED_SHOW);
+    var inactive = sf.slice(FEATURED_SHOW);
+    var rest     = shuffle(inactive.concat(basic), slot + 9999);
+    var ordered  = active.concat(rest);
+
+    var container = document.getElementById('mtdir-cards');
+    container.innerHTML = '';
+    var shown = 0;
+
+    ordered.forEach(function (a) {
+      if (loc !== 'all' && a.loc !== loc) return;
+      if (cat !== 'all' && a.cat !== cat) return;
+      shown++;
+
+      var isActive  = active.indexOf(a) > -1;
+      var tag  = LANG === 'en' ? a.tag_en  : a.tag_es;
+      var desc = LANG === 'en' ? a.desc_en : a.desc_es;
+      var why  = LANG === 'en' ? a.why_en  : a.why_es;
+      var tier = TIER[a.tier] || 'Aliado Verificado';
+
+      var banner = a.featured
+        ? '<div class="banner"><span class="b-dot"></span><span class="b-lbl">' + tier + '</span><span class="b-gap"></span><div class="b-badge"><img src="' + BADGE + '" alt="Aliado Verificado"></div></div>'
+        : '';
+
+      var profileBtn = a.profile_url
+        ? '<a class="btn-o" href="' + a.profile_url + '" target="_blank">' + STR.profile + '</a>'
+        : '';
+
+      var entryClass = 'entry' + (a.featured ? ' has-banner' : '');
+
+      var html =
+        banner +
+        '<div class="card">' +
+          '<div class="card-row">' +
+            '<div class="card-img-cell">' +
+              '<img src="' + a.img + '" alt="' + a.name + ' — Aliado Verificado Maya Tuya" loading="lazy">' +
+            '</div>' +
+            '<div class="card-body-cell">' +
+              '<div class="card-meta">' +
+                '<span class="tag">' + tag + '</span>' +
+                '<span class="loc">📍 ' + a.loc_label + '</span>' +
+              '</div>' +
+              '<span class="card-name">' + a.name + '</span>' +
+              '<span class="card-desc">' + desc + '</span>' +
+              '<span class="card-why">' + why + '</span>' +
+              '<div class="card-actions">' +
+                '<a class="btn-p" href="' + a.contact_url + '" target="_blank">' + STR.contact + '</a>' +
+                '<a class="btn-o" href="' + a.map_url + '" target="_blank">' + STR.map + '</a>' +
+                profileBtn +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>';
+
+      var entry = document.createElement('div');
+      entry.className = entryClass;
+      entry.innerHTML = html;
+      container.appendChild(entry);
+    });
+
+    var n = document.getElementById('mtdir-n');
+    if (n) n.textContent = shown;
+    var note = document.getElementById('mtdir-note');
+    if (note) note.textContent = shown ? STR.note : '';
+  }
+
+  /* ── Init ── */
+  window.mtdirRender = render;
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+  setTimeout(render, 400);
+})();
+</script>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+
+<div class="mt-w">
+<div class="mt-exp-nudge">
+  
+  <img class="mt-exp-nudge-img"
+    src="/assets/img/ChatGPT-Image-Nov-27-2025-09_37_41-PM.png"
+    alt="Maya Tuya Experiences — Campeche"
+    loading="lazy">
+  <div class="mt-exp-nudge-overlay"></div>
+  <div class="mt-exp-nudge-content">
+    <span class="mt-exp-nudge-eyebrow">Want something a little more personal?</span>
+    <span class="mt-exp-nudge-title">The Aliados, designed<br>into a full day.</span>
+    <span class="mt-exp-nudge-rule"></span>
+    <span class="mt-exp-nudge-sub">Every experience we run is built around the businesses in this directory — the same people, the same places, with a private driver connecting the stops and a pace that lets Campeche actually land.</span>
+    <a class="mt-exp-nudge-btn" href="/experiences/">View all experiences</a>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<footer id="colophon">
+
+
+<div id="mtfoot-en">
+
+  
+  <div class="foot-brand">
+    <div class="foot-brand-left">
+      
+      <img class="foot-logo"
+        src="/assets/img/cropped-Logo-emblem.png"
+        alt="Maya Tuya logo">
+      <span class="foot-tagline">Slow travel along the Tren Maya route.<br>Curated experiences, verified businesses, honest guides.</span>
+    </div>
+    <div class="foot-brand-right">
+      <span class="foot-contact-label">Get in touch</span>
+      <a class="foot-contact-link" href="mailto:hola@mayatuya.com">hola@mayatuya.com</a>
+      <a class="foot-contact-link" href="https://wa.me/529381842944">+52 938 184 2944</a>
+    </div>
+  </div>
+
+  
+  <div class="foot-grid">
+    <div class="foot-col">
+      <span class="foot-col-title">Experiences</span>
+      <a class="footer-link" href="/experiences/openheartopentable/">Open Heart, Open Table</a><a class="footer-link" href="/experiences/fromthewallstothetable/">From the Walls to the Table</a><a class="footer-link" href="/experiences/thegatesandthenight/">The Gates &amp; The Night</a><a class="footer-link-all" href="/experiences/">All experiences →</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-col-title">Guides</span>
+      <a class="footer-link" href="/product/campeche-travel-guide/">Campeche — First Edition</a><a class="footer-link" href="/conscioustraveler/">The Conscious Traveler <span class="footer-link-free">Free</span></a><a class="footer-link-all" href="/guides/">All guides →</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-col-title">Destinations</span>
+      <a class="footer-link" href="/destinations/campeche/">Campeche</a><span class="footer-link-soon">Mérida</span><span class="footer-link-soon">Valladolid</span>
+    </div>
+    <div class="foot-col">
+      <span class="foot-col-title">Aliados</span>
+      <a class="footer-link" href="/aliados/">Aliados Verificados</a><a class="footer-link" href="/aliados/directory/">Directory</a><a class="footer-link" href="/inicio/hazte-aliado/">Become an Aliado</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-col-title">Maya Tuya</span>
+      <a class="footer-link" href="/about/">Our Story</a><a class="footer-link" href="/contact/">Contact</a><a class="footer-link" href="/privacy/">Privacy Policy</a><a class="footer-link" href="/terms/">Terms &amp; Conditions</a><a class="footer-link" href="/cookies/">Cookie Policy</a>
+    </div>
+  </div>
+
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

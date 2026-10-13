@@ -1,21 +1,630 @@
 [
-  {
-    "id": "home-en", "lang": "en", "url": "/", "content": "home-en.html", "pair": "home-es",
-    "title": "Maya Tuya — Curated Experiences Along the Tren Maya Route",
-    "description": "Curated experiences in Campeche, built around local businesses with roots. Slow travel on the Tren Maya route — designed, not improvised.",
-    "og_image": "Untitled-design-10.png"
-  },
-  {
-    "id": "home-es", "lang": "es", "url": "/inicio/", "content": "home-es.html", "pair": "home-en",
-    "title": "Maya Tuya — Experiencias curadas en la ruta del Tren Maya",
-    "description": "Experiencias curadas en Campeche, hechas con negocios locales con raíces. Viaje lento en la ruta del Tren Maya: diseñado, no improvisado.",
-    "og_image": "Untitled-design-10.png"
-  },
-  {
-    "id": "exp-walls-en", "lang": "en", "url": "/experiences/fromthewallstothetable/", "content": "exp-walls-en.html",
-    "pair": "exp-walls-es", "pair_url": "/inicio/experiencias/delasmurallasalamesa/",
-    "title": "From the Walls to the Table — A Morning in Campeche | Maya Tuya",
-    "description": "A curated morning inside Campeche's walled city: a private chocolate workshop, a local artisan and an all-inclusive organic brunch. Bilingual guide.",
-    "og_image": "Campeche-Walls-e1776555524400.jpg"
-  }
+ {
+  "id": "home-en",
+  "lang": "en",
+  "url": "/",
+  "content": "home-en.html",
+  "pair": "home-es",
+  "title": "Maya Tuya — Curated Experiences Along the Tren Maya Route",
+  "description": "Curated experiences in Campeche, built around local businesses with roots. Slow travel on the Tren Maya route — designed, not improvised."
+ },
+ {
+  "id": "home-es",
+  "lang": "es",
+  "url": "/inicio/",
+  "content": "home-es.html",
+  "pair": "home-en",
+  "title": "Maya Tuya — Experiencias curadas en la ruta del Tren Maya",
+  "description": "Experiencias curadas en Campeche, hechas con negocios locales con raíces. Viaje lento en la ruta del Tren Maya: diseñado, no improvisado."
+ },
+ {
+  "id": "exp-walls-en",
+  "lang": "en",
+  "url": "/experiences/fromthewallstothetable/",
+  "content": "exp-walls-en.html",
+  "pair": "exp-walls-es",
+  "title": "From the Walls to the Table — A Morning in Campeche | Maya Tuya",
+  "description": "A curated morning inside Campeche's walled city: a private chocolate workshop, a local artisan and an all-inclusive organic brunch. Bilingual guide.",
+  "og_image": "Campeche-Walls-e1776555524400.jpg"
+ },
+ {
+  "id": "about-en",
+  "lang": "en",
+  "url": "/about/",
+  "content": "about-en.html",
+  "title": "Our Story — Why Maya Tuya Exists | Maya Tuya",
+  "description": "Maya Tuya was born in Campeche to make sure the Tren Maya's new travellers find local businesses first. Meet the idea and the founder.",
+  "pair": "about-es"
+ },
+ {
+  "id": "about-es",
+  "lang": "es",
+  "url": "/inicio/acercade/",
+  "content": "about-es.html",
+  "title": "Nuestra historia — Por qué existe Maya Tuya | Maya Tuya",
+  "description": "Maya Tuya nació en Campeche para que los viajeros del Tren Maya encuentren primero a los negocios locales. Conoce la idea y a quien la fundó.",
+  "pair": "about-en"
+ },
+ {
+  "id": "experiences-en",
+  "lang": "en",
+  "url": "/experiences/",
+  "content": "experiences-en.html",
+  "title": "Curated Experiences in Campeche | Maya Tuya",
+  "description": "Three all-inclusive experiences in Campeche: a cacao ceremony, a chocolate workshop with brunch, and an evening on Calle 59. Booked personally.",
+  "pair": "experiences-es"
+ },
+ {
+  "id": "experiences-es",
+  "lang": "es",
+  "url": "/inicio/experiencias/",
+  "content": "experiences-es.html",
+  "title": "Experiencias curadas en Campeche | Maya Tuya",
+  "description": "Tres experiencias todo incluido en Campeche: ceremonia de cacao, taller de chocolate con brunch y una noche por la calle 59. Reserva atendida personalmente.",
+  "pair": "experiences-en"
+ },
+ {
+  "id": "exp-openheart-en",
+  "lang": "en",
+  "url": "/experiences/openheartopentable/",
+  "content": "exp-openheart-en.html",
+  "title": "Open Heart, Open Table — Cacao Ceremony in Campeche",
+  "description": "A cacao ceremony, guided meditation, light yoga and a shared meal in the courtyard and secret garden of a 16th-century house in Campeche. All-inclusive.",
+  "pair": "exp-openheart-es"
+ },
+ {
+  "id": "exp-openheart-es",
+  "lang": "es",
+  "url": "/inicio/experiencias/corazonabiertomesaabierta/",
+  "content": "exp-openheart-es.html",
+  "title": "Corazón Abierto, Mesa Abierta — Ceremonia de cacao",
+  "description": "Ceremonia de cacao, meditación guiada, yoga suave y comida compartida en el patio y jardín secreto de una casa del siglo XVI en Campeche. Todo incluido.",
+  "pair": "exp-openheart-en"
+ },
+ {
+  "id": "exp-gates-en",
+  "lang": "en",
+  "url": "/experiences/thegatesandthenight/",
+  "content": "exp-gates-en.html",
+  "title": "The Gates & The Night — An Evening in Campeche",
+  "description": "An evening walk through Campeche's historic centre: Calle 59, the city walls at dusk, the mercado, and a three-course dinner. All-inclusive.",
+  "pair": "exp-gates-es"
+ },
+ {
+  "id": "exp-gates-es",
+  "lang": "es",
+  "url": "/inicio/experiencias/laspuertasylanoche/",
+  "content": "exp-gates-es.html",
+  "title": "Las Puertas y la Noche — Una noche en Campeche",
+  "description": "Un paseo nocturno por el centro histórico de Campeche: calle 59, las murallas al atardecer, el mercado y una cena de tres tiempos. Todo incluido.",
+  "pair": "exp-gates-en"
+ },
+ {
+  "id": "exp-walls-es",
+  "lang": "es",
+  "url": "/inicio/experiencias/delasmurallasalamesa/",
+  "content": "exp-walls-es.html",
+  "title": "De las Murallas a la Mesa — Una mañana en Campeche",
+  "description": "Una mañana curada en el centro amurallado de Campeche: taller privado de chocolate, joyería artesanal y un brunch orgánico todo incluido. Guía bilingüe.",
+  "pair": "exp-walls-en"
+ },
+ {
+  "id": "destinations-en",
+  "lang": "en",
+  "url": "/destinations/",
+  "content": "destinations-en.html",
+  "title": "Destinations on the Tren Maya Route | Maya Tuya",
+  "description": "Guides to the cities along the Tren Maya route, built one verified local network at a time. Starting with Campeche, the walled city on the Gulf.",
+  "pair": "destinations-es"
+ },
+ {
+  "id": "destinations-es",
+  "lang": "es",
+  "url": "/inicio/destinos/",
+  "content": "destinations-es.html",
+  "title": "Destinos en la ruta del Tren Maya | Maya Tuya",
+  "description": "Guías de las ciudades de la ruta del Tren Maya, construidas con redes locales verificadas. Empezamos por Campeche, la ciudad amurallada del Golfo.",
+  "pair": "destinations-en"
+ },
+ {
+  "id": "campeche-en",
+  "lang": "en",
+  "url": "/destinations/campeche/",
+  "content": "campeche-en.html",
+  "title": "Campeche Travel Guide — The Walled City | Maya Tuya",
+  "description": "The most intact walled colonial city in the Americas, and almost nobody knows it. History, food, neighbourhoods and how to visit.",
+  "pair": "campeche-es"
+ },
+ {
+  "id": "campeche-es",
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/",
+  "content": "campeche-es.html",
+  "title": "Guía de Campeche — La ciudad amurallada | Maya Tuya",
+  "description": "La ciudad colonial amurallada más intacta de América, y casi nadie la conoce. Historia, comida, barrios y cómo visitarla.",
+  "pair": "campeche-en"
+ },
+ {
+  "id": "campeche-things-en",
+  "lang": "en",
+  "url": "/destinations/campeche/things-to-do/",
+  "content": "campeche-things-en.html",
+  "title": "Things to Do in Campeche | Maya Tuya",
+  "description": "How to actually use Campeche's walls and baluartes, and what comes after them. A practical guide to things to do in the city.",
+  "pair": "campeche-things-es"
+ },
+ {
+  "id": "campeche-things-es",
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/que-hacer/",
+  "content": "campeche-things-es.html",
+  "title": "Qué hacer en Campeche | Maya Tuya",
+  "description": "Cómo aprovechar de verdad las murallas y los baluartes de Campeche, y qué viene después. Guía práctica de qué hacer en la ciudad.",
+  "pair": "campeche-things-en"
+ },
+ {
+  "id": "campeche-getting-en",
+  "lang": "en",
+  "url": "/destinations/campeche/getting-there/",
+  "content": "campeche-getting-en.html",
+  "title": "How to Get to Campeche | Maya Tuya",
+  "description": "From the Tren Maya station to the historic centre: how to arrive in Campeche, and the answer nobody tells you in advance.",
+  "pair": "campeche-getting-es"
+ },
+ {
+  "id": "campeche-getting-es",
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/como-llegar/",
+  "content": "campeche-getting-es.html",
+  "title": "Cómo llegar a Campeche | Maya Tuya",
+  "description": "De la estación del Tren Maya al centro histórico: cómo llegar a Campeche, y lo que nadie te cuenta antes de viajar.",
+  "pair": "campeche-getting-en"
+ },
+ {
+  "id": "campeche-when-en",
+  "lang": "en",
+  "url": "/destinations/campeche/when-to-visit/",
+  "content": "campeche-when-en.html",
+  "title": "When to Visit Campeche — Seasons & Events | Maya Tuya",
+  "description": "What each season gives you in Campeche, and when the city is most alive: weather, events and the best months to go.",
+  "pair": "campeche-when-es"
+ },
+ {
+  "id": "campeche-when-es",
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/cuando-ir/",
+  "content": "campeche-when-es.html",
+  "title": "Cuándo ir a Campeche — Temporadas y eventos | Maya Tuya",
+  "description": "Lo que ofrece cada temporada en Campeche y cuándo la ciudad está más viva: clima, eventos y los mejores meses para viajar.",
+  "pair": "campeche-when-en"
+ },
+ {
+  "id": "campeche-food-en",
+  "lang": "en",
+  "url": "/destinations/campeche/food-and-drink/",
+  "content": "campeche-food-en.html",
+  "title": "Eating & Drinking in Campeche | Maya Tuya",
+  "description": "The regional cuisine most visitors never properly meet, and where to find it: local traditions and the tables worth booking.",
+  "pair": "campeche-food-es"
+ },
+ {
+  "id": "campeche-food-es",
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/comer-y-beber/",
+  "content": "campeche-food-es.html",
+  "title": "Comer y beber en Campeche | Maya Tuya",
+  "description": "La cocina regional que casi nadie conoce de verdad y dónde encontrarla: tradiciones locales y las mesas que valen la pena.",
+  "pair": "campeche-food-en"
+ },
+ {
+  "id": "campeche-itineraries-en",
+  "lang": "en",
+  "url": "/destinations/campeche/itineraries/",
+  "content": "campeche-itineraries-en.html",
+  "title": "Campeche Itineraries — 1, 2 & 3 Days | Maya Tuya",
+  "description": "Flexible frameworks for one, two or three days in Campeche, with space built in for the detour.",
+  "pair": "campeche-itineraries-es"
+ },
+ {
+  "id": "campeche-itineraries-es",
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/itinerarios/",
+  "content": "campeche-itineraries-es.html",
+  "title": "Itinerarios en Campeche — 1, 2 y 3 días | Maya Tuya",
+  "description": "Marcos flexibles para uno, dos o tres días en Campeche, con espacio para el desvío.",
+  "pair": "campeche-itineraries-en"
+ },
+ {
+  "id": "campeche-neighbourhoods-en",
+  "lang": "en",
+  "url": "/destinations/campeche/neighbourhoods/",
+  "content": "campeche-neighbourhoods-en.html",
+  "title": "Campeche's Barrios Beyond the Walls | Maya Tuya",
+  "description": "The traditional neighbourhoods that grew around Campeche's bastions: each with its own church, market and tempo, all within walking distance.",
+  "pair": "campeche-neighbourhoods-es"
+ },
+ {
+  "id": "campeche-neighbourhoods-es",
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/barrios/",
+  "content": "campeche-neighbourhoods-es.html",
+  "title": "Los barrios de Campeche fuera de las murallas | Maya Tuya",
+  "description": "Los barrios tradicionales que crecieron alrededor de los baluartes de Campeche: cada uno con su iglesia, su mercado y su ritmo, a pie del centro.",
+  "pair": "campeche-neighbourhoods-en"
+ },
+ {
+  "id": "campeche-daytrips-en",
+  "lang": "en",
+  "url": "/destinations/campeche/day-trips/",
+  "content": "campeche-daytrips-en.html",
+  "title": "Day Trips from Campeche | Maya Tuya",
+  "description": "Four day trips worth taking within three hours of Campeche, including Edzná: what each is like and how to pace it.",
+  "pair": "campeche-daytrips-es"
+ },
+ {
+  "id": "campeche-daytrips-es",
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/excursiones/",
+  "content": "campeche-daytrips-es.html",
+  "title": "Excursiones desde Campeche | Maya Tuya",
+  "description": "Cuatro excursiones que valen la pena a menos de tres horas de Campeche, entre ellas Edzná: cómo son y cómo organizarlas.",
+  "pair": "campeche-daytrips-en"
+ },
+ {
+  "id": "aliados-en",
+  "lang": "en",
+  "url": "/aliados/",
+  "content": "aliados-en.html",
+  "title": "Aliados Verificados in Campeche | Maya Tuya",
+  "description": "Businesses chosen by hand, not by ad spend. Every Aliado Verificado was visited in person and checked against real standards.",
+  "pair": "aliados-es"
+ },
+ {
+  "id": "aliados-es",
+  "lang": "es",
+  "url": "/inicio/aliados/",
+  "content": "aliados-es.html",
+  "title": "Aliados Verificados en Campeche | Maya Tuya",
+  "description": "Negocios elegidos a mano, no por inversión publicitaria. Cada Aliado Verificado fue visitado en persona y evaluado con estándares reales.",
+  "pair": "aliados-en"
+ },
+ {
+  "id": "directory-en",
+  "lang": "en",
+  "url": "/aliados/directory/",
+  "content": "directory-en.html",
+  "title": "Aliados Directory — Verified Local Businesses | Maya Tuya",
+  "description": "Filter Campeche's verified local businesses by place and category: restaurants, wellness, craft, chocolate and more.",
+  "pair": "directory-es"
+ },
+ {
+  "id": "directory-es",
+  "lang": "es",
+  "url": "/inicio/aliados/directorio/",
+  "content": "directory-es.html",
+  "title": "Directorio de Aliados — Negocios locales verificados | Maya Tuya",
+  "description": "Filtra por lugar y categoría los negocios locales verificados de Campeche: restaurantes, bienestar, artesanía, chocolate y más.",
+  "pair": "directory-en"
+ },
+ {
+  "id": "aliado-casamayis-en",
+  "lang": "en",
+  "url": "/aliados/casa-mayis/",
+  "content": "aliado-casamayis-en.html",
+  "title": "Casa Mayis — Ceremonies & Workshops in Campeche",
+  "description": "A holistic practice in Campeche: sound therapy, guided meditation, aura cleansing and bodywork. Aliado Fundador of Maya Tuya.",
+  "pair": "aliado-casamayis-es"
+ },
+ {
+  "id": "aliado-casamayis-es",
+  "lang": "es",
+  "url": "/inicio/aliados/casa-mayis/",
+  "content": "aliado-casamayis-es.html",
+  "title": "Casa Mayis — Ceremonias y talleres en Campeche",
+  "description": "Práctica holística en Campeche: terapia de sonido, meditación guiada, limpieza de aura y trabajo corporal. Aliado Fundador de Maya Tuya.",
+  "pair": "aliado-casamayis-en"
+ },
+ {
+  "id": "aliado-casamenta-en",
+  "lang": "en",
+  "url": "/aliados/casa-menta/",
+  "content": "aliado-casamenta-en.html",
+  "title": "Casa Menta — Space & Events in Campeche",
+  "description": "On Calle 59 inside Campeche's walled city: restaurant, bar, live music and event space. Aliado Selecto of Maya Tuya.",
+  "pair": "aliado-casamenta-es"
+ },
+ {
+  "id": "aliado-casamenta-es",
+  "lang": "es",
+  "url": "/inicio/aliados/casa-menta/",
+  "content": "aliado-casamenta-es.html",
+  "title": "Casa Menta — Espacio y eventos en Campeche",
+  "description": "En la calle 59, dentro de Campeche amurallado: restaurante, bar, música en vivo y espacio para eventos. Aliado Selecto de Maya Tuya.",
+  "pair": "aliado-casamenta-en"
+ },
+ {
+  "id": "aliado-casavieja-en",
+  "lang": "en",
+  "url": "/aliados/casa-vieja-del-rio/",
+  "content": "aliado-casavieja-en.html",
+  "title": "Casa Vieja del Río — Restaurant in Campeche",
+  "description": "A balcony and rooftop terrace over the Cathedral and Plaza de la Independencia in Campeche's historic centre. Aliado Selecto of Maya Tuya.",
+  "pair": "aliado-casavieja-es"
+ },
+ {
+  "id": "aliado-casavieja-es",
+  "lang": "es",
+  "url": "/inicio/aliados/casa-vieja-del-rio/",
+  "content": "aliado-casavieja-es.html",
+  "title": "Casa Vieja del Río — Restaurante en Campeche",
+  "description": "Balcón y terraza sobre la Catedral y la Plaza de la Independencia, en el centro histórico de Campeche. Aliado Selecto de Maya Tuya.",
+  "pair": "aliado-casavieja-en"
+ },
+ {
+  "id": "aliado-corazon-en",
+  "lang": "en",
+  "url": "/aliados/corazon-contento/",
+  "content": "aliado-corazon-en.html",
+  "title": "Corazón Contento — Organic Kitchen in Campeche",
+  "description": "A restaurant full since the day it opened, thanks to a carefully sourced kitchen. Two locations in Campeche. Aliado Selecto of Maya Tuya.",
+  "pair": "aliado-corazon-es"
+ },
+ {
+  "id": "aliado-corazon-es",
+  "lang": "es",
+  "url": "/inicio/aliados/corazon-contento/",
+  "content": "aliado-corazon-es.html",
+  "title": "Corazón Contento — Cocina orgánica en Campeche",
+  "description": "Un restaurante lleno desde el primer día gracias a su cocina de ingredientes con procedencia conocida. Dos sucursales en Campeche. Aliado Selecto.",
+  "pair": "aliado-corazon-en"
+ },
+ {
+  "id": "guides-en",
+  "lang": "en",
+  "url": "/guides/",
+  "content": "guides-en.html",
+  "title": "Destination Guides — Bilingual EN + ES | Maya Tuya",
+  "description": "Guides written with intention, not generated to rank. Free and paid destination guides for Campeche and the Tren Maya route.",
+  "pair": "guides-es"
+ },
+ {
+  "id": "guides-es",
+  "lang": "es",
+  "url": "/inicio/guias/",
+  "content": "guides-es.html",
+  "title": "Guías de destino — Bilingües EN + ES | Maya Tuya",
+  "description": "Guías escritas con intención, no generadas para posicionar. Guías gratuitas y de pago para Campeche y la ruta del Tren Maya.",
+  "pair": "guides-en"
+ },
+ {
+  "id": "product-campeche-guide-en",
+  "lang": "en",
+  "url": "/product/campeche-travel-guide/",
+  "content": "product-campeche-guide-en.html",
+  "title": "Campeche Travel Guide — First Edition (EN + ES) | Maya Tuya",
+  "description": "A calm, human-first guide to Campeche for slow, confident travel. Full English and Spanish editions in one PDF."
+ },
+ {
+  "id": "campeche-guide-download-en",
+  "lang": "en",
+  "url": "/campeche-guide-download/",
+  "content": "campeche-guide-download-en.html",
+  "title": "Your Campeche Guide — Download | Maya Tuya",
+  "description": "Download the Campeche Destination Guide, First Edition, in English and Español.",
+  "noindex": true
+ },
+ {
+  "id": "conscioustraveler-en",
+  "lang": "en",
+  "url": "/conscioustraveler/",
+  "content": "conscioustraveler-en.html",
+  "title": "The Conscious Traveler — Free Mini-Guide | Maya Tuya",
+  "description": "A small compass for how you explore: meaningful prompts, a one-day travel map and a way to tune your trip. Free, bilingual EN + ES.",
+  "pair": "conscioustraveler-es"
+ },
+ {
+  "id": "conscioustraveler-es",
+  "lang": "es",
+  "url": "/inicio/viajero-consciente/",
+  "content": "conscioustraveler-es.html",
+  "title": "El Viajero Consciente — Mini guía gratuita | Maya Tuya",
+  "description": "Una pequeña brújula para tu manera de viajar: preguntas con sentido, un mapa de un día y una forma de afinar tu viaje. Gratis, bilingüe EN + ES.",
+  "pair": "conscioustraveler-en"
+ },
+ {
+  "id": "ct-download-en",
+  "lang": "en",
+  "url": "/conscious-traveler-download/",
+  "content": "ct-download-en.html",
+  "title": "Download — The Conscious Traveler | Maya Tuya",
+  "description": "Download The Conscious Traveler, the free mini-guide from Maya Tuya.",
+  "pair": "ct-download-es",
+  "noindex": true
+ },
+ {
+  "id": "ct-download-es",
+  "lang": "es",
+  "url": "/inicio/viajero-consciente-descarga/",
+  "content": "ct-download-es.html",
+  "title": "Descarga — El Viajero Consciente | Maya Tuya",
+  "description": "Descarga El Viajero Consciente, la mini guía gratuita de Maya Tuya.",
+  "pair": "ct-download-en",
+  "noindex": true
+ },
+ {
+  "id": "contact-en",
+  "lang": "en",
+  "url": "/contact/",
+  "content": "contact-en.html",
+  "title": "Contact — Maya Tuya",
+  "description": "Write to Maya Tuya: general enquiries, traveller support, or a local business ready to become an Aliado.",
+  "pair": "contact-es"
+ },
+ {
+  "id": "contact-es",
+  "lang": "es",
+  "url": "/inicio/contacto/",
+  "content": "contact-es.html",
+  "title": "Contacto — Maya Tuya",
+  "description": "Escribe a Maya Tuya: consultas generales, soporte para viajeros o un negocio local que quiere ser Aliado.",
+  "pair": "contact-en"
+ },
+ {
+  "id": "privacy-en",
+  "lang": "en",
+  "url": "/privacy/",
+  "content": "privacy-en.html",
+  "title": "Privacy Policy | Maya Tuya",
+  "description": "How Maya Tuya collects, uses and protects your personal information, in plain language.",
+  "pair": "privacy-es",
+  "noindex": true
+ },
+ {
+  "id": "privacy-es",
+  "lang": "es",
+  "url": "/inicio/privacidad/",
+  "content": "privacy-es.html",
+  "title": "Política de privacidad | Maya Tuya",
+  "description": "Cómo Maya Tuya recopila, usa y protege tu información personal, en lenguaje claro.",
+  "pair": "privacy-en",
+  "noindex": true
+ },
+ {
+  "id": "terms-en",
+  "lang": "en",
+  "url": "/terms/",
+  "content": "terms-en.html",
+  "title": "Terms & Conditions | Maya Tuya",
+  "description": "The terms for using mayatuya.com and purchasing from Maya Tuya, kept short and in plain language.",
+  "pair": "terms-es",
+  "noindex": true
+ },
+ {
+  "id": "terms-es",
+  "lang": "es",
+  "url": "/inicio/terminos-de-uso/",
+  "content": "terms-es.html",
+  "title": "Términos de uso | Maya Tuya",
+  "description": "Los términos para usar mayatuya.com y comprar en Maya Tuya, breves y en lenguaje claro.",
+  "pair": "terms-en",
+  "noindex": true
+ },
+ {
+  "id": "cookies-en",
+  "lang": "en",
+  "url": "/cookies/",
+  "content": "cookies-en.html",
+  "title": "Cookie Policy | Maya Tuya",
+  "description": "Which cookies mayatuya.com uses and why.",
+  "pair": "cookies-es",
+  "noindex": true
+ },
+ {
+  "id": "cookies-es",
+  "lang": "es",
+  "url": "/inicio/cookies/",
+  "content": "cookies-es.html",
+  "title": "Política de cookies | Maya Tuya",
+  "description": "Qué cookies usa mayatuya.com y para qué.",
+  "pair": "cookies-en",
+  "noindex": true
+ },
+ {
+  "id": "donations-en",
+  "lang": "en",
+  "url": "/donations/",
+  "content": "donations-en.html",
+  "title": "Support the Journey | Maya Tuya",
+  "description": "Help Maya Tuya build the next destinations, guides and experiences with a contribution of any size.",
+  "pair": "donations-es"
+ },
+ {
+  "id": "donations-es",
+  "lang": "es",
+  "url": "/inicio/aportaciones/",
+  "content": "donations-es.html",
+  "title": "Apoya el viaje | Maya Tuya",
+  "description": "Ayuda a Maya Tuya a crear los próximos destinos, guías y experiencias con una aportación del monto que quieras.",
+  "pair": "donations-en"
+ },
+ {
+  "id": "hazte-aliado-es",
+  "lang": "es",
+  "url": "/inicio/hazte-aliado/",
+  "content": "hazte-aliado-es.html",
+  "title": "Hazte Aliado — Forma parte de la red | Maya Tuya",
+  "description": "Únete gratis a la red de negocios locales verificados de Maya Tuya en la ruta del Tren Maya. Cuéntanos sobre tu negocio."
+ },
+ {
+  "id": "aliado-en-proceso-es",
+  "lang": "es",
+  "url": "/inicio/aliado-en-proceso/",
+  "content": "aliado-en-proceso-es.html",
+  "title": "Ya estás dentro | Maya Tuya",
+  "description": "Tu negocio ya forma parte de la red Maya Tuya. Lo que construimos juntos.",
+  "noindex": true
+ },
+ {
+  "id": "tu-negocio-mejor-es",
+  "lang": "es",
+  "url": "/tu-negocio-mejor/",
+  "content": "tu-negocio-mejor-es.html",
+  "title": "Descarga — Tu Negocio, Mejor. | Maya Tuya",
+  "description": "Descarga tu guía Tu Negocio, Mejor.",
+  "noindex": true
+ },
+ {
+  "id": "acuerdo-aliado-es",
+  "lang": "es",
+  "url": "/acuerdo-aliado/",
+  "content": "acuerdo-aliado-es.html",
+  "title": "Acuerdo de Aliado | Maya Tuya",
+  "description": "Acuerdo de membresía Aliado de Maya Tuya.",
+  "noindex": true
+ },
+ {
+  "id": "acuerdo-destacado-es",
+  "lang": "es",
+  "url": "/acuerdo-aliado-destacado/",
+  "content": "acuerdo-destacado-es.html",
+  "title": "Acuerdo Aliado Destacado | Maya Tuya",
+  "description": "Acuerdo de membresía Aliado Destacado de Maya Tuya.",
+  "noindex": true
+ },
+ {
+  "id": "acuerdo-fundador-es",
+  "lang": "es",
+  "url": "/acuerdo-aliado-fundador/",
+  "content": "acuerdo-fundador-es.html",
+  "title": "Acuerdo Aliado Fundador | Maya Tuya",
+  "description": "Acuerdo de Aliado Fundador de Maya Tuya, Campeche.",
+  "noindex": true
+ },
+ {
+  "id": "bienvenido-aliado-es",
+  "lang": "es",
+  "url": "/bienvenido-aliado/",
+  "content": "bienvenido-aliado-es.html",
+  "title": "Bienvenido, Aliado | Maya Tuya",
+  "description": "Tu acuerdo de Aliado fue registrado.",
+  "noindex": true
+ },
+ {
+  "id": "bienvenido-destacado-es",
+  "lang": "es",
+  "url": "/bienvenido-aliado-destacado/",
+  "content": "bienvenido-destacado-es.html",
+  "title": "Bienvenido, Aliado Destacado | Maya Tuya",
+  "description": "Tu membresía Aliado Destacado está activa.",
+  "noindex": true
+ },
+ {
+  "id": "bienvenido-fundador-es",
+  "lang": "es",
+  "url": "/bienvenido-aliado-fundador/",
+  "content": "bienvenido-fundador-es.html",
+  "title": "Bienvenido, Aliado Fundador | Maya Tuya",
+  "description": "Tu posición de Aliado Fundador fue registrada.",
+  "noindex": true
+ }
 ]

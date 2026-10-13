@@ -72,14 +72,46 @@ COPY_FIXES = {'Air B&B Experiences': 'Airbnb Experiences', 'Numero de Personas':
               'Correo': 'Correo electrónico', 'Correo Electrónico': 'Correo electrónico', 'de un amigo': 'Por un amigo'}
 
 
-def fix(v):
+BOOKING_IDS = {'11', '12', '13', '14', '15', '16'}
+FORM_RENAMES = {
+    '3':  {'names_first_name': 'first_name', 'names_last_name': 'last_name', 'checkbox': 'newsletter_optin'},
+    '7':  {'names_first_name': 'first_name', 'names_last_name': 'last_name', 'checkbox': 'newsletter_optin'},
+    '8':  {'names_first_name': 'name', 'description': 'message'},
+    '9':  {'names_first_name': 'name', 'description': 'message'},
+    '6':  {'input_text': 'business_name', 'dropdown': 'business_type', 'heard_from': 'business_type', 'dropdown_4': 'city', 'input_text_1': 'contact_name',
+           'input_text_2': 'address', 'numeric_field': 'whatsapp', 'hidden': 'form_source', 'dropdown_2': 'curated_experience_fit', 'description_1': 'about_business', 'experience': 'form_source'},
+    '17': {'input_text': 'full_name', 'input_text_1': 'business_name', 'checkbox': 'acuerdo_accepted', 'health_confirmation': 'acuerdo_accepted'},
+}
+FORM_RENAMES['18'] = FORM_RENAMES['19'] = FORM_RENAMES['17']
+COPY_FIXES['Sí, creo que encajaría bien1'] = 'Sí, creo que encajaría bien'
+
+
+def fix(v, rename=None):
     if isinstance(v, str):
         return COPY_FIXES.get(v, v)
     if isinstance(v, list):
-        return [fix(x) for x in v]
+        return [fix(x, rename) for x in v]
     if isinstance(v, dict):
-        return {k: (RENAME.get(x, x) if k == 'name' and isinstance(x, str) else fix(x)) for k, x in v.items()}
+        return {k: (rename.get(x, x) if k == 'name' and isinstance(x, str) else fix(x, rename)) for k, x in v.items()}
     return v
+
+
+def page_urls():
+    mf = ROOT / 'tools' / 'manifest.json'
+    urls = {'15': '/', '2239': '/inicio/', '4531': '/experiences/fromthewallstothetable/'}
+    if mf.exists():
+        urls.update({str(m['post']): m['url'] for m in json.load(open(mf))})
+    return urls
+
+
+def redirect_for(conf):
+    conf = conf or {}
+    if conf.get('redirectTo') == 'customPage' and conf.get('customPage'):
+        return page_urls().get(str(conf['customPage']), '')
+    if conf.get('redirectTo') == 'customUrl' and conf.get('customUrl'):
+        u = re.sub(r'^https?://(?:www\.)?mayatuya\.com', '', conf['customUrl'])
+        return u if u.endswith('/') else u + '/'
+    return ''
 
 
 def main():
@@ -93,13 +125,15 @@ def main():
         fields = []
         for fld in ff.get('fields', []):
             fields += normalise_field(fld)
-        fields = fix(fields)
+        fid = str(f['id'])
+        rename = RENAME if fid in BOOKING_IDS else FORM_RENAMES.get(fid, {})
+        fields = fix(fields, rename)
         meta = {m['meta_key']: m['value'] for m in f.get('metas', [])}
         fs = json.loads(meta.get('formSettings', '{}'))
         btn = (ff.get('submitButton') or {}).get('settings', {}).get('button_ui', {}).get('text') or 'Send'
         forms[str(f['id'])] = {'title': f['title'], 'button': btn,
                                'success': text(fs.get('confirmation', {}).get('messageToShow')),
-                               'redirect': fs.get('confirmation', {}).get('customUrl') or '',
+                               'redirect': redirect_for(fs.get('confirmation')),
                                'fields': fields}
         print(f['id'], f['title'], '->', [x.get('name') or x.get('type') for x in fields])
     OUT.write_text(json.dumps(forms, indent=1, ensure_ascii=False) + '\n', encoding='utf-8')

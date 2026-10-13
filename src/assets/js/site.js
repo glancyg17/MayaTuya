@@ -53,6 +53,8 @@
         .then(function (r) { return r.json(); })
         .then(function (res) {
           if (!res.success) { throw new Error(res.message || 'failed'); }
+          var go = form.getAttribute('data-redirect');
+          if (go) { window.location.assign(go); return; }
           var msg = (form.getAttribute('data-success') || '').replace('[Name]', data.first_name || '');
           var box = document.createElement('div');
           box.className = 'mt-form-success'; box.setAttribute('role', 'status');

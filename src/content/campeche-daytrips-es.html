@@ -1,0 +1,161 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#f3eee2">
+<div class="mt-inner">
+<style>
+#mtcdt-es {
+  --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;
+  --ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,.12);--rule-g:rgba(200,158,75,.25);
+  font-family:'Lato',sans-serif;color:var(--ink);
+}
+#mtcdt-es * { box-sizing:border-box; }
+#mtcdt-es a { text-decoration:none;color:inherit; }
+#mtcdt-es p { font-size:14px;color:var(--muted);line-height:1.85;margin-bottom:16px; }
+#mtcdt-es p:last-child { margin-bottom:0; }
+#mtcdt-es .eyebrow { font-size:8px;letter-spacing:.52em;text-transform:uppercase;color:var(--gold-d);opacity:.72;display:block;margin-bottom:12px; }
+#mtcdt-es h1 { font-family:'Playfair Display SC',serif;font-size:clamp(32px,5.5vw,56px);color:var(--ink);line-height:1.06;display:block;margin-bottom:14px;font-weight:400;margin-top:0; }
+#mtcdt-es h2 { font-family:'Playfair Display SC',serif;font-size:clamp(20px,3vw,32px);color:var(--ink);line-height:1.1;display:block;margin-bottom:12px;font-weight:400;margin-top:0; }
+#mtcdt-es h3 { font-family:'Playfair Display',serif;font-size:clamp(15px,2vw,18px);color:var(--ink);font-weight:700;display:block;margin-bottom:8px;line-height:1.2;margin-top:0; }
+#mtcdt-es .gold-rule { width:40px;height:2px;background:var(--gold);display:block;margin-bottom:18px; }
+#mtcdt-es .pull { font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,2.3vw,22px);color:var(--g);line-height:1.5;border-left:3px solid var(--gold);padding:12px 0 12px 20px;display:block;margin:24px 0; }
+#mtcdt-es .section { padding:44px 0;border-bottom:1px solid var(--rule); }
+#mtcdt-es .section:last-child { border-bottom:none; }
+#mtcdt-es .two-col { display:table;width:100%; }
+#mtcdt-es .col-main { display:table-cell;vertical-align:top;padding-right:48px; }
+#mtcdt-es .col-side { display:table-cell;vertical-align:top;width:260px;min-width:220px; }
+#mtcdt-es .info-block { border:1px solid var(--rule);padding:14px 16px;margin-bottom:8px;background:#fffdf7; }
+#mtcdt-es .info-label { font-size:8px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:5px; }
+#mtcdt-es .info-val { font-size:13px;color:var(--ink);line-height:1.6; }
+#mtcdt-es .btn-dark { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--g);color:var(--cream);display:inline-block;transition:background .2s; }
+#mtcdt-es .btn-dark:hover { background:#024a30; }
+#mtcdt-es .btn-gold { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--gold);color:#fff;display:inline-block;transition:background .2s; }
+#mtcdt-es .btn-gold:hover { background:var(--gold-d); }
+#mtcdt-es .btn-outline { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 22px;background:transparent;color:var(--muted);border:1px solid var(--rule-g);display:inline-block;transition:all .2s; }
+#mtcdt-es .btn-outline:hover { border-color:var(--gold);color:var(--ink); }
+#mtcdt-es .actions { display:flex;gap:10px;flex-wrap:wrap;margin-top:20px; }
+#mtcdt-es .ul-clean { list-style:none;padding:0;margin:0; }
+#mtcdt-es .ul-clean li { font-size:14px;color:var(--muted);line-height:1.75;padding:7px 0 7px 16px;border-bottom:1px solid var(--rule);position:relative; }
+#mtcdt-es .ul-clean li:last-child { border-bottom:none; }
+#mtcdt-es .ul-clean li::before { content:'·';position:absolute;left:2px;color:var(--gold);font-size:18px;line-height:1.3; }
+#mtcdt-es .cta-band { background:var(--g);padding:28px 32px;margin-top:28px; }
+#mtcdt-es .cta-band-title { font-family:'Playfair Display SC',serif;font-size:clamp(17px,2.3vw,24px);color:#fff;display:block;margin-bottom:8px; }
+#mtcdt-es .cta-band-sub { font-size:13px;color:rgba(242,233,208,.6);line-height:1.7;display:block;margin-bottom:16px;max-width:520px; }
+#mtcdt-es .pg-hero { position:relative;width:100%;overflow:hidden;height:380px; }
+#mtcdt-es .pg-hero img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.78) brightness(.52); }
+#mtcdt-es .pg-hero-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,rgba(1,15,7,.55) 28%,rgba(1,15,7,.08) 55%,transparent 100%); }
+#mtcdt-es .pg-hero-content { position:absolute;bottom:0;left:0;right:0;padding:28px 0 32px; }
+#mtcdt-es .pg-hero-content .eyebrow { color:var(--gold) !important;opacity:.9 !important; }
+#mtcdt-es .pg-hero-content h1 { color:#ffffff !important; }
+#mtcdt-es .img-full { width:100%;display:block;margin:24px 0;object-fit:cover;height:280px;filter:saturate(.88); }
+#mtcdt-es .img-half { display:table;width:100%;gap:0;margin:24px 0; }
+#mtcdt-es .img-half-l { display:table-cell;width:50%;padding-right:3px;vertical-align:top; }
+#mtcdt-es .img-half-r { display:table-cell;width:50%;padding-left:3px;vertical-align:top; }
+#mtcdt-es .img-half img { width:100%;height:200px;object-fit:cover;display:block;filter:saturate(.88); }
+#mtcdt-es .img-caption { font-size:10px;letter-spacing:.15em;color:var(--muted);opacity:.55;display:block;margin-top:4px;font-style:italic; }
+#mtcdt-es .sub-nav { display:flex;flex-wrap:wrap;border:1px solid var(--rule);margin-top:40px; }
+#mtcdt-es .sub-nav a { font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);padding:12px 16px;border-right:1px solid var(--rule);transition:color .2s,background .2s;display:block; }
+#mtcdt-es .sub-nav a:last-child { border-right:none; }
+#mtcdt-es .sub-nav a:hover { color:var(--g);background:rgba(1,50,32,.03); }
+#mtcdt-es .sub-nav a.active { color:var(--g);border-bottom:2px solid var(--gold); }
+#mtcdt-es .mag-grid { display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px; }
+#mtcdt-es .mag-card { position:relative;overflow:hidden;display:block;height:220px; }
+#mtcdt-es .mag-card.tall { grid-row:span 2;height:100%; }
+#mtcdt-es .mag-card img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.75) brightness(.52);transition:filter .4s,transform .5s; }
+#mtcdt-es .mag-card:hover img { filter:saturate(.9) brightness(.62);transform:scale(1.04); }
+#mtcdt-es .mag-card-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,transparent 55%); }
+#mtcdt-es .mag-card-content { position:absolute;bottom:0;left:0;right:0;padding:16px 18px; }
+#mtcdt-es .mag-card-tag { font-size:7.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:5px; }
+#mtcdt-es .mag-card-title { font-family:'Playfair Display SC',serif;font-size:clamp(14px,1.8vw,18px);color:#fff;line-height:1.1;display:block;margin-bottom:3px; }
+#mtcdt-es .mag-card-sub { font-size:11px;color:rgba(242,233,208,.55);line-height:1.4;display:block; }
+#mtcdt-es .mag-card-arrow { font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);opacity:.7;display:block;margin-top:6px; }
+#mtcdt-es .ali-card { border:1px solid var(--rule);background:#fffdf7;display:table;width:100%;margin-bottom:2px;transition:border-color .2s; }
+#mtcdt-es .ali-card:hover { border-color:var(--gold); }
+#mtcdt-es .ali-card-img { display:table-cell;width:140px;min-width:120px;vertical-align:top;position:relative;overflow:hidden; }
+#mtcdt-es .ali-card-img img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.88); }
+#mtcdt-es .ali-card-body { display:table-cell;vertical-align:middle;padding:14px 18px; }
+#mtcdt-es .ali-card-tag { font-size:8px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-d);opacity:.8;display:block;margin-bottom:5px; }
+#mtcdt-es .ali-card-name { font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--ink);display:block;margin-bottom:4px; }
+#mtcdt-es .ali-card-text { font-size:12.5px;color:var(--muted);line-height:1.6;display:block;margin-bottom:8px; }
+#mtcdt-es .ali-card-link { font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--g);border-bottom:1px solid var(--rule-g);padding-bottom:1px;transition:all .2s; }
+#mtcdt-es .ali-card-link:hover { color:var(--gold-d);border-color:var(--gold-d); }
+@media(max-width:680px){
+  #mtcdt-es .pg-hero { height:240px; }
+  #mtcdt-es .two-col { display:block; }
+  #mtcdt-es .col-main { display:block;padding-right:0;margin-bottom:20px; }
+  #mtcdt-es .col-side { display:block;width:100%; }
+  #mtcdt-es .mag-grid { grid-template-columns:1fr 1fr; }
+  #mtcdt-es .mag-card { height:160px; }
+  #mtcdt-es .mag-card.tall { grid-row:span 1;height:160px; }
+  #mtcdt-es .sub-nav a { border-right:none;border-bottom:1px solid var(--rule);width:50%; }
+  #mtcdt-es .img-half { display:block; }
+  #mtcdt-es .img-half-l,#mtcdt-es .img-half-r { display:block;width:100%;padding:0 0 3px; }
+  #mtcdt-es .ali-card-img { width:100px;min-width:80px; }
+  #mtcdt-es .cta-band { padding:22px 20px; }
+}
+</style>
+<div id="mtcdt-es">
+    <div class="pg-hero">
+    <img src="/assets/img/edzna-e1777226797271.webp" alt="Zona arqueológica de Edzná, estado de Campeche, México">
+    <div class="pg-hero-overlay"></div>
+    <div class="pg-hero-content">
+      <span class="eyebrow">Excursiones desde Campeche · Más allá de la ciudad</span>
+      <h1>Más allá<br>de la ciudad.</h1>
+    </div>
+  </div>
+  <div style="height:3px;background:var(--gold);width:100%;"></div>
+
+  <div class="section">
+    <span class="gold-rule"></span>
+    <p>Campeche es lo suficientemente compacto para cubrir el centro histórico en un día y aún tener energía. Estos son los cuatro destinos que merecen usar esa energía — cada uno genuinamente diferente, todos a menos de tres horas de la ciudad.</p>
+
+    <h2>Edzná — 45 minutos.</h2>
+    <img class="img-full" src="/assets/img/DSC6555-scaled-e1777226983774.jpg" alt="Edificio de los Cinco Pisos, Edzná, Campeche" loading="lazy">
+    <span class="img-caption">El Edificio de los Cinco Pisos — una de las pirámides-templo más complejas arquitectónicamente de Mesoamérica.</span>
+    <p>Uno de los sitios arqueológicos más significativos y menos visitados de la Península de Yucatán. Edzná data de alrededor del 600 a.C. y alcanzó su apogeo durante el período Clásico Maya (600–900 d.C.). La estructura principal — el Edificio de los Cinco Pisos — son cinco pisos de habitaciones abovedadas apiladas con una cresta que habría sido visible a kilómetros de distancia.</p>
+    <p>Ve temprano por la mañana, antes de que llegue el calor. En la mayoría de las mañanas tendrás el sitio casi completamente para ti. El entorno — un valle rodeado de suaves colinas — hace algo con la luz a ciertas horas que las fotografías no pueden capturar del todo.</p>
+    <div class="info-block" style="margin:16px 0;">
+      <span class="info-label">Edzná — información práctica</span>
+      <span class="info-val">45 min desde Campeche en coche · Entrada: 210 MXN por persona · Abierto todos los días 8:00am – 5:00pm · Última entrada 4:30pm · Ir lo antes posible</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Hampolól — 30 minutos.</h2>
+    <img class="img-full" src="/assets/img/478899361_3542460196054318_1015272957351305192_n.jpg" alt="Hampolól ojo de agua, manantial natural, Campeche" loading="lazy">
+    <p>Un ojo de agua — un manantial de agua dulce natural — a unos treinta minutos de la ciudad. El tipo de lugar que existe en casi todos los estados de México y que la mayoría de los visitantes internacionales nunca encuentran. El agua es clara y fresca en comparación con el calor circundante. Entorno sencillo, sin infraestructura, y un nivel de quietud que la ciudad no puede ofrecer.</p>
+    <p>Vale la pena combinarlo con Edzná el mismo día si tienes coche — Edzná temprano por la mañana, Hampolól a primera hora de la tarde.</p>
+    <div class="info-block" style="margin:16px 0;">
+      <span class="info-label">Hampolól — información práctica</span>
+      <span class="info-val">30 min desde Campeche en coche · Manantial de agua dulce natural · Mejor mañana o primera hora de la tarde</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Playa Bonita — 20 minutos.</h2>
+    <img class="img-full" src="/assets/img/60851280-415a-4f11-b80d-54161da70285-scaled.webp" alt="Playa Bonita, 20 minutos desde el centro histórico de Campeche" loading="lazy">
+    <span class="img-caption">Playa Bonita — veinte minutos desde el final del Malecón.</span>
+    <p>La playa más cercana a Campeche y la más accesible — veinte minutos desde el final del Malecón, accesible en autobús Ko'ox desde el centro histórico sin necesidad de coche. Agua tranquila, relativamente poco concurrida, cálida todo el año. No es una playa de destino en sí misma, pero es una tarde perfecta si has terminado con la ciudad y quieres sentarte a la orilla del agua sin un largo viaje.</p>
+    <div class="info-block" style="margin:16px 0;">
+      <span class="info-label">Playa Bonita — información práctica</span>
+      <span class="info-val">20 min desde el final del Malecón · Autobús Ko'ox desde el centro · No se necesita coche</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Isla Aguada — 2 a 3 horas.</h2>
+    <img class="img-full" src="/assets/img/isla-aguada-delfines-00996124-focus-0-0-608-342.webp" alt="Delfines en Isla Aguada, Laguna de Términos, Campeche" loading="lazy">
+    <span class="img-caption">Isla Aguada — tours en barco para ver delfines en la Laguna de Términos.</span>
+    <p>Más lejos que los demás, y vale la pena. Isla Aguada está donde la Laguna de Términos se encuentra con el Golfo de México — una de las biosferasmas importantes del país. El atractivo aquí son los tours en barco: los operadores locales llevan grupos pequeños a ver las poblaciones de delfines que habitan la laguna, y los encuentros son genuinos y no gestionados. Iguanas en las rocas, pelícanos en los postes y la particular quietud de un pueblo costero al que el turismo masivo no ha llegado.</p>
+    <p>Dos o tres horas en coche según el tráfico. Mejor como día completo, o combinado con una noche si quieres aprovechar la luz de la mañana cuando los delfines están más activos.</p>
+    <div class="info-block" style="margin:16px 0;">
+      <span class="info-label">Isla Aguada — información práctica</span>
+      <span class="info-val">2–3 horas en coche (tráfico variable) · Tours en barco para ver delfines · Mejor día completo o con noche · Sin transporte público directo</span>
+    </div>
+    <div class="cta-band">
+      <span class="cta-band-title">La red está creciendo.</span>
+      <span class="cta-band-sub">A medida que Maya Tuya se expande por la Ruta Tren Maya, se añadirán más excursiones, experiencias con noche y itinerarios regionales — la Biosfera de los Petenes, la carretera costera sur y los pueblos a lo largo de la ruta.</span>
+      <a class="btn-outline" href="/inicio/experiencias">Experiencias actuales →</a>
+    </div>
+  </div>
+  <div class="sub-nav"><a href="/inicio/destinos/campeche">Introducción</a><a href="/inicio/destinos/campeche/que-hacer">Qué hacer</a><a href="/inicio/destinos/campeche/como-llegar">Cómo llegar</a><a href="/inicio/destinos/campeche/comer-y-beber">Comer & Beber</a><a href="/inicio/destinos/campeche/cuando-ir">Cuándo ir</a><a href="/inicio/destinos/campeche/itinerarios">Itinerarios</a><a href="/inicio/destinos/campeche/barrios">Barrios</a><a href="/inicio/destinos/campeche/excursiones" class="active">Excursiones</a></div>
+</div>
+</div>
+</section>

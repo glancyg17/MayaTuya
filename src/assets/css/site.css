@@ -164,3 +164,29 @@ p { margin: 0 0 1.75em; }
   background: none; border: 0; padding: 0; cursor: pointer; float: right;
   font: 700 9px 'Lato', sans-serif; letter-spacing: .38em; text-transform: uppercase; color: var(--mt-muted);
 }
+
+/* ── Native content (converted from Elementor heading / text / button widgets) ── */
+.mt-h { font-family: 'Playfair Display SC', serif; font-weight: 400; color: var(--mt-g); line-height: 1.2; margin: 0; }
+h1.mt-h { font-size: clamp(28px, 4vw, 44px); }
+h2.mt-h { font-size: clamp(22px, 3vw, 30px); }
+.mt-text { font-size: 15px; line-height: 1.85; color: var(--mt-muted); }
+.mt-text p { margin: 0 0 1.1em; }
+.mt-text ul, .mt-text ol { margin: 0 0 1.2em; padding-left: 1.3em; }
+.mt-text li { margin-bottom: .5em; }
+.mt-text a { color: var(--mt-g); text-decoration-color: var(--mt-gold); }
+.mt-text h3 { font-family: 'Playfair Display SC', serif; font-weight: 400; color: var(--mt-g); font-size: 19px; margin: 1.6em 0 .6em; }
+.mt-btn-wrap { margin: 0; }
+.mt-btn {
+  display: inline-block; background: var(--mt-g); color: var(--mt-cream); text-decoration: none;
+  font: 700 10px 'Lato', sans-serif; letter-spacing: .38em; text-transform: uppercase; padding: 15px 34px; transition: background .2s;
+}
+.mt-btn:hover { background: #024a30; }
+
+/* Long-form native pages (legal, donations): keep line length readable */
+.mt-sec .mt-inner:has(> .mt-text, > .mt-h) { max-width: 780px; }
+
+/* Dark sections made from native widgets: light text, gold buttons */
+.mt-dark .mt-text { color: #f1f1f1; }
+.mt-dark .mt-text a { color: var(--mt-gold); }
+.mt-dark .mt-btn { background: var(--mt-gold); color: var(--mt-g); }
+.mt-dark .mt-btn:hover { background: #d4b068; }

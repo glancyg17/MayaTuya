@@ -1,0 +1,195 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+#mtctd {
+  --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;
+  --ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,.12);--rule-g:rgba(200,158,75,.25);
+  font-family:'Lato',sans-serif;color:var(--ink);
+}
+#mtctd * { box-sizing:border-box; }
+#mtctd a { text-decoration:none;color:inherit; }
+#mtctd p { font-size:14px;color:var(--muted);line-height:1.85;margin-bottom:16px; }
+#mtctd p:last-child { margin-bottom:0; }
+#mtctd .eyebrow { font-size:8px;letter-spacing:.52em;text-transform:uppercase;color:var(--gold-d);opacity:.72;display:block;margin-bottom:12px; }
+#mtctd h1 { font-family:'Playfair Display SC',serif;font-size:clamp(32px,5.5vw,56px);color:var(--ink);line-height:1.06;display:block;margin-bottom:14px;font-weight:400;margin-top:0; }
+#mtctd h2 { font-family:'Playfair Display SC',serif;font-size:clamp(20px,3vw,32px);color:var(--ink);line-height:1.1;display:block;margin-bottom:12px;font-weight:400;margin-top:0; }
+#mtctd h3 { font-family:'Playfair Display',serif;font-size:clamp(15px,2vw,18px);color:var(--ink);font-weight:700;display:block;margin-bottom:8px;line-height:1.2;margin-top:0; }
+#mtctd .gold-rule { width:40px;height:2px;background:var(--gold);display:block;margin-bottom:18px; }
+#mtctd .pull { font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,2.3vw,22px);color:var(--g);line-height:1.5;border-left:3px solid var(--gold);padding:12px 0 12px 20px;display:block;margin:24px 0; }
+#mtctd .section { padding:44px 0;border-bottom:1px solid var(--rule); }
+#mtctd .section:last-child { border-bottom:none; }
+#mtctd .two-col { display:table;width:100%; }
+#mtctd .col-main { display:table-cell;vertical-align:top;padding-right:48px; }
+#mtctd .col-side { display:table-cell;vertical-align:top;width:260px;min-width:220px; }
+#mtctd .info-block { border:1px solid var(--rule);padding:14px 16px;margin-bottom:8px;background:#fffdf7; }
+#mtctd .info-label { font-size:8px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:5px; }
+#mtctd .info-val { font-size:13px;color:var(--ink);line-height:1.6; }
+#mtctd .btn-dark { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--g);color:var(--cream);display:inline-block;transition:background .2s; }
+#mtctd .btn-dark:hover { background:#024a30; }
+#mtctd .btn-gold { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--gold);color:#fff;display:inline-block;transition:background .2s; }
+#mtctd .btn-gold:hover { background:var(--gold-d); }
+#mtctd .btn-outline { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 22px;background:transparent;color:var(--muted);border:1px solid var(--rule-g);display:inline-block;transition:all .2s; }
+#mtctd .btn-outline:hover { border-color:var(--gold);color:var(--ink); }
+#mtctd .actions { display:flex;gap:10px;flex-wrap:wrap;margin-top:20px; }
+#mtctd .ul-clean { list-style:none;padding:0;margin:0; }
+#mtctd .ul-clean li { font-size:14px;color:var(--muted);line-height:1.75;padding:7px 0 7px 16px;border-bottom:1px solid var(--rule);position:relative; }
+#mtctd .ul-clean li:last-child { border-bottom:none; }
+#mtctd .ul-clean li::before { content:'·';position:absolute;left:2px;color:var(--gold);font-size:18px;line-height:1.3; }
+#mtctd .cta-band { background:var(--g);padding:28px 32px;margin-top:28px; }
+#mtctd .cta-band-title { font-family:'Playfair Display SC',serif;font-size:clamp(17px,2.3vw,24px);color:#fff;display:block;margin-bottom:8px; }
+#mtctd .cta-band-sub { font-size:13px;color:rgba(242,233,208,.6);line-height:1.7;display:block;margin-bottom:16px;max-width:520px; }
+
+/* HERO */
+#mtctd .pg-hero { position:relative;width:100%;overflow:hidden;height:380px; }
+#mtctd .pg-hero img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.78) brightness(.52); }
+#mtctd .pg-hero-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,rgba(1,15,7,.55) 28%,rgba(1,15,7,.08) 55%,transparent 100%); }
+#mtctd .pg-hero-content { position:absolute;bottom:0;left:0;right:0;padding:28px 0 32px; }
+#mtctd .pg-hero-content .eyebrow { color:var(--gold) !important;opacity:.9 !important; }
+#mtctd .pg-hero-content h1 { color:#ffffff !important; }
+
+/* INLINE IMAGES */
+#mtctd .img-full { width:100%;display:block;margin:24px 0;object-fit:cover;height:280px;filter:saturate(.88); }
+#mtctd .img-half { display:table;width:100%;gap:0;margin:24px 0; }
+#mtctd .img-half-l { display:table-cell;width:50%;padding-right:3px;vertical-align:top; }
+#mtctd .img-half-r { display:table-cell;width:50%;padding-left:3px;vertical-align:top; }
+#mtctd .img-half img { width:100%;height:200px;object-fit:cover;display:block;filter:saturate(.88); }
+#mtctd .img-caption { font-size:10px;letter-spacing:.15em;color:var(--muted);opacity:.55;display:block;margin-top:4px;font-style:italic; }
+
+/* SUB-NAV */
+#mtctd .sub-nav { display:flex;flex-wrap:wrap;border:1px solid var(--rule);margin-top:40px; }
+#mtctd .sub-nav a { font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);padding:12px 16px;border-right:1px solid var(--rule);transition:color .2s,background .2s;display:block; }
+#mtctd .sub-nav a:last-child { border-right:none; }
+#mtctd .sub-nav a:hover { color:var(--g);background:rgba(1,50,32,.03); }
+#mtctd .sub-nav a.active { color:var(--g);border-bottom:2px solid var(--gold); }
+
+/* HUB MAGAZINE GRID */
+#mtctd .mag-grid { display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px; }
+#mtctd .mag-card { position:relative;overflow:hidden;display:block;height:220px; }
+#mtctd .mag-card.tall { grid-row:span 2;height:100%; }
+#mtctd .mag-card img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.75) brightness(.52);transition:filter .4s,transform .5s; }
+#mtctd .mag-card:hover img { filter:saturate(.9) brightness(.62);transform:scale(1.04); }
+#mtctd .mag-card-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,transparent 55%); }
+#mtctd .mag-card-content { position:absolute;bottom:0;left:0;right:0;padding:16px 18px; }
+#mtctd .mag-card-tag { font-size:7.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:5px; }
+#mtctd .mag-card-title { font-family:'Playfair Display SC',serif;font-size:clamp(14px,1.8vw,18px);color:#fff;line-height:1.1;display:block;margin-bottom:3px; }
+#mtctd .mag-card-sub { font-size:11px;color:rgba(242,233,208,.55);line-height:1.4;display:block; }
+#mtctd .mag-card-arrow { font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);opacity:.7;display:block;margin-top:6px; }
+
+/* ALIADO CARDS */
+#mtctd .ali-card { border:1px solid var(--rule);background:#fffdf7;display:table;width:100%;margin-bottom:2px;transition:border-color .2s; }
+#mtctd .ali-card:hover { border-color:var(--gold); }
+#mtctd .ali-card-img { display:table-cell;width:140px;min-width:120px;vertical-align:top;position:relative;overflow:hidden; }
+#mtctd .ali-card-img img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.88); }
+#mtctd .ali-card-body { display:table-cell;vertical-align:middle;padding:14px 18px; }
+#mtctd .ali-card-tag { font-size:8px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-d);opacity:.8;display:block;margin-bottom:5px; }
+#mtctd .ali-card-name { font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--ink);display:block;margin-bottom:4px; }
+#mtctd .ali-card-text { font-size:12.5px;color:var(--muted);line-height:1.6;display:block;margin-bottom:8px; }
+#mtctd .ali-card-link { font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--g);border-bottom:1px solid var(--rule-g);padding-bottom:1px;transition:all .2s; }
+#mtctd .ali-card-link:hover { color:var(--gold-d);border-color:var(--gold-d); }
+
+@media(max-width:680px){
+  #mtctd .pg-hero { height:240px; }
+  #mtctd .two-col { display:block; }
+  #mtctd .col-main { display:block;padding-right:0;margin-bottom:20px; }
+  #mtctd .col-side { display:block;width:100%; }
+  #mtctd .mag-grid { grid-template-columns:1fr 1fr; }
+  #mtctd .mag-card { height:160px; }
+  #mtctd .mag-card.tall { grid-row:span 1;height:160px; }
+  #mtctd .sub-nav a { border-right:none;border-bottom:1px solid var(--rule);width:50%; }
+  #mtctd .img-half { display:block; }
+  #mtctd .img-half-l,#mtctd .img-half-r { display:block;width:100%;padding:0 0 3px; }
+  #mtctd .ali-card-img { width:100px;min-width:80px; }
+  #mtctd .cta-band { padding:22px 20px; }
+}
+</style>
+<div id="mtctd">
+  <div class="pg-hero">
+    <img src="/assets/img/caption-1.jpg" alt="Campeche city walls at morning light, Mexico">
+    <div class="pg-hero-overlay"></div>
+    <div class="pg-hero-content">
+      <span class="eyebrow">Things to do · Campeche, Mexico</span>
+      <h1>What to do<br>in Campeche.</h1>
+    </div>
+  </div>
+  <div style="height:3px;background:var(--gold);width:100%;"></div>
+
+  <div class="section">
+    <span class="gold-rule"></span>
+    <p>Every list of things to do in Campeche starts with the walls. Which is right — but the walls are a beginning, not a checklist. Here's how to actually use them, and what comes after.</p>
+
+    <h2>The walls & the baluartes.</h2>
+    <img class="img-full" src="/assets/img/6849aa2be6a25-67f6e2886151e-0V9A7667_gmxdot_jpg-scaled.jpg" alt="Baluarte de la Soledad, Campeche city walls" loading="lazy">
+    <span class="img-caption">Baluarte de la Soledad — the best sea views in the city.</span>
+    <p>The circuit of defensive walls enclosing Campeche's historic centre is one of only two complete fortified perimeters surviving in the Americas. Built between 1686 and 1704 after generations of pirate raids, the walls connect eight baluartes — fortified bastions that once housed artillery and garrison troops. Most are now museums or cultural spaces, and none charge much to enter.</p>
+    <p>Walk the full circuit in the morning before the heat settles — it takes about forty minutes at a stroll, longer if you stop at each baluarte. The views toward the Gulf are best in the hour before the sun climbs. In the evening, from around five o'clock, the walls are lit from below and the temperature drops. Both versions are worth experiencing.</p>
+    <p>The Baluarte de San Carlos houses the city museum — small, well-curated, and almost always empty. The Baluarte de la Soledad overlooks the sea and holds the best collection of pre-Hispanic stelae in the city. The Puerta del Mar (Sea Gate) and the Puerta de Tierra (Land Gate) are the two surviving gateways into the walled centre.</p>
+    <div class="cta-band">
+      <span class="cta-band-title">Walk the walls with context.</span>
+      <span class="cta-band-sub">Our evening experience begins at Puerta del Mar and traces the walls through Calle 59 to the mercado — stories included, dinner at the end.</span>
+      <a class="btn-gold" href="/experiences/thegatesandthenight">The Gates & The Night →</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>The historic centre.</h2>
+    <div class="img-half">
+      <div class="img-half-l"><img src="/assets/img/WhatsApp-Image-2026-04-23-at-17.57.11.jpeg" alt="Cathedral of Campeche, Plaza de Independencia" loading="lazy"></div>
+      <div class="img-half-r"><img src="/assets/img/WhatsApp-Image-2026-04-26-at-12.26.14.jpeg" alt="Municipal Library balcony view, Campeche" loading="lazy"></div>
+    </div>
+    <p>Inside the walls, the historic centre takes about twenty minutes to cross on foot — which means most visitors underestimate it. The Plaza de la Independencia is the centre of the centre: the Cathedral, the Municipal Library with its balcony (most visitors never find it — go up), the old government buildings. Morning or evening are best. Midday in summer is for shade.</p>
+    <p>Calle 59 runs from the Puerta del Mar straight through to the Puerta de Tierra — the full length of the old city in one line. It's the best street in Campeche for walking slowly.</p>
+    <p>San Franscisquito, a few blocks from the plaza, is the oldest church in the city — founded in 1546, predating the walls themselves. Almost no tourists visit. That's reason enough to go.</p>
+  </div>
+
+  <div class="section">
+    <h2>Curated experiences.</h2>
+    <p>We design and run small-group experiences for travellers who want the city understood rather than just seen. Every stop curated, every business verified, everything included in the price.</p>
+    <div class="two-col">
+      <div class="col-main">
+        <div class="ali-card">
+          <div class="ali-card-img"><img src="/assets/img/Campeche-Walls-e1776555524400.jpg" alt="From the Walls to the Table experience, Campeche"></div>
+          <div class="ali-card-body">
+            <span class="ali-card-tag">Full morning · From $185</span>
+            <span class="ali-card-name">From the Walls to the Table</span>
+            <span class="ali-card-text">Private chocolate workshop, the historic centre on foot, a local artisan, and an organic brunch. All-inclusive.</span>
+            <a class="ali-card-link" href="/experiences/fromthewallstothetable">View experience →</a>
+          </div>
+        </div>
+        <div class="ali-card" style="margin-top:2px;">
+          <div class="ali-card-img"><img src="/assets/img/ChatGPT-Image-Nov-1-2025-04_52_27-PM.png" alt="The Gates and The Night experience, Campeche"></div>
+          <div class="ali-card-body">
+            <span class="ali-card-tag">Evening · From $185</span>
+            <span class="ali-card-name">The Gates & The Night</span>
+            <span class="ali-card-text">Calle 59, the walls at dusk, the mercado, dinner on the balcony, Lotería Campechana.</span>
+            <a class="ali-card-link" href="/experiences/thegatesandthenight">View experience →</a>
+          </div>
+        </div>
+        <div class="ali-card" style="margin-top:2px;">
+          <div class="ali-card-img"><img src="/assets/img/1000118855.jpg" alt="Open Heart Open Table experience, Campeche"></div>
+          <div class="ali-card-body">
+            <span class="ali-card-tag">Morning or afternoon · From $195</span>
+            <span class="ali-card-name">Open Heart, Open Table</span>
+            <span class="ali-card-text">Cacao ceremony, guided meditation, yoga, and a shared meal in a historic courtyard.</span>
+            <a class="ali-card-link" href="/experiences/openheartopentable">View experience →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-side">
+        <div class="info-block">
+          <span class="info-label">All experiences</span>
+          <span class="info-val">Private · your group only<br>All-inclusive pricing<br>Nothing to pay on the day<br>Minimum 2 people</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Campeche guide</span>
+          <span class="info-val">The First Edition covers the city in detail — bilingual EN+ES, $9.99</span>
+        </div>
+        <div class="actions">
+          <a class="btn-outline" href="/guides">View guides →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-nav"><a href="/destinations/campeche">Overview</a><a href="/destinations/campeche/things-to-do" class="active">Things to Do</a><a href="/destinations/campeche/getting-there">Getting There</a><a href="/destinations/campeche/food-and-drink">Food & Drink</a><a href="/destinations/campeche/when-to-visit">When to Visit</a><a href="/destinations/campeche/itineraries">Itineraries</a><a href="/destinations/campeche/neighbourhoods">Neighbourhoods</a><a href="/destinations/campeche/day-trips">Day Trips</a></div>
+</div>
+</div>
+</section>

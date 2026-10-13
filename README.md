@@ -29,27 +29,52 @@ git add -A && git commit -m "…" && git push
 Header, footer, language switch, canonical + hreflang tags, sitemap and robots are generated for you.
 Page-specific CSS stays inside each page's HTML; the build hoists it into `<head>` and de-duplicates.
 
-## Images
+## Images and downloads
 
-Copy your local WordPress uploads folder into `media_src/` (keep it as it is). The build copies **only the files pages actually
-reference** into `docs/assets/img/`, so the 214 unused media-library items never reach the repo.
+`python tools/fetch_media.py` downloads every image/ZIP the pages need from the live WordPress site into `media_src/`
+(run `python build.py` first so `media_needed.txt` exists). Three files are **not** public on the live site and must come from
+your own copies — put them in `media_src/` with exactly these names:
+
+- `Guide-Campeche-First-Edition-ipt3rn.pdf` (paid guide, English)
+- `ES_Campeche_FirstEdition-zs7f1m.pdf` (paid guide, Spanish)
+- `Tu-Negocio-Mejor-9m0ieq.pdf`
+
+The build copies **only the files pages actually reference** into `docs/assets/img/` and `docs/assets/dl/`, so unused media-library
+items never reach the repo. Paid PDFs are protected only by their obscure filenames (noindex pages) — see the Codex decision.
+
+## Staging vs live
+
+`config.json` has `"mode": "staging"`: every page is `noindex`, canonicals use `new.mayatuya.com`, robots.txt blocks crawling and
+no sitemap is written. When you switch the real domain: set `"mode": "live"`, put `mayatuya.com` in `docs/CNAME`, rebuild.
+
+## Old WordPress URLs
+
+`src/redirects.json` maps dead WordPress URLs (shop, cart, my-account, `/home`, `-2` slugs…) to their new homes as static redirect
+pages. `src/link_fixes.json` repairs wrong links that existed inside the old pages (e.g. `/experiencias/…` → `/inicio/experiencias/…`).
 
 ## Placeholders (swap before launch)
 
-`config.json` holds `PLACEHOLDER_…` values for the Web3Forms access key and every Stripe link.
-In content, use `{{stripe:tu_negocio_mejor}}` etc. — the build swaps in the link from `config.json`.
+`config.json` holds `PLACEHOLDER_…` values for the Web3Forms access key and the Stripe links (Aliado Destacado monthly/annual,
+Fundador, Campeche guide, contribution). The three existing live Stripe links are saved under `stripe_live_reference` for when
+you're ready. In content, use `{{stripe:guide_campeche}}` etc. — the build swaps in the link from `config.json`.
+
+Stripe settings to make at launch: set the guide's Payment Link to redirect after payment to `/campeche-guide-download/`, the
+Destacado/Fundador links to `/acuerdo-aliado-destacado/` and `/acuerdo-aliado-fundador/` flow as today (pay → accept agreement → welcome).
 
 ```bash
 python build.py --check-release   # fails while placeholders, missing images or broken links remain
 ```
 
-## Adding / migrating a page
+## Re-running the migration
+
+All 69 pages were extracted from the WordPress export with `tools/manifest.json` (id, post, language, URL, EN/ES pair):
 
 ```bash
-python tools/extract.py --xml path/to/wordpress-export.xml new-page-id=POST_ID
+python tools/extract.py --manifest tools/manifest.json path/to/wordpress-export.xml
+python tools/forms_from_fluent.py path/to/fluentform-export.json 3 6 7 8 9 11 12 13 14 15 16 17 18 19
 ```
-then add an entry to `src/pages.json` (write a real title and description — most old pages shared one generic title).
-Forms: `python tools/forms_from_fluent.py path/to/fluentform-export.json 6 8 9 …`
+Page bodies in `src/content/` are now the source of truth — edit them directly; re-extracting overwrites them.
+Two pages are hand-built, not extracted: `product-campeche-guide-en` and `campeche-guide-download-en`.
 
 ## Going live (GitHub Pages)
 
@@ -61,7 +86,7 @@ Forms: `python tools/forms_from_fluent.py path/to/fluentform-export.json 6 8 9 �
 
 ## Not done yet
 
-- Remaining ~55 pages (run the extractor + add to `pages.json`)
-- Forms other than bookings (contact, Conscious Traveler, acuerdo ×3, Hazte Aliado)
+- Final styling/uniformity pass (two greens in use: #0b3d2e from the theme palette vs #013220 in the widgets; off-brand fonts
+  were mapped to brand fonts only on the native-widget pages)
 - Self-hosted fonts and flag icons (currently Google Fonts + flagcdn.com)
 - Structured data (Organization / WebSite JSON-LD) to replace SureRank's

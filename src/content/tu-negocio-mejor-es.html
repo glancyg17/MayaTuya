@@ -1,0 +1,245 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+.mt-dl {
+  --g:#013220;
+  --gold:#c89e4b;
+  --gold-d:#9a7828;
+  --cream:#f3eee2;
+  --ink:#0c0b09;
+  --muted:#5a5040;
+  --rule:rgba(1,50,32,0.10);
+  --rule-gold:rgba(200,158,75,0.25);
+  font-family:'Lato',sans-serif;
+  color:var(--ink);
+  max-width:580px;
+  margin:0 auto;
+  padding:0 24px 80px;
+}
+
+/* ── Mark ── */
+.mt-dl-mark {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:64px 0 36px;
+}
+.mt-dl-mark-circle {
+  width:56px;height:56px;
+  border:1px solid var(--rule-gold);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.mt-dl-mark-dot {
+  width:8px;height:8px;
+  border-radius:50%;
+  background:var(--gold);
+}
+
+/* ── Header ── */
+.mt-dl-head {
+  text-align:center;
+  padding-bottom:32px;
+  border-bottom:1px solid var(--rule-gold);
+  margin-bottom:32px;
+}
+.mt-dl-eyebrow {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.48em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  margin:0 0 14px;
+  opacity:0.85;
+}
+.mt-dl-title {
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(22px,4vw,32px);
+  font-weight:400;
+  color:var(--g);
+  margin:0 0 10px;
+  line-height:1.2;
+}
+.mt-dl-subtitle {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:17px;
+  color:var(--muted);
+  margin:0;
+  line-height:1.5;
+}
+
+/* ── Body ── */
+.mt-dl-body {
+  margin-bottom:32px;
+}
+.mt-dl-body p {
+  font-family:'Lato',sans-serif;
+  font-size:14px;
+  line-height:1.85;
+  color:var(--muted);
+  margin:0 0 14px;
+}
+.mt-dl-body p:last-child { margin:0; }
+
+/* ── Download button ── */
+.mt-dl-btn-wrap {
+  text-align:center;
+  margin:36px 0;
+}
+.mt-dl-btn {
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+  background:var(--g);
+  color:var(--cream);
+  text-decoration:none;
+  padding:20px 48px;
+  transition:background .2s;
+}
+.mt-dl-btn:hover { background:#024d30; }
+.mt-dl-btn-label {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.4em;
+  text-transform:uppercase;
+  color:var(--gold);
+  opacity:0.8;
+}
+.mt-dl-btn-text {
+  font-family:'Playfair Display SC',serif;
+  font-size:15px;
+  color:var(--cream);
+  font-weight:400;
+}
+.mt-dl-btn-sub {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:12px;
+  color:rgba(242,233,208,0.5);
+}
+
+/* ── Upsell block ── */
+.mt-dl-upsell {
+  border:1px solid var(--rule);
+  padding:22px 24px;
+  margin-top:8px;
+}
+.mt-dl-upsell-label {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.4em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  display:block;
+  margin-bottom:10px;
+  opacity:0.85;
+}
+.mt-dl-upsell-title {
+  font-family:'Playfair Display SC',serif;
+  font-size:15px;
+  color:var(--g);
+  font-weight:400;
+  display:block;
+  margin-bottom:8px;
+}
+.mt-dl-upsell-text {
+  font-family:'Lato',sans-serif;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.7;
+  margin-bottom:14px;
+}
+.mt-dl-upsell-link {
+  font-family:'Lato',sans-serif;
+  font-size:11px;
+  letter-spacing:0.25em;
+  text-transform:uppercase;
+  color:var(--g);
+  text-decoration:none;
+  border-bottom:1px solid var(--rule-gold);
+  padding-bottom:2px;
+}
+
+/* ── Footer ── */
+.mt-dl-foot {
+  margin-top:48px;
+  padding-top:20px;
+  border-top:1px solid var(--rule);
+  text-align:center;
+}
+.mt-dl-foot p {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:13px;
+  color:var(--muted);
+  margin:0 0 6px;
+}
+.mt-dl-foot a {
+  color:var(--muted);
+  text-decoration:none;
+  border-bottom:1px solid var(--rule-gold);
+}
+.mt-dl-tagline {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.35em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  opacity:0.5;
+  margin-top:16px !important;
+}
+</style>
+
+<div class="mt-dl">
+
+  <div class="mt-dl-mark">
+    <div class="mt-dl-mark-circle">
+      <div class="mt-dl-mark-dot"></div>
+    </div>
+  </div>
+
+  <div class="mt-dl-head">
+    <p class="mt-dl-eyebrow">Maya Tuya · Descarga</p>
+    <h1 class="mt-dl-title">Tu Negocio, Mejor.</h1>
+    <p class="mt-dl-subtitle">Tu pago fue confirmado. La guía está lista.</p>
+  </div>
+
+  <div class="mt-dl-body">
+    <p>Gracias por tu compra. A continuación encontrarás el enlace de descarga directo. Guarda el PDF en tu teléfono o computadora — es tuyo para consultar cuando quieras.</p>
+    <p>Si tienes algún problema con la descarga, escríbenos por WhatsApp y lo resolvemos de inmediato.</p>
+  </div>
+
+  <div class="mt-dl-btn-wrap">
+    <a href="/assets/dl/Tu-Negocio-Mejor-9m0ieq.pdf"
+       class="mt-dl-btn"
+       download="TuNegocioMejor_MayaTuya.pdf"
+       target="_blank"
+       rel="noopener">
+      <span class="mt-dl-btn-label">Descarga directa</span>
+      <span class="mt-dl-btn-text">Tu Negocio, Mejor.</span>
+      <span class="mt-dl-btn-sub">PDF · Acceso inmediato</span>
+    </a>
+  </div>
+
+  <div class="mt-dl-upsell">
+    <span class="mt-dl-upsell-label">¿Quieres ir más lejos?</span>
+    <span class="mt-dl-upsell-title">Membresía Aliado Destacado</span>
+    <p class="mt-dl-upsell-text">
+      Esta guía es el punto de partida. La membresía Aliado Destacado incluye tu perfil completo en el directorio de Maya Tuya, presencia prioritaria frente a viajeros conscientes, y todo lo que necesitas para que los viajeros correctos te encuentren — por $749 MXN al mes.
+    </p>
+    <a href="https://wa.me/529381842944" class="mt-dl-upsell-link" target="_blank" rel="noopener">Hablamos por WhatsApp</a>
+  </div>
+
+  <div class="mt-dl-foot">
+    <p>¿Alguna pregunta?</p>
+    <p><a href="mailto:hola@mayatuya.com">hola@mayatuya.com</a> &nbsp;·&nbsp; <a href="https://wa.me/529381842944">WhatsApp +52 938 184 2944</a></p>
+    <p class="mt-dl-tagline">No es solo Maya — es Tuya.</p>
+  </div>
+
+</div>
+</div>
+</section>

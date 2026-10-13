@@ -1,0 +1,276 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<style>
+.mt-confirm {
+  --green: #013220;
+  --gold: #c89e4b;
+  --gold-mid: #8B6914;
+  --gold-light: rgba(200,158,75,0.15);
+  --cream: #f2e9d0;
+  --ink: #0c0b09;
+  --muted: #4a4035;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--ink);
+  box-sizing: border-box;
+}
+
+.mt-confirm *, .mt-confirm *::before, .mt-confirm *::after {
+  box-sizing: inherit;
+}
+
+.mt-c-hero {
+  text-align: center;
+  padding: 48px 0 40px;
+  border-bottom: 1px solid rgba(200,158,75,0.3);
+  margin-bottom: 52px;
+}
+
+.mt-c-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.45em;
+  color: var(--gold-mid);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mt-c-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.mt-c-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mt-c-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  color: var(--green);
+  margin: 0 0 10px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.mt-c-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0;
+}
+
+.mt-c-section-label {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 0.45em;
+  color: var(--gold-mid);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 28px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(200,158,75,0.25);
+}
+
+.mt-c-intro {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0 0 44px;
+}
+
+.mt-c-bases {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 52px;
+}
+
+.mt-c-base-item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 0 18px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(200,158,75,0.15);
+}
+
+.mt-c-base-item:first-child {
+  border-top: 1px solid rgba(200,158,75,0.15);
+}
+
+.mt-c-base-num {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  color: var(--gold);
+  padding-top: 3px;
+  letter-spacing: 0.05em;
+}
+
+.mt-c-base-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: var(--green);
+  font-weight: 600;
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+
+.mt-c-base-text {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.mt-c-note {
+  background: var(--gold-light);
+  border-left: 2px solid var(--gold);
+  padding: 20px 24px;
+  margin-bottom: 52px;
+}
+
+.mt-c-note-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.mt-c-cta {
+  text-align: center;
+  padding: 50px 0 40px;
+  border-top: 1px solid rgba(200,158,75,0.25);
+}
+
+.mt-c-cta-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  color: var(--green);
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+
+.mt-c-cta-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+
+.mt-c-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid var(--green);
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--green);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mt-c-btn:hover {
+  background: var(--green);
+  color: var(--cream);
+}
+
+@media (max-width: 480px) {
+  .mt-c-headline { font-size: 32px; }
+  .mt-c-base-title { font-size: 18px; }
+  .mt-c-base-item { grid-template-columns: 24px 1fr; gap: 0 12px; }
+}
+</style>
+
+<div class="mt-confirm">
+
+  <div class="mt-c-hero">
+    <span class="mt-c-eyebrow">Maya Tuya · Aliados</span>
+    <div class="mt-c-icon">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <div class="mt-c-headline">Ya estás dentro.</div>
+    <div class="mt-c-sub">Tu negocio ya forma parte de la red Maya Tuya.</div>
+  </div>
+
+  <div>
+    <span class="mt-c-section-label">Lo que construimos juntos</span>
+
+    <p class="mt-c-intro">
+      Ser un Aliado no es solo aparecer en un directorio. Es mantener una base sólida que haga que los viajeros confíen en ti desde el primer contacto. Estas son las cuatro áreas que marcan la diferencia.
+    </p>
+
+    <div class="mt-c-bases">
+
+      <div class="mt-c-base-item">
+        <span class="mt-c-base-num">01</span>
+        <div>
+          <div class="mt-c-base-title">Presencia digital clara</div>
+          <p class="mt-c-base-text">Tu perfil de Google Maps completo y actualizado es a menudo el primer punto de contacto. Nombre, horarios, fotos y una mención a Maya Tuya son el punto de partida.</p>
+        </div>
+      </div>
+
+      <div class="mt-c-base-item">
+        <span class="mt-c-base-num">02</span>
+        <div>
+          <div class="mt-c-base-title">Señalización bilingüe en tu espacio</div>
+          <p class="mt-c-base-text">Una entrada clara, con material en español e inglés, le indica al viajero que llegó al lugar correcto — sin fricción y sin necesidad de preguntar.</p>
+        </div>
+      </div>
+
+      <div class="mt-c-base-item">
+        <span class="mt-c-base-num">03</span>
+        <div>
+          <div class="mt-c-base-title">Tu oferta visible desde el primer momento</div>
+          <p class="mt-c-base-text">El beneficio que ofreces a los viajeros Maya Tuya debe ser fácil de ver y fácil de aplicar. Nada que requiera explicación larga ni trámites incómodos.</p>
+        </div>
+      </div>
+
+      <div class="mt-c-base-item">
+        <span class="mt-c-base-num">04</span>
+        <div>
+          <div class="mt-c-base-title">Capacidad básica de atención en inglés</div>
+          <p class="mt-c-base-text">No hace falta fluidez, pero sí poder resolver una pregunta sencilla. Al menos una persona en tu equipo debería poder orientar a alguien que no habla español.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-c-note">
+      <p class="mt-c-note-text">
+        Cada una de estas bases tiene soluciones concretas y herramientas que hacen el proceso más fácil. En breve estaremos en contacto contigo para revisar dónde estás y cómo avanzar desde aquí.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="mt-c-cta">
+    <div class="mt-c-cta-headline">¿Tienes preguntas mientras tanto?</div>
+    <div class="mt-c-cta-sub">Estamos disponibles por WhatsApp para cualquier duda antes de nuestra próxima conversación.</div>
+    <a href="https://wa.me/5219381842944?text=Hola%2C%20soy%20Aliado%20de%20Maya%20Tuya%20y%20tengo%20una%20pregunta" class="mt-c-btn">Escribir por WhatsApp</a>
+  </div>
+
+</div>
+</div>
+</section>

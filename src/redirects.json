@@ -1,0 +1,23 @@
+{
+ "/home/": "/",
+ "/hazte-aliado/": "/inicio/hazte-aliado/",
+ "/shop/": "/guides/",
+ "/cart/": "/guides/",
+ "/checkout/": "/guides/",
+ "/my-account/": "/guides/",
+ "/account/": "/guides/",
+ "/login/": "/",
+ "/register/": "/",
+ "/password-reset/": "/",
+ "/inicio/tienda/": "/inicio/guias/",
+ "/inicio/carrito/": "/inicio/guias/",
+ "/inicio/finalizar-compra/": "/inicio/guias/",
+ "/product/the-conscious-traveler/": "/conscioustraveler/",
+ "/product/contribution-to-maya-tuya/": "/donations/",
+ "/product/merida-travel-guide/": "/guides/",
+ "/coming-soon/": "/",
+ "/inicio/proximamente/": "/inicio/",
+ "/inicio/acceso-aliados/": "/inicio/hazte-aliado/",
+ "/workbook-thanks/": "/inicio/viajero-consciente-descarga/",
+ "/destinations/campeche/food-and-drink-2/": "/destinations/campeche/food-and-drink/"
+}

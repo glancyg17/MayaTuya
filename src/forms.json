@@ -1,4 +1,282 @@
 {
+ "3": {
+  "title": "Conscious Traveler Form (#3)",
+  "button": "Get The Conscious Traveler",
+  "success": "Thank you for your message. We will get in touch with you shortly",
+  "redirect": "/conscious-traveler-download/",
+  "fields": [
+   {
+    "type": "text",
+    "name": "first_name",
+    "label": "First Name",
+    "required": true,
+    "placeholder": "Enter Your First Name"
+   },
+   {
+    "type": "text",
+    "name": "last_name",
+    "label": "Last Name",
+    "required": false,
+    "placeholder": "Enter Your Last Name"
+   },
+   {
+    "name": "email",
+    "label": "Email",
+    "required": true,
+    "placeholder": "Email Address",
+    "type": "email"
+   },
+   {
+    "name": "newsletter_optin",
+    "label": "I'd like to receive occasional updates and new chapters.",
+    "required": false,
+    "placeholder": "",
+    "type": "checkbox",
+    "options": [
+     {
+      "label": "Keep me updated on Maya Tuya news!",
+      "value": "Keep me updated on Maya Tuya news!"
+     }
+    ]
+   }
+  ]
+ },
+ "6": {
+  "title": "Hazte Aliado (#6)",
+  "button": "Quiero formar parte",
+  "success": "Thank you for your message. We will get in touch with you shortly",
+  "redirect": "/inicio/aliado-en-proceso/",
+  "fields": [
+   {
+    "name": "business_name",
+    "label": "Nombre del negocio",
+    "required": true,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "business_type",
+    "label": "Tipo de negocio",
+    "required": true,
+    "placeholder": "- selecciona -",
+    "type": "select",
+    "options": [
+     {
+      "label": "Restaurante / Bar",
+      "value": "Restaurante / Bar"
+     },
+     {
+      "label": "Bienestar",
+      "value": "Bienestar"
+     },
+     {
+      "label": "Artesanía & Joyería",
+      "value": "Artesanía & Joyería"
+     },
+     {
+      "label": "Chocolate & Cacao",
+      "value": "Chocolate & Cacao"
+     },
+     {
+      "label": "Espacio & Eventos",
+      "value": "Espacio & Eventos"
+     },
+     {
+      "label": "Ceremonias & Talleres",
+      "value": "Ceremonias & Talleres"
+     },
+     {
+      "label": "Otro",
+      "value": "Otro"
+     }
+    ]
+   },
+   {
+    "name": "city",
+    "label": "Ciudad / Municipio",
+    "required": false,
+    "placeholder": "Selecciona",
+    "type": "select",
+    "options": [
+     {
+      "label": "Campeche",
+      "value": "Campeche"
+     },
+     {
+      "label": "Mérida",
+      "value": "Mérida"
+     },
+     {
+      "label": "Valladolid",
+      "value": "Valladolid"
+     }
+    ]
+   },
+   {
+    "name": "contact_name",
+    "label": "Tu nombre",
+    "required": true,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "whatsapp",
+    "label": "Whatsapp",
+    "required": true,
+    "placeholder": "",
+    "type": "tel",
+    "min": null,
+    "max": null
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": false,
+    "placeholder": "opcional",
+    "type": "email"
+   },
+   {
+    "name": "address",
+    "label": "Dirección",
+    "required": false,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "curated_experience_fit",
+    "label": "¿Tu negocio podría formar parte de una experiencia curada?",
+    "required": false,
+    "placeholder": "Selecciona",
+    "type": "select",
+    "options": [
+     {
+      "label": "Sí, creo que encajaría bien",
+      "value": "Sí, creo que encajaría bien"
+     },
+     {
+      "label": "Posiblemente, cuéntame más",
+      "value": "Posiblemente, cuéntame más"
+     },
+     {
+      "label": "Por ahora no",
+      "value": "Por ahora no"
+     }
+    ]
+   },
+   {
+    "name": "about_business",
+    "label": "Cuéntanos sobre tu negocio",
+    "required": true,
+    "placeholder": "  Qué ofreces, dónde estás, qué tipo de clientes tienes. Todo lo que creas que es relevante.  ",
+    "type": "textarea"
+   },
+   {
+    "type": "hidden",
+    "name": "form_source",
+    "value": "hazte-aliado"
+   }
+  ]
+ },
+ "7": {
+  "title": "Viajero Consciente Formulario (#7)",
+  "button": "Obtén El Viajero Consciente",
+  "success": "Thank you for your message. We will get in touch with you shortly",
+  "redirect": "/inicio/viajero-consciente-descarga/",
+  "fields": [
+   {
+    "type": "text",
+    "name": "first_name",
+    "label": "Nombre",
+    "required": true,
+    "placeholder": "Tu nombre"
+   },
+   {
+    "type": "text",
+    "name": "last_name",
+    "label": "Apellido(s)",
+    "required": false,
+    "placeholder": "Tu(s) apellido(s)"
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": true,
+    "placeholder": "Correo electrónico",
+    "type": "email"
+   },
+   {
+    "name": "newsletter_optin",
+    "label": "Me gustaría recibir actualizaciones ocasionales y nuevos capítulos.",
+    "required": false,
+    "placeholder": "",
+    "type": "checkbox",
+    "options": [
+     {
+      "label": "¡Manténme al tanto de las noticias de Maya Tuya!",
+      "value": "¡Manténme al tanto de las noticias de Maya Tuya!"
+     }
+    ]
+   }
+  ]
+ },
+ "8": {
+  "title": "Contact Form (#8)",
+  "button": "Submit Form",
+  "success": "Thank you for your message. We will get in touch with you shortly",
+  "redirect": "",
+  "fields": [
+   {
+    "type": "text",
+    "name": "name",
+    "label": "Name",
+    "required": true,
+    "placeholder": "Enter Your Name"
+   },
+   {
+    "name": "email",
+    "label": "Email",
+    "required": true,
+    "placeholder": "Email Address",
+    "type": "email"
+   },
+   {
+    "name": "message",
+    "label": "Your Message",
+    "required": true,
+    "placeholder": "",
+    "type": "textarea"
+   }
+  ]
+ },
+ "9": {
+  "title": "ES Contact Form (#9)",
+  "button": "Enviar",
+  "success": "Gracias por su mensaje. Pronto nos pondremos en contacto.",
+  "redirect": "",
+  "fields": [
+   {
+    "type": "text",
+    "name": "name",
+    "label": "Nombre",
+    "required": true,
+    "placeholder": "Escribe su nombre"
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": true,
+    "placeholder": "Correo electrónico",
+    "type": "email"
+   },
+   {
+    "name": "message",
+    "label": "Su Mensaje",
+    "required": true,
+    "placeholder": "",
+    "type": "textarea"
+   }
+  ]
+ },
  "11": {
   "title": "Booking Form - From the Walls to the Table (#11)",
   "button": "Check Availability",
@@ -616,6 +894,147 @@
       "value": "Confirmo que no estoy tomando actualmente SSRIs, inhibidores MAO u otros medicamentos que puedan interactuar con el cacao ceremonial. Entiendo que si tengo alguna duda de salud, debo consultar con un médico antes de participar, y que puedo solicitar una dosis reducida en el campo de notas."
      }
     ]
+   }
+  ]
+ },
+ "17": {
+  "title": "Acuerdo Aliado (#17)",
+  "button": "Acepto este acuerdo",
+  "success": "Thank you for your message. We will get in touch with you shortly",
+  "redirect": "/bienvenido-aliado/",
+  "fields": [
+   {
+    "name": "full_name",
+    "label": "Nombre completo",
+    "required": true,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "business_name",
+    "label": "Nombre del negocio",
+    "required": true,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": true,
+    "placeholder": "",
+    "type": "email"
+   },
+   {
+    "name": "acuerdo_accepted",
+    "label": "",
+    "required": true,
+    "placeholder": "",
+    "type": "checkbox",
+    "options": [
+     {
+      "label": "He leído y acepto los términos del Acuerdo Aliado de Maya Tuya",
+      "value": "He leído y acepto los términos del Acuerdo Aliado de Maya Tuya"
+     }
+    ]
+   },
+   {
+    "type": "hidden",
+    "name": "tier",
+    "value": "aliado"
+   }
+  ]
+ },
+ "18": {
+  "title": "Acuerdo Aliado Destacado (#18)",
+  "button": "Acepto este acuerdo",
+  "success": "Thank you for your message. We will get in touch with you shortly",
+  "redirect": "/bienvenido-aliado-destacado/",
+  "fields": [
+   {
+    "name": "full_name",
+    "label": "Nombre completo",
+    "required": true,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "business_name",
+    "label": "Nombre del negocio",
+    "required": true,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": true,
+    "placeholder": "",
+    "type": "email"
+   },
+   {
+    "name": "acuerdo_accepted",
+    "label": "",
+    "required": true,
+    "placeholder": "",
+    "type": "checkbox",
+    "options": [
+     {
+      "label": "He leído y acepto los términos del Acuerdo Aliado Destacado de Maya Tuya",
+      "value": "He leído y acepto los términos del Acuerdo Aliado Destacado de Maya Tuya"
+     }
+    ]
+   },
+   {
+    "type": "hidden",
+    "name": "tier",
+    "value": "aliado_destacado"
+   }
+  ]
+ },
+ "19": {
+  "title": "Acuerdo Aliado Fundador (#19)",
+  "button": "Acepto este acuerdo",
+  "success": "Thank you for your message. We will get in touch with you shortly",
+  "redirect": "/bienvenido-aliado-fundador/",
+  "fields": [
+   {
+    "name": "full_name",
+    "label": "Nombre completo",
+    "required": true,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "business_name",
+    "label": "Nombre del negocio",
+    "required": true,
+    "placeholder": "",
+    "type": "text"
+   },
+   {
+    "name": "email",
+    "label": "Correo electrónico",
+    "required": true,
+    "placeholder": "",
+    "type": "email"
+   },
+   {
+    "name": "acuerdo_accepted",
+    "label": "",
+    "required": true,
+    "placeholder": "",
+    "type": "checkbox",
+    "options": [
+     {
+      "label": "He leído y acepto los términos del Acuerdo Aliado Fundador de Maya Tuya",
+      "value": "He leído y acepto los términos del Acuerdo Aliado Fundador de Maya Tuya"
+     }
+    ]
+   },
+   {
+    "type": "hidden",
+    "name": "tier",
+    "value": "aliado_fundador"
    }
   ]
  }

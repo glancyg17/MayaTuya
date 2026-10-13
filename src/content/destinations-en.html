@@ -1,0 +1,305 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#f3eee2">
+<div class="mt-inner">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinations — Maya Tuya</title>
+<style>
+:root{
+  --g:#013220;
+  --gold:#c89e4b;
+  --gold-d:#9a7828;
+  --cream:#f2e9d0;
+  --ink:#0c0b09;
+  --muted:#5a5040;
+  --rule:rgba(1,50,32,0.1);
+  --rule-gold:rgba(200,158,75,0.22);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'Lato',sans-serif;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* ── HERO ── */
+.hero{
+  background:var(--g);
+  padding:72px 48px 64px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  bottom:-1px;left:0;right:0;
+  height:48px;
+  background:var(--cream);
+  clip-path:ellipse(55% 100% at 50% 100%);
+}
+.hero-inner{
+  max-width:860px;
+  margin:0 auto;
+  position:relative;
+}
+.hero-eyebrow{
+  font-size:8px;
+  letter-spacing:.55em;
+  text-transform:uppercase;
+  color:var(--gold);
+  opacity:.7;
+  display:block;
+  margin-bottom:18px;
+}
+.hero-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(28px,5vw,48px);
+  font-weight:400;
+  color:var(--cream);
+  line-height:1.1;
+  letter-spacing:.01em;
+  margin-bottom:18px;
+}
+.hero-sub{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:clamp(16px,2.2vw,20px);
+  color:rgba(242,233,208,.65);
+  line-height:1.6;
+  max-width:480px;
+}
+
+/* ── MAIN ── */
+main{
+  flex:1;
+  max-width:860px;
+  margin:0 auto;
+  padding:56px 48px 80px;
+  width:100%;
+}
+
+.sec-eyebrow{
+  font-size:8px;
+  letter-spacing:.5em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  opacity:.7;
+  display:block;
+  margin-bottom:10px;
+}
+.sec-rule{
+  width:28px;height:2px;
+  background:var(--gold);
+  display:block;
+  margin:14px 0 36px;
+}
+
+/* ── DESTINATION GRID ── */
+.dest-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
+  gap:1px;
+  background:var(--rule-gold);
+  border:1px solid var(--rule-gold);
+  margin-bottom:48px;
+}
+
+.dest-card{
+  background:var(--cream);
+  text-decoration:none;
+  display:block;
+  padding:28px 28px 24px;
+  transition:background .2s;
+  position:relative;
+}
+.dest-card:hover{
+  background:#ede4ca;
+}
+.dest-card::after{
+  content:'→';
+  position:absolute;
+  top:28px;right:24px;
+  font-size:14px;
+  color:var(--gold);
+  opacity:0;
+  transition:opacity .2s, right .2s;
+}
+.dest-card:hover::after{
+  opacity:1;
+  right:20px;
+}
+
+.dest-region{
+  font-size:7px;
+  letter-spacing:.42em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  opacity:.65;
+  display:block;
+  margin-bottom:8px;
+}
+.dest-name{
+  font-family:'Playfair Display SC',serif;
+  font-size:20px;
+  font-weight:400;
+  color:var(--g);
+  letter-spacing:.02em;
+  display:block;
+  margin-bottom:10px;
+  line-height:1.1;
+}
+.dest-desc{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.55;
+  display:block;
+  margin-bottom:14px;
+}
+.dest-status{
+  font-size:8px;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  display:inline-block;
+  padding:3px 10px;
+}
+.dest-status--active{
+  background:rgba(1,50,32,0.08);
+  color:var(--g);
+}
+.dest-status--soon{
+  background:rgba(200,158,75,0.1);
+  color:var(--gold-d);
+}
+.dest-status--planned{
+  background:rgba(90,80,64,0.08);
+  color:var(--muted);
+  opacity:.7;
+}
+
+/* Inactive cards */
+.dest-card--inactive{
+  pointer-events:none;
+  opacity:.55;
+}
+.dest-card--inactive::after{display:none;}
+
+/* ── ROUTE NOTE ── */
+.route-note{
+  border-left:2px solid var(--rule-gold);
+  padding:14px 20px;
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.65;
+}
+.route-note strong{
+  color:var(--g);
+  font-style:normal;
+}
+
+/* ── FOOTER ── */
+footer{
+  padding:22px 48px;
+  border-top:1px solid var(--rule);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.footer-brand{
+  font-family:'Playfair Display SC',serif;
+  font-size:12px;
+  color:var(--g);
+  letter-spacing:.05em;
+  opacity:.5;
+}
+.footer-contact{
+  font-size:11px;
+  color:var(--muted);
+  opacity:.45;
+}
+
+/* ── MOBILE ── */
+@media(max-width:600px){
+  .hero{padding:52px 24px 56px;}
+  main{padding:44px 24px 64px;}
+  footer{padding:20px 24px;flex-direction:column;gap:6px;text-align:center;}
+  .dest-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Maya Tuya · Ruta Tren Maya</span>
+    <h1 class="hero-title">Destinations</h1>
+    <p class="hero-sub">Each city on the Tren Maya route has its own character. We're building a guide to all of them — one verified local network at a time.</p>
+  </div>
+</section>
+
+<main>
+  <span class="sec-eyebrow">On the route</span>
+  <span class="sec-rule"></span>
+
+  <div class="dest-grid">
+
+    
+    <a href="/destinations/campeche" class="dest-card">
+      <span class="dest-region">Campeche · Gulf Coast</span>
+      <span class="dest-name">Campeche</span>
+      <span class="dest-desc">The walled city. UNESCO heritage, calm streets, and a local life that hasn't been replaced by tourism yet.</span>
+      <span class="dest-status dest-status--active">Available now</span>
+    </a>
+
+    
+    <div class="dest-card dest-card--inactive">
+      <span class="dest-region">Yucatán · Interior</span>
+      <span class="dest-name">Mérida</span>
+      <span class="dest-desc">The White City. Colonial grandeur, world-class food, and a cultural scene that never sleeps.</span>
+      <span class="dest-status dest-status--soon">Coming soon</span>
+    </div>
+
+    
+    <div class="dest-card dest-card--inactive">
+      <span class="dest-region">Yucatán · East</span>
+      <span class="dest-name">Valladolid</span>
+      <span class="dest-desc">The quiet colonial town between Chichén Itzá and the Caribbean. Slow, beautiful, underrated.</span>
+      <span class="dest-status dest-status--soon">Coming soon</span>
+    </div>
+
+    
+    <div class="dest-card dest-card--inactive">
+      <span class="dest-region">Quintana Roo · South</span>
+      <span class="dest-name">Bacalar</span>
+      <span class="dest-desc">The Lake of Seven Colours. Where the route ends and the water begins.</span>
+      <span class="dest-status dest-status--planned">Planned</span>
+    </div>
+
+  </div>
+
+  <div class="route-note">
+    <strong>The Tren Maya</strong> connects the Yucatán Peninsula across five states and over 1,500 km of track. Maya Tuya is building a verified local network at each stop — so every traveler on the route finds the right places, not just the first ones.
+  </div>
+
+</main>
+
+<footer>
+  <span class="footer-brand">Maya Tuya</span>
+  <span class="footer-contact">mayatuya.com · hola@mayatuya.com</span>
+</footer>
+
+</body>
+</html>
+</div>
+</section>

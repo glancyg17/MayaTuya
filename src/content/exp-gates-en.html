@@ -1,0 +1,304 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+#mtexp2 {
+  --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;
+  --ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,.12);--rule-g:rgba(200,158,75,.25);
+  font-family:'Lato',sans-serif;color:var(--ink);
+}
+#mtexp2 * { box-sizing:border-box; }
+#mtexp2 a { color:inherit;text-decoration:none; }
+
+/* HERO */
+#mtexp2 .hero {position:relative;overflow:hidden;width:100%;min-height:500px;display:flex;align-items:flex-end;}
+#mtexp2 .hero-img {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;display:block;filter:saturate(.72) brightness(.42);}
+#mtexp2 .hero-overlay {position:absolute;inset:0;background:linear-gradient(to top,rgba(1,10,5,.98) 0%,rgba(1,10,5,.45) 50%,transparent 100%);}
+#mtexp2 .hero-inner {position:relative;z-index:2;width:100%;padding:40px 44px;display:table;}
+#mtexp2 .hero-left {display:table-cell;vertical-align:bottom;}
+#mtexp2 .hero-right {display:table-cell;vertical-align:bottom;text-align:right;width:180px;white-space:nowrap;padding-left:24px;}
+#mtexp2 .eyebrow {font-size:8px;letter-spacing:.52em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:14px;}
+#mtexp2 .hero-title {font-family:'Playfair Display SC',serif;font-size:clamp(34px,6vw,62px);color:#fff;line-height:1.05;display:block;margin-bottom:14px;}
+#mtexp2 .hero-sub {font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(15px,1.8vw,18px);color:rgba(242,233,208,.55);line-height:1.6;display:block;max-width:560px;}
+#mtexp2 .price-num {font-family:'Playfair Display SC',serif;font-size:clamp(30px,4vw,46px);color:var(--gold);display:block;line-height:1;}
+#mtexp2 .price-label {font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(200,158,75,.55);display:block;margin-top:5px;}
+#mtexp2 .price-incl {font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(200,158,75,.3);display:block;margin-top:3px;}
+#mtexp2 .gold-bar {height:3px;background:var(--gold);width:100%;}
+
+/* SECTIONS */
+#mtexp2 .section {padding:40px 44px;border-bottom:1px solid var(--rule);}
+#mtexp2 .section:last-child {border-bottom:none;}
+#mtexp2 .sec-eyebrow {font-size:8px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold-d);opacity:.7;display:block;margin-bottom:16px;}
+#mtexp2 .sec-title {font-family:'Playfair Display SC',serif;font-size:clamp(18px,2.5vw,26px);color:var(--ink);display:block;margin-bottom:20px;}
+
+/* EDITORIAL */
+#mtexp2 .editorial p {font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:18px;}
+#mtexp2 .editorial p:last-child {margin-bottom:0;}
+#mtexp2 .pull {font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(19px,2.5vw,24px);color:var(--g);line-height:1.5;border-left:3px solid var(--gold);padding:14px 0 14px 22px;display:block;margin:28px 0 0;}
+#mtexp2 .first-time {font-size:12px;letter-spacing:.1em;color:var(--muted);opacity:.7;border-top:1px solid var(--rule);padding-top:18px;margin-top:28px;display:block;line-height:1.65;font-style:italic;}
+
+/* INCLUSIONS */
+#mtexp2 .inc-list {list-style:none;padding:0;margin:0;}
+#mtexp2 .inc-item {display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--rule);font-size:14px;color:var(--muted);line-height:1.5;}
+#mtexp2 .inc-item:last-child {border-bottom:none;}
+#mtexp2 .inc-item::before {content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+
+/* GALLERY */
+#mtexp2 .gallery-wrap {position:relative;background:#000;overflow:hidden;user-select:none;}
+#mtexp2 .gallery-eyebrow {padding:16px 44px 0;}
+#mtexp2 .slides {display:flex;transition:transform .5s ease;will-change:transform;}
+#mtexp2 .slide {min-width:100%;position:relative;}
+#mtexp2 .slide img {width:100%;height:420px;object-fit:cover;object-position:center;display:block;filter:saturate(.9) brightness(.92);}
+#mtexp2 .gallery-prev,
+#mtexp2 .gallery-next {position:absolute;top:50%;transform:translateY(-50%);background:rgba(1,50,32,.6);border:1px solid rgba(200,158,75,.3);color:var(--gold);font-size:16px;line-height:1;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;transition:background .2s;}
+#mtexp2 .gallery-prev {left:14px;}
+#mtexp2 .gallery-next {right:14px;}
+#mtexp2 .gallery-prev:hover,
+#mtexp2 .gallery-next:hover {background:var(--g);}
+#mtexp2 .gallery-dots {position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:2;}
+#mtexp2 .dot {width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .2s;}
+#mtexp2 .dot.active {background:var(--gold);}
+
+/* PRACTICAL */
+#mtexp2 .know-row {display:table;width:100%;padding:11px 0;border-bottom:1px solid var(--rule);}
+#mtexp2 .know-row:last-child {border-bottom:none;}
+#mtexp2 .know-key {display:table-cell;vertical-align:top;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--g);font-weight:700;width:140px;padding-right:20px;padding-top:1px;}
+#mtexp2 .know-val {display:table-cell;vertical-align:top;font-size:13px;color:var(--muted);line-height:1.6;}
+
+/* ALIADO CARDS */
+#mtexp2 .aliado-note {font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--muted);opacity:.8;display:block;margin-bottom:20px;line-height:1.6;}
+#mtexp2 .aliado-stack {display:flex;flex-direction:column;gap:2px;}
+#mtexp2 .exp-card-wrap {display:block;width:100%;}
+#mtexp2 .card-banner {display:flex;align-items:center;gap:8px;background:var(--g);padding:7px 14px;width:100%;}
+#mtexp2 .banner-dot {width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+#mtexp2 .banner-lbl {font-size:8px;letter-spacing:.45em;text-transform:uppercase;color:var(--gold);opacity:.9;}
+#mtexp2 .banner-gap {flex:1;}
+#mtexp2 .banner-badge {width:20px;height:20px;border-radius:50%;overflow:hidden;border:1px solid rgba(200,158,75,.3);}
+#mtexp2 .banner-badge img {width:100%;height:100%;object-fit:cover;}
+#mtexp2 .exp-card {background:#fffdf7;border:1px solid var(--rule);border-left:3px solid transparent;overflow:hidden;transition:border-left-color .2s,box-shadow .2s;width:100%;}
+#mtexp2 .exp-card-wrap.has-banner .exp-card {border-top:none;border-left-color:var(--gold);}
+#mtexp2 .exp-card:hover {border-left-color:var(--gold);box-shadow:0 4px 20px rgba(1,50,32,.08);}
+#mtexp2 .exp-card-row {display:table;width:100%;min-height:160px;}
+#mtexp2 .exp-card-img-cell {display:table-cell;width:200px;min-width:160px;vertical-align:top;position:relative;overflow:hidden;}
+#mtexp2 .exp-card-img-cell img {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.88);transition:filter .3s,transform .45s;}
+#mtexp2 .exp-card:hover .exp-card-img-cell img {filter:saturate(1);transform:scale(1.03);}
+#mtexp2 .exp-card-body {display:table-cell;vertical-align:top;padding:16px 20px;}
+#mtexp2 .card-meta {display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap;}
+#mtexp2 .card-tag {font-size:8px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-d);border:1px solid var(--rule-g);padding:3px 8px;}
+#mtexp2 .card-name {font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--ink);display:block;margin-bottom:5px;}
+#mtexp2 .card-why {font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:var(--g);line-height:1.5;display:block;margin-bottom:12px;}
+#mtexp2 .card-actions {display:flex;gap:8px;flex-wrap:wrap;padding-top:10px;border-top:1px solid var(--rule);}
+#mtexp2 .card-btn-p {font-size:9px;letter-spacing:.3em;text-transform:uppercase;padding:7px 16px;background:var(--g);color:var(--cream);text-decoration:none;display:inline-block;transition:background .2s;}
+#mtexp2 .card-btn-p:hover {background:#024a30;}
+#mtexp2 .card-btn-o {font-size:9px;letter-spacing:.3em;text-transform:uppercase;padding:7px 16px;background:transparent;color:var(--muted);border:1px solid var(--rule-g);text-decoration:none;display:inline-block;transition:all .2s;}
+#mtexp2 .card-btn-o:hover {border-color:var(--gold);color:var(--ink);}
+
+/* BOOK */
+#mtexp2 .book {background:var(--g);padding:40px 44px;}
+#mtexp2 .book-title {font-family:'Playfair Display SC',serif;font-size:clamp(22px,3vw,34px);color:#fff;display:block;margin-bottom:12px;}
+#mtexp2 .book-sub {font-size:14px;color:rgba(242,233,208,.6);line-height:1.75;display:block;max-width:560px;margin-bottom:20px;}
+#mtexp2 .book-btn {display:inline-block;font-size:10px;letter-spacing:.38em;text-transform:uppercase;padding:14px 32px;background:var(--gold);color:#fff;cursor:pointer;border:none;transition:background .2s;font-family:'Lato',sans-serif;}
+#mtexp2 .book-btn:hover {background:var(--gold-d);}
+#mtexp2 .book-note {font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(200,158,75,.4);display:block;margin-top:12px;}
+
+/* MODAL */
+#mtexp2-modal {display:none;position:fixed;inset:0;z-index:99999;background:rgba(1,15,7,.88);align-items:center;justify-content:center;padding:20px;}
+#mtexp2-modal.open {display:flex;}
+#mtexp2-modal-inner {background:#fffdf7;width:100%;max-width:580px;max-height:90vh;overflow-y:auto;padding:36px 36px 28px;position:relative;}
+#mtexp2-modal-close {position:absolute;top:14px;right:16px;font-size:18px;line-height:1;cursor:pointer;color:var(--muted);background:none;border:none;font-family:'Lato',sans-serif;}
+#mtexp2-modal-close:hover {color:var(--ink);}
+#mtexp2-modal-title {font-family:'Playfair Display SC',serif;font-size:clamp(18px,2.5vw,24px);color:var(--g);display:block;margin-bottom:6px;}
+#mtexp2-modal-sub {font-size:13px;color:var(--muted);line-height:1.65;display:block;margin-bottom:22px;border-bottom:1px solid var(--rule);padding-bottom:18px;}
+
+/* NAV */
+#mtexp2 .nav {display:flex;flex-wrap:wrap;border-top:1px solid var(--rule);}
+#mtexp2 .nav a {font-size:9px;letter-spacing:.35em;text-transform:uppercase;color:var(--muted);padding:16px 26px;border-right:1px solid var(--rule);transition:color .2s,background .2s;}
+#mtexp2 .nav a:last-child {border-right:none;}
+#mtexp2 .nav a:hover {color:var(--g);background:rgba(1,50,32,.03);}
+
+/* MOBILE */
+@media(max-width:620px){
+  #mtexp2 .hero {min-height:unset;display:block;}
+  #mtexp2 .hero-img {position:static;height:280px;width:100%;object-fit:cover;object-position:center;display:block;}
+  #mtexp2 .hero-overlay {display:none;}
+  #mtexp2 .hero-inner {position:static;background:var(--g);padding:26px 22px;display:block;}
+  #mtexp2 .hero-left,#mtexp2 .hero-right {display:block;width:100%;text-align:left;white-space:normal;padding-left:0;}
+  #mtexp2 .hero-right {margin-top:20px;padding-top:18px;border-top:1px solid rgba(200,158,75,.2);}
+  #mtexp2 .hero-sub {color:rgba(242,233,208,.6);}
+  #mtexp2 .section {padding:28px 22px;}
+  #mtexp2 .gallery-eyebrow {padding:14px 22px 0;}
+  #mtexp2 .slide img {height:240px;}
+  #mtexp2 .book {padding:28px 22px;}
+  #mtexp2 .exp-card-row {display:block;}
+  #mtexp2 .exp-card-img-cell {display:block;width:100%;height:180px;min-width:0;position:relative;}
+  #mtexp2 .exp-card-body {display:block;width:100%;padding:14px 16px;}
+  #mtexp2 .know-key {width:100px;}
+  #mtexp2 .nav a {border-right:none;border-bottom:1px solid var(--rule);width:100%;display:block;}
+  #mtexp2-modal-inner {padding:28px 22px 22px;}
+}
+</style>
+
+<div id="mtexp2-modal">
+  <div id="mtexp2-modal-inner">
+    <button id="mtexp2-modal-close" onclick="document.getElementById('mtexp2-modal').classList.remove('open')">✕ Close</button>
+    <span id="mtexp2-modal-title">Book this experience.</span>
+    <span id="mtexp2-modal-sub">Fill in the short form and we'll confirm availability personally. No automated response.</span>
+    {{form:13}}
+  </div>
+</div>
+
+<div id="mtexp2">
+
+  
+  <div class="hero">
+    <img class="hero-img"
+      src="/assets/img/ChatGPT-Image-Nov-1-2025-04_52_27-PM.png"
+      alt="The Gates and The Night — Maya Tuya Experience, Campeche">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <span class="eyebrow">Curated Experience · Campeche · Evening</span>
+        <span class="hero-title">The Gates &<br>The Night.</span>
+        <span class="hero-sub">An evening walk through the spine of Campeche's historic centre — Calle 59, the city walls at dusk, the mercado, and a three-course meal with the best view in the city. Then drinks and Lotería Campechana — the most popular game in Campeche, played for over 130 years.</span>
+      </div>
+      <div class="hero-right">
+        <span class="price-num">$185</span>
+        <span class="price-label">USD per person</span>
+        <span class="price-incl">All-inclusive</span>
+      </div>
+    </div>
+  </div>
+  <div class="gold-bar"></div>
+
+  <div class="body">
+
+    
+    <div class="section">
+      <span class="sec-eyebrow">The experience</span>
+      <div class="editorial">
+        <p>Campeche is a different city in the evening. The heat drops, the walls catch the last of the light, and the streets that were quiet at noon fill with the ordinary rhythm of a city that has been doing this for 500 years. This experience is designed to walk you through that transition — from the sea gate to the plaza, through the market, along the walls, and into the night.</p>
+        <p>The walk follows Calle 59, the spine of the historic centre, from Puerta del Mar to Puerta de Tierra. Between the gates: a stop at one of the most serious silver and gemstone workshops in the city — 15 years of craft, four artisans, .925 silver set with Mexican opals, Guatemalan jade, and Chiapas amber with insects. A small piece is included in your experience. It leaves with you.</p>
+        <p>The walk continues along the exterior walls as the sun goes down — then through the mercado as it winds down for the night, and back through the quieter streets toward the plaza. Casa Vieja del Rio is waiting. Dinner on the balcony, the Cathedral below, a Margarita Campechana in front of you. Then Lotería.</p>
+      </div>
+      <span class="pull">Lotería Campechana has been played in this city for over 130 years. By the end of the night, you'll understand why.</span>
+      <span class="first-time">A natural companion to From the Walls to the Table — or a complete evening on its own. Works equally well for first-time visitors and for those returning to Campeche wanting to see it differently.</span>
+    </div>
+
+    
+    <div class="section">
+      <span class="sec-eyebrow">Everything covered in your price</span>
+      <span class="sec-title">What's included.</span>
+      <ul class="inc-list"><li class="inc-item">Guided evening walk through the historic centre — Calle 59, both city gates, the walls at dusk</li><li class="inc-item">A visit to Ópalos Mexicanos — silver and gemstone artisans with 15 years of craft</li><li class="inc-item">An included souvenir piece from the collection</li><li class="inc-item">Pass through the Mercado Principal as the city winds down</li><li class="inc-item">Three-course dinner on the balcony at Casa Vieja del Rio</li><li class="inc-item">Welcome Margarita Campechana on arrival</li><li class="inc-item">Lotería Campechana — cards, calls, and as many rounds as you want</li><li class="inc-item">Nothing to pay on the day</li></ul>
+    </div>
+
+    
+    <div class="gallery-wrap">
+      <span class="sec-eyebrow gallery-eyebrow">From the experience</span>
+      <div class="slides" id="mtexp2-slides"><div class="slide"><img src="/assets/img/gtn-puerta-mar.jpg" alt="Puerta del Mar — Campeche" loading="lazy"></div><div class="slide"><img src="/assets/img/gtn-calle59.jpg" alt="Calle 59 — Campeche" loading="lazy"></div><div class="slide"><img src="/assets/img/gtn-opalos.jpg" alt="Ópalos Mexicanos — Campeche" loading="lazy"></div><div class="slide"><img src="/assets/img/gtn-walls-dusk.jpg" alt="City walls at dusk — Campeche" loading="lazy"></div><div class="slide"><img src="/assets/img/gtn-mercado.jpg" alt="Mercado Principal — Campeche" loading="lazy"></div><div class="slide"><img src="/assets/img/gtn-casavieja-night.jpg" alt="Casa Vieja del Rio at night — Campeche" loading="lazy"></div><div class="slide"><img src="/assets/img/gtn-loteria.jpg" alt="Lotería Campechana" loading="lazy"></div></div>
+      <div class="gallery-prev" onclick="galleryMove2(-1)">&#8592;</div>
+      <div class="gallery-next" onclick="galleryMove2(1)">&#8594;</div>
+      <div class="gallery-dots"><span class="dot  active" onclick="gotoSlide(0)"></span><span class="dot" onclick="gotoSlide(1)"></span><span class="dot" onclick="gotoSlide(2)"></span><span class="dot" onclick="gotoSlide(3)"></span><span class="dot" onclick="gotoSlide(4)"></span><span class="dot" onclick="gotoSlide(5)"></span><span class="dot" onclick="gotoSlide(6)"></span></div>
+    </div>
+
+    
+    <div class="book">
+      <span class="sec-eyebrow" style="color:var(--gold);opacity:.75;">$185 USD · per person · all-inclusive · min. 2</span>
+      <span class="book-title">Book this experience.</span>
+      <span class="book-sub">Fill in the short form and we'll confirm availability personally. No automated response.</span>
+      <button class="book-btn" onclick="document.getElementById('mtexp2-modal').classList.add('open')">Check availability</button>
+      <span class="book-note">Or write directly: hola@mayatuya.com · +52 938 184 2944</span>
+    </div>
+
+    
+    <div class="section">
+      <span class="sec-eyebrow">Aliados Verificados</span>
+      <span class="aliado-note">Two Aliados Verificados anchor this experience.</span>
+      <div class="aliado-stack">
+        <div class="exp-card-wrap  has-banner">
+          <div class="card-banner">
+              <span class="banner-dot"></span>
+              <span class="banner-lbl">Aliado Selecto</span>
+              <span class="banner-gap"></span>
+              <div class="banner-badge"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado"></div>
+            </div>
+          <div class="exp-card">
+            <div class="exp-card-row">
+              <div class="exp-card-img-cell">
+                <img src="/assets/img/577806754_1394944679302666_1464355943699789243_n-e1776811005646.jpg" alt="Casa Vieja del Rio — Aliado Verificado Maya Tuya" loading="lazy">
+              </div>
+              <div class="exp-card-body">
+                <div class="card-meta"><span class="card-tag">Restaurant · Cocktails · Campeche</span></div>
+                <span class="card-name">Casa Vieja del Rio</span>
+                <span class="card-why">One of the very few places in Campeche where you see the city the way it deserves to be seen.</span>
+                <div class="card-actions">
+                  <a class="card-btn-p" href="https://wa.me/529811295716?text=Hola%2C%20vengo%20de%20Maya%20Tuya" target="_blank">Contact</a>
+                  <a class="card-btn-o" href="https://maps.google.com/?q=Casa+Vieja+del+Rio+Campeche" target="_blank">Map</a>
+                  <a class="card-btn-o" href="/aliados/casa-vieja-del-rio">View profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-card-wrap">
+          
+          <div class="exp-card">
+            <div class="exp-card-row">
+              <div class="exp-card-img-cell">
+                <img src="/assets/img/Photos-Soon-EN.jpg" alt="Ópalos Mexicanos — Aliado Verificado Maya Tuya" loading="lazy">
+              </div>
+              <div class="exp-card-body">
+                <div class="card-meta"><span class="card-tag">Silver · Gemstones · Campeche</span></div>
+                <span class="card-name">Ópalos Mexicanos</span>
+                <span class="card-why">Fifteen years of craft. Four artisans. Every piece has a story that starts in the ground.</span>
+                <div class="card-actions">
+                  <a class="card-btn-p" href="https://wa.me/529818299789?text=Hola%2C%20vengo%20de%20Maya%20Tuya" target="_blank">Contact</a>
+                  <a class="card-btn-o" href="https://maps.google.com/?q=Opalos+Mexicanos+Calle+59+Campeche" target="_blank">Map</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="nav">
+      <a href="/experiences">← All experiences</a>
+      <a href="/aliados/casa-vieja-del-rio">Casa Vieja del Rio →</a>
+      <a href="/aliados/directory">Directory →</a>
+      <a href="/destinations/campeche">Campeche →</a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var idx = 0;
+  var total = 7;
+  var auto;
+
+  function gotoSlide(n) {
+    idx = (n + total) % total;
+    document.getElementById('mtexp2-slides').style.transform = 'translateX(-' + (idx * 100) + '%)';
+    document.querySelectorAll('#mtexp2 .dot').forEach(function(d,i){
+      d.classList.toggle('active', i === idx);
+    });
+  }
+
+  window.gotoSlide  = window.gotoSlide  || gotoSlide;
+  window.galleryMove2 = function(dir){
+    clearInterval(auto);
+    gotoSlide(idx + dir);
+    auto = setInterval(function(){ gotoSlide(idx+1); }, 4500);
+  };
+
+  auto = setInterval(function(){ gotoSlide(idx+1); }, 4500);
+
+  document.getElementById('mtexp2-modal').addEventListener('click', function(e){
+    if (e.target === this) this.classList.remove('open');
+  });
+})();
+</script>
+</div>
+</section>

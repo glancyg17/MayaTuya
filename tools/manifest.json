@@ -1,0 +1,451 @@
+[
+ {
+  "id": "about-en",
+  "post": 37,
+  "lang": "en",
+  "url": "/about/",
+  "pair": "about-es"
+ },
+ {
+  "id": "experiences-en",
+  "post": 4024,
+  "lang": "en",
+  "url": "/experiences/",
+  "pair": "experiences-es"
+ },
+ {
+  "id": "exp-openheart-en",
+  "post": 4602,
+  "lang": "en",
+  "url": "/experiences/openheartopentable/",
+  "pair": "exp-openheart-es"
+ },
+ {
+  "id": "exp-gates-en",
+  "post": 4567,
+  "lang": "en",
+  "url": "/experiences/thegatesandthenight/",
+  "pair": "exp-gates-es"
+ },
+ {
+  "id": "destinations-en",
+  "post": 34,
+  "lang": "en",
+  "url": "/destinations/",
+  "pair": "destinations-es"
+ },
+ {
+  "id": "campeche-en",
+  "post": 4062,
+  "lang": "en",
+  "url": "/destinations/campeche/",
+  "pair": "campeche-es"
+ },
+ {
+  "id": "campeche-things-en",
+  "post": 4731,
+  "lang": "en",
+  "url": "/destinations/campeche/things-to-do/",
+  "pair": "campeche-things-es"
+ },
+ {
+  "id": "campeche-getting-en",
+  "post": 4734,
+  "lang": "en",
+  "url": "/destinations/campeche/getting-there/",
+  "pair": "campeche-getting-es"
+ },
+ {
+  "id": "campeche-when-en",
+  "post": 4736,
+  "lang": "en",
+  "url": "/destinations/campeche/when-to-visit/",
+  "pair": "campeche-when-es"
+ },
+ {
+  "id": "campeche-food-en",
+  "post": 4738,
+  "lang": "en",
+  "url": "/destinations/campeche/food-and-drink/",
+  "pair": "campeche-food-es"
+ },
+ {
+  "id": "campeche-itineraries-en",
+  "post": 4740,
+  "lang": "en",
+  "url": "/destinations/campeche/itineraries/",
+  "pair": "campeche-itineraries-es"
+ },
+ {
+  "id": "campeche-neighbourhoods-en",
+  "post": 4742,
+  "lang": "en",
+  "url": "/destinations/campeche/neighbourhoods/",
+  "pair": "campeche-neighbourhoods-es"
+ },
+ {
+  "id": "campeche-daytrips-en",
+  "post": 4744,
+  "lang": "en",
+  "url": "/destinations/campeche/day-trips/",
+  "pair": "campeche-daytrips-es"
+ },
+ {
+  "id": "aliados-en",
+  "post": 1377,
+  "lang": "en",
+  "url": "/aliados/",
+  "pair": "aliados-es"
+ },
+ {
+  "id": "directory-en",
+  "post": 3802,
+  "lang": "en",
+  "url": "/aliados/directory/",
+  "pair": "directory-es"
+ },
+ {
+  "id": "aliado-casamayis-en",
+  "post": 3822,
+  "lang": "en",
+  "url": "/aliados/casa-mayis/",
+  "pair": "aliado-casamayis-es"
+ },
+ {
+  "id": "aliado-casamenta-en",
+  "post": 3832,
+  "lang": "en",
+  "url": "/aliados/casa-menta/",
+  "pair": "aliado-casamenta-es"
+ },
+ {
+  "id": "aliado-casavieja-en",
+  "post": 4388,
+  "lang": "en",
+  "url": "/aliados/casa-vieja-del-rio/",
+  "pair": "aliado-casavieja-es"
+ },
+ {
+  "id": "aliado-corazon-en",
+  "post": 3827,
+  "lang": "en",
+  "url": "/aliados/corazon-contento/",
+  "pair": "aliado-corazon-es"
+ },
+ {
+  "id": "guides-en",
+  "post": 1080,
+  "lang": "en",
+  "url": "/guides/",
+  "pair": "guides-es"
+ },
+ {
+  "id": "conscioustraveler-en",
+  "post": 36,
+  "lang": "en",
+  "url": "/conscioustraveler/",
+  "pair": "conscioustraveler-es"
+ },
+ {
+  "id": "ct-download-en",
+  "post": 1573,
+  "lang": "en",
+  "url": "/conscious-traveler-download/",
+  "pair": "ct-download-es"
+ },
+ {
+  "id": "contact-en",
+  "post": 2013,
+  "lang": "en",
+  "url": "/contact/",
+  "pair": "contact-es"
+ },
+ {
+  "id": "privacy-en",
+  "post": 3,
+  "lang": "en",
+  "url": "/privacy/",
+  "pair": "privacy-es"
+ },
+ {
+  "id": "terms-en",
+  "post": 471,
+  "lang": "en",
+  "url": "/terms/",
+  "pair": "terms-es"
+ },
+ {
+  "id": "cookies-en",
+  "post": 473,
+  "lang": "en",
+  "url": "/cookies/",
+  "pair": "cookies-es"
+ },
+ {
+  "id": "donations-en",
+  "post": 1353,
+  "lang": "en",
+  "url": "/donations/",
+  "pair": "donations-es"
+ },
+ {
+  "id": "about-es",
+  "post": 2228,
+  "lang": "es",
+  "url": "/inicio/acercade/",
+  "pair": "about-en"
+ },
+ {
+  "id": "experiences-es",
+  "post": 4035,
+  "lang": "es",
+  "url": "/inicio/experiencias/",
+  "pair": "experiences-en"
+ },
+ {
+  "id": "exp-openheart-es",
+  "post": 4604,
+  "lang": "es",
+  "url": "/inicio/experiencias/corazonabiertomesaabierta/",
+  "pair": "exp-openheart-en"
+ },
+ {
+  "id": "exp-walls-es",
+  "post": 4540,
+  "lang": "es",
+  "url": "/inicio/experiencias/delasmurallasalamesa/",
+  "pair": "exp-walls-en"
+ },
+ {
+  "id": "exp-gates-es",
+  "post": 4569,
+  "lang": "es",
+  "url": "/inicio/experiencias/laspuertasylanoche/",
+  "pair": "exp-gates-en"
+ },
+ {
+  "id": "destinations-es",
+  "post": 2253,
+  "lang": "es",
+  "url": "/inicio/destinos/",
+  "pair": "destinations-en"
+ },
+ {
+  "id": "campeche-es",
+  "post": 4067,
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/",
+  "pair": "campeche-en"
+ },
+ {
+  "id": "campeche-things-es",
+  "post": 4847,
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/que-hacer/",
+  "pair": "campeche-things-en"
+ },
+ {
+  "id": "campeche-getting-es",
+  "post": 4850,
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/como-llegar/",
+  "pair": "campeche-getting-en"
+ },
+ {
+  "id": "campeche-when-es",
+  "post": 4853,
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/cuando-ir/",
+  "pair": "campeche-when-en"
+ },
+ {
+  "id": "campeche-food-es",
+  "post": 4852,
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/comer-y-beber/",
+  "pair": "campeche-food-en"
+ },
+ {
+  "id": "campeche-itineraries-es",
+  "post": 4854,
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/itinerarios/",
+  "pair": "campeche-itineraries-en"
+ },
+ {
+  "id": "campeche-neighbourhoods-es",
+  "post": 4855,
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/barrios/",
+  "pair": "campeche-neighbourhoods-en"
+ },
+ {
+  "id": "campeche-daytrips-es",
+  "post": 4856,
+  "lang": "es",
+  "url": "/inicio/destinos/campeche/excursiones/",
+  "pair": "campeche-daytrips-en"
+ },
+ {
+  "id": "aliados-es",
+  "post": 2241,
+  "lang": "es",
+  "url": "/inicio/aliados/",
+  "pair": "aliados-en"
+ },
+ {
+  "id": "directory-es",
+  "post": 3749,
+  "lang": "es",
+  "url": "/inicio/aliados/directorio/",
+  "pair": "directory-en"
+ },
+ {
+  "id": "aliado-casamayis-es",
+  "post": 3765,
+  "lang": "es",
+  "url": "/inicio/aliados/casa-mayis/",
+  "pair": "aliado-casamayis-en"
+ },
+ {
+  "id": "aliado-casamenta-es",
+  "post": 3797,
+  "lang": "es",
+  "url": "/inicio/aliados/casa-menta/",
+  "pair": "aliado-casamenta-en"
+ },
+ {
+  "id": "aliado-casavieja-es",
+  "post": 4397,
+  "lang": "es",
+  "url": "/inicio/aliados/casa-vieja-del-rio/",
+  "pair": "aliado-casavieja-en"
+ },
+ {
+  "id": "aliado-corazon-es",
+  "post": 3792,
+  "lang": "es",
+  "url": "/inicio/aliados/corazon-contento/",
+  "pair": "aliado-corazon-en"
+ },
+ {
+  "id": "guides-es",
+  "post": 4107,
+  "lang": "es",
+  "url": "/inicio/guias/",
+  "pair": "guides-en"
+ },
+ {
+  "id": "conscioustraveler-es",
+  "post": 2247,
+  "lang": "es",
+  "url": "/inicio/viajero-consciente/",
+  "pair": "conscioustraveler-en"
+ },
+ {
+  "id": "ct-download-es",
+  "post": 2249,
+  "lang": "es",
+  "url": "/inicio/viajero-consciente-descarga/",
+  "pair": "ct-download-en"
+ },
+ {
+  "id": "contact-es",
+  "post": 2251,
+  "lang": "es",
+  "url": "/inicio/contacto/",
+  "pair": "contact-en"
+ },
+ {
+  "id": "privacy-es",
+  "post": 2230,
+  "lang": "es",
+  "url": "/inicio/privacidad/",
+  "pair": "privacy-en"
+ },
+ {
+  "id": "terms-es",
+  "post": 2234,
+  "lang": "es",
+  "url": "/inicio/terminos-de-uso/",
+  "pair": "terms-en"
+ },
+ {
+  "id": "cookies-es",
+  "post": 2232,
+  "lang": "es",
+  "url": "/inicio/cookies/",
+  "pair": "cookies-en",
+  "keep": 2
+ },
+ {
+  "id": "donations-es",
+  "post": 2255,
+  "lang": "es",
+  "url": "/inicio/aportaciones/",
+  "pair": "donations-en"
+ },
+ {
+  "id": "hazte-aliado-es",
+  "post": 2243,
+  "lang": "es",
+  "url": "/inicio/hazte-aliado/",
+  "pair": null
+ },
+ {
+  "id": "aliado-en-proceso-es",
+  "post": 3735,
+  "lang": "es",
+  "url": "/inicio/aliado-en-proceso/",
+  "pair": null
+ },
+ {
+  "id": "tu-negocio-mejor-es",
+  "post": 5008,
+  "lang": "es",
+  "url": "/tu-negocio-mejor/",
+  "pair": null
+ },
+ {
+  "id": "acuerdo-aliado-es",
+  "post": 4964,
+  "lang": "es",
+  "url": "/acuerdo-aliado/",
+  "pair": null
+ },
+ {
+  "id": "acuerdo-destacado-es",
+  "post": 4969,
+  "lang": "es",
+  "url": "/acuerdo-aliado-destacado/",
+  "pair": null
+ },
+ {
+  "id": "acuerdo-fundador-es",
+  "post": 4971,
+  "lang": "es",
+  "url": "/acuerdo-aliado-fundador/",
+  "pair": null
+ },
+ {
+  "id": "bienvenido-aliado-es",
+  "post": 4988,
+  "lang": "es",
+  "url": "/bienvenido-aliado/",
+  "pair": null
+ },
+ {
+  "id": "bienvenido-destacado-es",
+  "post": 4990,
+  "lang": "es",
+  "url": "/bienvenido-aliado-destacado/",
+  "pair": null
+ },
+ {
+  "id": "bienvenido-fundador-es",
+  "post": 4992,
+  "lang": "es",
+  "url": "/bienvenido-aliado-fundador/",
+  "pair": null
+ }
+]

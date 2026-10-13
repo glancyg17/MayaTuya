@@ -29,10 +29,12 @@ cfg = json.loads((ROOT / 'config.json').read_text(encoding='utf-8'))
 pages = json.loads((SRC / 'pages.json').read_text(encoding='utf-8'))
 forms = json.loads((SRC / 'forms.json').read_text(encoding='utf-8')) if (SRC / 'forms.json').exists() else {}
 by_id = {p['id']: p for p in pages}
-DOMAIN = cfg['domain'].rstrip('/')
+LINK_FIXES = json.loads((SRC / 'link_fixes.json').read_text(encoding='utf-8')) if (SRC / 'link_fixes.json').exists() else {}
+STAGING = cfg.get('mode', 'staging') != 'live'      # set "mode": "live" in config.json when you switch the real domain
+DOMAIN = (cfg['staging_domain'] if STAGING else cfg['domain']).rstrip('/')
 
 problems, notes = [], []          # problems block --check-release; notes are informational
-images_used = set()
+images_used = set()              # entries look like 'img/Logo.png' or 'dl/Guide.pdf'
 internal_links = {}               # href -> set(page ids)
 
 
@@ -70,6 +72,7 @@ def norm_links(html):
             return m.group(0)
         if not path.endswith('/'):
             path += '/'
+        path = LINK_FIXES.get(path, path)          # repair known-bad links from the old site
         return f'{m.group(1)}{path}{tail}"'
     return re.sub(r'(href=")(/[^"#?]*)([?#][^"]*)?"', fix, html)
 
@@ -85,11 +88,14 @@ def stripe_tokens(html):
 
 
 def collect_assets(html):
-    for m in re.finditer(r'/assets/img/([^"\'\s)<>]+)', html):
-        images_used.add(m.group(1))
+    for m in re.finditer(r'/assets/(img|dl)/([^"\'\s)<>]+)', html):
+        images_used.add(f'{m.group(1)}/{m.group(2)}')
 
 
 # ── forms ─────────────────────────────────────────────────────────
+FORM_KINDS = {'3': 'traveler', '7': 'traveler', '8': 'contact', '9': 'contact', '6': 'hazte-aliado',
+              '11': 'booking', '12': 'booking', '13': 'booking', '14': 'booking', '15': 'booking', '16': 'booking',
+              '17': 'acuerdo', '18': 'acuerdo', '19': 'acuerdo'}
 AUTOCOMPLETE = {'first_name': 'given-name', 'last_name': 'family-name', 'email': 'email', 'phone': 'tel'}
 ERRORS = {'en': 'We could not send your message. Please write to us directly at',
           'es': 'No pudimos enviar tu mensaje. Escríbenos directamente a'}
@@ -105,7 +111,7 @@ def render_field(x, fid):
     if t == 'checkbox':
         o = x['options'][0]
         return (f'<div class="mt-field"><label class="mt-check" for="{fld}"><input type="checkbox" id="{fld}" '
-                f'name="{esc(name)}" value="Confirmed"{r}><span>{esc(o["label"])}</span></label></div>')
+                f'name="{esc(name)}" value="Yes"{r}><span>{esc(o["label"])}</span></label></div>')
     if t == 'textarea':
         ctl = f'<textarea id="{fld}" name="{esc(name)}"{r}></textarea>'
     elif t == 'select':
@@ -129,12 +135,17 @@ def render_form(fid, page):
         problems.append(f'{page["id"]}: form {fid} not defined in src/forms.json')
         return f'<!-- form {fid} missing -->'
     lang = page['lang']
+    if f.get('redirect'):
+        internal_links.setdefault(f['redirect'], set()).add(page['id'])
     exp = next((x['value'] for x in f['fields'] if x['name'] == 'experience'), '')
-    subject = f'[MT booking] {exp} ({lang.upper()})' if exp else f'[MT form] {f["title"]} ({lang.upper()})'
+    tier = next((x['value'] for x in f['fields'] if x['name'] == 'tier'), '')
+    kind = FORM_KINDS.get(fid, 'form')
+    detail = exp or tier
+    subject = f'[MT {kind}] {detail} ({lang.upper()})' if detail else f'[MT {kind}] ({lang.upper()})'
     hidden = {'access_key': cfg['form_access_key'], 'subject': subject, 'from_name': 'Maya Tuya website',
               'form_id': fid, 'page_language': lang, 'page_url': DOMAIN + page['url']}
     out = [f'<form class="mt-form" method="POST" action="{esc(cfg["form_endpoint"])}" '
-           f'data-success="{esc(f["success"])}" data-error="{esc(ERRORS[lang])}" data-mail="{esc(cfg["email"])}">']
+           f'data-success="{esc(f["success"])}"' + (f' data-redirect="{esc(f["redirect"])}"' if f.get('redirect') else '') + f' data-error="{esc(ERRORS[lang])}" data-mail="{esc(cfg["email"])}">']
     out += [f'<input type="hidden" name="{k}" value="{esc(v)}">' for k, v in hidden.items()]
     out.append('<input type="checkbox" name="botcheck" class="mt-hp" tabindex="-1" autocomplete="off" aria-hidden="true">')
     fields, i = f['fields'], 0
@@ -180,7 +191,7 @@ def render_header(page):
             notes.append(f'{page["id"]}: pair "{page["pair"]}" not built yet — language switch points to the language home')
     sw = cfg['lang_switch'][lang]
     logo = cfg['logos'][lang]
-    images_used.add(logo)
+    images_used.add(f'img/{logo}')
     return f'''<a class="mt-skip" href="#content">{esc(cfg["skip_link"][lang])}</a>
 <header class="mt-header" id="masthead">
 <div class="mt-header-inner">
@@ -263,15 +274,16 @@ def build_page(page, footers):
                 f'<link rel="alternate" hreflang="es" href="{DOMAIN}{es["url"]}">\n'
                 f'<link rel="alternate" hreflang="x-default" href="{DOMAIN}{en["url"]}">')
     og = ''
-    if page.get('og_image'):
-        images_used.add(page['og_image'])
-        og = f'<meta property="og:image" content="{DOMAIN}/assets/img/{page["og_image"]}">'
-    images_used.add(cfg['favicon'])
+    og_image = page.get('og_image') or cfg.get('default_og')
+    if og_image and not page.get('noindex'):
+        images_used.add(f'img/{og_image}')
+        og = f'<meta property="og:image" content="{DOMAIN}/assets/img/{og_image}">'
+    images_used.add(f'img/{cfg["favicon"]}')
 
     html = LAYOUT
     for k, v in {
         'LANG': lang, 'TITLE': esc(page['title']), 'DESC': esc(page['description']),
-        'ROBOTS': 'noindex, follow' if page.get('noindex') else 'index, follow',
+        'ROBOTS': 'noindex, nofollow' if STAGING else ('noindex, follow' if page.get('noindex') else 'index, follow'),
         'CANON': DOMAIN + page['url'], 'ALTERNATES': alts, 'OGIMAGE': og,
         'LOCALE': 'en_US' if lang == 'en' else 'es_MX', 'FAVICON': cfg['favicon'], 'FONTS': FONTS,
         'PAGESTYLES': '\n'.join(f'<style>\n{c}\n</style>' for c in styles),
@@ -311,6 +323,21 @@ def main():
         write(OUT / 'index.html' if p['url'] == '/' else OUT / p['url'].strip('/') / 'index.html', html)
         built[p['url']] = p
 
+    # redirect stubs for old WordPress URLs (GitHub Pages cannot do server-side 301s)
+    redirects = json.loads((SRC / 'redirects.json').read_text(encoding='utf-8')) if (SRC / 'redirects.json').exists() else {}
+    for frm, to in redirects.items():
+        if to not in built:
+            problems.append(f'redirect {frm} -> {to}: target is not a built page')
+        if frm in built:
+            problems.append(f'redirect {frm} clashes with a real page')
+            continue
+        write(OUT / frm.strip('/') / 'index.html',
+              f'<!DOCTYPE html>\n<html><head><meta charset="utf-8"><title>Redirecting…</title>'
+              f'<meta name="robots" content="noindex"><link rel="canonical" href="{DOMAIN}{to}">'
+              f'<meta http-equiv="refresh" content="0; url={to}"></head>'
+              f'<body><p><a href="{to}">Continue</a></p><script>location.replace("{to}")</script></body></html>\n')
+        built[frm] = {'id': 'redirect', 'url': frm}
+
     # 404 (GitHub Pages serves /404.html for unknown paths)
     nf = {'id': '404', 'lang': 'en', 'url': '/404.html', 'noindex': True, 'content': '404.html',
           'title': 'Page not found — Maya Tuya', 'description': 'This page does not exist.'}
@@ -325,31 +352,39 @@ def main():
 
     # sitemap + robots
     urls = [p['url'] for p in pages if not p.get('noindex')]
-    write(OUT / 'sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    if STAGING:
+        write(OUT / 'robots.txt', 'User-agent: *\nDisallow: /\n')
+        urls = None
+    else:
+        write(OUT / 'robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n')
+    if urls is not None: write(OUT / 'sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
           + ''.join(f'  <url><loc>{DOMAIN}{u}</loc></url>\n' for u in urls) + '</urlset>\n')
-    write(OUT / 'robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n')
 
     # media: copy only what the pages actually reference
     idx = index_media()
-    (OUT / 'assets' / 'img').mkdir(parents=True, exist_ok=True)
     have, missing = [], []
-    for name in sorted(images_used):
+    for entry in sorted(images_used):
+        kind, name = entry.split('/', 1)
         if name in idx:
-            shutil.copy2(idx[name], OUT / 'assets' / 'img' / name)
-            have.append(name)
+            (OUT / 'assets' / kind).mkdir(parents=True, exist_ok=True)
+            shutil.copy2(idx[name], OUT / 'assets' / kind / name)
+            have.append(entry)
         else:
-            missing.append(name)
-    write(ROOT / 'media_needed.txt', '\n'.join(f'{"OK     " if n in have else "MISSING"}  {n}' for n in sorted(images_used)) + '\n')
+            missing.append(entry)
+    write(ROOT / 'media_needed.txt', '\n'.join(f'{"OK     " if e in have else "MISSING"}  {e.split("/", 1)[1]}' for e in sorted(images_used)) + '\n')
+    big = [e for e in have if (OUT / 'assets' / e).stat().st_size > 50 * 1024 * 1024]
+    if big: problems.append(f'file(s) over 50 MB (GitHub warns at 50, blocks at 100): {big}')
 
     # checks
     broken = sorted(h for h in internal_links
                     if not h.startswith('/assets/') and h not in built and h != '/404.html')
     placeholders = [k for k, v in {**cfg['stripe'], 'form_access_key': cfg['form_access_key']}.items() if str(v).startswith('PLACEHOLDER')]
+    if STAGING: problems.append('config.json "mode" is "staging" (noindex, staging domain). Set it to "live" when switching the real domain')
     if missing: problems.append(f'{len(missing)} image(s) not found in media_src/ (see media_needed.txt)')
     if broken: problems.append(f'{len(broken)} internal link(s) point to pages not built yet')
     if placeholders: problems.append(f'placeholders still in config.json: {", ".join(placeholders)}')
 
-    print(f'Built {len(pages)} pages + 404 → docs/   |   images: {len(have)} ok, {len(missing)} missing')
+    print(f'[{"STAGING — noindex" if STAGING else "LIVE"}] Built {len(pages)} pages + {len(redirects)} redirects + 404 → docs/   |   images: {len(have)} ok, {len(missing)} missing')
     for n in notes: print('  note:', n)
     for p in problems: print('  todo:', p)
     if broken: print('  unbuilt link targets:', ', '.join(broken[:12]) + (' …' if len(broken) > 12 else ''))

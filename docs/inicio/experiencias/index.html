@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experiencias curadas en Campeche | Maya Tuya</title>
+<meta name="description" content="Tres experiencias todo incluido en Campeche: ceremonia de cacao, taller de chocolate con brunch y una noche por la calle 59. Reserva atendida personalmente.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://new.mayatuya.com/inicio/experiencias/">
+<link rel="alternate" hreflang="en" href="https://new.mayatuya.com/experiences/">
+<link rel="alternate" hreflang="es" href="https://new.mayatuya.com/inicio/experiencias/">
+<link rel="alternate" hreflang="x-default" href="https://new.mayatuya.com/experiences/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Maya Tuya">
+<meta property="og:title" content="Experiencias curadas en Campeche | Maya Tuya">
+<meta property="og:description" content="Tres experiencias todo incluido en Campeche: ceremonia de cacao, taller de chocolate con brunch y una noche por la calle 59. Reserva atendida personalmente.">
+<meta property="og:url" content="https://new.mayatuya.com/inicio/experiencias/">
+<meta property="og:locale" content="es_MX">
+<meta property="og:image" content="https://new.mayatuya.com/assets/img/Untitled-design-4.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/cropped-Logo-emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-light{background:transparent;border:1.5px solid rgba(242,233,208,.5);color:var(--cream);}
+.mt-btn-outline-light:hover{background:rgba(242,233,208,.12);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-exp-hero{
+  position:relative;width:100%;
+  min-height:clamp(460px,68vh,700px);
+  overflow:hidden;display:flex;align-items:flex-end;
+}
+.mt-exp-hero-img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;filter:saturate(.82) brightness(.6);
+}
+.mt-exp-hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(1,25,12,.92) 0%,rgba(1,25,12,.28) 55%,transparent 100%);
+}
+.mt-exp-hero-content{
+  position:relative;z-index:2;
+  padding:clamp(28px,5vw,56px) clamp(20px,6vw,64px);
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:24px;
+  align-items:flex-end;
+}
+.mt-exp-hero-left{}
+.mt-exp-hero-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:12px;}
+.mt-exp-hero-title{font-family:'Playfair Display SC',serif;font-size:clamp(32px,5.5vw,62px);font-weight:400;color:#fff;line-height:1.06;display:block;margin-bottom:10px;}
+.mt-exp-hero-desc{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(15px,2vw,19px);color:rgba(242,233,208,.65);line-height:1.5;display:block;max-width:520px;margin-bottom:22px;}
+.mt-exp-hero-right{text-align:right;flex-shrink:0;}
+.mt-exp-hero-price{font-family:'Playfair Display SC',serif;font-size:clamp(24px,3.5vw,42px);color:var(--gold);display:block;line-height:1;}
+.mt-exp-hero-price-sub{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(200,158,75,.55);display:block;margin-top:4px;margin-bottom:16px;}
+@media(max-width:600px){
+  .mt-exp-hero-content{grid-template-columns:1fr;gap:20px;}
+  .mt-exp-hero-right{text-align:left;}
+}
+
+/* ── MOBILE: stacked layout — image on top, dark panel below ── */
+@media(max-width:600px){
+  .mt-exp-hero{display:block;min-height:unset;overflow:visible;}
+  .mt-exp-hero-img{position:static;width:100%;height:240px;object-fit:cover;object-position:center top;display:block;}
+  .mt-exp-hero-overlay{display:none;}
+  .mt-exp-hero-content{position:static;background:var(--g);padding:28px 22px;display:block;width:100%;}
+  .mt-exp-hero-price,.mt-exp-hero-price-sub{color:var(--gold);}
+  .mt-exp-hero-right{text-align:left;margin-top:4px;}
+}
+</style>
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+
+.mt-exp-intro{
+  padding:52px 0 44px;
+  border-bottom:1px solid var(--rule);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:64px;
+  align-items:start;
+}
+.mt-exp-intro-left{}
+.mt-exp-intro-eyebrow{
+  font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;
+  text-transform:uppercase;color:var(--gold-d);opacity:.75;
+  display:block;margin-bottom:12px;
+}
+.mt-exp-intro-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(26px,4vw,44px);
+  font-weight:400;color:var(--ink);
+  line-height:1.08;display:block;margin-bottom:16px;
+}
+.mt-exp-intro-title em{font-style:normal;color:var(--g);}
+.mt-exp-intro-rule{width:40px;height:2px;background:var(--gold);display:block;margin-bottom:18px;}
+.mt-exp-intro-sub{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(17px,2.2vw,21px);color:var(--muted);
+  line-height:1.6;display:block;
+}
+.mt-exp-intro-right{
+  padding-top:6px;
+  display:flex;flex-direction:column;gap:20px;
+}
+.mt-exp-intro-right p{
+  font-family:'Lato',sans-serif;font-size:14px;
+  color:var(--muted);line-height:1.8;
+}
+/* How it works — three items */
+.mt-exp-how{
+  display:flex;flex-direction:column;gap:0;
+  border:1px solid var(--rule);
+  margin-top:4px;
+}
+.mt-exp-how-item{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:14px 18px;border-bottom:1px solid var(--rule);
+}
+.mt-exp-how-item:last-child{border-bottom:none;}
+.mt-exp-how-num{
+  font-family:'Playfair Display SC',serif;
+  font-size:18px;color:var(--g);opacity:.18;
+  flex-shrink:0;line-height:1.1;min-width:22px;
+}
+.mt-exp-how-text{
+  font-family:'Lato',sans-serif;font-size:13px;
+  color:var(--muted);line-height:1.6;
+}
+.mt-exp-how-text strong{color:var(--ink);font-weight:700;}
+@media(max-width:660px){
+  .mt-exp-intro{grid-template-columns:1fr;gap:32px;}
+}
+</style>
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-light{background:transparent;border:1.5px solid rgba(242,233,208,.5);color:var(--cream);}
+.mt-btn-outline-light:hover{background:rgba(242,233,208,.12);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-exp-page{padding:44px 0 60px;}
+
+/* ── Filter bar ── */
+.mt-exp-filters{
+  display:flex;flex-wrap:wrap;gap:10px;
+  margin-bottom:32px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--rule);
+  align-items:center;
+}
+.mt-filter-label{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-d);opacity:.7;flex-shrink:0;margin-right:4px;}
+.mt-filter-btn{
+  font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;
+  padding:7px 16px;background:transparent;
+  border:1px solid var(--rule);color:var(--muted);
+  cursor:pointer;transition:all .2s;
+}
+.mt-filter-btn.active,.mt-filter-btn:hover{
+  border-color:var(--g);background:var(--g);color:var(--cream);
+}
+.mt-exp-count{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:14px;color:var(--muted);margin-left:auto;
+}
+.mt-exp-count strong{color:var(--g);font-style:normal;}
+
+/* ── Grid ── */
+.mt-exp-grid-wrap{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:3px;
+}
+.mt-exp-item{display:block;text-decoration:none;color:inherit;position:relative;overflow:hidden;}
+.mt-exp-item-img{
+  width:100%;aspect-ratio:16/9;object-fit:cover;display:block;
+  filter:saturate(.82) brightness(.68);
+  transition:filter .4s,transform .5s;
+}
+.mt-exp-item:hover .mt-exp-item-img{filter:saturate(.95) brightness(.55);transform:scale(1.03);}
+.mt-exp-item-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(1,25,12,.88) 0%,rgba(1,25,12,.05) 55%,transparent 100%);
+  padding:20px 24px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+}
+.mt-exp-item-tags{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap;}
+.mt-exp-item-tag{font-family:'Lato',sans-serif;font-size:8px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);opacity:.8;border:1px solid rgba(200,158,75,.3);padding:2px 8px;}
+.mt-exp-item-name{font-family:'Playfair Display SC',serif;font-size:clamp(16px,2.2vw,24px);color:#fff;line-height:1.1;display:block;margin-bottom:6px;}
+.mt-exp-item-desc{font-family:'Lato',sans-serif;font-size:12px;color:rgba(242,233,208,.6);line-height:1.5;display:block;margin-bottom:14px;}
+.mt-exp-item-footer{display:flex;justify-content:space-between;align-items:center;}
+.mt-exp-item-price{font-family:'Playfair Display SC',serif;font-size:16px;color:var(--gold);}
+.mt-exp-item-cta{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;padding:7px 16px;background:rgba(242,233,208,.1);border:1px solid rgba(242,233,208,.25);color:var(--cream);transition:background .2s;}
+.mt-exp-item:hover .mt-exp-item-cta{background:var(--gold);border-color:var(--gold);color:#fff;}
+
+/* hidden by filter */
+.mt-exp-item[style*="none"]{display:none!important;}
+
+@media(max-width:620px){.mt-exp-grid-wrap{grid-template-columns:1fr;}}
+</style>
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-dark{background:transparent;border:1.5px solid var(--g);color:var(--g);}
+.mt-btn-outline-dark:hover{background:var(--g);color:var(--cream);}
+.mt-btn-outline-light{background:transparent;border:1.5px solid rgba(242,233,208,.5);color:var(--cream);}
+.mt-btn-outline-light:hover{background:rgba(242,233,208,.12);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-biz-cta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  border-top:2px solid var(--g);
+}
+.mt-biz-cta-text{
+  padding:52px 48px;
+  background:rgba(1,50,32,.04);
+  border-right:1px solid var(--rule);
+}
+.mt-biz-cta-text .mt-eyebrow{margin-bottom:14px;}
+.mt-biz-cta-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(20px,3vw,30px);
+  color:var(--ink);line-height:1.1;
+  display:block;margin-bottom:16px;
+}
+.mt-biz-cta-body{
+  font-family:'Lato',sans-serif;font-size:14px;
+  color:var(--muted);line-height:1.75;
+  margin-bottom:0;
+}
+.mt-biz-cta-action{
+  padding:52px 48px;
+  background:var(--g);
+  display:flex;flex-direction:column;
+  justify-content:space-between;
+}
+.mt-biz-cta-pull{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:clamp(17px,2.2vw,22px);
+  color:rgba(242,233,208,.72);
+  line-height:1.55;
+  display:block;
+  margin-bottom:32px;
+  flex:1;
+}
+.mt-biz-cta-btn{
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.35em;
+  text-transform:uppercase;padding:14px 32px;
+  background:var(--gold);color:#fff;
+  text-decoration:none;display:inline-block;
+  transition:background .2s;align-self:flex-start;
+}
+.mt-biz-cta-btn:hover{background:var(--gold-d);color:#fff;}
+@media(max-width:620px){
+  .mt-biz-cta{grid-template-columns:1fr;}
+  .mt-biz-cta-text,.mt-biz-cta-action{padding:36px 28px;}
+  .mt-biz-cta-text{border-right:none;border-bottom:1px solid var(--rule);}
+}
+</style>
+<style>
+#mtfoot-es {
+  --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;
+  --cream:#f2e9d0;--muted:#5a5040;
+  --rule:rgba(200,158,75,0.15);
+  background:var(--g);
+  padding:52px clamp(22px,6vw,64px) 36px;
+  font-family:'Lato',sans-serif;
+}
+#mtfoot-es * { box-sizing:border-box; }
+#mtfoot-es a { text-decoration:none;color:inherit; }
+
+/* Brand row */
+#mtfoot-es .foot-brand {
+  display:table;width:100%;
+  padding-bottom:32px;margin-bottom:32px;
+  border-bottom:1px solid var(--rule);
+}
+#mtfoot-es .foot-brand-left { display:table-cell;vertical-align:middle; }
+#mtfoot-es .foot-brand-right {
+  display:table-cell;vertical-align:middle;
+  text-align:right;white-space:nowrap;padding-left:24px;
+}
+
+/* Logo */
+#mtfoot-es .foot-logo {
+  width:auto;height:48px;
+  display:block;margin-bottom:14px;
+  object-fit:contain;object-position:left center;
+  opacity:.9;
+}
+#mtfoot-es .foot-tagline {
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(13px,1.6vw,16px);
+  color:rgba(242,233,208,0.42);line-height:1.55;
+  display:block;max-width:300px;
+}
+
+/* Contact */
+#mtfoot-es .foot-contact-label {
+  font-size:8px;letter-spacing:0.45em;text-transform:uppercase;
+  color:var(--gold);opacity:0.65;
+  display:block;margin-bottom:5px;
+}
+#mtfoot-es .foot-contact-link {
+  font-size:13px;color:rgba(242,233,208,0.55);
+  display:block;transition:color 0.2s;line-height:1.7;
+}
+#mtfoot-es .foot-contact-link:hover { color:var(--cream); }
+
+/* Grid */
+#mtfoot-es .foot-grid {
+  display:table;width:100%;
+}
+#mtfoot-es .foot-col {
+  display:table-cell;vertical-align:top;
+  padding-right:28px;width:20%;
+}
+#mtfoot-es .foot-col:last-child { padding-right:0; }
+#mtfoot-es .foot-col-title {
+  font-size:8px;letter-spacing:0.5em;text-transform:uppercase;
+  color:var(--gold);opacity:0.72;
+  display:block;margin-bottom:14px;
+  padding-bottom:10px;border-bottom:1px solid var(--rule);
+}
+#mtfoot-es .footer-link {
+  font-size:12.5px;color:rgba(242,233,208,0.5);
+  display:block;padding:5px 0;
+  transition:color 0.2s;line-height:1.4;
+}
+#mtfoot-es .footer-link:hover { color:var(--cream); }
+#mtfoot-es .footer-link-free {
+  font-size:9px;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--gold);opacity:0.55;margin-left:5px;
+}
+#mtfoot-es .footer-link-soon {
+  font-size:12.5px;color:rgba(242,233,208,0.2);
+  display:block;padding:5px 0;cursor:default;line-height:1.4;
+}
+#mtfoot-es .footer-link-all {
+  font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
+  color:var(--gold);opacity:0.6;
+  display:block;padding:8px 0 4px;
+  margin-top:4px;border-top:1px solid var(--rule);
+  transition:opacity 0.2s;
+}
+#mtfoot-es .footer-link-all:hover { opacity:1; }
+
+/* Bottom bar */
+#mtfoot-es .foot-bottom {
+  margin-top:36px;padding-top:20px;
+  border-top:1px solid var(--rule);
+  display:table;width:100%;
+}
+#mtfoot-es .foot-bottom-left { display:table-cell;vertical-align:middle; }
+#mtfoot-es .foot-bottom-right {
+  display:table-cell;vertical-align:middle;text-align:right;
+}
+#mtfoot-es .foot-copy {
+  font-size:10px;color:rgba(242,233,208,0.22);letter-spacing:0.12em;
+}
+#mtfoot-es .foot-legal {
+  display:flex;gap:20px;justify-content:flex-end;flex-wrap:wrap;
+}
+#mtfoot-es .foot-legal a {
+  font-size:9px;color:rgba(242,233,208,0.25);
+  letter-spacing:0.2em;text-transform:uppercase;transition:color 0.2s;
+}
+#mtfoot-es .foot-legal a:hover { color:rgba(242,233,208,0.6); }
+
+/* Mobile */
+@media(max-width:680px){
+  #mtfoot-es .foot-brand,
+  #mtfoot-es .foot-grid,
+  #mtfoot-es .foot-bottom { display:block; }
+  #mtfoot-es .foot-brand-left,
+  #mtfoot-es .foot-brand-right,
+  #mtfoot-es .foot-col,
+  #mtfoot-es .foot-bottom-left,
+  #mtfoot-es .foot-bottom-right {
+    display:block;width:100%;text-align:left;
+    white-space:normal;padding-right:0;
+  }
+  #mtfoot-es .foot-brand-right { margin-top:20px;padding-left:0; }
+  #mtfoot-es .foot-col { margin-bottom:28px; }
+  #mtfoot-es .foot-bottom-right { margin-top:12px; }
+  #mtfoot-es .foot-legal { justify-content:flex-start; }
+}
+</style>
+</head>
+<body class="lang-es page-experiences-es">
+<a class="mt-skip" href="#content">Saltar al contenido</a>
+<header class="mt-header" id="masthead">
+<div class="mt-header-inner">
+<a class="mt-logo" href="/inicio/"><img src="/assets/img/Logo-ES-1-e1776037333928.png" alt="Maya Tuya" width="120" height="56"></a>
+<button class="mt-nav-toggle" type="button" aria-expanded="false" aria-controls="mt-nav">Menú</button>
+<nav class="mt-nav" id="mt-nav" aria-label="Principal"><ul><li><a href="/inicio/experiencias/" aria-current="page">Experiencias</a></li><li><a href="/inicio/destinos/campeche/">Campeche</a></li><li class="has-sub"><a href="/inicio/aliados/" aria-haspopup="true">Aliados</a><ul class="sub"><li><a href="/inicio/aliados/">Aliados</a></li><li><a href="/inicio/aliados/directorio/">Directorio</a></li><li><a href="/inicio/hazte-aliado/">Hazte Aliado</a></li></ul></li><li><a href="/inicio/guias/">Guías</a></li><li><a href="/inicio/acercade/">Nuestra Historia</a></li></ul></nav>
+<a class="mt-lang-switch" href="/experiences/" hreflang="en" lang="en" title="View in English">
+<img class="mt-lang-flag" src="https://flagcdn.com/20x15/gb.png" width="20" height="15" alt="">
+<span class="mt-lang-divider"></span><span class="mt-lang-code">EN</span></a>
+</div>
+</header>
+<main id="content">
+<section class="mt-sec" style="--pt:40px;--pr:40px;--pb:40px;--pl:40px">
+<div class="mt-inner">
+
+<div class="mt-w">
+<div class="mt-exp-hero">
+  
+  <img class="mt-exp-hero-img" src="/assets/img/Campeche-Walls-e1776555524400.jpg" alt="La Ciudad Amurallada — Maya Tuya Experience">
+  <div class="mt-exp-hero-overlay"></div>
+  <div class="mt-exp-hero-content">
+    <div class="mt-exp-hero-left">
+      <span class="mt-exp-hero-eyebrow">Experiencia Destacada · Campeche · 5 horas</span>
+      <span class="mt-exp-hero-title">De las Murallas
+a la Mesa.</span>
+      <span class="mt-exp-hero-desc">Una mañana curada dentro de la ciudad amurallada de Campeche — taller privado de chocolate, el centro histórico UNESCO, joyería artesanal local, y un desayuno orgánico todo incluido. Sin pagos en el día.</span>
+      <div class="mt-actions">
+        <a class="mt-btn mt-btn-dark" style="background:var(--gold);border-color:var(--gold);" href="/inicio/experiencias/delasmurallasalamesa/"> Ver y Reservar</a>
+        <a class="mt-btn mt-btn-outline-light" href="#mt-exp-grid">Ver todas las experiencias</a>
+      </div>
+    </div>
+    <div class="mt-exp-hero-right">
+      <span class="mt-exp-hero-price">$185 USD</span>
+      <span class="mt-exp-hero-price-sub">Desde · por persona · mín. 2</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mt-w">
+<div class="mt-exp-intro">
+  <div class="mt-exp-intro-left">
+    <span class="mt-exp-intro-eyebrow">Campeche · Experiencias Curadas · Privadas</span>
+    <span class="mt-exp-intro-title">Días diseñados.<br>No paquetes turísticos.</span>
+    <span class="mt-exp-intro-rule"></span>
+    <span class="mt-exp-intro-sub">Cada experiencia está construida alrededor de una idea concreta — un estado de ánimo, un recorrido, un grupo de Aliados Verificados que hacen algo que vale la pena experimentar. Nada es estándar.</span>
+  </div>
+  <div class="mt-exp-intro-right">
+    <p>Diseñamos cada experiencia desde la red de Aliados hacia afuera. Un conductor privado conecta las paradas. Guía local donde aporta algo. Comidas preseleccionadas, ritmo cuidado, e intención clara detrás de cada decisión. Mínimo 2 personas.</p>
+    <div class="mt-exp-how">
+      <div class="mt-exp-how-item">
+        <span class="mt-exp-how-num">01</span>
+        <span class="mt-exp-how-text"><strong>Reserva —</strong> Elige tu experiencia, confirma la fecha y reserva directamente en esta página.</span>
+      </div>
+      <div class="mt-exp-how-item">
+        <span class="mt-exp-how-num">02</span>
+        <span class="mt-exp-how-text"><strong>Llega —</strong> Tu conductor te recibe. El día ya está diseñado — solo tienes que aparecer.</span>
+      </div>
+      <div class="mt-exp-how-item">
+        <span class="mt-exp-how-num">03</span>
+        <span class="mt-exp-how-text"><strong>Disfruta —</strong> Sin prisa. Sin estrés. Los Aliados saben como recibirte.</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mt-w">
+<div class="mt-exp-page" id="mt-exp-grid">
+
+  
+  <div class="mt-exp-filters">
+    <span class="mt-filter-label">Filtrar:</span><button class="mt-filter-btn active" onclick="mtExpFilter(this,'all')">Todas</button><button class="mt-filter-btn" onclick="mtExpFilter(this,'dia-completo')">Día completo</button><button class="mt-filter-btn" onclick="mtExpFilter(this,'tarde-noche')">Tarde-noche</button><button class="mt-filter-btn" onclick="mtExpFilter(this,'medio-dia')">Medio día</button>
+    <span class="mt-exp-count"><strong id="mt-exp-count-n">4</strong> experiencias</span>
+  </div>
+
+  
+  <div class="mt-exp-grid-wrap" id="mt-exp-grid-wrap">
+    
+    
+    <a class="mt-exp-item" data-slug="dia-completo" href="/inicio/experiencias/delasmurallasalamesa/">
+      <img class="mt-exp-item-img" src="/assets/img/Campeche-Walls-e1776555524400.jpg" alt="La Ciudad Amurallada — Maya Tuya" loading="lazy">
+      <div class="mt-exp-item-overlay">
+        <div class="mt-exp-item-tags"><span class="mt-exp-item-tag">5 Horas</span><span class="mt-exp-item-tag">Desde $185 USD</span></div>
+        <span class="mt-exp-item-name">De las Murallas
+a la Mesa.</span>
+        <span class="mt-exp-item-desc">Una mañana curada dentro de la ciudad amurallada de Campeche — taller privado de chocolate, el centro histórico UNESCO, joyería artesanal local, y un desayuno orgánico todo incluido. Sin pagos en el día.</span>
+        <div class="mt-exp-item-footer">
+          <span class="mt-exp-item-price">$185 USD</span>
+          <span class="mt-exp-item-cta">Ver y reservar</span>
+        </div>
+      </div>
+    </a>
+    
+    
+    <a class="mt-exp-item" data-slug="tarde-noche" href="/inicio/experiencias/laspuertasylanoche/">
+      <img class="mt-exp-item-img" src="/assets/img/ChatGPT-Image-Nov-1-2025-04_52_27-PM.png" alt="La Noche de Campeche — Maya Tuya" loading="lazy">
+      <div class="mt-exp-item-overlay">
+        <div class="mt-exp-item-tags"><span class="mt-exp-item-tag">Tarde-noche</span><span class="mt-exp-item-tag">Desde $185 USD</span></div>
+        <span class="mt-exp-item-name">Las Puertas
+y la Noche.</span>
+        <span class="mt-exp-item-desc">Un paseo nocturno por la columna vertebral del centro histórico de Campeche — Calle 59, las murallas al atardecer, el mercado, y una cena de tres tiempos con la mejor vista de la ciudad. Luego copas y Lotería Campechana — el juego más popular de Campeche, jugado durante más de 130 años.</span>
+        <div class="mt-exp-item-footer">
+          <span class="mt-exp-item-price">$185 USD</span>
+          <span class="mt-exp-item-cta">Ver y reservar</span>
+        </div>
+      </div>
+    </a>
+    
+    
+    <a class="mt-exp-item" data-slug="medio-dia" href="/inicio/experiencias/corazonabiertomesaabierta/">
+      <img class="mt-exp-item-img" src="/assets/img/1000118855.jpg" alt="El Círculo — Maya Tuya" loading="lazy">
+      <div class="mt-exp-item-overlay">
+        <div class="mt-exp-item-tags"><span class="mt-exp-item-tag">Mañana o Tarde</span><span class="mt-exp-item-tag">Desde $195 USD</span></div>
+        <span class="mt-exp-item-name">Corazón Abierto, Mesa Abierta.</span>
+        <span class="mt-exp-item-desc">Una ceremonia de cacao, meditación guiada, yoga suave y una comida compartida — celebrada en el patio y el jardín secreto de una casa histórica en la ciudad amurallada de Campeche.</span>
+        <div class="mt-exp-item-footer">
+          <span class="mt-exp-item-price">$195 USD</span>
+          <span class="mt-exp-item-cta">Ver y reservar</span>
+        </div>
+      </div>
+    </a>
+    
+    
+    <a class="mt-exp-item" data-slug="medio-dia" href="/inicio/experiencias/delasmurallasalamesa/">
+      <img class="mt-exp-item-img" src="/assets/img/WhatsApp-Image-2026-04-13-at-18.09.05.jpeg" alt="A la Mesa — Maya Tuya" loading="lazy">
+      <div class="mt-exp-item-overlay">
+        <div class="mt-exp-item-tags"><span class="mt-exp-item-tag">Medio día</span><span class="mt-exp-item-tag">Desde $95 USD</span></div>
+        <span class="mt-exp-item-name">A la Mesa</span>
+        <span class="mt-exp-item-desc">Mariscos, cacao de Chiapas y la mejor cocina orgánica de la ciudad. La versión corta de Campeche en un plato.</span>
+        <div class="mt-exp-item-footer">
+          <span class="mt-exp-item-price">$95 USD</span>
+          <span class="mt-exp-item-cta">Ver y reservar</span>
+        </div>
+      </div>
+    </a>
+    
+  </div>
+
+</div>
+</div>
+
+<script>
+function mtExpFilter(btn, slug) {
+  // Update active button
+  document.querySelectorAll('.mt-filter-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+
+  // Show/hide cards
+  var items = document.querySelectorAll('.mt-exp-item');
+  var count = 0;
+  items.forEach(function(item) {
+    var show = slug === 'all' || item.dataset.slug === slug;
+    item.style.display = show ? '' : 'none';
+    if(show) count++;
+  });
+  var el = document.getElementById('mt-exp-count-n');
+  if(el) el.textContent = count;
+}
+</script>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+
+<div class="mt-w">
+<div class="mt-biz-cta">
+  <div class="mt-biz-cta-text">
+    <span class="mt-eyebrow">¿Tienes un negocio en la Ruta Tren Maya?</span>
+    <span class="mt-biz-cta-title">Únete al programa de Aliados de Maya Tuya.</span>
+    <p class="mt-biz-cta-body">Diseñado para ayudar a los negocios locales a destacar, prepararse y conectar con los viajeros que ya están llegando. Plantillas profesionales, herramientas prácticas y apoyo real para que tu negocio crezca con la nueva ola de turismo.</p>
+  </div>
+  <div class="mt-biz-cta-action">
+    <span class="mt-biz-cta-pull">Sin costo mensual. Con estándares reales. Y viajeros que ya están buscando exactamente lo que tú ofreces.</span>
+    <a class="mt-biz-cta-btn" href="/inicio/hazte-aliado/">Hazte Aliado</a>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<footer id="colophon">
+
+
+<div id="mtfoot-es">
+
+  
+  <div class="foot-brand">
+    <div class="foot-brand-left">
+      
+      <img class="foot-logo"
+        src="/assets/img/cropped-Logo-emblem.png"
+        alt="Logo Maya Tuya">
+      <span class="foot-tagline">Viaje lento por la Ruta Tren Maya.<br>Experiencias curadas, negocios verificados, guías honestas.</span>
+    </div>
+    <div class="foot-brand-right">
+      <span class="foot-contact-label">Escríbenos</span>
+      <a class="foot-contact-link" href="mailto:hola@mayatuya.com">hola@mayatuya.com</a>
+      <a class="foot-contact-link" href="https://wa.me/529381842944">+52 938 184 2944</a>
+    </div>
+  </div>
+
+  
+  <div class="foot-grid">
+    <div class="foot-col">
+      <span class="foot-col-title">Experiencias</span>
+      <a class="footer-link" href="/inicio/experiencias/corazonabiertomesaabierta/">Corazón Abierto, Mesa Abierta</a><a class="footer-link" href="/inicio/experiencias/delasmurallasalamesa/">De las Murallas a la Mesa</a><a class="footer-link" href="/inicio/experiencias/laspuertasylanoche/">Las Puertas y la Noche</a><a class="footer-link-all" href="/inicio/experiencias/">Todas las experiencias →</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-col-title">Guías</span>
+      <a class="footer-link" href="/product/campeche-travel-guide/">Campeche — Primera Edición</a><a class="footer-link" href="/inicio/viajero-consciente/">The Conscious Traveler <span class="footer-link-free">Gratis</span></a><a class="footer-link-all" href="/inicio/guias/">Todas las guías →</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-col-title">Destinos</span>
+      <a class="footer-link" href="/inicio/destinos/campeche/">Campeche</a><span class="footer-link-soon">Mérida</span><span class="footer-link-soon">Valladolid</span>
+    </div>
+    <div class="foot-col">
+      <span class="foot-col-title">Aliados</span>
+      <a class="footer-link" href="/inicio/aliados/">Aliados Verificados</a><a class="footer-link" href="/inicio/aliados/directorio/">Directorio</a><a class="footer-link" href="/inicio/hazte-aliado/">Hazte Aliado</a>
+    </div>
+    <div class="foot-col">
+      <span class="foot-col-title">Maya Tuya</span>
+      <a class="footer-link" href="/inicio/acercade/">Nuestra Historia</a><a class="footer-link" href="/inicio/contacto/">Contacto</a><a class="footer-link" href="/privacy/">Política de Privacidad</a><a class="footer-link" href="/terms/">Términos y Condiciones</a><a class="footer-link" href="/cookies/">Política de Cookies</a>
+    </div>
+  </div>
+
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

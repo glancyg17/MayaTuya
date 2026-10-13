@@ -1,0 +1,297 @@
+<section class="mt-sec mt-dark" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#0b3d2e">
+<div class="mt-inner">
+<style>
+.mt-bv {
+  --g:#013220;
+  --gold:#c89e4b;
+  --gold-d:#9a7828;
+  --cream:#f2e9d0;
+  --ink:#0c0b09;
+  --muted:#5a5040;
+  --rule:rgba(1,50,32,0.10);
+  --rule-gold:rgba(200,158,75,0.25);
+  font-family:'Lato',sans-serif;
+  color:var(--ink);
+  max-width:640px;
+  margin:0 auto;
+  padding:0 24px 80px;
+}
+
+@keyframes mt-fade-up {
+  from { opacity:0; transform:translateY(20px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes mt-line-grow {
+  from { transform:scaleX(0); }
+  to   { transform:scaleX(1); }
+}
+
+.mt-bv-inner { animation: mt-fade-up 0.7s ease both; }
+.mt-bv-hero  { animation-delay: 0.05s; }
+.mt-bv-rule  { animation-delay: 0.3s; }
+.mt-bv-body  { animation-delay: 0.4s; }
+.mt-bv-next  { animation-delay: 0.55s; }
+.mt-bv-std   { animation-delay: 0.7s; }
+.mt-bv-foot  { animation-delay: 0.85s; }
+
+/* ── Hero — full dark, gold accents ── */
+.mt-bv-hero {
+  text-align:center;
+  padding:72px 24px 52px;
+  position:relative;
+}
+.mt-bv-position-number {
+  font-family:'Playfair Display SC',serif;
+  font-size:72px;
+  color:rgba(200,158,75,0.12);
+  line-height:1;
+  margin:0 0 -16px;
+  display:block;
+  letter-spacing:0.05em;
+}
+.mt-bv-eyebrow {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.5em;
+  text-transform:uppercase;
+  color:var(--gold);
+  opacity:0.75;
+  margin:0 0 20px;
+  display:block;
+}
+.mt-bv-title {
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(26px,5vw,40px);
+  font-weight:400;
+  color:var(--cream);
+  margin:0 0 16px;
+  line-height:1.2;
+}
+.mt-bv-subtitle {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:19px;
+  color:rgba(242,233,208,0.55);
+  margin:0 0 32px;
+  line-height:1.55;
+}
+.mt-bv-badge {
+  display:inline-block;
+  border:1px solid rgba(200,158,75,0.3);
+  padding:10px 28px;
+}
+.mt-bv-badge span {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.45em;
+  text-transform:uppercase;
+  color:var(--gold);
+  opacity:0.8;
+}
+
+/* ── Divider ── */
+.mt-bv-rule {
+  height:1px;
+  background:rgba(200,158,75,0.2);
+  margin:0 0 36px;
+  transform-origin:left;
+  animation:mt-line-grow 0.8s ease 0.3s both;
+}
+
+/* ── Body — on dark bg ── */
+.mt-bv-body {
+  margin-bottom:36px;
+}
+.mt-bv-body p {
+  font-family:'Cormorant Garamond',serif;
+  font-size:17px;
+  line-height:1.8;
+  color:rgba(242,233,208,0.7);
+  margin:0 0 16px;
+}
+.mt-bv-body p:last-child { margin:0; }
+.mt-bv-body strong { color:var(--cream); font-weight:600; }
+
+/* ── Pull quote ── */
+.mt-bv-pull {
+  border-left:2px solid rgba(200,158,75,0.35);
+  padding:4px 0 4px 20px;
+  margin:28px 0;
+}
+.mt-bv-pull p {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:18px;
+  color:rgba(242,233,208,0.55);
+  margin:0;
+  line-height:1.65;
+}
+
+/* ── Next steps — cream card on dark bg ── */
+.mt-bv-next {
+  background:rgba(242,233,208,0.05);
+  border:1px solid rgba(200,158,75,0.15);
+  padding:24px 24px 8px;
+  margin-bottom:32px;
+}
+.mt-bv-next-title {
+  font-family:'Playfair Display SC',serif;
+  font-size:10px;
+  font-weight:400;
+  color:var(--gold);
+  letter-spacing:0.05em;
+  margin:0 0 18px;
+  padding-bottom:12px;
+  border-bottom:1px solid rgba(200,158,75,0.15);
+}
+.mt-bv-step {
+  display:flex;
+  gap:14px;
+  padding:0 0 16px;
+  margin-bottom:16px;
+  border-bottom:1px solid rgba(242,233,208,0.05);
+}
+.mt-bv-step:last-child { border-bottom:none; margin-bottom:0; }
+.mt-bv-step-num {
+  font-family:'Playfair Display SC',serif;
+  font-size:13px;
+  color:rgba(200,158,75,0.5);
+  flex-shrink:0;
+  margin-top:1px;
+}
+.mt-bv-step-text {
+  font-family:'Lato',sans-serif;
+  font-size:13px;
+  color:rgba(242,233,208,0.6);
+  line-height:1.65;
+}
+.mt-bv-step-text strong { color:var(--cream); font-weight:700; }
+
+/* ── Standards ── */
+.mt-bv-std {
+  border-left:2px solid rgba(200,158,75,0.3);
+  padding:16px 20px;
+  margin-bottom:40px;
+}
+.mt-bv-std-title {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.4em;
+  text-transform:uppercase;
+  color:var(--gold);
+  opacity:0.6;
+  display:block;
+  margin-bottom:12px;
+}
+.mt-bv-std-list { list-style:none; padding:0; margin:0; }
+.mt-bv-std-list li {
+  font-family:'Lato',sans-serif;
+  font-size:12px;
+  color:rgba(242,233,208,0.5);
+  line-height:1.6;
+  padding:4px 0 4px 14px;
+  position:relative;
+  border-bottom:1px solid rgba(242,233,208,0.04);
+}
+.mt-bv-std-list li:last-child { border-bottom:none; }
+.mt-bv-std-list li::before {
+  content:'';
+  position:absolute;
+  left:0;top:12px;
+  width:4px;height:4px;
+  border-radius:50%;
+  background:rgba(200,158,75,0.4);
+}
+
+/* ── Footer ── */
+.mt-bv-foot {
+  text-align:center;
+  padding-top:24px;
+  border-top:1px solid rgba(200,158,75,0.15);
+}
+.mt-bv-foot p {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:14px;
+  color:rgba(242,233,208,0.4);
+  margin:0 0 8px;
+}
+.mt-bv-foot a {
+  color:rgba(242,233,208,0.4);
+  text-decoration:none;
+  border-bottom:1px solid rgba(200,158,75,0.2);
+}
+.mt-bv-tagline {
+  font-family:'Lato',sans-serif;
+  font-size:9px;
+  letter-spacing:0.35em;
+  text-transform:uppercase;
+  color:var(--gold);
+  opacity:0.3;
+  margin-top:24px !important;
+}
+</style>
+
+<div class="mt-bv">
+
+  <div class="mt-bv-inner mt-bv-hero">
+    <span class="mt-bv-position-number">07</span>
+    <p class="mt-bv-eyebrow">Maya Tuya · Campeche · Aliado Fundador</p>
+    <h1 class="mt-bv-title">Eres uno de los siete.</h1>
+    <p class="mt-bv-subtitle">Tu posición de Fundador ha sido registrada. Es permanente.</p>
+    <div class="mt-bv-badge"><span>Aliado Fundador · Campeche · Confirmado</span></div>
+  </div>
+
+  <div class="mt-bv-inner mt-bv-rule"></div>
+
+  <div class="mt-bv-inner mt-bv-body">
+    <p>No llegaste aquí por un anuncio ni por un formulario en línea. Llegaste porque alguien creyó que tu negocio merecía estar en el origen de algo.</p>
+    <p>Las <strong>7 posiciones de Fundador en Campeche</strong> son permanentes. La tuya también lo es. Cuando esta red crezca — y crecerá — tu nombre estará en el principio.</p>
+    <div class="mt-bv-pull">
+      <p>Gracias por confiar en esto cuando aún era una idea tomando forma.</p>
+    </div>
+  </div>
+
+  <div class="mt-bv-inner mt-bv-next">
+    <p class="mt-bv-next-title">Lo que viene ahora</p>
+    <div class="mt-bv-step">
+      <span class="mt-bv-step-num">01</span>
+      <span class="mt-bv-step-text"><strong>Formulario de perfil</strong> — te enviamos el enlace esta semana. Tu perfil editorial completo EN + ES es una de las primeras cosas que construimos juntos.</span>
+    </div>
+    <div class="mt-bv-step">
+      <span class="mt-bv-step-num">02</span>
+      <span class="mt-bv-step-text"><strong>Publicación premier</strong> — posicionamiento permanente y prioritario en el directorio. Los viajeros te encontrarán primero.</span>
+    </div>
+    <div class="mt-bv-step">
+      <span class="mt-bv-step-num">03</span>
+      <span class="mt-bv-step-text"><strong>Entrega de placa NFC</strong> — coordinamos la entrega en persona. Es el momento que nos gusta celebrar.</span>
+    </div>
+    <div class="mt-bv-step">
+      <span class="mt-bv-step-num">04</span>
+      <span class="mt-bv-step-text"><strong>Visita de seguimiento</strong> — en los próximos 30 días pasamos a verte. Sin agenda formal — solo para asegurarnos de que todo está bien.</span>
+    </div>
+  </div>
+
+  <div class="mt-bv-inner mt-bv-std">
+    <span class="mt-bv-std-title">Recordatorio rápido — estándares a cumplir en 30 días</span>
+    <ul class="mt-bv-std-list">
+      <li>Perfil de Google Maps completo con fotos actualizadas</li>
+      <li>Señalización básica bilingüe visible en la entrada</li>
+      <li>Material Maya Tuya visible y destacado para el viajero</li>
+      <li>Al menos una persona con inglés básico en el equipo</li>
+      <li>Entrada limpia, ordenada e iluminada</li>
+      <li>Precios visibles y método de pago indicado</li>
+      <li>Placa NFC Aliado Fundador instalada en lugar visible</li>
+      <li>Formulario de perfil completo enviado a Maya Tuya</li>
+    </ul>
+  </div>
+
+  <div class="mt-bv-inner mt-bv-foot">
+    <p>Cualquier pregunta — estamos aquí.</p>
+    <p><a href="mailto:hola@mayatuya.com">hola@mayatuya.com</a> &nbsp;·&nbsp; <a href="https://wa.me/529381842944">WhatsApp +52 938 184 2944</a></p>
+    <p class="mt-bv-tagline">No es solo Maya — es Tuya.</p>
+  </div>
+
+</div>
+</div>
+</section>

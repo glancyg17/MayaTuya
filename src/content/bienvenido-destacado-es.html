@@ -1,0 +1,272 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+.mt-bv {
+  --g:#013220;
+  --gold:#c89e4b;
+  --gold-d:#9a7828;
+  --cream:#f2e9d0;
+  --ink:#0c0b09;
+  --muted:#5a5040;
+  --rule:rgba(1,50,32,0.10);
+  --rule-gold:rgba(200,158,75,0.25);
+  font-family:'Lato',sans-serif;
+  color:var(--ink);
+  max-width:640px;
+  margin:0 auto;
+  padding:0 24px 80px;
+}
+
+@keyframes mt-fade-up {
+  from { opacity:0; transform:translateY(16px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.mt-bv-inner { animation: mt-fade-up 0.6s ease both; }
+.mt-bv-hero  { animation-delay: 0.05s; }
+.mt-bv-body  { animation-delay: 0.25s; }
+.mt-bv-next  { animation-delay: 0.4s; }
+.mt-bv-std   { animation-delay: 0.55s; }
+.mt-bv-foot  { animation-delay: 0.7s; }
+
+/* ── Hero — dark green for Destacado ── */
+.mt-bv-hero {
+  background:var(--g);
+  text-align:center;
+  padding:52px 32px 44px;
+  margin-bottom:36px;
+  position:relative;
+  overflow:hidden;
+}
+.mt-bv-hero::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at 50% 100%, rgba(200,158,75,0.08) 0%, transparent 70%);
+}
+.mt-bv-hero * { position:relative; }
+
+.mt-bv-eyebrow {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.48em;
+  text-transform:uppercase;
+  color:var(--gold);
+  opacity:0.8;
+  margin:0 0 18px;
+}
+.mt-bv-title {
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(24px,4.5vw,36px);
+  font-weight:400;
+  color:var(--cream);
+  margin:0 0 12px;
+  line-height:1.2;
+}
+.mt-bv-subtitle {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:17px;
+  color:rgba(242,233,208,0.65);
+  margin:0 0 28px;
+  line-height:1.55;
+}
+.mt-bv-tier-pill {
+  display:inline-block;
+  border:1px solid rgba(200,158,75,0.35);
+  padding:8px 24px;
+}
+.mt-bv-tier-pill span {
+  font-family:'Lato',sans-serif;
+  font-size:9px;
+  letter-spacing:0.38em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+
+/* ── Body ── */
+.mt-bv-body {
+  margin-bottom:32px;
+}
+.mt-bv-body p {
+  font-family:'Lato',sans-serif;
+  font-size:14px;
+  line-height:1.85;
+  color:var(--muted);
+  margin:0 0 16px;
+}
+.mt-bv-body p:last-child { margin:0; }
+
+/* ── Payment confirmed note ── */
+.mt-bv-payment {
+  background:rgba(1,50,32,0.05);
+  border-left:3px solid var(--g);
+  padding:14px 18px;
+  margin-bottom:32px;
+  font-family:'Lato',sans-serif;
+  font-size:13px;
+  color:var(--g);
+  line-height:1.65;
+}
+
+/* ── Next steps ── */
+.mt-bv-next {
+  border:1px solid var(--rule);
+  padding:24px 24px 8px;
+  margin-bottom:32px;
+}
+.mt-bv-next-title {
+  font-family:'Playfair Display SC',serif;
+  font-size:10px;
+  font-weight:400;
+  color:var(--g);
+  letter-spacing:0.05em;
+  margin:0 0 18px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--rule-gold);
+}
+.mt-bv-step {
+  display:flex;
+  gap:14px;
+  padding:0 0 16px;
+  margin-bottom:16px;
+  border-bottom:1px solid rgba(1,50,32,0.05);
+}
+.mt-bv-step:last-child { border-bottom:none; margin-bottom:0; }
+.mt-bv-step-num {
+  font-family:'Playfair Display SC',serif;
+  font-size:13px;
+  color:var(--gold);
+  flex-shrink:0;
+  margin-top:1px;
+}
+.mt-bv-step-text {
+  font-family:'Lato',sans-serif;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.65;
+}
+.mt-bv-step-text strong { color:var(--g); font-weight:700; }
+
+/* ── Standards ── */
+.mt-bv-std {
+  border-left:3px solid var(--gold);
+  background:rgba(200,158,75,0.04);
+  padding:18px 20px;
+  margin-bottom:36px;
+}
+.mt-bv-std-title {
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:0.4em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  display:block;
+  margin-bottom:12px;
+  opacity:0.85;
+}
+.mt-bv-std-list { list-style:none; padding:0; margin:0; }
+.mt-bv-std-list li {
+  font-family:'Lato',sans-serif;
+  font-size:12.5px;
+  color:var(--muted);
+  line-height:1.6;
+  padding:4px 0 4px 16px;
+  position:relative;
+  border-bottom:1px solid rgba(1,50,32,0.04);
+}
+.mt-bv-std-list li:last-child { border-bottom:none; }
+.mt-bv-std-list li::before {
+  content:'';
+  position:absolute;
+  left:0;top:12px;
+  width:5px;height:5px;
+  border-radius:50%;
+  background:var(--gold);
+}
+
+/* ── Footer ── */
+.mt-bv-foot {
+  text-align:center;
+  padding-top:24px;
+  border-top:1px solid var(--rule);
+}
+.mt-bv-foot p {
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:14px;
+  color:var(--muted);
+  margin:0 0 8px;
+}
+.mt-bv-foot a { color:var(--muted); text-decoration:none; border-bottom:1px solid var(--rule-gold); }
+.mt-bv-tagline {
+  font-family:'Lato',sans-serif;
+  font-size:9px;
+  letter-spacing:0.35em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  opacity:0.6;
+  margin-top:20px !important;
+}
+</style>
+
+<div class="mt-bv">
+
+  <div class="mt-bv-inner mt-bv-hero">
+    <p class="mt-bv-eyebrow">Maya Tuya · Aliado Destacado</p>
+    <h1 class="mt-bv-title">Bienvenido a la primera fila.</h1>
+    <p class="mt-bv-subtitle">Tu membresía Aliado Destacado está activa. Los viajeros ya pueden encontrarte.</p>
+    <div class="mt-bv-tier-pill"><span>Aliado Destacado · Confirmado</span></div>
+  </div>
+
+  <div class="mt-bv-inner mt-bv-body">
+    <p>Tu pago y tu acuerdo han sido registrados. A partir de ahora formas parte de la capa más visible de Maya Tuya — los negocios que los viajeros conscientes encuentran primero.</p>
+    <p>Nos ponemos en contacto contigo esta semana para avanzar con tu perfil. Mientras tanto, si tienes algo urgente, estamos en WhatsApp.</p>
+  </div>
+
+  <div class="mt-bv-inner mt-bv-payment">
+    Si aún no has recibido la confirmación de pago de Stripe, revisa tu carpeta de spam o escríbenos directamente — lo resolvemos de inmediato.
+  </div>
+
+  <div class="mt-bv-inner mt-bv-next">
+    <p class="mt-bv-next-title">Lo que viene ahora</p>
+    <div class="mt-bv-step">
+      <span class="mt-bv-step-num">01</span>
+      <span class="mt-bv-step-text"><strong>Formulario de perfil</strong> — te enviamos el enlace esta semana. Con esa información construimos tu perfil completo EN + ES.</span>
+    </div>
+    <div class="mt-bv-step">
+      <span class="mt-bv-step-num">02</span>
+      <span class="mt-bv-step-text"><strong>Publicación prioritaria</strong> — tu perfil completo aparece destacado en el directorio de mayatuya.com con posicionamiento preferente.</span>
+    </div>
+    <div class="mt-bv-step">
+      <span class="mt-bv-step-num">03</span>
+      <span class="mt-bv-step-text"><strong>Entrega de placa</strong> — coordinamos la entrega de tu placa física Aliado Destacado en la visita de seguimiento.</span>
+    </div>
+    <div class="mt-bv-step">
+      <span class="mt-bv-step-num">04</span>
+      <span class="mt-bv-step-text"><strong>Visita de seguimiento</strong> — en los próximos 30 días pasamos a verte, a responder preguntas y a asegurarnos de que todo esté funcionando.</span>
+    </div>
+  </div>
+
+  <div class="mt-bv-inner mt-bv-std">
+    <span class="mt-bv-std-title">Recordatorio rápido — estándares a cumplir en 30 días</span>
+    <ul class="mt-bv-std-list">
+      <li>Perfil de Google Maps completo con fotos actualizadas</li>
+      <li>Señalización básica bilingüe visible en la entrada</li>
+      <li>Material Maya Tuya visible y destacado para el viajero</li>
+      <li>Al menos una persona con inglés básico en el equipo</li>
+      <li>Entrada limpia, ordenada e iluminada</li>
+      <li>Precios visibles y método de pago indicado</li>
+      <li>Placa Aliado Destacado instalada en lugar visible</li>
+      <li>Formulario de perfil completo enviado a Maya Tuya</li>
+    </ul>
+  </div>
+
+  <div class="mt-bv-inner mt-bv-foot">
+    <p>¿Tienes alguna pregunta?</p>
+    <p><a href="mailto:hola@mayatuya.com">hola@mayatuya.com</a> &nbsp;·&nbsp; <a href="https://wa.me/529381842944">WhatsApp +52 938 184 2944</a></p>
+    <p class="mt-bv-tagline">No es solo Maya — es Tuya.</p>
+  </div>
+
+</div>
+</div>
+</section>

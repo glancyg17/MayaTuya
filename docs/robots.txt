@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://mayatuya.com/sitemap.xml
+Disallow: /
