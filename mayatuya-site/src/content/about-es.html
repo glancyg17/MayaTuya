@@ -1,0 +1,237 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#f3eee2">
+<div class="mt-inner">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-h1{font-family:'Playfair Display SC',serif;font-size:clamp(30px,5vw,54px);font-weight:400;line-height:1.08;color:var(--ink);display:block;}
+.mt-h2{font-family:'Playfair Display SC',serif;font-size:clamp(22px,3.5vw,36px);font-weight:400;line-height:1.12;color:var(--ink);display:block;}
+.mt-body{font-family:'Lato',sans-serif;font-size:14px;color:var(--muted);line-height:1.75;}
+.mt-italic{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,2vw,20px);color:var(--muted);line-height:1.65;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-dark{background:transparent;border:1.5px solid var(--g);color:var(--g);}
+.mt-btn-outline-dark:hover{background:var(--g);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-story-hero{
+  position:relative;width:100%;
+  min-height:clamp(460px,68vh,700px);
+  overflow:hidden;display:flex;align-items:center;
+}
+.mt-story-hero-img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;filter:saturate(.75) brightness(.52);
+}
+.mt-story-hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(1,25,12,.3) 0%,rgba(1,25,12,.65) 100%);
+}
+.mt-story-hero-content{
+  position:relative;z-index:2;
+  padding:clamp(28px,5vw,64px) clamp(20px,6vw,80px);
+  max-width:760px;
+}
+.mt-story-hero-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:18px;}
+.mt-story-hero-quote{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(22px,3.5vw,40px);
+  color:#fff;line-height:1.35;display:block;margin-bottom:20px;
+}
+.mt-story-hero-rule{width:44px;height:2px;background:var(--gold);display:block;margin-bottom:18px;}
+.mt-story-hero-attr{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.35em;text-transform:uppercase;color:rgba(242,233,208,.5);display:block;}
+
+@media(max-width:600px){
+  .mt-story-hero{display:block;min-height:unset;overflow:visible;}
+  .mt-story-hero-img{position:static;width:100%;height:260px;object-fit:cover;object-position:center top;display:block;}
+  .mt-story-hero-overlay{display:none;}
+  .mt-story-hero-content{position:static;background:var(--g);padding:28px 22px;max-width:100%;}
+  .mt-story-hero-eyebrow{color:var(--gold);opacity:.75;}
+  .mt-story-hero-quote{color:#fff;font-size:clamp(18px,4.5vw,26px);}
+  .mt-story-hero-rule{background:var(--gold);}
+  .mt-story-hero-attr{color:rgba(242,233,208,.5);}
+}
+</style>
+<div class="mt-w">
+<div class="mt-story-hero">
+  
+  <img class="mt-story-hero-img" src="/assets/img/A_digital_painting_or_photorealistic_illustration_.png" alt="Maya Tuya — Nuestra Historia">
+  <div class="mt-story-hero-overlay"></div>
+  <div class="mt-story-hero-content">
+    <span class="mt-story-hero-eyebrow">Nuestra Historia · Maya Tuya · Ruta Tren Maya</span>
+    <span class="mt-story-hero-quote">"El Tren Maya está cambiando esta región. Más viajeros, más frecuencia, más oportunidades. Pero esas oportunidades muchas veces llegan primero a quienes los viajeros encuentran primero. Maya Tuya existe para asegurarse de que esos negocios sean los locales."</span>
+    <span class="mt-story-hero-rule"></span>
+    <span class="mt-story-hero-attr">Glancy G. · Fundador — Maya Tuya</span>
+  </div>
+</div>
+</div>
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-h1{font-family:'Playfair Display SC',serif;font-size:clamp(30px,5vw,54px);font-weight:400;line-height:1.08;color:var(--ink);display:block;}
+.mt-h2{font-family:'Playfair Display SC',serif;font-size:clamp(22px,3.5vw,36px);font-weight:400;line-height:1.12;color:var(--ink);display:block;}
+.mt-body{font-family:'Lato',sans-serif;font-size:14px;color:var(--muted);line-height:1.75;}
+.mt-italic{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,2vw,20px);color:var(--muted);line-height:1.65;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-dark{background:transparent;border:1.5px solid var(--g);color:var(--g);}
+.mt-btn-outline-dark:hover{background:var(--g);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-vision{padding:60px 0;}
+.mt-vision-grid{display:grid;grid-template-columns:1fr 380px;gap:52px;align-items:start;}
+.mt-vision-text .mt-eyebrow{margin-bottom:12px;}
+.mt-vision-text .mt-h2{margin-bottom:16px;}
+.mt-vision-rule{width:40px;height:2px;background:var(--gold);display:block;margin-bottom:20px;}
+.mt-vision-text p{font-family:'Lato',sans-serif;font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:16px;}
+.mt-vision-text p strong{color:var(--ink);}
+.mt-vision-right{display:flex;flex-direction:column;gap:0;}
+.mt-vision-img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;filter:saturate(.85);margin-bottom:20px;}
+.mt-vision-pull{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(16px,2vw,20px);color:var(--g);
+  border-left:3px solid var(--gold);padding:12px 0 12px 18px;
+  line-height:1.45;
+}
+@media(max-width:700px){
+  .mt-vision-grid{grid-template-columns:1fr;}
+  .mt-vision-img{aspect-ratio:16/9;}
+}
+</style>
+<div class="mt-w">
+<div class="mt-vision">
+  <div class="mt-vision-grid">
+    <div class="mt-vision-text">
+      <span class="mt-eyebrow">El contexto · La Ruta Tren Maya · El cambio</span>
+      <span class="mt-h2">Una región en transformación. Y una elección.</span>
+      <span class="mt-vision-rule"></span>
+      <p>El Tren Maya conecta la Península de Yucatán de una manera que no existía antes. Ciudades que antes requerían cuatro horas en coche ahora están a una hora en tren. Campeche, Mérida, Valladolid, Bacalar — todas más accesibles, más visibles, más dentro del radar de millones de viajeros.</p>
+      <p>Eso no es neutral. Cuando más gente llega a un lugar, los primeros en beneficiarse son los primeros en aparecer. Y en la economía digital, eso significa cadenas, plataformas globales, y negocios con presupuesto para posicionarse — no necesariamente los que mejor representan al lugar.</p>
+      <p>Maya Tuya existe para cambiar eso. Seleccionamos negocios locales con criterio propio. Los verificamos, los presentamos, y conectamos a viajeros conscientes — personas que buscan lo auténtico — directamente con ellos. Sin intermediarios innecesarios. Sin pago por aparecer. Con estándares reales.</p>
+    </div>
+    <div class="mt-vision-right">
+      
+      <img class="mt-vision-img" src="/assets/img/ChatGPT-Image-Oct-29-2025-03_00_01-PM.png" alt="Maya Tuya — Visión" loading="lazy">
+      <span class="mt-vision-pull">No somos una agencia de viajes. No somos una plataforma de reseñas. Somos una red editorial con criterio propio y compromisos bilaterales con cada negocio que representa.</span>
+    </div>
+  </div>
+</div>
+</div>
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-h1{font-family:'Playfair Display SC',serif;font-size:clamp(30px,5vw,54px);font-weight:400;line-height:1.08;color:var(--ink);display:block;}
+.mt-h2{font-family:'Playfair Display SC',serif;font-size:clamp(22px,3.5vw,36px);font-weight:400;line-height:1.12;color:var(--ink);display:block;}
+.mt-body{font-family:'Lato',sans-serif;font-size:14px;color:var(--muted);line-height:1.75;}
+.mt-italic{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,2vw,20px);color:var(--muted);line-height:1.65;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-dark{background:transparent;border:1.5px solid var(--g);color:var(--g);}
+.mt-btn-outline-dark:hover{background:var(--g);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-how{padding:52px 0;border-top:1px solid var(--rule);}
+.mt-how-intro{margin-bottom:40px;}
+.mt-how-intro .mt-h2{margin-bottom:10px;}
+.mt-how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.mt-how-block{
+  padding:32px 28px;
+  border:1px solid var(--rule);
+  position:relative;
+}
+.mt-how-num{
+  font-family:'Playfair Display SC',serif;
+  font-size:52px;color:var(--g);opacity:.08;
+  position:absolute;top:16px;right:20px;line-height:1;
+}
+.mt-how-icon-bar{width:32px;height:3px;background:var(--gold);margin-bottom:16px;}
+.mt-how-block .mt-h3{margin-bottom:10px;font-size:16px;}
+.mt-how-block .mt-body{font-size:13px;}
+@media(max-width:620px){.mt-how-grid{grid-template-columns:1fr;}}
+</style>
+<div class="mt-w">
+<div class="mt-how">
+  <div class="mt-how-intro">
+    <span class="mt-eyebrow">Cómo funciona · El modelo</span>
+    <span class="mt-h2">Simple. Bilateral. Real.</span>
+  </div>
+  <div class="mt-how-grid">
+  <div class="mt-how-block">
+    <span class="mt-how-num">01</span>
+    <div class="mt-how-icon-bar"></div>
+    <span class="mt-h3">Para el viajero</span>
+    <p class="mt-body" style="margin-top:8px;">Descarga la guía gratuita — The Conscious Traveler — para orientarte antes de llegar. Compra guías de destino por $9.99. Reserva experiencias curadas con Aliados Verificados. Muestra tu email de compra en cada Aliado y recibe algo especial.</p>
+  </div>
+  <div class="mt-how-block">
+    <span class="mt-how-num">02</span>
+    <div class="mt-how-icon-bar"></div>
+    <span class="mt-h3">Para el negocio</span>
+    <p class="mt-body" style="margin-top:8px;">Únete como Aliado Básico sin costo mensual. Cumple estándares verificables en 30 días. Ofrece un beneficio real a los viajeros Maya Tuya y aparece en el directorio. Actualíza para aparecer en las guías, y en las experiencias — poniendo los clientes correctos en tu lugar.</p>
+  </div>
+  <div class="mt-how-block">
+    <span class="mt-how-num">03</span>
+    <div class="mt-how-icon-bar"></div>
+    <span class="mt-h3">Para la región</span>
+    <p class="mt-body" style="margin-top:8px;">Cada Aliado que se incorpora hace la red más sólida. Cada experiencia que se lanza conecta más negocios con más viajeros. El objetivo es que la Ruta Tren Maya sea recordada por lo local — no por lo que reemplazó a lo local.</p>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#f3eee2">
+<div class="mt-inner">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-h1{font-family:'Playfair Display SC',serif;font-size:clamp(30px,5vw,54px);font-weight:400;line-height:1.08;color:var(--ink);display:block;}
+.mt-h2{font-family:'Playfair Display SC',serif;font-size:clamp(22px,3.5vw,36px);font-weight:400;line-height:1.12;color:var(--ink);display:block;}
+.mt-body{font-family:'Lato',sans-serif;font-size:14px;color:var(--muted);line-height:1.75;}
+.mt-italic{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,2vw,20px);color:var(--muted);line-height:1.65;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-dark{background:transparent;border:1.5px solid var(--g);color:var(--g);}
+.mt-btn-outline-dark:hover{background:var(--g);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-involve{
+  display:grid;grid-template-columns:1fr 1fr;gap:2px;
+  border-top:2px solid var(--g);
+}
+.mt-involve-block{padding:44px 40px;}
+.mt-involve-block:first-child{background:var(--g);}
+.mt-involve-block:last-child{background:rgba(1,50,32,.04);border:1px solid var(--rule);border-top:none;}
+.mt-inv-eyebrow-l{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold);opacity:.75;display:block;margin-bottom:12px;}
+.mt-inv-title-l{font-family:'Playfair Display SC',serif;font-size:clamp(18px,2.8vw,28px);color:#fff;line-height:1.12;display:block;margin-bottom:12px;}
+.mt-inv-body-l{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:rgba(242,233,208,.62);line-height:1.6;display:block;margin-bottom:24px;}
+.mt-inv-btn-l{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;background:var(--gold);color:#fff;text-decoration:none;display:inline-block;transition:background .2s;}
+.mt-inv-btn-l:hover{background:var(--gold-d);color:#fff;}
+.mt-inv-eyebrow-d{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:12px;}
+.mt-inv-title-d{font-family:'Playfair Display SC',serif;font-size:clamp(18px,2.8vw,28px);color:var(--ink);line-height:1.12;display:block;margin-bottom:12px;}
+.mt-inv-body-d{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--muted);line-height:1.6;display:block;margin-bottom:24px;}
+.mt-inv-btn-d{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;background:var(--g);color:var(--cream);text-decoration:none;display:inline-block;transition:background .2s;}
+.mt-inv-btn-d:hover{background:#024a30;color:var(--cream);}
+@media(max-width:560px){.mt-involve{grid-template-columns:1fr;}.mt-involve-block{padding:32px 24px;}}
+</style>
+<div class="mt-w">
+<div class="mt-involve">
+  <div class="mt-involve-block">
+    <span class="mt-inv-eyebrow-l">Para el viajero</span>
+    <span class="mt-inv-title-l">Campeche te espera.<br>Con criterio.</span>
+    <span class="mt-inv-body-l">Descarga la guía gratuita y descubre los Aliados Verificados antes de llegar.</span>
+    <a class="mt-inv-btn-l" href="/viajero-consciente">Descargar guía gratuita</a>
+  </div>
+  <div class="mt-involve-block">
+    <span class="mt-inv-eyebrow-d">Para el negocio local</span>
+    <span class="mt-inv-title-d">¿Tu negocio debería<br>star aquí?</span>
+    <span class="mt-inv-body-d">Sin costo mensual. Con estándares reales. Y con viajeros que buscan exactamente lo que tú ofreces.</span>
+    <a class="mt-inv-btn-d" href="/inicio/hazte-aliado/">Hazte Aliado</a>
+  </div>
+</div>
+</div>
+</div>
+</section>

@@ -1,0 +1,155 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#f3eee2">
+<div class="mt-inner">
+<style>
+#mtcnh-es {
+  --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;
+  --ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,.12);--rule-g:rgba(200,158,75,.25);
+  font-family:'Lato',sans-serif;color:var(--ink);
+}
+#mtcnh-es * { box-sizing:border-box; }
+#mtcnh-es a { text-decoration:none;color:inherit; }
+#mtcnh-es p { font-size:14px;color:var(--muted);line-height:1.85;margin-bottom:16px; }
+#mtcnh-es p:last-child { margin-bottom:0; }
+#mtcnh-es .eyebrow { font-size:8px;letter-spacing:.52em;text-transform:uppercase;color:var(--gold-d);opacity:.72;display:block;margin-bottom:12px; }
+#mtcnh-es h1 { font-family:'Playfair Display SC',serif;font-size:clamp(32px,5.5vw,56px);color:var(--ink);line-height:1.06;display:block;margin-bottom:14px;font-weight:400;margin-top:0; }
+#mtcnh-es h2 { font-family:'Playfair Display SC',serif;font-size:clamp(20px,3vw,32px);color:var(--ink);line-height:1.1;display:block;margin-bottom:12px;font-weight:400;margin-top:0; }
+#mtcnh-es h3 { font-family:'Playfair Display',serif;font-size:clamp(15px,2vw,18px);color:var(--ink);font-weight:700;display:block;margin-bottom:8px;line-height:1.2;margin-top:0; }
+#mtcnh-es .gold-rule { width:40px;height:2px;background:var(--gold);display:block;margin-bottom:18px; }
+#mtcnh-es .pull { font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,2.3vw,22px);color:var(--g);line-height:1.5;border-left:3px solid var(--gold);padding:12px 0 12px 20px;display:block;margin:24px 0; }
+#mtcnh-es .section { padding:44px 0;border-bottom:1px solid var(--rule); }
+#mtcnh-es .section:last-child { border-bottom:none; }
+#mtcnh-es .two-col { display:table;width:100%; }
+#mtcnh-es .col-main { display:table-cell;vertical-align:top;padding-right:48px; }
+#mtcnh-es .col-side { display:table-cell;vertical-align:top;width:260px;min-width:220px; }
+#mtcnh-es .info-block { border:1px solid var(--rule);padding:14px 16px;margin-bottom:8px;background:#fffdf7; }
+#mtcnh-es .info-label { font-size:8px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:5px; }
+#mtcnh-es .info-val { font-size:13px;color:var(--ink);line-height:1.6; }
+#mtcnh-es .btn-dark { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--g);color:var(--cream);display:inline-block;transition:background .2s; }
+#mtcnh-es .btn-dark:hover { background:#024a30; }
+#mtcnh-es .btn-gold { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--gold);color:#fff;display:inline-block;transition:background .2s; }
+#mtcnh-es .btn-gold:hover { background:var(--gold-d); }
+#mtcnh-es .btn-outline { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 22px;background:transparent;color:var(--muted);border:1px solid var(--rule-g);display:inline-block;transition:all .2s; }
+#mtcnh-es .btn-outline:hover { border-color:var(--gold);color:var(--ink); }
+#mtcnh-es .actions { display:flex;gap:10px;flex-wrap:wrap;margin-top:20px; }
+#mtcnh-es .ul-clean { list-style:none;padding:0;margin:0; }
+#mtcnh-es .ul-clean li { font-size:14px;color:var(--muted);line-height:1.75;padding:7px 0 7px 16px;border-bottom:1px solid var(--rule);position:relative; }
+#mtcnh-es .ul-clean li:last-child { border-bottom:none; }
+#mtcnh-es .ul-clean li::before { content:'·';position:absolute;left:2px;color:var(--gold);font-size:18px;line-height:1.3; }
+#mtcnh-es .cta-band { background:var(--g);padding:28px 32px;margin-top:28px; }
+#mtcnh-es .cta-band-title { font-family:'Playfair Display SC',serif;font-size:clamp(17px,2.3vw,24px);color:#fff;display:block;margin-bottom:8px; }
+#mtcnh-es .cta-band-sub { font-size:13px;color:rgba(242,233,208,.6);line-height:1.7;display:block;margin-bottom:16px;max-width:520px; }
+#mtcnh-es .pg-hero { position:relative;width:100%;overflow:hidden;height:380px; }
+#mtcnh-es .pg-hero img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.78) brightness(.52); }
+#mtcnh-es .pg-hero-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,rgba(1,15,7,.55) 28%,rgba(1,15,7,.08) 55%,transparent 100%); }
+#mtcnh-es .pg-hero-content { position:absolute;bottom:0;left:0;right:0;padding:28px 0 32px; }
+#mtcnh-es .pg-hero-content .eyebrow { color:var(--gold) !important;opacity:.9 !important; }
+#mtcnh-es .pg-hero-content h1 { color:#ffffff !important; }
+#mtcnh-es .img-full { width:100%;display:block;margin:24px 0;object-fit:cover;height:280px;filter:saturate(.88); }
+#mtcnh-es .img-half { display:table;width:100%;gap:0;margin:24px 0; }
+#mtcnh-es .img-half-l { display:table-cell;width:50%;padding-right:3px;vertical-align:top; }
+#mtcnh-es .img-half-r { display:table-cell;width:50%;padding-left:3px;vertical-align:top; }
+#mtcnh-es .img-half img { width:100%;height:200px;object-fit:cover;display:block;filter:saturate(.88); }
+#mtcnh-es .img-caption { font-size:10px;letter-spacing:.15em;color:var(--muted);opacity:.55;display:block;margin-top:4px;font-style:italic; }
+#mtcnh-es .sub-nav { display:flex;flex-wrap:wrap;border:1px solid var(--rule);margin-top:40px; }
+#mtcnh-es .sub-nav a { font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);padding:12px 16px;border-right:1px solid var(--rule);transition:color .2s,background .2s;display:block; }
+#mtcnh-es .sub-nav a:last-child { border-right:none; }
+#mtcnh-es .sub-nav a:hover { color:var(--g);background:rgba(1,50,32,.03); }
+#mtcnh-es .sub-nav a.active { color:var(--g);border-bottom:2px solid var(--gold); }
+#mtcnh-es .mag-grid { display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px; }
+#mtcnh-es .mag-card { position:relative;overflow:hidden;display:block;height:220px; }
+#mtcnh-es .mag-card.tall { grid-row:span 2;height:100%; }
+#mtcnh-es .mag-card img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.75) brightness(.52);transition:filter .4s,transform .5s; }
+#mtcnh-es .mag-card:hover img { filter:saturate(.9) brightness(.62);transform:scale(1.04); }
+#mtcnh-es .mag-card-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,transparent 55%); }
+#mtcnh-es .mag-card-content { position:absolute;bottom:0;left:0;right:0;padding:16px 18px; }
+#mtcnh-es .mag-card-tag { font-size:7.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:5px; }
+#mtcnh-es .mag-card-title { font-family:'Playfair Display SC',serif;font-size:clamp(14px,1.8vw,18px);color:#fff;line-height:1.1;display:block;margin-bottom:3px; }
+#mtcnh-es .mag-card-sub { font-size:11px;color:rgba(242,233,208,.55);line-height:1.4;display:block; }
+#mtcnh-es .mag-card-arrow { font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);opacity:.7;display:block;margin-top:6px; }
+#mtcnh-es .ali-card { border:1px solid var(--rule);background:#fffdf7;display:table;width:100%;margin-bottom:2px;transition:border-color .2s; }
+#mtcnh-es .ali-card:hover { border-color:var(--gold); }
+#mtcnh-es .ali-card-img { display:table-cell;width:140px;min-width:120px;vertical-align:top;position:relative;overflow:hidden; }
+#mtcnh-es .ali-card-img img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.88); }
+#mtcnh-es .ali-card-body { display:table-cell;vertical-align:middle;padding:14px 18px; }
+#mtcnh-es .ali-card-tag { font-size:8px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-d);opacity:.8;display:block;margin-bottom:5px; }
+#mtcnh-es .ali-card-name { font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--ink);display:block;margin-bottom:4px; }
+#mtcnh-es .ali-card-text { font-size:12.5px;color:var(--muted);line-height:1.6;display:block;margin-bottom:8px; }
+#mtcnh-es .ali-card-link { font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--g);border-bottom:1px solid var(--rule-g);padding-bottom:1px;transition:all .2s; }
+#mtcnh-es .ali-card-link:hover { color:var(--gold-d);border-color:var(--gold-d); }
+@media(max-width:680px){
+  #mtcnh-es .pg-hero { height:240px; }
+  #mtcnh-es .two-col { display:block; }
+  #mtcnh-es .col-main { display:block;padding-right:0;margin-bottom:20px; }
+  #mtcnh-es .col-side { display:block;width:100%; }
+  #mtcnh-es .mag-grid { grid-template-columns:1fr 1fr; }
+  #mtcnh-es .mag-card { height:160px; }
+  #mtcnh-es .mag-card.tall { grid-row:span 1;height:160px; }
+  #mtcnh-es .sub-nav a { border-right:none;border-bottom:1px solid var(--rule);width:50%; }
+  #mtcnh-es .img-half { display:block; }
+  #mtcnh-es .img-half-l,#mtcnh-es .img-half-r { display:block;width:100%;padding:0 0 3px; }
+  #mtcnh-es .ali-card-img { width:100px;min-width:80px; }
+  #mtcnh-es .cta-band { padding:22px 20px; }
+}
+</style>
+<div id="mtcnh-es">
+    <div class="pg-hero">
+    <img src="/assets/img/383174.jpg" alt="Iglesia de San Román, barrio de Campeche">
+    <div class="pg-hero-overlay"></div>
+    <div class="pg-hero-content">
+      <span class="eyebrow">Barrios tradicionales · Campeche</span>
+      <h1>Los barrios<br>más allá de las murallas.</h1>
+    </div>
+  </div>
+  <div style="height:3px;background:var(--gold);width:100%;"></div>
+
+  <div class="section">
+    <span class="gold-rule"></span>
+    <p>El centro histórico se lleva las fotografías. Los barrios se llevan la vida. Estos son los vecindarios tradicionales que crecieron alrededor de los baluartes de Campeche — cada uno con su propia iglesia, su propio mercado, su propio ritmo. Todos a poca distancia a pie de la ciudad amurallada.</p>
+    <div class="info-block" style="margin-bottom:24px;">
+      <span class="info-label">Paradas del Tren Ligero</span>
+      <span class="info-val">San Francisco · Guadalupe · La Ermita tienen parada propia del Tren Ligero — fáciles de alcanzar desde la estación o el centro histórico. San Román y Santa Ana no tienen parada — ambos están a poca distancia a pie de las murallas.</span>
+    </div>
+
+    <h2>San Román.</h2>
+    <img class="img-full" src="/assets/img/iglesia-de-san-roman-0.webp" alt="Cristo Negro, Iglesia de San Román, Campeche" loading="lazy">
+    <p>El más significativo de los barrios campechanos y el que más merece buscarse deliberadamente. San Román alberga el Cristo Negro — un Cristo de marfil negro traído de Italia a Campeche en 1565, y protagonista del festival anual más importante de la ciudad (la Feria de San Román, agosto-septiembre). La Iglesia de San Román preside el barrio, rodeada de vida cotidiana — mercados, puestos de tacos, niños en bicicleta — que el centro histórico cedió al turismo. Visita por la mañana. El mercado del barrio cerca de la iglesia es la mejor razón para llegar con hambre. Sin parada del Tren Ligero — a corta distancia a pie de las murallas.</p>
+  </div>
+
+  <div class="section">
+    <h2>Santa Ana.</h2>
+    <div class="img-half">
+      <div class="img-half-l"><img src="/assets/img/480788324_1001202458877951_1631192056258759771_n.jpg" alt="Plaza de Santa Ana, Campeche" loading="lazy"></div>
+      <div class="img-half-r"><img src="/assets/img/480784971_1001202512211279_2798904391644228571_n.jpg" alt="Iglesia de Santa Ana, barrio de Campeche" loading="lazy"></div>
+    </div>
+    <p>El barrio que tienden a preferir los propios campechanos — lo que siempre es un indicador útil. La Plaza de Santa Ana es más tranquila que la Plaza de la Independencia, rodeada de restaurantes y cafés que sirven a locales más que a visitantes. Corazón Contento tiene una ubicación aquí, lo que te dice algo del barrio. La Iglesia de Santa Ana da a una plaza arbolada que se ralentiza notablemente por la tarde. Sin parada del Tren Ligero — a diez o quince minutos a pie de las murallas.</p>
+  </div>
+
+  <div class="section">
+    <h2>San Francisco.</h2>
+    <img class="img-full" src="/assets/img/WhatsApp-Image-2025-05-28-at-4.12.06-PM-e1777226407308.jpeg" alt="Iglesia de San Francisco, barrio de San Francisco, Campeche" loading="lazy">
+    <span class="img-caption">Iglesia de San Francisco — el ancla del barrio.</span>
+    <p>El más antiguo de los barrios, con raíces en la primera presencia franciscana en Campeche — anterior a las propias murallas. La Iglesia de San Francisco es el ancla del barrio, y las calles a su alrededor tienen una textura más áspera y obrera que Santa Ana. La iglesia es genuinamente antigua de una manera que merece unos minutos de atención. Parada del Tren Ligero: San Francisco.</p>
+  </div>
+
+  <div class="section">
+    <h2>Guadalupe.</h2>
+    <img class="img-full" src="/assets/img/IMG-34864083.webp" alt="Ermita de la Guadalupe, barrio de Guadalupe, Campeche" loading="lazy">
+    <span class="img-caption">Ermita de la Guadalupe — la pequeña capilla que da nombre al barrio.</span>
+    <p>Uno de los barrios tradicionales más pequeños, situado entre el centro histórico y San Román. La Ermita de la Guadalupe — una pequeña capilla — da nombre al barrio y su centro. Menos visitado que San Román o Santa Ana, más tranquilo por ello. Parada del Tren Ligero: Guadalupe.</p>
+  </div>
+
+  <div class="section">
+    <h2>La Ermita.</h2>
+    <img class="img-full" src="/assets/img/WhatsApp-Image-2026-04-10-at-13.47.39.jpeg" alt="Barrio de La Ermita, Campeche — vida cotidiana" loading="lazy">
+    <span class="img-caption">La Ermita — el barrio donde la ciudad no actúa para nadie.</span>
+    <p>El más meridional de los barrios tradicionales — genuinamente local, con un mercado de barrio real y el tipo de comida callejera que existe porque los vecinos la quieren, no porque los turistas la esperen. Vale la pena si tienes un día completo y quieres ver cómo es Campeche cuando no está actuando para nadie. Parada del Tren Ligero: La Ermita.</p>
+    <div class="cta-band">
+      <span class="cta-band-title">La red Maya Tuya está creciendo.</span>
+      <span class="cta-band-sub">A medida que nos expandimos por los barrios, los negocios verificados se añadirán al directorio. Explora lo disponible ahora — y vuelve a consultar.</span>
+      <a class="btn-gold" href="/inicio/aliados/directorio">Ver el directorio →</a>
+    </div>
+  </div>
+  <div class="sub-nav"><a href="/inicio/destinos/campeche">Introducción</a><a href="/inicio/destinos/campeche/que-hacer">Qué hacer</a><a href="/inicio/destinos/campeche/como-llegar">Cómo llegar</a><a href="/inicio/destinos/campeche/comer-y-beber">Comer & Beber</a><a href="/inicio/destinos/campeche/cuando-ir">Cuándo ir</a><a href="/inicio/destinos/campeche/itinerarios">Itinerarios</a><a href="/inicio/destinos/campeche/barrios" class="active">Barrios</a><a href="/inicio/destinos/campeche/excursiones">Excursiones</a></div>
+</div>
+</div>
+</section>

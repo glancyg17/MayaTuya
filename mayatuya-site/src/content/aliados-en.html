@@ -1,0 +1,498 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#f3eee2">
+<div class="mt-inner">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-dark{background:transparent;border:1.5px solid var(--g);color:var(--g);}
+.mt-btn-outline-dark:hover{background:var(--g);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-ali-hero{padding:48px 0 44px;border-bottom:2px solid var(--g);}
+.mt-ali-hero-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:12px;}
+.mt-ali-hero-title{font-family:'Playfair Display SC',serif;font-size:clamp(32px,5.5vw,58px);font-weight:400;color:var(--ink);line-height:1.06;display:block;margin-bottom:18px;}
+.mt-ali-hero-rule{width:44px;height:2px;background:var(--gold);display:block;margin-bottom:20px;}
+.mt-ali-hero-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,2.2vw,22px);color:var(--muted);line-height:1.6;display:block;max-width:580px;margin-bottom:28px;}
+/* Stat strip — horizontal on all screens */
+.mt-ali-hero-stat-strip{
+  display:flex;align-items:center;gap:20px;
+  padding:18px 24px;
+  border:1px solid var(--rule-gold);
+  background:rgba(200,158,75,.03);
+  width:fit-content;
+}
+.mt-ali-hero-badge{width:44px;height:44px;border-radius:50%;overflow:hidden;border:1px solid rgba(200,158,75,.2);flex-shrink:0;}
+.mt-ali-hero-badge img{width:100%;height:100%;object-fit:cover;}
+.mt-ali-hero-stat-num{font-family:'Playfair Display SC',serif;font-size:32px;color:var(--g);display:block;line-height:1;}
+.mt-ali-hero-stat-label{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.38em;text-transform:uppercase;color:var(--muted);opacity:.65;display:block;margin-top:2px;}
+.mt-ali-hero-stat-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:var(--muted);opacity:.8;}
+</style>
+<div class="mt-w">
+<div class="mt-ali-hero">
+  <span class="mt-ali-hero-eyebrow">Aliados Verificados · Campeche · Tren Maya Route</span>
+  <span class="mt-ali-hero-title">Every place<br>was chosen.</span>
+  <span class="mt-ali-hero-rule"></span>
+  <span class="mt-ali-hero-sub">Not because they paid to appear. Because someone visited, checked, and decided they were worth your time. That's what Aliado Verificado means.</span>
+  <div class="mt-ali-hero-stat-strip">
+    <div class="mt-ali-hero-badge"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado Maya Tuya"></div>
+    <div>
+      <span class="mt-ali-hero-stat-num">8</span>
+      <span class="mt-ali-hero-stat-label">Aliados Verificados</span>
+    </div>
+    <span class="mt-ali-hero-stat-sub">in Campeche — chosen by hand</span>
+  </div>
+</div>
+</div>
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-dark{background:transparent;border:1.5px solid var(--g);color:var(--g);}
+.mt-btn-outline-dark:hover{background:var(--g);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-diff{padding:56px 0;border-bottom:1px solid var(--rule);}
+.mt-diff-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:12px;}
+.mt-diff-title{font-family:'Playfair Display SC',serif;font-size:clamp(22px,3.5vw,36px);color:var(--ink);line-height:1.1;display:block;margin-bottom:16px;}
+.mt-diff-rule{width:40px;height:2px;background:var(--gold);display:block;margin-bottom:20px;}
+.mt-diff-cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+.mt-diff-text p{font-family:'Lato',sans-serif;font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:16px;}
+.mt-diff-text p:last-child{margin-bottom:0;}
+.mt-diff-right{display:flex;flex-direction:column;gap:20px;}
+.mt-diff-pull{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(19px,2.8vw,26px);color:var(--g);line-height:1.4;border-left:3px solid var(--gold);padding:14px 0 14px 22px;}
+.mt-diff-contrast{display:flex;flex-direction:column;gap:2px;}
+.mt-diff-block{padding:16px 20px;}
+.mt-diff-anywhere{background:rgba(90,80,64,.06);border-left:3px solid rgba(90,80,64,.2);}
+.mt-diff-aliado{background:rgba(1,50,32,.05);border-left:3px solid var(--g);}
+.mt-diff-block-label{font-family:'Lato',sans-serif;font-size:8px;letter-spacing:.42em;text-transform:uppercase;display:block;margin-bottom:7px;}
+.mt-diff-anywhere .mt-diff-block-label{color:var(--muted);opacity:.7;}
+.mt-diff-aliado .mt-diff-block-label{color:var(--g);opacity:.85;}
+.mt-diff-block-text{font-family:'Lato',sans-serif;font-size:13px;color:var(--muted);line-height:1.6;}
+.mt-diff-aliado .mt-diff-block-text{color:var(--ink);}
+@media(max-width:660px){
+  .mt-diff-cols{grid-template-columns:1fr;gap:32px;}
+}
+</style>
+<div class="mt-w">
+<div class="mt-diff">
+  <span class="mt-diff-eyebrow">What it means · For the traveller</span>
+  <span class="mt-diff-title">The difference between<br>found and chosen.</span>
+  <span class="mt-diff-rule"></span>
+  <div class="mt-diff-cols">
+    <div class="mt-diff-text">
+      <p>Campeche has good businesses. Some are excellent. The problem, for a traveller who doesn't know the city, is that the excellent ones and the mediocre ones look the same from the street. The ones that rank highest online aren't necessarily the ones that deserve to. The ones that appear first aren't necessarily the ones worth finding.</p>
+      <p>An Aliado Verificado has been visited in person. Checked against real standards. And agreed to receive you — specifically — with something that goes beyond what they offer anyone who walks in. You arrive already expected. That changes how a place feels.</p>
+    </div>
+    <div class="mt-diff-right">
+      <span class="mt-diff-pull">You arrive already expected.<br>That changes how a place feels.</span>
+      <div class="mt-diff-contrast">
+        <div class="mt-diff-block mt-diff-anywhere">
+          <span class="mt-diff-block-label">Walking in anywhere</span>
+          <span class="mt-diff-block-text">You find the place yourself, hope the reviews are current, and receive whatever a stranger gets off the street.</span>
+        </div>
+        <div class="mt-diff-block mt-diff-aliado">
+          <span class="mt-diff-block-label">Walking into an Aliado Verificado</span>
+          <span class="mt-diff-block-text">The place was selected before you arrived. You are expected. Show your email and you will be welcomed as part of something.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-image:linear-gradient(rgba(243,238,226,0.50),rgba(243,238,226,0.50)),url('/assets/img/g222247d8583aed27f0e42813ae5632de98b7c0141394a53c285eb1b88cf69c8b2512eb6b7b0523163d34892e1da81a00_1280-803865.jpg');background-size:cover;background-position:center center;background-repeat:no-repeat">
+<div class="mt-inner">
+<img src="/assets/img/Aliado-Verificado-Badge-scaled.png" alt="aliado verificado badge">
+<style>
+
+/* Scoped to this widget only */
+#mtali3 {
+  --g:      #013220;
+  --gold:   #c89e4b;
+  --gold-d: #9a7828;
+  --cream:  #f2e9d0;
+  --ink:    #0c0b09;
+  --muted:  #5a5040;
+  --rule:   rgba(1,50,32,0.12);
+  --rule-g: rgba(200,158,75,0.25);
+  --card:   #fffdf7;
+  display: block;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  color: var(--ink);
+}
+#mtali3 * { box-sizing: border-box; }
+
+/* Section header */
+#mtali3 .section-header {
+  margin-bottom: 24px;
+}
+#mtali3 .eyebrow {
+  font-size: 9px; letter-spacing: 0.55em; text-transform: uppercase;
+  color: var(--gold-d); opacity: 0.75; display: block; margin-bottom: 8px;
+}
+#mtali3 .section-title {
+  font-family: 'Playfair Display SC', serif;
+  font-size: clamp(22px, 3.5vw, 34px);
+  color: var(--ink); line-height: 1.1; display: block;
+}
+
+/* Card stack */
+#mtali3 .cards { display: block; width: 100%; }
+
+/* One entry = featured banner + card */
+#mtali3 .entry {
+  display: block;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+/* Featured banner */
+#mtali3 .banner {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--g); padding: 7px 14px; width: 100%;
+}
+#mtali3 .b-dot   { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+#mtali3 .b-lbl   { font-size: 8px; letter-spacing: 0.45em; text-transform: uppercase; color: var(--gold); opacity: 0.9; }
+#mtali3 .b-gap   { flex: 1; }
+#mtali3 .b-badge { width: 20px; height: 20px; border-radius: 50%; overflow: hidden; border: 1px solid rgba(200,158,75,0.3); }
+#mtali3 .b-badge img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Card shell */
+#mtali3 .card {
+  display: block; width: 100%;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--gold);
+  border-top: none;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+#mtali3 .card:hover { box-shadow: 0 4px 20px rgba(1,50,32,0.08); }
+
+/* Card inner: image left, body right — display:table for Elementor reliability */
+#mtali3 .card-row {
+  display: table;
+  width: 100%;
+  min-height: 200px;
+}
+#mtali3 .card-img-cell {
+  display: table-cell;
+  width: 30%;
+  min-width: 200px;
+  max-width: 280px;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+#mtali3 .card-img-cell img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: saturate(0.88);
+  transition: filter 0.3s, transform 0.45s;
+}
+#mtali3 .card:hover .card-img-cell img { filter: saturate(1); transform: scale(1.03); }
+
+#mtali3 .card-body-cell {
+  display: table-cell;
+  vertical-align: top;
+  padding: 18px 22px;
+}
+
+/* Body content */
+#mtali3 .card-meta  { display: flex; align-items: center; gap: 8px; margin-bottom: 9px; flex-wrap: wrap; }
+#mtali3 .tag        { font-size: 8px; letter-spacing: 0.38em; text-transform: uppercase; color: var(--gold-d); border: 1px solid var(--rule-g); padding: 3px 8px; }
+#mtali3 .loc        { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); opacity: 0.65; }
+#mtali3 .card-name  { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--ink); line-height: 1.15; display: block; margin-bottom: 7px; }
+#mtali3 .card-desc  { font-size: 12.5px; color: var(--muted); line-height: 1.65; display: block; margin-bottom: 10px; }
+#mtali3 .card-why   { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13.5px; color: var(--g); line-height: 1.5; border-left: 2px solid var(--rule-g); padding-left: 9px; display: block; margin-bottom: 14px; }
+#mtali3 .card-actions { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid var(--rule); }
+
+#mtali3 .btn-p { font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; padding: 8px 18px; background: var(--g); color: var(--cream); text-decoration: none; display: inline-block; transition: background 0.2s; }
+#mtali3 .btn-p:hover { background: #024a30; }
+#mtali3 .btn-o { font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; padding: 8px 18px; background: transparent; color: var(--muted); border: 1px solid var(--rule-g); text-decoration: none; display: inline-block; transition: all 0.2s; }
+#mtali3 .btn-o:hover { border-color: var(--gold); color: var(--ink); }
+
+/* View directory CTA */
+#mtali3 .dir-cta {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#mtali3 .dir-cta-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--muted);
+  flex: 1;
+}
+#mtali3 .btn-dir {
+  font-size: 9px; letter-spacing: 0.35em; text-transform: uppercase;
+  padding: 11px 26px; background: var(--g); color: var(--cream);
+  text-decoration: none; display: inline-block; transition: background 0.2s;
+  white-space: nowrap; flex-shrink: 0;
+}
+#mtali3 .btn-dir:hover { background: #024a30; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  #mtali3 .card-row        { display: block; }
+  #mtali3 .card-img-cell   { display: block; width: 100%; max-width: 100%; min-width: 0; height: 200px; position: relative; }
+  #mtali3 .card-body-cell  { display: block; width: 100%; padding: 16px 18px; }
+  #mtali3 .card-name       { font-size: 18px; }
+  #mtali3 .dir-cta         { flex-direction: column; align-items: flex-start; gap: 14px; }
+  #mtali3 .dir-cta-note    { flex: none; }
+}
+
+</style>
+
+<div id="mtali3">
+
+  <div class="section-header">
+    <span class="eyebrow">Aliados Verificados · Campeche</span>
+    <span class="section-title">The businesses<br>worth finding.</span>
+  </div>
+
+  <div class="cards">
+
+  
+  <div class="entry">
+    <div class="banner">
+      <span class="b-dot"></span>
+      <span class="b-lbl">Aliado Selecto</span>
+      <span class="b-gap"></span>
+      <div class="b-badge"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado Maya Tuya"></div>
+    </div>
+    <div class="card">
+      <div class="card-row">
+        <div class="card-img-cell">
+          <img src="/assets/img/577806754_1394944679302666_1464355943699789243_n-e1776811005646.jpg" alt="Casa Vieja del Rio — Balcony over the Cathedral, Campeche" loading="lazy">
+        </div>
+        <div class="card-body-cell">
+          <div class="card-meta">
+            <span class="tag">Restaurant · Cocktails</span>
+            <span class="loc">📍 Campeche, Plaza de Independencia</span>
+          </div>
+          <span class="card-name">Casa Vieja del Rio</span>
+          <span class="card-desc">Balcony and rooftop over the Cathedral and Plaza de Independencia. Regional cuisine and the Margarita Campechana that becomes the memory of Campeche.</span>
+          <span class="card-why">One of the very few places in Campeche where you see the city the way it deserves to be seen.</span>
+          <div class="card-actions">
+            <a class="btn-p" href="mailto:casaviejadelosarcos@gmail.com" target="_blank">Email</a>
+            <a class="btn-o" href="https://maps.google.com/?q=Casa+Vieja+del+Rio+Campeche" target="_blank">Map</a>
+            <a class="btn-o" href="/aliados/casa-vieja-del-rio" target="_blank">Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="entry">
+    <div class="banner">
+      <span class="b-dot"></span>
+      <span class="b-lbl">Aliado Selecto</span>
+      <span class="b-gap"></span>
+      <div class="b-badge"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado Maya Tuya"></div>
+    </div>
+    <div class="card">
+      <div class="card-row">
+        <div class="card-img-cell">
+          <img src="/assets/img/Corazon-Contento-Pagina-Hero-2.jpg" alt="Corazón Contento — Organic kitchen, Campeche" loading="lazy">
+        </div>
+        <div class="card-body-cell">
+          <div class="card-meta">
+            <span class="tag">Organic Kitchen · 2 locations</span>
+            <span class="loc">📍 Campeche</span>
+          </div>
+          <span class="card-name">Corazón Contento</span>
+          <span class="card-desc">Seasonal ingredients, known provenance, presentation that tells you someone thought carefully. The direct answer to: where do I eat well here?</span>
+          <span class="card-why">Full without advertising. That's the only recommendation that holds.</span>
+          <div class="card-actions">
+            <a class="btn-p" href="https://wa.me/52981 135 4554?text=Hello%2C%20I'm%20from%20Maya%20Tuya" target="_blank">WhatsApp</a>
+            <a class="btn-o" href="https://maps.app.goo.gl/9tkAaNqvMJR7ApV27" target="_blank">Map</a>
+            <a class="btn-o" href="/aliados/corazon-contento" target="_blank">Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="entry">
+    <div class="banner">
+      <span class="b-dot"></span>
+      <span class="b-lbl">Aliado Selecto</span>
+      <span class="b-gap"></span>
+      <div class="b-badge"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado Maya Tuya"></div>
+    </div>
+    <div class="card">
+      <div class="card-row">
+        <div class="card-img-cell">
+          <img src="/assets/img/Casa-Menta-Pagina-Hero-e1776797089175.jpg" alt="Casa Menta — Events space and accommodation, Campeche" loading="lazy">
+        </div>
+        <div class="card-body-cell">
+          <div class="card-meta">
+            <span class="tag">Space · Events · Accommodation</span>
+            <span class="loc">📍 Campeche, Historic Centre</span>
+          </div>
+          <span class="card-name">Casa Menta</span>
+          <span class="card-desc">Versatile space in the historic centre — events, accommodation, food, drink. Flexible enough for a curated experience, intimate enough to feel personal.</span>
+          <span class="card-why">A structural node in the network — a space with judgement.</span>
+          <div class="card-actions">
+            <a class="btn-p" href="https://wa.me/52981 816 8131?text=Hello%2C%20I'm%20from%20Maya%20Tuya" target="_blank">WhatsApp</a>
+            <a class="btn-o" href="https://maps.app.goo.gl/dc5aqKN9uGYe5zBu6" target="_blank">Map</a>
+            <a class="btn-o" href="/aliados/casa-menta" target="_blank">Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="entry">
+    <div class="banner">
+      <span class="b-dot"></span>
+      <span class="b-lbl">Aliado Fundador</span>
+      <span class="b-gap"></span>
+      <div class="b-badge"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado Maya Tuya"></div>
+    </div>
+    <div class="card">
+      <div class="card-row">
+        <div class="card-img-cell">
+          <img src="/assets/img/Casa-Mayis-Pagina-Hero-1-e1776119710800.jpg" alt="Casa Mayis — Ceremonies and circles, Campeche" loading="lazy">
+        </div>
+        <div class="card-body-cell">
+          <div class="card-meta">
+            <span class="tag">Ceremonies · Circles · Workshops</span>
+            <span class="loc">📍 Campeche</span>
+          </div>
+          <span class="card-name">Casa Mayis</span>
+          <span class="card-desc">Circles, ceremonies and personal connection workshops. No fixed space — the location follows the intention. Facilitators with years of genuine practice.</span>
+          <span class="card-why">For the traveller looking for a real encounter, not a wellness product.</span>
+          <div class="card-actions">
+            <a class="btn-p" href="https://wa.me/529381341778?text=Hello%2C%20I'm%20from%20Maya%20Tuya" target="_blank">WhatsApp</a>
+            <a class="btn-o" href="https://maps.app.goo.gl/yE7P2Lp4MDJHQ6Qy9" target="_blank">Map</a>
+            <a class="btn-o" href="/aliados/casa-mayis" target="_blank">Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  
+  <div class="dir-cta">
+    <span class="dir-cta-note">These are four of our Aliados Verificados. The full network is in the directory.</span>
+    <a class="btn-dir" href="/aliados/directory">Browse the directory</a>
+  </div>
+
+</div>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:60px;--pr:70px;--pb:10px;--pl:70px;background-color:#f3eee2;background-image:linear-gradient(rgba(243,238,226,0.45),rgba(243,238,226,0.45))">
+<div class="mt-inner">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+
+.mt-benefit{background:var(--g);padding:52px 40px;}
+.mt-benefit-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold);opacity:.75;display:block;margin-bottom:12px;}
+.mt-benefit-title{font-family:'Playfair Display SC',serif;font-size:clamp(22px,3.5vw,36px);color:#fff;line-height:1.1;display:block;margin-bottom:16px;}
+.mt-benefit-rule{width:40px;height:2px;background:var(--gold);opacity:.5;display:block;margin-bottom:18px;}
+.mt-benefit-body{font-family:'Lato',sans-serif;font-size:14px;color:rgba(242,233,208,.7);line-height:1.8;margin-bottom:32px;}
+.mt-benefit-right-label{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.45em;text-transform:uppercase;color:var(--gold);opacity:.7;display:block;margin-bottom:16px;}
+.mt-benefit-steps{border:1px solid rgba(200,158,75,.2);padding:4px 20px;}
+.mt-benefit-step{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(200,158,75,.08);}
+.mt-benefit-step:last-child{border-bottom:none;}
+.mt-benefit-step-num{font-family:'Playfair Display SC',serif;font-size:20px;color:var(--gold);opacity:.3;flex-shrink:0;line-height:1.1;min-width:22px;}
+.mt-benefit-step-text{font-family:'Lato',sans-serif;font-size:13px;color:rgba(242,233,208,.75);line-height:1.6;}
+.mt-benefit-step-text strong{color:rgba(242,233,208,.95);font-weight:700;}
+.mt-benefit-badge-row{display:flex;align-items:center;gap:10px;margin-top:20px;}
+.mt-benefit-badge-img{width:56px;height:56px;border-radius:50%;overflow:hidden;flex-shrink:0;}
+.mt-benefit-badge-img img{width:100%;height:100%;object-fit:cover;}
+.mt-benefit-badge-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:rgba(242,233,208,.45);line-height:1.4;}
+/* Two columns on desktop, single col on mobile — no squishing */
+.mt-benefit-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+@media(max-width:620px){
+  .mt-benefit{padding:40px 24px;}
+  .mt-benefit-cols{grid-template-columns:1fr;gap:28px;}
+}
+</style>
+<div class="mt-w">
+<div class="mt-benefit">
+  <div class="mt-benefit-cols">
+    <div>
+      <span class="mt-benefit-eyebrow">For Maya Tuya travellers · What you receive</span>
+      <span class="mt-benefit-title">You will be<br>welcomed.</span>
+      <span class="mt-benefit-rule"></span>
+      <p class="mt-benefit-body">Every Aliado Verificado has agreed to receive Maya Tuya travellers with something beyond the standard. A welcome drink, an extra few minutes, a private demonstration. A detail that makes you feel like someone was expecting you. Because they were.</p>
+    </div>
+    <div>
+      <span class="mt-benefit-right-label">How to receive your welcome</span>
+      <div class="mt-benefit-steps"><div class="mt-benefit-step"><span class="mt-benefit-step-num">1</span><span class="mt-benefit-step-text"><strong>Buy anything from Maya Tuya —</strong> A guide, an experience, The Conscious Traveler (free). Any purchase email counts.</span></div><div class="mt-benefit-step"><span class="mt-benefit-step-num">2</span><span class="mt-benefit-step-text"><strong>Arrive at the Aliado —</strong> Walk in. You don't need to announce yourself — just show up.</span></div><div class="mt-benefit-step"><span class="mt-benefit-step-num">3</span><span class="mt-benefit-step-text"><strong>Show your purchase email —</strong> Open any Maya Tuya purchase confirmation on your phone and show it to the team.</span></div><div class="mt-benefit-step"><span class="mt-benefit-step-num">4</span><span class="mt-benefit-step-text"><strong>Receive your welcome —</strong> The team already knows what to do. The rest is theirs.</span></div></div>
+      <div class="mt-benefit-badge-row">
+        <div class="mt-benefit-badge-img"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado"></div>
+        <span class="mt-benefit-badge-text">Look for the Aliado Verificado mark</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:40px;--pr:40px;--pb:40px;--pl:40px;background-color:#f3eee2">
+<div class="mt-inner">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+
+.mt-ali-cta{display:grid;grid-template-columns:1fr 1fr;gap:2px;border-top:2px solid var(--g);}
+.mt-ali-cta-block{padding:44px 40px;}
+.mt-traveler{background:rgba(1,50,32,.04);border:1px solid var(--rule);border-top:none;}
+.mt-business{background:rgba(200,158,75,.05);border:1px solid var(--rule-gold);border-top:none;}
+.mt-cta-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:12px;}
+.mt-cta-title{font-family:'Playfair Display SC',serif;font-size:clamp(18px,2.8vw,26px);color:var(--ink);line-height:1.12;display:block;margin-bottom:10px;}
+.mt-cta-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--muted);line-height:1.6;display:block;margin-bottom:22px;}
+.mt-cta-btn-green{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;background:var(--g);color:var(--cream);text-decoration:none;display:inline-block;transition:background .2s;}
+.mt-cta-btn-green:hover{background:#024a30;color:var(--cream);}
+.mt-cta-btn-gold{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;background:var(--gold);color:#fff;text-decoration:none;display:inline-block;transition:background .2s;}
+.mt-cta-btn-gold:hover{background:var(--gold-d);color:#fff;}
+@media(max-width:560px){.mt-ali-cta{grid-template-columns:1fr;}.mt-ali-cta-block{padding:32px 24px;}}
+</style>
+<div class="mt-w">
+<div class="mt-ali-cta">
+  <div class="mt-ali-cta-block mt-traveler">
+    <span class="mt-cta-eyebrow">Travelling to Campeche?</span>
+    <span class="mt-cta-title">Find every<br>Aliado Verificado.</span>
+    <span class="mt-cta-sub">Browse the full directory — filter by category, explore the profiles, and plan your visit around the network.</span>
+    <a class="mt-cta-btn-green" href="/aliados/directory">Browse the directory</a>
+  </div>
+  <div class="mt-ali-cta-block mt-business">
+    <span class="mt-cta-eyebrow">Do you run a local business?</span>
+    <span class="mt-cta-title">Join the<br>network.</span>
+    <span class="mt-cta-sub">No monthly fee. Real standards. And travellers who are already looking for exactly what you offer.</span>
+    <a class="mt-cta-btn-gold" href="/inicio/hazte-aliado/">Become an Aliado</a>
+  </div>
+</div>
+</div>
+</div>
+</section>

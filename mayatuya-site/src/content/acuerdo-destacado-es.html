@@ -1,0 +1,510 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+.mt-ap{
+  --g:#013220;
+  --gold:#c89e4b;
+  --gold-d:#9a7828;
+  --cream:#f2e9d0;
+  --ink:#0c0b09;
+  --muted:#5a5040;
+  --rule:rgba(1,50,32,0.10);
+  --rule-gold:rgba(200,158,75,0.25);
+  font-family:'Lato',sans-serif;
+  color:var(--ink);
+  max-width:700px;
+  margin:0 auto;
+  padding:0 24px 56px;
+}
+
+/* ── Header ── */
+.mt-ap-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:52px 0 22px;
+  border-bottom:2px solid var(--g);
+  margin-bottom:28px;
+}
+.mt-ap-brand-name{
+  font-family:'Playfair Display SC',serif;
+  font-size:17px;
+  color:var(--g);
+  letter-spacing:.06em;
+  display:block;
+}
+.mt-ap-brand-tag{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:11px;
+  color:var(--gold-d);
+  display:block;
+  margin-top:3px;
+}
+.mt-ap-meta{text-align:right;}
+.mt-ap-doc-type{
+  font-size:8px;
+  letter-spacing:.44em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  display:block;
+  margin-bottom:3px;
+}
+.mt-ap-doc-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:12px;
+  color:var(--g);
+  letter-spacing:.02em;
+  display:block;
+}
+.mt-ap-doc-sub{
+  font-size:10px;
+  color:var(--muted);
+  display:block;
+  margin-top:2px;
+}
+
+/* ── Tier badge ── */
+.mt-ap-tier{
+  display:inline-block;
+  font-size:8px;
+  letter-spacing:.4em;
+  text-transform:uppercase;
+  color:var(--g);
+  background:rgba(1,50,32,0.07);
+  padding:5px 14px;
+  margin-bottom:20px;
+}
+
+/* ── Price block ── */
+.mt-ap-price-row{
+  display:flex;
+  gap:2px;
+  margin-bottom:24px;
+}
+.mt-ap-price-opt{
+  flex:1;
+  border:1px solid var(--rule-gold);
+  padding:16px 18px;
+  background:#fff;
+}
+.mt-ap-price-opt-label{
+  font-size:8px;
+  letter-spacing:.35em;
+  text-transform:uppercase;
+  color:var(--muted);
+  display:block;
+  margin-bottom:8px;
+}
+.mt-ap-price-opt-amount{
+  font-family:'Playfair Display SC',serif;
+  font-size:22px;
+  color:var(--g);
+  display:block;
+  margin-bottom:4px;
+}
+.mt-ap-price-opt-note{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* ── Intro ── */
+.mt-ap-intro{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:15px;
+  color:var(--muted);
+  line-height:1.65;
+  padding:18px 0 24px;
+  border-bottom:1px solid var(--rule);
+  margin-bottom:28px;
+}
+
+/* ── Section label ── */
+.mt-ap-sec{
+  font-size:8px;
+  letter-spacing:.48em;
+  text-transform:uppercase;
+  color:var(--gold-d);
+  display:block;
+  margin-bottom:12px;
+  margin-top:28px;
+  opacity:.85;
+}
+.mt-ap-sec:first-of-type{margin-top:0;}
+
+/* ── Clause ── */
+.mt-ap-clause{
+  border:1px solid var(--rule-gold);
+  border-left:3px solid var(--gold);
+  padding:16px 18px;
+  margin-bottom:24px;
+  background:rgba(200,158,75,0.03);
+}
+.mt-ap-clause-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:9px;
+  color:var(--g);
+  letter-spacing:.05em;
+  display:block;
+  margin-bottom:9px;
+}
+.mt-ap-clause-text{
+  font-size:13px;
+  color:#3a3228;
+  line-height:1.75;
+}
+
+/* ── Obligation boxes ── */
+.mt-ap-oblig{
+  border:1px solid var(--rule);
+  padding:16px 18px;
+  margin-bottom:14px;
+}
+.mt-ap-oblig-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:9px;
+  color:var(--g);
+  letter-spacing:.05em;
+  display:block;
+  margin-bottom:12px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--rule-gold);
+}
+.mt-ap-list{list-style:none;padding:0;margin:0;}
+.mt-ap-list li{
+  font-size:12.5px;
+  color:var(--muted);
+  padding:5px 0 5px 16px;
+  border-bottom:1px solid rgba(1,50,32,0.04);
+  position:relative;
+  line-height:1.55;
+}
+.mt-ap-list li:last-child{border-bottom:none;}
+.mt-ap-list li::before{
+  content:'—';
+  position:absolute;
+  left:0;
+  color:var(--gold);
+  font-size:10px;
+  top:6px;
+}
+
+/* ── Standards ── */
+.mt-ap-std{
+  border:1px solid var(--rule);
+  padding:16px 18px;
+  margin-bottom:24px;
+}
+.mt-ap-std-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:9px;
+  color:var(--g);
+  letter-spacing:.05em;
+  display:block;
+  margin-bottom:12px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--rule-gold);
+}
+.mt-ap-std-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0 16px;
+}
+@media(max-width:560px){.mt-ap-std-grid{grid-template-columns:1fr;}}
+.mt-ap-std-item{
+  display:flex;
+  gap:9px;
+  padding:6px 0;
+  border-bottom:1px solid rgba(1,50,32,0.04);
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.45;
+  align-items:flex-start;
+}
+.mt-ap-std-item:last-child{border-bottom:none;}
+.mt-ap-std-box{
+  width:13px;height:13px;
+  border:1px solid var(--rule-gold);
+  flex-shrink:0;
+  margin-top:2px;
+}
+
+/* ── Payment note ── */
+.mt-ap-payment-note{
+  background:rgba(200,158,75,0.07);
+  border:1px solid var(--rule-gold);
+  padding:14px 18px;
+  margin-bottom:24px;
+  font-size:13px;
+  color:var(--g);
+  line-height:1.65;
+}
+.mt-ap-payment-note strong{font-weight:700;}
+
+/* ── Conditions ── */
+.mt-ap-conditions{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.65;
+  padding:16px 0;
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  margin-bottom:24px;
+}
+
+/* ── Review ── */
+.mt-ap-review{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:13px;
+  color:var(--muted);
+  padding:12px 16px;
+  background:rgba(1,50,32,0.03);
+  border-left:2px solid rgba(1,50,32,0.15);
+  margin-bottom:36px;
+  line-height:1.6;
+}
+
+/* ── Payment links ── */
+.mt-ap-payment-links{margin-bottom:8px;}
+.mt-ap-payment-links-note{
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.65;
+  margin:0 0 16px;
+}
+.mt-ap-payment-links-row{
+  display:flex;
+  gap:12px;
+}
+@media(max-width:520px){.mt-ap-payment-links-row{flex-direction:column;}}
+.mt-ap-pay-btn{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding:20px 16px;
+  background:var(--g);
+  text-decoration:none;
+  transition:background .2s;
+  gap:4px;
+}
+.mt-ap-pay-btn:hover{background:#024d30;}
+.mt-ap-pay-btn-label{
+  font-family:'Lato',sans-serif;
+  font-size:8px;
+  letter-spacing:.4em;
+  text-transform:uppercase;
+  color:var(--gold);
+  opacity:.85;
+}
+.mt-ap-pay-btn-amount{
+  font-family:'Playfair Display SC',serif;
+  font-size:22px;
+  color:var(--cream);
+  margin:4px 0 2px;
+}
+.mt-ap-pay-btn-note{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:12px;
+  color:rgba(242,233,208,0.6);
+}
+
+/* ── Divider + form heading ── */
+.mt-ap-divider{
+  border:none;
+  border-top:1px solid var(--rule-gold);
+  margin:0 0 28px;
+}
+.mt-ap-form-head{margin-bottom:20px;}
+.mt-ap-form-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:18px;
+  font-weight:400;
+  color:var(--g);
+  margin:0 0 6px;
+}
+.mt-ap-form-note{
+  font-family:'Lato',sans-serif;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.65;
+  margin:0;
+}
+
+/* ── Footer ── */
+.mt-ap-footer{
+  margin-top:48px;
+  padding-top:14px;
+  border-top:1px solid var(--rule);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.mt-ap-footer-brand{
+  font-family:'Playfair Display SC',serif;
+  font-size:9px;
+  color:var(--g);
+  opacity:.45;
+  letter-spacing:.05em;
+}
+.mt-ap-footer-contact{font-size:10px;color:var(--muted);opacity:.55;}
+.mt-ap-footer-contact a{color:var(--muted);text-decoration:none;}
+</style>
+
+<div class="mt-ap">
+
+  
+  <div class="mt-ap-header">
+    <div>
+      <span class="mt-ap-brand-name">Maya Tuya</span>
+      <span class="mt-ap-brand-tag">No es solo Maya — es Tuya.</span>
+    </div>
+    <div class="mt-ap-meta">
+      <span class="mt-ap-doc-type">Documento</span>
+      <span class="mt-ap-doc-title">Acuerdo Aliado Destacado</span>
+      <span class="mt-ap-doc-sub">Ruta Tren Maya · 2026</span>
+    </div>
+  </div>
+
+  <span class="mt-ap-tier">Membresía Aliado Destacado · Presencia prioritaria</span>
+
+  
+  <div class="mt-ap-price-row">
+    <div class="mt-ap-price-opt">
+      <span class="mt-ap-price-opt-label">Plan mensual</span>
+      <span class="mt-ap-price-opt-amount">$749 MXN</span>
+      <span class="mt-ap-price-opt-note">por mes · compromiso mínimo 12 meses</span>
+    </div>
+    <div class="mt-ap-price-opt">
+      <span class="mt-ap-price-opt-label">Plan anual</span>
+      <span class="mt-ap-price-opt-amount">$7,490 MXN</span>
+      <span class="mt-ap-price-opt-note">pago único · equivale a 2 meses sin costo</span>
+    </div>
+  </div>
+
+  <p class="mt-ap-intro">
+    Este acuerdo formaliza la incorporación de tu negocio a la red Maya Tuya como Aliado Destacado — presencia prioritaria dentro del ecosistema de viajeros conscientes de la ruta. Lee cada sección con calma antes de aceptar.
+  </p>
+
+  
+  <span class="mt-ap-sec">Pago y activación</span>
+  <div class="mt-ap-payment-note">
+    <strong>El pago activa la membresía.</strong> Realiza el pago a través del enlace de Stripe que te enviamos antes de aceptar este acuerdo. Tu membresía entra en vigor a partir de la confirmación del pago y la aceptación de este documento.
+  </div>
+
+  
+  <span class="mt-ap-sec">Compromiso con el viajero Maya Tuya</span>
+  <div class="mt-ap-clause">
+    <span class="mt-ap-clause-title">Cláusula de experiencia</span>
+    <div class="mt-ap-clause-text">
+      El Aliado se compromete a recibir a todo viajero que se identifique como cliente de Maya Tuya con atención genuina y a ofrecerle algo que enriquezca su experiencia — sea una atención especial, una historia, una recomendación, o cualquier gesto que refleje lo mejor de este negocio. La forma específica queda a criterio del Aliado y puede variar.
+    </div>
+  </div>
+
+  
+  <span class="mt-ap-sec">Compromisos bilaterales</span>
+  <div class="mt-ap-oblig">
+    <span class="mt-ap-oblig-title">El negocio se compromete a</span>
+    <ul class="mt-ap-list">
+      <li>Mantener los estándares Aliado Destacado mientras forme parte de la red</li>
+      <li>Proporcionar a Maya Tuya la información y material necesario para el perfil completo en el directorio</li>
+      <li>Notificar a Maya Tuya ante cualquier cambio relevante para la experiencia del viajero</li>
+    </ul>
+  </div>
+  <div class="mt-ap-oblig">
+    <span class="mt-ap-oblig-title">Maya Tuya se compromete a</span>
+    <ul class="mt-ap-list">
+      <li>Presentar el negocio con perfil prioritario y cuidado editorial en el directorio</li>
+      <li>Proporcionar la placa física Aliado Destacado y el material oficial sin costo adicional</li>
+      <li>Publicar el perfil completo una vez recibida y revisada la información</li>
+      <li>Incluir al Aliado en experiencias y guías cuando estén operativas</li>
+      <li>Notificar al negocio ante cualquier cambio que le afecte directamente</li>
+      <li>Visitar el negocio a los 30 días para una conversación de seguimiento</li>
+    </ul>
+  </div>
+
+  
+  <span class="mt-ap-sec">Estándares Aliado Destacado — a cumplir en 30 días</span>
+  <div class="mt-ap-std">
+    <div class="mt-ap-std-grid">
+      <div class="mt-ap-std-item"><div class="mt-ap-std-box"></div><span>Perfil de Google Maps completo con fotos actualizadas</span></div>
+      <div class="mt-ap-std-item"><div class="mt-ap-std-box"></div><span>Señalización básica bilingüe visible en la entrada</span></div>
+      <div class="mt-ap-std-item"><div class="mt-ap-std-box"></div><span>Material Maya Tuya visible y destacado para el viajero</span></div>
+      <div class="mt-ap-std-item"><div class="mt-ap-std-box"></div><span>Al menos una persona con inglés básico en el equipo</span></div>
+      <div class="mt-ap-std-item"><div class="mt-ap-std-box"></div><span>Entrada limpia, ordenada e iluminada</span></div>
+      <div class="mt-ap-std-item"><div class="mt-ap-std-box"></div><span>Precios visibles y método de pago indicado</span></div>
+      <div class="mt-ap-std-item"><div class="mt-ap-std-box"></div><span>Placa Aliado Destacado instalada en lugar visible</span></div>
+      <div class="mt-ap-std-item"><div class="mt-ap-std-box"></div><span>Formulario de perfil completo enviado a Maya Tuya</span></div>
+    </div>
+  </div>
+
+  
+  <span class="mt-ap-sec">Condiciones económicas</span>
+  <div class="mt-ap-oblig">
+    <ul class="mt-ap-list">
+      <li><strong style="color:var(--g);">Plan mensual:</strong> $749 MXN/mes · compromiso mínimo de 12 meses · sin cancelación anticipada</li>
+      <li><strong style="color:var(--g);">Plan anual:</strong> $7,490 MXN · pago único · sin devolución parcial una vez pagado</li>
+      <li>La tarifa de fundador ($749 MXN/mes) queda bloqueada mientras la membresía permanezca activa — se pierde si se cancela</li>
+      <li>La renovación al término del período es opcional — sin compromiso automático</li>
+    </ul>
+  </div>
+
+  
+  <p class="mt-ap-conditions">
+    La membresía Aliado Destacado permanece activa mientras el negocio mantenga los estándares acordados y los pagos estén al corriente. Maya Tuya puede retirar del directorio a cualquier Aliado que incumpla de forma reiterada, con aviso mínimo de 7 días. En ese caso, el período no utilizado será reembolsado de forma proporcional. Este acuerdo puede actualizarse de mutuo acuerdo entre ambas partes.
+  </p>
+
+  
+  <div class="mt-ap-review">
+    La visita de seguimiento tendrá lugar 30 días naturales a partir de la fecha de aceptación de este acuerdo.
+  </div>
+
+  
+  <hr class="mt-ap-divider">
+  <span class="mt-ap-sec" style="margin-top:0;">Paso 1 — Realiza el pago</span>
+  <div class="mt-ap-payment-links">
+    <p class="mt-ap-payment-links-note">Elige tu plan y completa el pago antes de aceptar el acuerdo. El pago activa tu membresía.</p>
+    <div class="mt-ap-payment-links-row">
+      <a href="{{stripe:destacado_monthly}}" class="mt-ap-pay-btn" target="_blank" rel="noopener">
+        <span class="mt-ap-pay-btn-label">Plan Mensual</span>
+        <span class="mt-ap-pay-btn-amount">$749 MXN / mes</span>
+        <span class="mt-ap-pay-btn-note">Cargo automático · mínimo 12 meses</span>
+      </a>
+      <a href="{{stripe:destacado_annual}}" class="mt-ap-pay-btn" target="_blank" rel="noopener">
+        <span class="mt-ap-pay-btn-label">Plan Anual</span>
+        <span class="mt-ap-pay-btn-amount">$7,490 MXN</span>
+        <span class="mt-ap-pay-btn-note">Pago único · equivale a 2 meses sin costo</span>
+      </a>
+    </div>
+  </div>
+
+  
+  <hr class="mt-ap-divider">
+  <div class="mt-ap-form-head">
+    <p class="mt-ap-form-title">Paso 2 — Acepta el acuerdo</p>
+    <p class="mt-ap-form-note">Una vez realizado el pago, completa los campos a continuación. Recibirás una confirmación por correo electrónico.</p>
+  </div>
+
+  
+  <div class="mt-ap-footer">
+    <span class="mt-ap-footer-brand">Maya Tuya</span>
+    <span class="mt-ap-footer-contact">
+      <a href="mailto:hola@mayatuya.com">hola@mayatuya.com</a> &nbsp;·&nbsp;
+      <a href="https://wa.me/529381842944">+52 938 184 2944</a>
+    </span>
+  </div>
+
+</div>
+{{form:18}}
+</div>
+</section>

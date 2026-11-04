@@ -1,0 +1,422 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-light{background:transparent;border:1.5px solid rgba(242,233,208,.5);color:var(--cream);}
+.mt-btn-outline-light:hover{background:rgba(242,233,208,.12);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-exp-hero{
+  position:relative;width:100%;
+  min-height:clamp(460px,68vh,700px);
+  overflow:hidden;display:flex;align-items:flex-end;
+}
+.mt-exp-hero-img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;filter:saturate(.82) brightness(.6);
+}
+.mt-exp-hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(1,25,12,.92) 0%,rgba(1,25,12,.28) 55%,transparent 100%);
+}
+.mt-exp-hero-content{
+  position:relative;z-index:2;
+  padding:clamp(28px,5vw,56px) clamp(20px,6vw,64px);
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:24px;
+  align-items:flex-end;
+}
+.mt-exp-hero-left{}
+.mt-exp-hero-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:12px;}
+.mt-exp-hero-title{font-family:'Playfair Display SC',serif;font-size:clamp(32px,5.5vw,62px);font-weight:400;color:#fff;line-height:1.06;display:block;margin-bottom:10px;}
+.mt-exp-hero-desc{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(15px,2vw,19px);color:rgba(242,233,208,.65);line-height:1.5;display:block;max-width:520px;margin-bottom:22px;}
+.mt-exp-hero-right{text-align:right;flex-shrink:0;}
+.mt-exp-hero-price{font-family:'Playfair Display SC',serif;font-size:clamp(24px,3.5vw,42px);color:var(--gold);display:block;line-height:1;}
+.mt-exp-hero-price-sub{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:rgba(200,158,75,.55);display:block;margin-top:4px;margin-bottom:16px;}
+@media(max-width:600px){
+  .mt-exp-hero-content{grid-template-columns:1fr;gap:20px;}
+  .mt-exp-hero-right{text-align:left;}
+}
+
+/* ── MOBILE: stacked layout — image on top, dark panel below ── */
+@media(max-width:600px){
+  .mt-exp-hero{display:block;min-height:unset;overflow:visible;}
+  .mt-exp-hero-img{position:static;width:100%;height:240px;object-fit:cover;object-position:center top;display:block;}
+  .mt-exp-hero-overlay{display:none;}
+  .mt-exp-hero-content{position:static;background:var(--g);padding:28px 22px;display:block;width:100%;}
+  .mt-exp-hero-price,.mt-exp-hero-price-sub{color:var(--gold);}
+  .mt-exp-hero-right{text-align:left;margin-top:4px;}
+}
+
+</style>
+<div class="mt-w">
+<div class="mt-exp-hero">
+  
+  <img class="mt-exp-hero-img" src="/assets/img/Campeche-Walls.jpg" alt="La Ciudad Amurallada — Maya Tuya Experience">
+  <div class="mt-exp-hero-overlay"></div>
+  <div class="mt-exp-hero-content">
+    <div class="mt-exp-hero-left">
+      <span class="mt-exp-hero-eyebrow">Featured Experience · Campeche · 5 Hours</span>
+      <span class="mt-exp-hero-title">From the Walls
+to the Table.</span>
+      <span class="mt-exp-hero-desc">A curated morning inside Campeche's walled city — private chocolate workshop, the UNESCO historic centre, handmade jewellery from a local artisan, and an all-inclusive organic brunch. Nothing to pay on the day.</span>
+      <div class="mt-actions">
+        <a class="mt-btn mt-btn-dark" style="background:var(--gold);border-color:var(--gold);" href="/experiences/fromthewallstothetable">View Details</a>
+        <a class="mt-btn mt-btn-outline-light" href="#mt-exp-grid">Browse all experiences</a>
+      </div>
+    </div>
+    <div class="mt-exp-hero-right">
+      <span class="mt-exp-hero-price">$185 USD</span>
+      <span class="mt-exp-hero-price-sub">From · per person · min. 2</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:40px;--pr:40px;--pb:40px;--pl:40px">
+<div class="mt-inner">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+
+.mt-exp-intro{
+  padding:52px 0 44px;
+  border-bottom:1px solid var(--rule);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:64px;
+  align-items:start;
+}
+.mt-exp-intro-left{}
+.mt-exp-intro-eyebrow{
+  font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;
+  text-transform:uppercase;color:var(--gold-d);opacity:.75;
+  display:block;margin-bottom:12px;
+}
+.mt-exp-intro-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(26px,4vw,44px);
+  font-weight:400;color:var(--ink);
+  line-height:1.08;display:block;margin-bottom:16px;
+}
+.mt-exp-intro-title em{font-style:normal;color:var(--g);}
+.mt-exp-intro-rule{width:40px;height:2px;background:var(--gold);display:block;margin-bottom:18px;}
+.mt-exp-intro-sub{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(17px,2.2vw,21px);color:var(--muted);
+  line-height:1.6;display:block;
+}
+.mt-exp-intro-right{
+  padding-top:6px;
+  display:flex;flex-direction:column;gap:20px;
+}
+.mt-exp-intro-right p{
+  font-family:'Lato',sans-serif;font-size:14px;
+  color:var(--muted);line-height:1.8;
+}
+/* How it works — three items */
+.mt-exp-how{
+  display:flex;flex-direction:column;gap:0;
+  border:1px solid var(--rule);
+  margin-top:4px;
+}
+.mt-exp-how-item{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:14px 18px;border-bottom:1px solid var(--rule);
+}
+.mt-exp-how-item:last-child{border-bottom:none;}
+.mt-exp-how-num{
+  font-family:'Playfair Display SC',serif;
+  font-size:18px;color:var(--g);opacity:.18;
+  flex-shrink:0;line-height:1.1;min-width:22px;
+}
+.mt-exp-how-text{
+  font-family:'Lato',sans-serif;font-size:13px;
+  color:var(--muted);line-height:1.6;
+}
+.mt-exp-how-text strong{color:var(--ink);font-weight:700;}
+@media(max-width:660px){
+  .mt-exp-intro{grid-template-columns:1fr;gap:32px;}
+}
+</style>
+<div class="mt-w">
+<div class="mt-exp-intro">
+  <div class="mt-exp-intro-left">
+    <span class="mt-exp-intro-eyebrow">Campeche · Curated Experiences · Private</span>
+    <span class="mt-exp-intro-title">Designed days.<br>Not packaged tours.</span>
+    <span class="mt-exp-intro-rule"></span>
+    <span class="mt-exp-intro-sub">Every experience is built around a specific idea — a mood, a route, a set of Aliados Verificados who do something worth experiencing. Nothing is off-the-shelf.</span>
+  </div>
+  <div class="mt-exp-intro-right">
+    <p>We design each experience from the Aliado network outward. A private driver connects the stops. A local guide where it adds something. Pre-selected meals, curated pacing, and a clear intention behind every decision. Minimum 2 people.</p>
+    <div class="mt-exp-how">
+      <div class="mt-exp-how-item">
+        <span class="mt-exp-how-num">01</span>
+        <span class="mt-exp-how-text"><strong>Book —</strong> Choose your experience, confirm the date and book directly on this page .</span>
+      </div>
+      <div class="mt-exp-how-item">
+        <span class="mt-exp-how-num">02</span>
+        <span class="mt-exp-how-text"><strong>Arrive —</strong> Your driver meets you. The day is already designed — you just have to show up.</span>
+      </div>
+      <div class="mt-exp-how-item">
+        <span class="mt-exp-how-num">03</span>
+        <span class="mt-exp-how-text"><strong>Enjoy —</strong> No rush. No stress. Our Aliados know how to welcome you.</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-light{background:transparent;border:1.5px solid rgba(242,233,208,.5);color:var(--cream);}
+.mt-btn-outline-light:hover{background:rgba(242,233,208,.12);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-exp-page{padding:44px 0 60px;}
+
+/* ── Filter bar ── */
+.mt-exp-filters{
+  display:flex;flex-wrap:wrap;gap:10px;
+  margin-bottom:32px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--rule);
+  align-items:center;
+}
+.mt-filter-label{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-d);opacity:.7;flex-shrink:0;margin-right:4px;}
+.mt-filter-btn{
+  font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;
+  padding:7px 16px;background:transparent;
+  border:1px solid var(--rule);color:var(--muted);
+  cursor:pointer;transition:all .2s;
+}
+.mt-filter-btn.active,.mt-filter-btn:hover{
+  border-color:var(--g);background:var(--g);color:var(--cream);
+}
+.mt-exp-count{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:14px;color:var(--muted);margin-left:auto;
+}
+.mt-exp-count strong{color:var(--g);font-style:normal;}
+
+/* ── Grid ── */
+.mt-exp-grid-wrap{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:3px;
+}
+.mt-exp-item{display:block;text-decoration:none;color:inherit;position:relative;overflow:hidden;}
+.mt-exp-item-img{
+  width:100%;aspect-ratio:16/9;object-fit:cover;display:block;
+  filter:saturate(.82) brightness(.68);
+  transition:filter .4s,transform .5s;
+}
+.mt-exp-item:hover .mt-exp-item-img{filter:saturate(.95) brightness(.55);transform:scale(1.03);}
+.mt-exp-item-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(1,25,12,.88) 0%,rgba(1,25,12,.05) 55%,transparent 100%);
+  padding:20px 24px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+}
+.mt-exp-item-tags{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap;}
+.mt-exp-item-tag{font-family:'Lato',sans-serif;font-size:8px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);opacity:.8;border:1px solid rgba(200,158,75,.3);padding:2px 8px;}
+.mt-exp-item-name{font-family:'Playfair Display SC',serif;font-size:clamp(16px,2.2vw,24px);color:#fff;line-height:1.1;display:block;margin-bottom:6px;}
+.mt-exp-item-desc{font-family:'Lato',sans-serif;font-size:12px;color:rgba(242,233,208,.6);line-height:1.5;display:block;margin-bottom:14px;}
+.mt-exp-item-footer{display:flex;justify-content:space-between;align-items:center;}
+.mt-exp-item-price{font-family:'Playfair Display SC',serif;font-size:16px;color:var(--gold);}
+.mt-exp-item-cta{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;padding:7px 16px;background:rgba(242,233,208,.1);border:1px solid rgba(242,233,208,.25);color:var(--cream);transition:background .2s;}
+.mt-exp-item:hover .mt-exp-item-cta{background:var(--gold);border-color:var(--gold);color:#fff;}
+
+/* hidden by filter */
+.mt-exp-item[style*="none"]{display:none!important;}
+
+@media(max-width:620px){.mt-exp-grid-wrap{grid-template-columns:1fr;}}
+</style>
+<div class="mt-w">
+<div class="mt-exp-page" id="mt-exp-grid">
+
+  
+  <div class="mt-exp-filters">
+    <span class="mt-filter-label">Filter:</span><button class="mt-filter-btn active" onclick="mtExpFilter(this,'all')">All</button><button class="mt-filter-btn" onclick="mtExpFilter(this,'full-day')">Full day</button><button class="mt-filter-btn" onclick="mtExpFilter(this,'evening')">Evening</button><button class="mt-filter-btn" onclick="mtExpFilter(this,'half-day')">Half day</button>
+    <span class="mt-exp-count"><strong id="mt-exp-count-n">4</strong> experiences</span>
+  </div>
+
+  
+  <div class="mt-exp-grid-wrap" id="mt-exp-grid-wrap">
+    
+    
+    <a class="mt-exp-item" data-slug="full-day" href="/experiences/fromthewallstothetable">
+      <img class="mt-exp-item-img" src="/assets/img/Campeche-Walls.jpg" alt="La Ciudad Amurallada — Maya Tuya" loading="lazy">
+      <div class="mt-exp-item-overlay">
+        <div class="mt-exp-item-tags"><span class="mt-exp-item-tag">Full morning</span><span class="mt-exp-item-tag">From $185 USD</span></div>
+        <span class="mt-exp-item-name">From the Walls
+to the Table.</span>
+        <span class="mt-exp-item-desc">A curated morning inside Campeche's walled city — private chocolate workshop, the UNESCO historic centre, handmade jewellery from a local artisan, and an all-inclusive organic brunch. Nothing to pay on the day.</span>
+        <div class="mt-exp-item-footer">
+          <span class="mt-exp-item-price">$185 USD</span>
+          <span class="mt-exp-item-cta">View & book</span>
+        </div>
+      </div>
+    </a>
+    
+    
+    <a class="mt-exp-item" data-slug="evening" href="/experiences/thegatesandthenight">
+      <img class="mt-exp-item-img" src="/assets/img/ChatGPT-Image-Nov-1-2025-04_52_27-PM.png" alt="La Noche de Campeche — Maya Tuya" loading="lazy">
+      <div class="mt-exp-item-overlay">
+        <div class="mt-exp-item-tags"><span class="mt-exp-item-tag">Evening</span><span class="mt-exp-item-tag">From $185 USD</span></div>
+        <span class="mt-exp-item-name">The Gates &
+The Night.</span>
+        <span class="mt-exp-item-desc">An evening walk through the spine of Campeche's historic centre — Calle 59, the city walls at dusk, the mercado, and a three-course meal with the best view in the city. Then drinks and Lotería Campechana — the most popular game in Campeche, played for over 130 years.</span>
+        <div class="mt-exp-item-footer">
+          <span class="mt-exp-item-price">$185 USD</span>
+          <span class="mt-exp-item-cta">View & book</span>
+        </div>
+      </div>
+    </a>
+    
+    
+    <a class="mt-exp-item" data-slug="half-day" href="/experiences/openheartopentable">
+      <img class="mt-exp-item-img" src="/assets/img/1000118855.jpg" alt="El Círculo — Maya Tuya" loading="lazy">
+      <div class="mt-exp-item-overlay">
+        <div class="mt-exp-item-tags"><span class="mt-exp-item-tag">Morning or Afternoon</span><span class="mt-exp-item-tag">From $195 USD</span></div>
+        <span class="mt-exp-item-name">Open Heart, Open Table</span>
+        <span class="mt-exp-item-desc">A cacao ceremony, guided meditation, light yoga, and a shared meal — held inside the courtyard and secret garden of a historic house in Campeche's walled city.</span>
+        <div class="mt-exp-item-footer">
+          <span class="mt-exp-item-price">$195 USD</span>
+          <span class="mt-exp-item-cta">View & book</span>
+        </div>
+      </div>
+    </a>
+    
+    
+    <a class="mt-exp-item" data-slug="half-day" href="/experiences/a-la-mesa">
+      <img class="mt-exp-item-img" src="/assets/img/WhatsApp-Image-2026-04-13-at-18.09.05.jpeg" alt="A la Mesa — Maya Tuya" loading="lazy">
+      <div class="mt-exp-item-overlay">
+        <div class="mt-exp-item-tags"><span class="mt-exp-item-tag">Half day</span><span class="mt-exp-item-tag">From $95 USD</span></div>
+        <span class="mt-exp-item-name">A la Mesa</span>
+        <span class="mt-exp-item-desc">Seafood, Chiapas cacao, and the city's finest organic kitchen. The short version of Campeche on a plate.</span>
+        <div class="mt-exp-item-footer">
+          <span class="mt-exp-item-price">$95 USD</span>
+          <span class="mt-exp-item-cta">View & book</span>
+        </div>
+      </div>
+    </a>
+    
+  </div>
+
+</div>
+</div>
+
+<script>
+function mtExpFilter(btn, slug) {
+  // Update active button
+  document.querySelectorAll('.mt-filter-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+
+  // Show/hide cards
+  var items = document.querySelectorAll('.mt-exp-item');
+  var count = 0;
+  items.forEach(function(item) {
+    var show = slug === 'all' || item.dataset.slug === slug;
+    item.style.display = show ? '' : 'none';
+    if(show) count++;
+  });
+  var el = document.getElementById('mt-exp-count-n');
+  if(el) el.textContent = count;
+}
+</script>
+</div>
+</section>
+
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-eyebrow{font-family:'Lato',sans-serif;font-size:9px;letter-spacing:.55em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:10px;}
+.mt-btn{font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;padding:12px 28px;text-decoration:none;display:inline-block;transition:all .2s;border:none;cursor:pointer;}
+.mt-btn-dark{background:var(--g);color:var(--cream);}
+.mt-btn-dark:hover{background:#024a30;color:var(--cream);}
+.mt-btn-outline-dark{background:transparent;border:1.5px solid var(--g);color:var(--g);}
+.mt-btn-outline-dark:hover{background:var(--g);color:var(--cream);}
+.mt-btn-outline-light{background:transparent;border:1.5px solid rgba(242,233,208,.5);color:var(--cream);}
+.mt-btn-outline-light:hover{background:rgba(242,233,208,.12);color:var(--cream);}
+.mt-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+
+.mt-biz-cta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  border-top:2px solid var(--g);
+}
+.mt-biz-cta-text{
+  padding:52px 48px;
+  background:rgba(1,50,32,.04);
+  border-right:1px solid var(--rule);
+}
+.mt-biz-cta-text .mt-eyebrow{margin-bottom:14px;}
+.mt-biz-cta-title{
+  font-family:'Playfair Display SC',serif;
+  font-size:clamp(20px,3vw,30px);
+  color:var(--ink);line-height:1.1;
+  display:block;margin-bottom:16px;
+}
+.mt-biz-cta-body{
+  font-family:'Lato',sans-serif;font-size:14px;
+  color:var(--muted);line-height:1.75;
+  margin-bottom:0;
+}
+.mt-biz-cta-action{
+  padding:52px 48px;
+  background:var(--g);
+  display:flex;flex-direction:column;
+  justify-content:space-between;
+}
+.mt-biz-cta-pull{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:clamp(17px,2.2vw,22px);
+  color:rgba(242,233,208,.72);
+  line-height:1.55;
+  display:block;
+  margin-bottom:32px;
+  flex:1;
+}
+.mt-biz-cta-btn{
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.35em;
+  text-transform:uppercase;padding:14px 32px;
+  background:var(--gold);color:#fff;
+  text-decoration:none;display:inline-block;
+  transition:background .2s;align-self:flex-start;
+}
+.mt-biz-cta-btn:hover{background:var(--gold-d);color:#fff;}
+@media(max-width:620px){
+  .mt-biz-cta{grid-template-columns:1fr;}
+  .mt-biz-cta-text,.mt-biz-cta-action{padding:36px 28px;}
+  .mt-biz-cta-text{border-right:none;border-bottom:1px solid var(--rule);}
+}
+</style>
+<div class="mt-w">
+<div class="mt-biz-cta">
+  <div class="mt-biz-cta-text">
+    <span class="mt-eyebrow">Do you run a business along the Tren Maya route?</span>
+    <span class="mt-biz-cta-title">Join the Maya Tuya Aliados program.</span>
+    <p class="mt-biz-cta-body">Designed to help local businesses stand out, prepare, and connect with the travelers who are coming. Professional templates, practical tools, and real support to help your business grow with the new wave of tourism.</p>
+  </div>
+  <div class="mt-biz-cta-action">
+    <span class="mt-biz-cta-pull">No monthly fee. Real standards. And travellers who are already looking for exactly what you offer.</span>
+    <a class="mt-biz-cta-btn" href="/inicio/hazte-aliado/">Become an Aliado</a>
+  </div>
+</div>
+</div>
+</div>
+</section>

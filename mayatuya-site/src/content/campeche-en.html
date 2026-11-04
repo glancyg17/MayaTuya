@@ -1,0 +1,248 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#f3eee2">
+<div class="mt-inner">
+<style>
+#mtch {
+  --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;
+  --ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,.12);--rule-g:rgba(200,158,75,.25);
+  font-family:'Lato',sans-serif;color:var(--ink);
+}
+#mtch * { box-sizing:border-box; }
+#mtch a { text-decoration:none;color:inherit; }
+#mtch p { font-size:14px;color:var(--muted);line-height:1.85;margin-bottom:16px; }
+#mtch p:last-child { margin-bottom:0; }
+#mtch .eyebrow { font-size:8px;letter-spacing:.52em;text-transform:uppercase;color:var(--gold-d);opacity:.72;display:block;margin-bottom:12px; }
+#mtch h1 { font-family:'Playfair Display SC',serif;font-size:clamp(32px,5.5vw,56px);color:var(--ink);line-height:1.06;display:block;margin-bottom:14px;font-weight:400;margin-top:0; }
+#mtch h2 { font-family:'Playfair Display SC',serif;font-size:clamp(20px,3vw,32px);color:var(--ink);line-height:1.1;display:block;margin-bottom:12px;font-weight:400;margin-top:0; }
+#mtch h3 { font-family:'Playfair Display',serif;font-size:clamp(15px,2vw,18px);color:var(--ink);font-weight:700;display:block;margin-bottom:8px;line-height:1.2;margin-top:0; }
+#mtch .gold-rule { width:40px;height:2px;background:var(--gold);display:block;margin-bottom:18px; }
+#mtch .pull { font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,2.3vw,22px);color:var(--g);line-height:1.5;border-left:3px solid var(--gold);padding:12px 0 12px 20px;display:block;margin:24px 0; }
+#mtch .section { padding:44px 0;border-bottom:1px solid var(--rule); }
+#mtch .section:last-child { border-bottom:none; }
+#mtch .two-col { display:table;width:100%; }
+#mtch .col-main { display:table-cell;vertical-align:top;padding-right:48px; }
+#mtch .col-side { display:table-cell;vertical-align:top;width:260px;min-width:220px; }
+#mtch .info-block { border:1px solid var(--rule);padding:14px 16px;margin-bottom:8px;background:#fffdf7; }
+#mtch .info-label { font-size:8px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:5px; }
+#mtch .info-val { font-size:13px;color:var(--ink);line-height:1.6; }
+#mtch .btn-dark { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--g);color:var(--cream);display:inline-block;transition:background .2s; }
+#mtch .btn-dark:hover { background:#024a30; }
+#mtch .btn-gold { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--gold);color:#fff;display:inline-block;transition:background .2s; }
+#mtch .btn-gold:hover { background:var(--gold-d); }
+#mtch .btn-outline { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 22px;background:transparent;color:var(--muted);border:1px solid var(--rule-g);display:inline-block;transition:all .2s; }
+#mtch .btn-outline:hover { border-color:var(--gold);color:var(--ink); }
+#mtch .actions { display:flex;gap:10px;flex-wrap:wrap;margin-top:20px; }
+#mtch .ul-clean { list-style:none;padding:0;margin:0; }
+#mtch .ul-clean li { font-size:14px;color:var(--muted);line-height:1.75;padding:7px 0 7px 16px;border-bottom:1px solid var(--rule);position:relative; }
+#mtch .ul-clean li:last-child { border-bottom:none; }
+#mtch .ul-clean li::before { content:'·';position:absolute;left:2px;color:var(--gold);font-size:18px;line-height:1.3; }
+#mtch .cta-band { background:var(--g);padding:28px 32px;margin-top:28px; }
+#mtch .cta-band-title { font-family:'Playfair Display SC',serif;font-size:clamp(17px,2.3vw,24px);color:#fff;display:block;margin-bottom:8px; }
+#mtch .cta-band-sub { font-size:13px;color:rgba(242,233,208,.6);line-height:1.7;display:block;margin-bottom:16px;max-width:520px; }
+
+/* HERO */
+#mtch .pg-hero { position:relative;width:100%;overflow:hidden;height:380px; }
+#mtch .pg-hero img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.78) brightness(.52); }
+#mtch .pg-hero-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,rgba(1,15,7,.55) 28%,rgba(1,15,7,.08) 55%,transparent 100%); }
+#mtch .pg-hero-content { position:absolute;bottom:0;left:0;right:0;padding:28px 0 32px; }
+#mtch .pg-hero-content .eyebrow { color:var(--gold) !important;opacity:.9 !important; }
+#mtch .pg-hero-content h1 { color:#ffffff !important; }
+
+/* INLINE IMAGES */
+#mtch .img-full { width:100%;display:block;margin:24px 0;object-fit:cover;height:280px;filter:saturate(.88); }
+#mtch .img-half { display:table;width:100%;gap:0;margin:24px 0; }
+#mtch .img-half-l { display:table-cell;width:50%;padding-right:3px;vertical-align:top; }
+#mtch .img-half-r { display:table-cell;width:50%;padding-left:3px;vertical-align:top; }
+#mtch .img-half img { width:100%;height:200px;object-fit:cover;display:block;filter:saturate(.88); }
+#mtch .img-caption { font-size:10px;letter-spacing:.15em;color:var(--muted);opacity:.55;display:block;margin-top:4px;font-style:italic; }
+
+/* SUB-NAV */
+#mtch .sub-nav { display:flex;flex-wrap:wrap;border:1px solid var(--rule);margin-top:40px; }
+#mtch .sub-nav a { font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);padding:12px 16px;border-right:1px solid var(--rule);transition:color .2s,background .2s;display:block; }
+#mtch .sub-nav a:last-child { border-right:none; }
+#mtch .sub-nav a:hover { color:var(--g);background:rgba(1,50,32,.03); }
+#mtch .sub-nav a.active { color:var(--g);border-bottom:2px solid var(--gold); }
+
+/* HUB MAGAZINE GRID */
+#mtch .mag-grid { display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px; }
+#mtch .mag-card { position:relative;overflow:hidden;display:block;height:220px; }
+#mtch .mag-card.tall { grid-row:span 2;height:100%; }
+#mtch .mag-card img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.75) brightness(.52);transition:filter .4s,transform .5s; }
+#mtch .mag-card:hover img { filter:saturate(.9) brightness(.62);transform:scale(1.04); }
+#mtch .mag-card-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,transparent 55%); }
+#mtch .mag-card-content { position:absolute;bottom:0;left:0;right:0;padding:16px 18px; }
+#mtch .mag-card-tag { font-size:7.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:5px; }
+#mtch .mag-card-title { font-family:'Playfair Display SC',serif;font-size:clamp(14px,1.8vw,18px);color:#fff;line-height:1.1;display:block;margin-bottom:3px; }
+#mtch .mag-card-sub { font-size:11px;color:rgba(242,233,208,.55);line-height:1.4;display:block; }
+#mtch .mag-card-arrow { font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);opacity:.7;display:block;margin-top:6px; }
+
+/* ALIADO CARDS */
+#mtch .ali-card { border:1px solid var(--rule);background:#fffdf7;display:table;width:100%;margin-bottom:2px;transition:border-color .2s; }
+#mtch .ali-card:hover { border-color:var(--gold); }
+#mtch .ali-card-img { display:table-cell;width:140px;min-width:120px;vertical-align:top;position:relative;overflow:hidden; }
+#mtch .ali-card-img img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.88); }
+#mtch .ali-card-body { display:table-cell;vertical-align:middle;padding:14px 18px; }
+#mtch .ali-card-tag { font-size:8px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-d);opacity:.8;display:block;margin-bottom:5px; }
+#mtch .ali-card-name { font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--ink);display:block;margin-bottom:4px; }
+#mtch .ali-card-text { font-size:12.5px;color:var(--muted);line-height:1.6;display:block;margin-bottom:8px; }
+#mtch .ali-card-link { font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--g);border-bottom:1px solid var(--rule-g);padding-bottom:1px;transition:all .2s; }
+#mtch .ali-card-link:hover { color:var(--gold-d);border-color:var(--gold-d); }
+
+@media(max-width:680px){
+  #mtch .pg-hero { height:240px; }
+  #mtch .two-col { display:block; }
+  #mtch .col-main { display:block;padding-right:0;margin-bottom:20px; }
+  #mtch .col-side { display:block;width:100%; }
+  #mtch .mag-grid { grid-template-columns:1fr 1fr; }
+  #mtch .mag-card { height:160px; }
+  #mtch .mag-card.tall { grid-row:span 1;height:160px; }
+  #mtch .sub-nav a { border-right:none;border-bottom:1px solid var(--rule);width:50%; }
+  #mtch .img-half { display:block; }
+  #mtch .img-half-l,#mtch .img-half-r { display:block;width:100%;padding:0 0 3px; }
+  #mtch .ali-card-img { width:100px;min-width:80px; }
+  #mtch .cta-band { padding:22px 20px; }
+}
+</style>
+<div id="mtch">
+  <div class="pg-hero">
+    <img src="/assets/img/Campache-Hub-Images-e1777178332108.jpg" alt="Campeche walled city aerial view — UNESCO World Heritage Site, Mexico">
+    <div class="pg-hero-overlay"></div>
+    <div class="pg-hero-content">
+      <span class="eyebrow">Destination guide · Campeche, Mexico · Maya Tuya</span>
+      <h1>Campeche.</h1>
+    </div>
+  </div>
+  <div style="height:3px;background:var(--gold);width:100%;"></div>
+
+  <div class="section">
+    <div class="two-col">
+      <div class="col-main">
+        <span class="gold-rule"></span>
+        <span class="pull">The most intact walled colonial city in the Americas. Almost nobody knows it.</span>
+        <p>I came to Campeche for the first time expecting something like Mérida — colourful, restored, proud of itself. What I found was something quieter and, I think, more honest. The walls are real. The colour is real. The pirate history — the reason those walls exist at all — is real in a way that most Mexican colonial cities have had to romanticise. Campeche doesn't need to.</p>
+        <p>It was the most attacked port city in the Americas. Spanish galleons, French corsairs, Dutch privateers — all of them came for the logwood trade that made Campeche one of the wealthiest cities on the Gulf coast. The walls you walk along today weren't built for atmosphere. They were built because the city kept getting sacked.</p>
+        <p>Inside the walls, the historic centre is compact and walkable — a UNESCO World Heritage Site since 1999. The colours that define the city (ochre, rose, mint, sky blue, burnt sienna) aren't decorative choices. They're the original pigments, maintained because the law requires it. Campeche looks the way it always looked, not the way someone decided it should look for tourists.</p>
+        <img class="img-full" src="/assets/img/campechecorre.webp" alt="Calle 59, historic centre, Campeche Mexico" loading="lazy">
+        <span class="img-caption">Calle 59 — the spine of the historic centre.</span>
+        <p>Most visitors come for a day, see what they expect to see, and leave. The ones who stay longer find the barrios — the traditional neighbourhoods just beyond the walls, each with its own church, its own market, its own tempo. They find the coast road at dusk. They find a meal that doesn't exist on any ranking, in a restaurant full of locals, on a street with no English on the signage.</p>
+        <p>That's what this guide is for. Not to tell you what Campeche is — you'll feel that when you get here — but to make sure you don't spend your first morning flustered on a corner wondering how to get to the centre. The practical things matter. The structure lets everything else in.</p>
+        <div class="actions">
+          <a class="btn-dark" href="/experiences">Book an experience</a>
+          <a class="btn-outline" href="/product/campeche-travel-guide">Campeche guide — $9.99</a>
+          <a class="btn-outline" href="/conscioustraveler">The Conscious Traveler — Free</a>
+        </div>
+      </div>
+      <div class="col-side">
+        <div class="info-block">
+          <span class="info-label">Location</span>
+          <span class="info-val">Campeche State, Gulf Coast, Mexico<br>UNESCO World Heritage Site</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Best time to visit</span>
+          <span class="info-val">November – February<br>Cool, dry, exceptional light</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Getting there</span>
+          <span class="info-val">Tren Maya from Mérida<br>Tren Ligero to historic centre (12 MXN)<br>Taxi: ~200 MXN from station</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Getting around</span>
+          <span class="info-val">Walkable inside the walls<br>Taxi: 60–100 MXN city-wide<br>Agree price before entering</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Currency tip</span>
+          <span class="info-val">Much cheaper than Mérida or Cancún — but agree prices in advance for taxis and tours</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="eyebrow">Explore this guide</span>
+    <h2>Everything you need,<br>one page at a time.</h2>
+    <div class="mag-grid">
+      <a class="mag-card tall" href="/destinations/campeche/things-to-do">
+        <img src="/assets/img/baluarte-de-san-francisco-0.webp" alt="Baluarte San Carlos, Campeche walls" loading="lazy">
+        <div class="mag-card-overlay"></div>
+        <div class="mag-card-content">
+          <span class="mag-card-tag">Experiences & activities</span>
+          <span class="mag-card-title">Things to Do</span>
+          <span class="mag-card-sub">The walls, the baluartes, the city — and what most guides leave out.</span>
+          <span class="mag-card-arrow">Read →</span>
+        </div>
+      </a>
+      <a class="mag-card" href="/destinations/campeche/food-and-drink">
+        <img src="/assets/img/platillos-de-mariscos-scaled.jpg" alt="Food in Campeche — organic kitchen" loading="lazy">
+        <div class="mag-card-overlay"></div>
+        <div class="mag-card-content">
+          <span class="mag-card-tag">Restaurants & bars</span>
+          <span class="mag-card-title">Food & Drink</span>
+          <span class="mag-card-sub">Where to eat well — curated and verified.</span>
+          <span class="mag-card-arrow">Read →</span>
+        </div>
+      </a>
+      <a class="mag-card" href="/destinations/campeche/getting-there">
+        <img src="/assets/img/tren-maya.webp" alt="Tren Maya train, Mexico" loading="lazy">
+        <div class="mag-card-overlay"></div>
+        <div class="mag-card-content">
+          <span class="mag-card-tag">Transport & logistics</span>
+          <span class="mag-card-title">Getting There</span>
+          <span class="mag-card-sub">Tren Maya, Tren Ligero, taxis — what to know before you arrive.</span>
+          <span class="mag-card-arrow">Read →</span>
+        </div>
+      </a>
+      <a class="mag-card" href="/destinations/campeche/when-to-visit">
+        <img src="/assets/img/20201209_171750.webp" alt="Campeche walls at sunset" loading="lazy">
+        <div class="mag-card-overlay"></div>
+        <div class="mag-card-content">
+          <span class="mag-card-tag">Seasons & events</span>
+          <span class="mag-card-title">When to Visit</span>
+          <span class="mag-card-sub">Festivals, light, and the seasons that make Campeche most itself.</span>
+          <span class="mag-card-arrow">Read →</span>
+        </div>
+      </a>
+      <a class="mag-card" href="/destinations/campeche/itineraries">
+        <img src="/assets/img/parque-principal-campeche-galeria-min.jpg" alt="Plaza de Independencia, Campeche" loading="lazy">
+        <div class="mag-card-overlay"></div>
+        <div class="mag-card-content">
+          <span class="mag-card-tag">Ready-made plans</span>
+          <span class="mag-card-title">Itineraries</span>
+          <span class="mag-card-sub">One day, two, or three — structured but never rigid.</span>
+          <span class="mag-card-arrow">Read →</span>
+        </div>
+      </a>
+      <a class="mag-card" href="/destinations/campeche/neighbourhoods">
+        <img src="/assets/img/iglesia-de-san-roman-0.webp" alt="Barrio de San Román, Campeche" loading="lazy">
+        <div class="mag-card-overlay"></div>
+        <div class="mag-card-content">
+          <span class="mag-card-tag">Beyond the walls</span>
+          <span class="mag-card-title">Neighbourhoods</span>
+          <span class="mag-card-sub">The barrios where the city actually lives.</span>
+          <span class="mag-card-arrow">Read →</span>
+        </div>
+      </a>
+      <a class="mag-card" href="/destinations/campeche/day-trips">
+        <img src="/assets/img/edzna.webp" alt="Edzná archaeological site, Campeche" loading="lazy">
+        <div class="mag-card-overlay"></div>
+        <div class="mag-card-content">
+          <span class="mag-card-tag">Outside the city</span>
+          <span class="mag-card-title">Day Trips</span>
+          <span class="mag-card-sub">Edzná, the Petenes, dolphins at Isla Aguada.</span>
+          <span class="mag-card-arrow">Read →</span>
+        </div>
+      </a>
+      <a class="mag-card" href="/guides">
+        <img src="/assets/img/Guide-Template-Master-2.png" alt="Campeche First Edition guide — Maya Tuya" loading="lazy">
+        <div class="mag-card-overlay"></div>
+        <div class="mag-card-content">
+          <span class="mag-card-tag">Take it with you</span>
+          <span class="mag-card-title">Guides</span>
+          <span class="mag-card-sub">The Campeche First Edition and The Conscious Traveler.</span>
+          <span class="mag-card-arrow">View guides →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="sub-nav"><a href="/destinations/campeche" class="active">Overview</a><a href="/destinations/campeche/things-to-do">Things to Do</a><a href="/destinations/campeche/getting-there">Getting There</a><a href="/destinations/campeche/food-and-drink">Food & Drink</a><a href="/destinations/campeche/when-to-visit">When to Visit</a><a href="/destinations/campeche/itineraries">Itineraries</a><a href="/destinations/campeche/neighbourhoods">Neighbourhoods</a><a href="/destinations/campeche/day-trips">Day Trips</a></div>
+</div>
+</div>
+</section>

@@ -1,0 +1,230 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+
+#mtap { --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,.12);--rule-g:rgba(200,158,75,.22); font-family:'Lato',sans-serif;color:var(--ink); }
+#mtap * { box-sizing:border-box; }
+#mtap a { color:inherit; }
+
+/* HERO */
+#mtap .hero { position:relative;width:100%;height:420px;overflow:hidden; }
+#mtap .hero-img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.82) brightness(.58); }
+#mtap .hero-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,25,12,.92) 0%,rgba(1,25,12,.2) 60%,transparent 100%); }
+#mtap .hero-content { position:absolute;bottom:0;left:0;right:0;padding:28px 32px; }
+#mtap .hero-eyebrow { font-size:8px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:10px; }
+#mtap .hero-name { font-family:'Playfair Display SC',serif;font-size:clamp(26px,5vw,48px);color:#fff;line-height:1.06;display:block;margin-bottom:6px; }
+#mtap .hero-loc { font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.45);display:block; }
+#mtap .hero-badge { position:absolute;top:20px;right:24px;width:52px;height:52px;border-radius:50%;overflow:hidden;border:1.5px solid rgba(200,158,75,.3); }
+#mtap .hero-badge img { width:100%;height:100%;object-fit:cover; }
+#mtap .gold-bar { height:3px;background:var(--gold);width:100%; }
+
+/* SECTIONS */
+#mtap .section { padding:32px 32px;border-bottom:1px solid var(--rule); }
+#mtap .section:last-child { border-bottom:none; }
+#mtap .sec-label { font-size:8px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:14px; }
+
+/* ABOUT — table layout */
+#mtap .about-row { display:table;width:100%; }
+#mtap .about-text { display:table-cell;vertical-align:top;padding-right:32px; }
+#mtap .about-text p { font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:14px; }
+#mtap .about-text p:last-child { margin-bottom:0; }
+#mtap .sidebar { display:table-cell;vertical-align:top;width:230px;min-width:200px; }
+#mtap .info-block { border:1px solid var(--rule);padding:14px 16px;margin-bottom:8px; }
+#mtap .info-label { font-size:7.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:5px; }
+#mtap .info-val { font-size:13px;color:var(--ink);line-height:1.5;white-space:pre-line; }
+
+/* GALLERY — table layout */
+#mtap .gallery { display:table;width:100%;border-collapse:separate;border-spacing:3px; }
+#mtap .gal-wide { display:table-cell;width:55%;vertical-align:top; }
+#mtap .gal-stack { display:table-cell;width:45%;vertical-align:top;padding-left:3px; }
+#mtap .gallery img { width:100%;display:block;object-fit:cover;object-position:center top;filter:saturate(.85);transition:filter .3s; }
+#mtap .gallery img:hover { filter:saturate(1); }
+#mtap .gal-wide img { height:280px; }
+#mtap .gal-stack img { height:136px; }
+#mtap .gal-stack img + img { margin-top:3px; }
+
+/* QUOTE */
+#mtap .quote { border-left:3px solid var(--gold);padding:16px 24px;background:rgba(200,158,75,.04); }
+#mtap .quote-text { font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,2.5vw,22px);color:var(--g);line-height:1.5;display:block;margin-bottom:10px; }
+#mtap .quote-attr { font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);opacity:.65; }
+
+/* WHY ALIADO */
+#mtap .why { background:var(--g);padding:22px 26px;display:table;width:100%; }
+#mtap .why-badge-cell { display:table-cell;vertical-align:middle;width:46px;padding-right:18px; }
+#mtap .why-badge { width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid rgba(200,158,75,.25); }
+#mtap .why-badge img { width:100%;height:100%;object-fit:cover; }
+#mtap .why-body { display:table-cell;vertical-align:middle; }
+#mtap .why-label { font-size:7.5px;letter-spacing:.45em;text-transform:uppercase;color:var(--gold);opacity:.75;display:block;margin-bottom:5px; }
+#mtap .why-text { font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(15px,2vw,18px);color:var(--cream);line-height:1.55; }
+
+/* BENEFIT */
+#mtap .benefit-box { background:rgba(1,50,32,.04);border:1px solid var(--rule);border-left:3px solid var(--g);padding:14px 18px; }
+#mtap .benefit-text { font-size:13.5px;color:var(--ink);line-height:1.65; }
+
+/* LINKS */
+#mtap .links-row { display:table;width:100%;border-collapse:separate;border-spacing:10px;margin:-10px; }
+#mtap .link-card { display:table-cell;border:1px solid var(--rule);padding:14px 16px;text-decoration:none;color:inherit;vertical-align:top;transition:border-color .2s;width:50%; }
+#mtap .link-card:hover { border-color:var(--gold); }
+#mtap .link-type { font-size:7.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-d);opacity:.8;display:block;margin-bottom:5px; }
+#mtap .link-title { font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--ink);display:block;margin-bottom:5px;line-height:1.2; }
+#mtap .link-desc { font-size:12px;color:var(--muted);line-height:1.5; }
+#mtap .link-arrow { font-size:11px;color:var(--gold-d);display:block;margin-top:8px; }
+
+/* CONTACT */
+#mtap .contact-actions { display:flex;gap:10px;flex-wrap:wrap; }
+#mtap .btn-p { font-size:9px;letter-spacing:.35em;text-transform:uppercase;padding:12px 24px;background:var(--g);color:var(--cream);text-decoration:none;display:inline-block;transition:background .2s; }
+#mtap .btn-p:hover { background:#024a30; }
+#mtap .btn-o { font-size:9px;letter-spacing:.35em;text-transform:uppercase;padding:12px 22px;background:transparent;color:var(--muted);border:1px solid var(--rule-g);text-decoration:none;display:inline-block;transition:all .2s; }
+#mtap .btn-o:hover { border-color:var(--gold);color:var(--ink); }
+
+/* BACK NAV */
+#mtap .back-nav { display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:28px 32px 24px;border-top:1px solid var(--rule); }
+#mtap .back-btn { font-size:9px;letter-spacing:.38em;text-transform:uppercase;padding:10px 20px;background:transparent;border:1px solid rgba(1,50,32,.18);color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer; }
+#mtap .back-btn:hover { border-color:var(--g);color:var(--g); }
+#mtap .back-div { width:1px;height:18px;background:var(--rule); }
+
+/* MOBILE */
+@media(max-width:620px){
+  #mtap .hero { height:auto;position:static;overflow:visible; }
+  #mtap .hero-img { position:static;width:100%;height:220px;object-fit:cover;object-position:center top;display:block; }
+  #mtap .hero-overlay { display:none; }
+  #mtap .hero-content { position:static;background:var(--g);padding:22px 22px; }
+  #mtap .hero-eyebrow { color:var(--gold); }
+  #mtap .hero-name { color:#fff; }
+  #mtap .hero-loc { color:rgba(255,255,255,.45); }
+  #mtap .hero-badge { top:12px;right:16px;width:40px;height:40px; }
+  #mtap .about-row { display:block; }
+  #mtap .about-text { display:block;padding-right:0;margin-bottom:20px; }
+  #mtap .sidebar { display:block;width:100%; }
+  #mtap .gallery { display:block; }
+  #mtap .gal-wide { display:block;width:100%; }
+  #mtap .gal-wide img { height:200px; }
+  #mtap .gal-stack { display:block;padding-left:0;margin-top:3px;width:100%; }
+  #mtap .gal-stack img { height:160px;width:100%; }
+  #mtap .gal-stack img + img { margin-top:3px; }
+  #mtap .why { display:block;padding:20px 22px; }
+  #mtap .why-badge-cell { display:block;width:auto;padding-right:0;margin-bottom:12px; }
+  #mtap .why-body { display:block; }
+  #mtap .links-row { display:block;margin:0; }
+  #mtap .link-card { display:block;width:100%;margin-bottom:8px; }
+  #mtap .section { padding:24px 22px; }
+  #mtap .back-nav { padding:24px 22px; }
+  #mtap .back-nav { flex-direction:column;align-items:flex-start;gap:10px; }
+  #mtap .back-div { display:none; }
+}
+
+</style>
+
+<div id="mtap">
+
+  
+  <div class="hero">
+    <img class="hero-img" src="/assets/img/Corazon-Contento-Pagina-Hero-1-e1776797632830.jpg" alt="Corazón Contento — Aliado Verificado Maya Tuya">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Restaurant · Organic Kitchen · Campeche · Aliado Selecto</span>
+      <span class="hero-name">Corazón Contento</span>
+      <span class="hero-loc">📍 Campeche · 2 locations</span>
+    </div>
+    <div class="hero-badge"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado Maya Tuya"></div>
+  </div>
+  <div class="gold-bar"></div>
+
+  <div class="body">
+
+    
+    <div class="section">
+      <span class="sec-label">About</span>
+      <div class="about-row">
+        <div class="about-text">
+          <p>Corazón Contento has been full since the day it opened. Not because of advertising — there isn't much — but because the kitchen earned it. The ingredients are sourced with care, the provenance is known, and the dishes are put together with the kind of attention that makes you want to eat slowly and order again. The presentation alone tells you someone thought carefully about what ended up on the plate.</p>
+          <p>There are two locations in the city centre, including one in the quieter Santa Ana neighbourhood. The drinks are taken as seriously as the food — the matcha in particular has become something of a quiet institution among regulars. The team genuinely enjoys what they do, and in a city full of restaurants, that energy is neither common nor invisible.</p>
+        </div>
+        <div class="sidebar">
+          <div class="info-block">
+            <span class="info-label">Hours</span>
+            <span class="info-val">8:00am – 5:00pm</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">Location</span>
+            <span class="info-val">Centro & Santa Ana, Campeche</span>
+          </div>
+          <div class="info-block">
+            <span class="info-label">Contact</span>
+            <span class="info-val">+52 981 120 2880 (WhatsApp)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="section" style="padding-top:0;padding-bottom:0;border-bottom:none;">
+      <div class="gallery">
+        <div class="gal-wide">
+          <img src="/assets/img/WhatsApp-Image-2026-04-14-at-12.13.22.jpeg" alt="Corazón Contento" loading="lazy">
+        </div>
+        <div class="gal-stack">
+          <img src="/assets/img/WhatsApp-Image-2026-04-13-at-17.23.59-1-e1776816206944.jpeg" alt="Corazón Contento" loading="lazy">
+          <img src="/assets/img/WhatsApp-Image-2026-04-13-at-17.17.43-1-e1776816242935.jpeg" alt="Corazón Contento" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="section">
+      <span class="sec-label">In their own words</span>
+      <div class="quote">
+        <span class="quote-text">"Cooking well isn't complicated. It's about respecting what you have — the ingredient, the season, the person eating it."</span>
+        <span class="quote-attr">Daniél · Owner — Corazón Contento</span>
+      </div>
+    </div>
+
+    
+    <div class="section" style="padding-top:0;padding-bottom:0;border-bottom:none;">
+      <div class="why">
+        <div class="why-badge-cell">
+          <div class="why-badge"><img src="/assets/img/Aliado-Verificado-Badge-Digital-scaled.png" alt="Aliado Verificado"></div>
+        </div>
+        <div class="why-body">
+          <span class="why-label">Aliado Verificado Maya Tuya — why</span>
+          <span class="why-text">The simplest test for any restaurant recommendation is whether it's full without needing to be promoted. Corazón Contento passes that test every day. The food is some of the best organic cooking in Campeche, the atmosphere is alive without being loud, and the team brings an ease to service that makes the whole experience feel genuinely restorative. Travellers who arrive through Maya Tuya find a table that was already prepared for them — and a kitchen that treats that responsibility as something worth rising to.</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="section">
+      <span class="sec-label">Maya Tuya experiences featuring this Aliado</span>
+      <div class="links-row">
+        <a class="link-card" href="/experiences/fromthewallstothetable" target="_blank">
+          <span class="link-type">Curated experience</span>
+          <span class="link-title">From the Walls to the Table</span>
+          <span class="link-desc">A curated morning inside Campeche's walled city — private chocolate workshop, the UNESCO historic centre, handmade jewellery from a local artisan, and an all-inclusive organic brunch.</span>
+          <span class="link-arrow">View experience →</span>
+        </a>
+      </div>
+    </div>
+
+    
+    <div class="section">
+      <span class="sec-label">Get there · Get in touch</span>
+      <div class="contact-actions">
+        <a class="btn-p" href="https://wa.me/529811354554?text=Hello%2C%20I%27m%20from%20Maya%20Tuya" target="_blank">WhatsApp</a>
+        <a class="btn-o" href="https://maps.app.goo.gl/9tkAaNqvMJR7ApV27" target="_blank">Google Maps</a>
+      </div>
+    </div>
+
+    
+    <div class="back-nav">
+      <a class="back-btn" href="#"
+        onclick="history.length>1?history.back():window.location='/directory';return false;">
+        ← Go back
+      </a>
+      <span class="back-div"></span>
+      <a class="back-btn" href="/directory">Browse all Aliados</a>
+    </div>
+
+  </div>
+</div>
+</div>
+</section>

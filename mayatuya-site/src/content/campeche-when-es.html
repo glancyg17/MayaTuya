@@ -1,0 +1,167 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px;background-color:#f3eee2">
+<div class="mt-inner">
+<style>
+#mtcwv-es {
+  --g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f2e9d0;
+  --ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,.12);--rule-g:rgba(200,158,75,.25);
+  font-family:'Lato',sans-serif;color:var(--ink);
+}
+#mtcwv-es * { box-sizing:border-box; }
+#mtcwv-es a { text-decoration:none;color:inherit; }
+#mtcwv-es p { font-size:14px;color:var(--muted);line-height:1.85;margin-bottom:16px; }
+#mtcwv-es p:last-child { margin-bottom:0; }
+#mtcwv-es .eyebrow { font-size:8px;letter-spacing:.52em;text-transform:uppercase;color:var(--gold-d);opacity:.72;display:block;margin-bottom:12px; }
+#mtcwv-es h1 { font-family:'Playfair Display SC',serif;font-size:clamp(32px,5.5vw,56px);color:var(--ink);line-height:1.06;display:block;margin-bottom:14px;font-weight:400;margin-top:0; }
+#mtcwv-es h2 { font-family:'Playfair Display SC',serif;font-size:clamp(20px,3vw,32px);color:var(--ink);line-height:1.1;display:block;margin-bottom:12px;font-weight:400;margin-top:0; }
+#mtcwv-es h3 { font-family:'Playfair Display',serif;font-size:clamp(15px,2vw,18px);color:var(--ink);font-weight:700;display:block;margin-bottom:8px;line-height:1.2;margin-top:0; }
+#mtcwv-es .gold-rule { width:40px;height:2px;background:var(--gold);display:block;margin-bottom:18px; }
+#mtcwv-es .pull { font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(17px,2.3vw,22px);color:var(--g);line-height:1.5;border-left:3px solid var(--gold);padding:12px 0 12px 20px;display:block;margin:24px 0; }
+#mtcwv-es .section { padding:44px 0;border-bottom:1px solid var(--rule); }
+#mtcwv-es .section:last-child { border-bottom:none; }
+#mtcwv-es .two-col { display:table;width:100%; }
+#mtcwv-es .col-main { display:table-cell;vertical-align:top;padding-right:48px; }
+#mtcwv-es .col-side { display:table-cell;vertical-align:top;width:260px;min-width:220px; }
+#mtcwv-es .info-block { border:1px solid var(--rule);padding:14px 16px;margin-bottom:8px;background:#fffdf7; }
+#mtcwv-es .info-label { font-size:8px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-d);opacity:.75;display:block;margin-bottom:5px; }
+#mtcwv-es .info-val { font-size:13px;color:var(--ink);line-height:1.6; }
+#mtcwv-es .btn-dark { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--g);color:var(--cream);display:inline-block;transition:background .2s; }
+#mtcwv-es .btn-dark:hover { background:#024a30; }
+#mtcwv-es .btn-gold { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 24px;background:var(--gold);color:#fff;display:inline-block;transition:background .2s; }
+#mtcwv-es .btn-gold:hover { background:var(--gold-d); }
+#mtcwv-es .btn-outline { font-size:9px;letter-spacing:.32em;text-transform:uppercase;padding:11px 22px;background:transparent;color:var(--muted);border:1px solid var(--rule-g);display:inline-block;transition:all .2s; }
+#mtcwv-es .btn-outline:hover { border-color:var(--gold);color:var(--ink); }
+#mtcwv-es .actions { display:flex;gap:10px;flex-wrap:wrap;margin-top:20px; }
+#mtcwv-es .ul-clean { list-style:none;padding:0;margin:0; }
+#mtcwv-es .ul-clean li { font-size:14px;color:var(--muted);line-height:1.75;padding:7px 0 7px 16px;border-bottom:1px solid var(--rule);position:relative; }
+#mtcwv-es .ul-clean li:last-child { border-bottom:none; }
+#mtcwv-es .ul-clean li::before { content:'·';position:absolute;left:2px;color:var(--gold);font-size:18px;line-height:1.3; }
+#mtcwv-es .cta-band { background:var(--g);padding:28px 32px;margin-top:28px; }
+#mtcwv-es .cta-band-title { font-family:'Playfair Display SC',serif;font-size:clamp(17px,2.3vw,24px);color:#fff;display:block;margin-bottom:8px; }
+#mtcwv-es .cta-band-sub { font-size:13px;color:rgba(242,233,208,.6);line-height:1.7;display:block;margin-bottom:16px;max-width:520px; }
+#mtcwv-es .pg-hero { position:relative;width:100%;overflow:hidden;height:380px; }
+#mtcwv-es .pg-hero img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.78) brightness(.52); }
+#mtcwv-es .pg-hero-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,rgba(1,15,7,.55) 28%,rgba(1,15,7,.08) 55%,transparent 100%); }
+#mtcwv-es .pg-hero-content { position:absolute;bottom:0;left:0;right:0;padding:28px 0 32px; }
+#mtcwv-es .pg-hero-content .eyebrow { color:var(--gold) !important;opacity:.9 !important; }
+#mtcwv-es .pg-hero-content h1 { color:#ffffff !important; }
+#mtcwv-es .img-full { width:100%;display:block;margin:24px 0;object-fit:cover;height:280px;filter:saturate(.88); }
+#mtcwv-es .img-half { display:table;width:100%;gap:0;margin:24px 0; }
+#mtcwv-es .img-half-l { display:table-cell;width:50%;padding-right:3px;vertical-align:top; }
+#mtcwv-es .img-half-r { display:table-cell;width:50%;padding-left:3px;vertical-align:top; }
+#mtcwv-es .img-half img { width:100%;height:200px;object-fit:cover;display:block;filter:saturate(.88); }
+#mtcwv-es .img-caption { font-size:10px;letter-spacing:.15em;color:var(--muted);opacity:.55;display:block;margin-top:4px;font-style:italic; }
+#mtcwv-es .sub-nav { display:flex;flex-wrap:wrap;border:1px solid var(--rule);margin-top:40px; }
+#mtcwv-es .sub-nav a { font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);padding:12px 16px;border-right:1px solid var(--rule);transition:color .2s,background .2s;display:block; }
+#mtcwv-es .sub-nav a:last-child { border-right:none; }
+#mtcwv-es .sub-nav a:hover { color:var(--g);background:rgba(1,50,32,.03); }
+#mtcwv-es .sub-nav a.active { color:var(--g);border-bottom:2px solid var(--gold); }
+#mtcwv-es .mag-grid { display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px; }
+#mtcwv-es .mag-card { position:relative;overflow:hidden;display:block;height:220px; }
+#mtcwv-es .mag-card.tall { grid-row:span 2;height:100%; }
+#mtcwv-es .mag-card img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.75) brightness(.52);transition:filter .4s,transform .5s; }
+#mtcwv-es .mag-card:hover img { filter:saturate(.9) brightness(.62);transform:scale(1.04); }
+#mtcwv-es .mag-card-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(1,15,7,.88) 0%,transparent 55%); }
+#mtcwv-es .mag-card-content { position:absolute;bottom:0;left:0;right:0;padding:16px 18px; }
+#mtcwv-es .mag-card-tag { font-size:7.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);opacity:.8;display:block;margin-bottom:5px; }
+#mtcwv-es .mag-card-title { font-family:'Playfair Display SC',serif;font-size:clamp(14px,1.8vw,18px);color:#fff;line-height:1.1;display:block;margin-bottom:3px; }
+#mtcwv-es .mag-card-sub { font-size:11px;color:rgba(242,233,208,.55);line-height:1.4;display:block; }
+#mtcwv-es .mag-card-arrow { font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);opacity:.7;display:block;margin-top:6px; }
+#mtcwv-es .ali-card { border:1px solid var(--rule);background:#fffdf7;display:table;width:100%;margin-bottom:2px;transition:border-color .2s; }
+#mtcwv-es .ali-card:hover { border-color:var(--gold); }
+#mtcwv-es .ali-card-img { display:table-cell;width:140px;min-width:120px;vertical-align:top;position:relative;overflow:hidden; }
+#mtcwv-es .ali-card-img img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.88); }
+#mtcwv-es .ali-card-body { display:table-cell;vertical-align:middle;padding:14px 18px; }
+#mtcwv-es .ali-card-tag { font-size:8px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold-d);opacity:.8;display:block;margin-bottom:5px; }
+#mtcwv-es .ali-card-name { font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--ink);display:block;margin-bottom:4px; }
+#mtcwv-es .ali-card-text { font-size:12.5px;color:var(--muted);line-height:1.6;display:block;margin-bottom:8px; }
+#mtcwv-es .ali-card-link { font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--g);border-bottom:1px solid var(--rule-g);padding-bottom:1px;transition:all .2s; }
+#mtcwv-es .ali-card-link:hover { color:var(--gold-d);border-color:var(--gold-d); }
+@media(max-width:680px){
+  #mtcwv-es .pg-hero { height:240px; }
+  #mtcwv-es .two-col { display:block; }
+  #mtcwv-es .col-main { display:block;padding-right:0;margin-bottom:20px; }
+  #mtcwv-es .col-side { display:block;width:100%; }
+  #mtcwv-es .mag-grid { grid-template-columns:1fr 1fr; }
+  #mtcwv-es .mag-card { height:160px; }
+  #mtcwv-es .mag-card.tall { grid-row:span 1;height:160px; }
+  #mtcwv-es .sub-nav a { border-right:none;border-bottom:1px solid var(--rule);width:50%; }
+  #mtcwv-es .img-half { display:block; }
+  #mtcwv-es .img-half-l,#mtcwv-es .img-half-r { display:block;width:100%;padding:0 0 3px; }
+  #mtcwv-es .ali-card-img { width:100px;min-width:80px; }
+  #mtcwv-es .cta-band { padding:22px 20px; }
+}
+</style>
+<div id="mtcwv-es">
+    <div class="pg-hero">
+    <img src="/assets/img/G0sZHDoXkAEJHcD.jpg" alt="Feria de San Román, Campeche México">
+    <div class="pg-hero-overlay"></div>
+    <div class="pg-hero-content">
+      <span class="eyebrow">Temporadas y eventos · Campeche, México</span>
+      <h1>Cuándo visitar<br>Campeche.</h1>
+    </div>
+  </div>
+  <div style="height:3px;background:var(--gold);width:100%;"></div>
+
+  <div class="section">
+    <span class="gold-rule"></span>
+    <p>Campeche recompensa a los visitantes durante todo el año — pero los recompensa de manera diferente según cuándo vengas. Esto es lo que ofrece cada temporada y cuándo la ciudad está más viva.</p>
+
+    <h2>Las temporadas.</h2>
+    <div class="two-col">
+      <div class="col-main">
+        <h3>Noviembre a febrero — los meses clásicos.</h3>
+        <img class="img-full" src="/assets/img/caption.jpg" alt="Centro histórico de Campeche en luz invernal, México" loading="lazy">
+        <p>Lo suficientemente fresco para caminar a cualquier hora, lo suficientemente seco para que el color de la ciudad se muestre en todo su esplendor. La luz de diciembre y enero tiene una calidad particular — más baja en el cielo, dorada antes, más larga al atardecer. Es cuando Campeche es más auténtico, y cuando las murallas se parecen más a las fotografías que llevan a la gente a querer venir.</p>
+
+        <h3>Marzo y abril — temporada media.</h3>
+        <p>Todavía cómodo por las mañanas y tardes, con el calor aumentando en abril. La ciudad está menos concurrida que en el pico invernal y el Festival de la Ciruela tiene lugar en marzo — un evento de comida y música que vale la pena si estás eligiendo las fechas del viaje.</p>
+
+        <h3>Mayo a octubre — temporada alta de festivales.</h3>
+        <p>El calor entre mayo y septiembre es considerable — las horas del mediodía requieren sombra y paciencia. Pero las tardes son genuinamente hermosas: el Golfo se tiñe de colores extraordinarios tras la lluvia, las calles tienen una calidad cinematográfica, y los grandes festivales de la ciudad — los que más importan a los propios campechanos — ocurren todos en esta ventana. Si vienes en los meses calurosos, estructura el día en los extremos: primera hora de la mañana y tarde. Las recompensas son reales.</p>
+      </div>
+      <div class="col-side">
+        <div class="info-block">
+          <span class="info-label">La mejor época en general</span>
+          <span class="info-val">Noviembre – Febrero<br>Fresco, seco, luz excepcional</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Mejor para valor y tranquilidad</span>
+          <span class="info-val">Marzo – Abril<br>Temporada media</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Mejor para festivales</span>
+          <span class="info-val">Agosto – Octubre<br>San Román, San Francisco, Carnaval</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Mejores horas del día</span>
+          <span class="info-val">Todo el año: antes de las 10am<br>y a partir de las 5pm<br>Las murallas al atardecer son imprescindibles</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Festivales y eventos.</h2>
+    <img class="img-full" src="/assets/img/52701414101_fbec7d0364_o.webp" alt="Desfile del Carnaval de Campeche, México" loading="lazy">
+    <span class="img-caption">Carnaval de Campeche — uno de los más antiguos de México.</span>
+    <ul class="ul-clean">
+      <li><strong>Carnaval de Campeche</strong> — Uno de los carnavales más antiguos de México. Abre con la "Quema del Mal Humor", seguida de desfiles, bailes y música callejera. Las fechas varían cada año — típicamente febrero o principios de marzo.</li>
+      <li><strong>Fiesta de la Candelaria</strong> — 2 de febrero. Procesiones, celebraciones religiosas y bailes tradicionales por el centro histórico.</li>
+      <li><strong>Festival de la Ciruela</strong> — Marzo. Un festival más reciente centrado en comida, rumba y productos locales. Buen momento de temporada media.</li>
+      <li><strong>Feria de San Román</strong> — Agosto hasta septiembre. El festival del Barrio de San Román y su Cristo Negro — traído a Campeche en 1565. Feria, exposiciones agrícolas, mercados artesanales, música en vivo. Uno de los eventos más esperados del calendario.</li>
+      <li><strong>Feria de San Francisco de Asís</strong> — Del 4 al 10 de octubre. En honor al santo patrón de la ciudad con procesiones, actos litúrgicos, bailes y fuegos artificiales.</li>
+      <li><strong>Festival del Centro Histórico</strong> — Eventos culturales y musicales por el centro colonial. Las fechas varían — consultar localmente al llegar.</li>
+    </ul>
+    <div class="cta-band">
+      <span class="cta-band-title">¿Planificando un viaje?</span>
+      <span class="cta-band-sub">La Primera Edición de Campeche cubre la ciudad en ocho secciones editoriales — bilingüe EN+ES, escrita para leer antes y durante la visita.</span>
+      <div class="actions">
+        <a class="btn-gold" href="/product/campeche-travel-guide">Guía de Campeche — $9.99 →</a>
+        <a class="btn-outline" href="/inicio/experiencias">Reservar una experiencia →</a>
+      </div>
+    </div>
+  </div>
+  <div class="sub-nav"><a href="/inicio/destinos/campeche">Introducción</a><a href="/inicio/destinos/campeche/que-hacer">Qué hacer</a><a href="/inicio/destinos/campeche/como-llegar">Cómo llegar</a><a href="/inicio/destinos/campeche/comer-y-beber">Comer & Beber</a><a href="/inicio/destinos/campeche/cuando-ir" class="active">Cuándo ir</a><a href="/inicio/destinos/campeche/itinerarios">Itinerarios</a><a href="/inicio/destinos/campeche/barrios">Barrios</a><a href="/inicio/destinos/campeche/excursiones">Excursiones</a></div>
+</div>
+</div>
+</section>
