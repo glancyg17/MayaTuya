@@ -1,0 +1,95 @@
+<section class="mt-sec" style="--pt:10px;--pr:10px;--pb:10px;--pl:10px">
+<div class="mt-inner">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+.mt-w{--g:#013220;--gold:#c89e4b;--gold-d:#9a7828;--cream:#f3eee2;--ink:#0c0b09;--muted:#5a5040;--rule:rgba(1,50,32,0.12);--rule-gold:rgba(200,158,75,0.25);font-family:'Lato',sans-serif;color:var(--ink);}
+.mt-w *{box-sizing:border-box;}
+
+.mt-gd{padding:72px 0 64px;max-width:980px;margin:0 auto;}
+.mt-gd-head{border-bottom:1px solid var(--rule);padding-bottom:40px;margin-bottom:48px;}
+.mt-gd-title{
+  font-family:'Playfair Display SC',serif;font-weight:400;
+  font-size:clamp(34px,5vw,56px);line-height:1.06;letter-spacing:.01em;
+  color:var(--ink);display:block;margin:0 0 16px;
+}
+.mt-gd-sub{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:clamp(18px,2vw,22px);color:var(--gold-d);line-height:1.4;display:block;
+}
+.mt-gd-rule{width:40px;height:2px;background:var(--gold);display:block;margin:22px 0 0;}
+
+.mt-gd-cols{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
+.mt-gd-col{padding-top:4px;}
+.mt-gd-col + .mt-gd-col{border-left:1px solid var(--rule);padding-left:64px;}
+.mt-gd-lang{
+  font-family:'Playfair Display',serif;font-size:22px;font-weight:400;
+  color:var(--g);margin:0 0 14px;display:block;
+}
+.mt-gd-body{
+  font-family:'Lato',sans-serif;font-size:14px;line-height:1.85;
+  color:var(--muted);margin:0 0 28px;max-width:46ch;
+}
+.mt-btn{
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.32em;text-transform:uppercase;
+  padding:14px 28px;text-decoration:none;display:inline-block;transition:background .2s,color .2s;
+  border:1.5px solid var(--g);background:var(--g);color:var(--cream);
+}
+.mt-btn:hover{background:#024a30;color:var(--cream);}
+.mt-btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+.mt-gd-meta{
+  font-family:'Lato',sans-serif;font-size:12px;color:var(--muted);
+  margin:14px 0 0;opacity:.8;
+}
+
+.mt-gd-foot{
+  margin-top:56px;padding-top:28px;border-top:1px solid var(--rule);
+  font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.6;
+  color:var(--muted);max-width:62ch;
+}
+.mt-gd-foot p{margin:0 0 12px;}
+.mt-gd-foot a{color:var(--g);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px;}
+.mt-gd-foot a:hover{color:#024a30;}
+
+@media(max-width:760px){
+  .mt-gd{padding:48px 0 48px;}
+  .mt-gd-cols{grid-template-columns:1fr;gap:48px;}
+  .mt-gd-col + .mt-gd-col{border-left:none;padding-left:0;border-top:1px solid var(--rule);padding-top:44px;}
+}
+</style>
+
+<div class="mt-w">
+<div class="mt-gd">
+
+  <div class="mt-gd-head">
+    <span class="mt-gd-title">Mérida</span>
+    <span class="mt-gd-sub">First Edition &middot; Primera Edición</span>
+    <span class="mt-gd-rule"></span>
+  </div>
+
+  <div class="mt-gd-cols">
+
+    <div class="mt-gd-col" lang="en">
+      <span class="mt-gd-lang">English</span>
+      <p class="mt-gd-body">Thank you. Your payment went through, and the guide is ready below. Save it to your phone before you go. It reads without a connection.</p>
+      <a class="mt-btn" href="/assets/dl/Merida-Guide-EN-cfbfb40166cc.pdf" download>Download the guide</a>
+      <p class="mt-gd-meta">PDF</p>
+    </div>
+
+    <div class="mt-gd-col" lang="es">
+      <span class="mt-gd-lang">Español</span>
+      <p class="mt-gd-body">Gracias. Tu pago se realizó y la guía ya está lista. Guárdala en tu teléfono antes de salir: se lee sin conexión.</p>
+      <a class="mt-btn" href="/assets/dl/Merida-Guide-ES-4015616edf73.pdf" download>Descargar la guía</a>
+      <p class="mt-gd-meta">PDF</p>
+    </div>
+
+  </div>
+
+  <div class="mt-gd-foot">
+    <p lang="en">Both editions are yours, whichever language you read in. If a file doesn&rsquo;t open, write to <a href="mailto:hola@mayatuya.com">hola@mayatuya.com</a> and I&rsquo;ll send it to you directly.</p>
+    <p lang="es">Las dos ediciones son tuyas, en el idioma que prefieras. Si algún archivo no abre, escribe a <a href="mailto:hola@mayatuya.com">hola@mayatuya.com</a> y te lo envío yo directamente.</p>
+  </div>
+
+</div>
+</div>
+</div>
+</section>

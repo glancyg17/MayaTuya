@@ -190,15 +190,6 @@
 }
 </style>
 
-<div id="mtexp-modal">
-  <div id="mtexp-modal-inner">
-    <button id="mtexp-modal-close" onclick="document.getElementById('mtexp-modal').classList.remove('open')">✕ Cerrar</button>
-    <span id="mtexp-modal-title">Reserva esta experiencia.</span>
-    <span id="mtexp-modal-sub">Rellena el formulario y confirmaremos disponibilidad personalmente. Sin respuesta automática.</span>
-    
-{{form:12}}  </div>
-</div>
-
 <div id="mtexp">
 
   
@@ -214,9 +205,7 @@
         <span class="hero-sub">Una mañana curada dentro de la ciudad amurallada de Campeche — taller privado de chocolate, el centro histórico UNESCO, joyería artesanal local, y un desayuno orgánico todo incluido. Sin pagos en el día.</span>
       </div>
       <div class="hero-right">
-        <span class="price-num">$185</span>
-        <span class="price-label">USD por persona</span>
-        <span class="price-incl">Todo incluido</span>
+        <span class="price-num" style="font-size:clamp(18px,2.4vw,26px);letter-spacing:.04em;">Próximamente</span>
       </div>
     </div>
   </div>
@@ -254,17 +243,15 @@
     
     <div class="section">
       <span class="sec-eyebrow">Detalles prácticos</span>
-      <span class="sec-title">Antes de reservar.</span>
-      <div><div class="know-row"><span class="know-key">Precio</span><span class="know-val">$185 USD por persona · mínimo 2 · máximo 6</span></div><div class="know-row"><span class="know-key">Duración</span><span class="know-val">Mañana completa · aprox. 9:00am – 2:00pm</span></div><div class="know-row"><span class="know-key">Grupo</span><span class="know-val">Privado · solo tu grupo · sin desconocidos</span></div><div class="know-row"><span class="know-key">Idioma</span><span class="know-val">Inglés · con español donde importa</span></div><div class="know-row"><span class="know-key">Transporte</span><span class="know-val">No incluido · tarifa fija compartida al reservar · sin sorpresas</span></div><div class="know-row"><span class="know-key">Cancelación</span><span class="know-val">Reembolso completo con 48h+ · 50% dentro de las 48h</span></div></div>
+      <span class="sec-title">Para tener en cuenta.</span>
+      <div><div class="know-row"><span class="know-key">Capacidad</span><span class="know-val">Mínimo 2 · máximo 6</span></div><div class="know-row"><span class="know-key">Duración</span><span class="know-val">Mañana completa · aprox. 9:00am – 2:00pm</span></div><div class="know-row"><span class="know-key">Grupo</span><span class="know-val">Privado · solo tu grupo · sin desconocidos</span></div><div class="know-row"><span class="know-key">Idioma</span><span class="know-val">Inglés · con español donde importa</span></div><div class="know-row"><span class="know-key">Transporte</span><span class="know-val">No incluido · tarifa fija compartida al reservar · sin sorpresas</span></div><div class="know-row"><span class="know-key">Cancelación</span><span class="know-val">Reembolso completo con 48h+ · 50% dentro de las 48h</span></div></div>
     </div>
 
     
     <div class="book">
-      <span class="sec-eyebrow" style="color:var(--gold);opacity:.75;">$185 USD · por persona · todo incluido · mín. 2</span>
-      <span class="book-title">Reserva esta experiencia.</span>
-      <span class="book-sub">Rellena el formulario y confirmaremos disponibilidad personalmente. Sin respuesta automática.</span>
-      <button class="book-btn" onclick="document.getElementById('mtexp-modal').classList.add('open')">Consultar disponibilidad</button>
-      <span class="book-note">O escríbenos: hola@mayatuya.com · +52 938 184 2944</span>
+      <span class="book-title">Próximamente.</span>
+      <span class="book-sub">Esta experiencia aún no está abierta a reservas. Escríbenos y te avisamos cuando lo esté.</span>
+      <span class="book-note">hola@mayatuya.com · +52 938 184 2944</span>
     </div>
 
     
@@ -382,10 +369,6 @@
   // Auto-advance
   auto = setInterval(function(){ gotoSlide(idx + 1); }, 4500);
 
-  // Close modal on backdrop click
-  document.getElementById('mtexp-modal').addEventListener('click', function(e) {
-    if (e.target === this) this.classList.remove('open');
-  });
 })();
 </script>
 </div>

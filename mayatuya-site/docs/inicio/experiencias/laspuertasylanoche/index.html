@@ -306,32 +306,6 @@
 <div class="mt-inner">
 
 
-<div id="mtexp2-modal">
-  <div id="mtexp2-modal-inner">
-    <button id="mtexp2-modal-close" onclick="document.getElementById('mtexp2-modal').classList.remove('open')">✕ Cerrar</button>
-    <span id="mtexp2-modal-title">Reserva esta experiencia.</span>
-    <span id="mtexp2-modal-sub">Rellena el formulario y confirmaremos disponibilidad personalmente. Sin respuesta automática.</span>
-    <form class="mt-form" method="POST" action="https://api.web3forms.com/submit" data-success="Gracias, [Name]. Confirmaremos disponibilidad y nos pondremos en contacto contigo personalmente en menos de 24 horas — por email y WhatsApp. Si tienes alguna pregunta urgente: hola@mayatuya.com o +52 938 184 2944." data-error="No pudimos enviar tu mensaje. Escríbenos directamente a" data-mail="hola@mayatuya.com">
-<input type="hidden" name="access_key" value="PLACEHOLDER_WEB3FORMS_ACCESS_KEY">
-<input type="hidden" name="subject" value="[MT booking] De Las Murallas a la Mesa (ES)">
-<input type="hidden" name="from_name" value="Maya Tuya website">
-<input type="hidden" name="form_id" value="14">
-<input type="hidden" name="page_language" value="es">
-<input type="hidden" name="page_url" value="https://new.mayatuya.com/inicio/experiencias/laspuertasylanoche/">
-<input type="checkbox" name="botcheck" class="mt-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<div class="mt-row"><div class="mt-field"><label class="mt-label mt-req" for="f14-first_name">Nombre</label><input type="text" id="f14-first_name" name="first_name" autocomplete="given-name" required></div><div class="mt-field"><label class="mt-label mt-req" for="f14-last_name">Apellido</label><input type="text" id="f14-last_name" name="last_name" autocomplete="family-name" required></div></div>
-<div class="mt-field"><label class="mt-label mt-req" for="f14-email">Correo electrónico</label><input type="email" id="f14-email" name="email" autocomplete="email" placeholder="Correo electrónico" required></div>
-<div class="mt-field"><label class="mt-label mt-req" for="f14-phone">Teléfono / WhatsApp</label><input type="tel" id="f14-phone" name="phone" autocomplete="tel" required></div>
-<input type="hidden" name="experience" value="De Las Murallas a la Mesa">
-<div class="mt-field"><label class="mt-label mt-req" for="f14-preferred_date">Fecha preferida</label><input type="date" id="f14-preferred_date" name="preferred_date" required></div>
-<div class="mt-field"><label class="mt-label mt-req" for="f14-guests">Número de personas</label><input type="number" id="f14-guests" name="guests" inputmode="numeric" min="2" max="10" required></div>
-<div class="mt-field"><label class="mt-label" for="f14-heard_from">¿Cómo nos conociste?</label><select id="f14-heard_from" name="heard_from"><option value="">Selecciona</option><option value="Google">Google</option><option value="GetYourGuide">GetYourGuide</option><option value="Airbnb Experiences">Airbnb Experiences</option><option value="A.I. (ChatGPT/Claude/Gemini...etc)">A.I. (ChatGPT/Claude/Gemini...etc)</option><option value="Por un amigo">Por un amigo</option><option value="Otro">Otro</option></select></div>
-<div class="mt-field"><label class="mt-label" for="f14-message">Preguntas o peticiones especiales</label><textarea id="f14-message" name="message"></textarea></div>
-<button type="submit" class="mt-form-btn">Consultar disponibilidad</button>
-<p class="mt-form-status" role="alert"></p></form>
-  </div>
-</div>
-
 <div id="mtexp2">
 
   
@@ -347,9 +321,7 @@
         <span class="hero-sub">Un paseo nocturno por la columna vertebral del centro histórico de Campeche — Calle 59, las murallas al atardecer, el mercado, y una cena de tres tiempos con la mejor vista de la ciudad. Luego copas y Lotería Campechana — el juego más popular de Campeche, jugado durante más de 130 años.</span>
       </div>
       <div class="hero-right">
-        <span class="price-num">$185</span>
-        <span class="price-label">USD por persona</span>
-        <span class="price-incl">Todo incluido</span>
+        <span class="price-num" style="font-size:clamp(18px,2.4vw,26px);letter-spacing:.04em;">Próximamente</span>
       </div>
     </div>
   </div>
@@ -387,11 +359,9 @@
 
     
     <div class="book">
-      <span class="sec-eyebrow" style="color:var(--gold);opacity:.75;">$185 USD · por persona · todo incluido · mín. 2</span>
-      <span class="book-title">Reserva esta experiencia.</span>
-      <span class="book-sub">Rellena el formulario y confirmaremos disponibilidad personalmente. Sin respuesta automática.</span>
-      <button class="book-btn" onclick="document.getElementById('mtexp2-modal').classList.add('open')">Consultar disponibilidad</button>
-      <span class="book-note">O escríbenos: hola@mayatuya.com · +52 938 184 2944</span>
+      <span class="book-title">Próximamente.</span>
+      <span class="book-sub">Esta experiencia aún no está abierta a reservas. Escríbenos y te avisamos cuando lo esté.</span>
+      <span class="book-note">hola@mayatuya.com · +52 938 184 2944</span>
     </div>
 
     
@@ -481,9 +451,6 @@
 
   auto = setInterval(function(){ gotoSlide(idx+1); }, 4500);
 
-  document.getElementById('mtexp2-modal').addEventListener('click', function(e){
-    if (e.target === this) this.classList.remove('open');
-  });
 })();
 </script>
 </div>

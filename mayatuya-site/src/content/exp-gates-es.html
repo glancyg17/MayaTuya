@@ -137,15 +137,6 @@
 }
 </style>
 
-<div id="mtexp2-modal">
-  <div id="mtexp2-modal-inner">
-    <button id="mtexp2-modal-close" onclick="document.getElementById('mtexp2-modal').classList.remove('open')">✕ Cerrar</button>
-    <span id="mtexp2-modal-title">Reserva esta experiencia.</span>
-    <span id="mtexp2-modal-sub">Rellena el formulario y confirmaremos disponibilidad personalmente. Sin respuesta automática.</span>
-    {{form:14}}
-  </div>
-</div>
-
 <div id="mtexp2">
 
   
@@ -161,9 +152,7 @@
         <span class="hero-sub">Un paseo nocturno por la columna vertebral del centro histórico de Campeche — Calle 59, las murallas al atardecer, el mercado, y una cena de tres tiempos con la mejor vista de la ciudad. Luego copas y Lotería Campechana — el juego más popular de Campeche, jugado durante más de 130 años.</span>
       </div>
       <div class="hero-right">
-        <span class="price-num">$185</span>
-        <span class="price-label">USD por persona</span>
-        <span class="price-incl">Todo incluido</span>
+        <span class="price-num" style="font-size:clamp(18px,2.4vw,26px);letter-spacing:.04em;">Próximamente</span>
       </div>
     </div>
   </div>
@@ -201,11 +190,9 @@
 
     
     <div class="book">
-      <span class="sec-eyebrow" style="color:var(--gold);opacity:.75;">$185 USD · por persona · todo incluido · mín. 2</span>
-      <span class="book-title">Reserva esta experiencia.</span>
-      <span class="book-sub">Rellena el formulario y confirmaremos disponibilidad personalmente. Sin respuesta automática.</span>
-      <button class="book-btn" onclick="document.getElementById('mtexp2-modal').classList.add('open')">Consultar disponibilidad</button>
-      <span class="book-note">O escríbenos: hola@mayatuya.com · +52 938 184 2944</span>
+      <span class="book-title">Próximamente.</span>
+      <span class="book-sub">Esta experiencia aún no está abierta a reservas. Escríbenos y te avisamos cuando lo esté.</span>
+      <span class="book-note">hola@mayatuya.com · +52 938 184 2944</span>
     </div>
 
     
@@ -295,9 +282,6 @@
 
   auto = setInterval(function(){ gotoSlide(idx+1); }, 4500);
 
-  document.getElementById('mtexp2-modal').addEventListener('click', function(e){
-    if (e.target === this) this.classList.remove('open');
-  });
 })();
 </script>
 </div>

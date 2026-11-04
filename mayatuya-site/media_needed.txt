@@ -1,5 +1,7 @@
 OK       Campeche-Guide-EN-fcf6ba.pdf
 OK       Campeche-Guide-ES-d6a86a.pdf
+OK       Merida-Guide-EN-cfbfb40166cc.pdf
+OK       Merida-Guide-ES-4015616edf73.pdf
 OK       The-Conscious-Traveler.zip
 OK       Tu-Negocio-Mejor-9m0ieq.pdf
 OK       1000118855.jpg
@@ -44,6 +46,7 @@ OK       Guide-Template-Master.png
 OK       IMG-34864083.webp
 OK       Logo-EN-1-e1776037490997.png
 OK       Logo-ES-1-e1776037333928.png
+OK       Merida-Guide-Cover.jpg
 MISSING  PHOTO.jpg
 OK       Photos-Soon-EN.jpg
 OK       The-Conscious-Traveler-1-1.png
