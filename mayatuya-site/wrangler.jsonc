@@ -3,6 +3,9 @@
   // The Worker name must match the project name in the Cloudflare dashboard (Workers Builds requirement).
   "name": "mayatuya",
   "compatibility_date": "2026-11-04",
+  "routes": [{ "pattern": "new.mayatuya.com", "custom_domain": true }],
+  "workers_dev": true,
+  "preview_urls": true,
   "assets": {
     "directory": "./docs",
     "not_found_handling": "404-page",
