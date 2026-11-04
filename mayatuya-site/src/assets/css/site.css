@@ -73,7 +73,7 @@ body { overflow-x: clip; }   /* full-bleed heroes use 100vw; clip avoids a scrol
 }
 .mt-inner .pg-hero .pg-hero-content { padding-left: var(--mt-edge) !important; padding-right: var(--mt-edge) !important; }
 @media (max-width: 680px) {
-  .mt-inner :is(.mt-story-hero, .mt-exp-hero, div.hero) {
+  .mt-inner :is(.mt-story-hero, .mt-exp-hero, div.hero:not(#mthome .hero)) {
     width: 100vw !important; max-width: 100vw !important; margin-left: calc(50% - 50vw) !important; margin-right: calc(50% - 50vw) !important;
   }
 }
