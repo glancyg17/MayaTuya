@@ -7,7 +7,7 @@
   "email": "hola@mayatuya.com",
   "whatsapp": "https://wa.me/529381842944",
   "form_endpoint": "https://api.web3forms.com/submit",
-  "form_access_key": "PLACEHOLDER_WEB3FORMS_ACCESS_KEY",
+  "form_access_key": "81528397-ad6b-4f19-a7c7-5d4f575a988e",
   "stripe": {
     "destacado_monthly": "https://buy.stripe.com/cNi28sgxfdea2tld1H3AY00",
     "destacado_annual": "https://buy.stripe.com/cNicN680J2zwfg78Lr3AY01",
