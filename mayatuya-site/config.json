@@ -9,11 +9,11 @@
   "form_endpoint": "https://api.web3forms.com/submit",
   "form_access_key": "PLACEHOLDER_WEB3FORMS_ACCESS_KEY",
   "stripe": {
-    "destacado_monthly": "PLACEHOLDER_STRIPE_DESTACADO_MONTHLY",
-    "destacado_annual": "PLACEHOLDER_STRIPE_DESTACADO_ANNUAL",
-    "fundador": "PLACEHOLDER_STRIPE_FUNDADOR",
-    "guide_campeche": "PLACEHOLDER_STRIPE_GUIDE_CAMPECHE",
-    "contribution": "PLACEHOLDER_STRIPE_CONTRIBUTION"
+    "destacado_monthly": "https://buy.stripe.com/cNi28sgxfdea2tld1H3AY00",
+    "destacado_annual": "https://buy.stripe.com/cNicN680J2zwfg78Lr3AY01",
+    "fundador": "https://buy.stripe.com/bJe28sa8Rgqm5Fx9Pv3AY02",
+    "guide_campeche": "https://buy.stripe.com/3cIeVea8R3DAec32n33AY04",
+    "contribution": "https://donate.stripe.com/3cI4gA4Oxgqmd7Z6Dj3AY05"
   },
   "logos": {
     "en": "Logo-EN-1-e1776037490997.png",
