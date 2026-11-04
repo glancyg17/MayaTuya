@@ -57,6 +57,26 @@ p { margin: 0 0 1.75em; }
   width: 100%; max-width: 1200px; margin: 0 auto;
 }
 .mt-sec.mt-full .mt-inner { max-width: none; }
+/* ── Uniform layer (applies to every page) ────────────────────────
+   Page bodies were extracted from WordPress with their own large section padding (40-70px).
+   On phones that stacks on top of each card's own padding, so cap it here. */
+:root { --mt-edge: max(20px, calc((100vw - 1200px) / 2)); }
+body { overflow-x: clip; }   /* full-bleed heroes use 100vw; clip avoids a scrollbar-width overflow */
+@media (max-width: 680px) {
+  .mt-sec {
+    padding: min(var(--pt, 10px), 20px) var(--mt-gutter) min(var(--pb, 10px), 20px) var(--mt-gutter);
+  }
+}
+/* Heroes run edge to edge. Campeche guide pages at every width; the other hero banners on phones. */
+.mt-inner .pg-hero, .mt-inner .pg-hero + div[style*="height:3px"] {
+  width: 100vw !important; max-width: 100vw !important; margin-left: calc(50% - 50vw) !important; margin-right: calc(50% - 50vw) !important;
+}
+.mt-inner .pg-hero .pg-hero-content { padding-left: var(--mt-edge) !important; padding-right: var(--mt-edge) !important; }
+@media (max-width: 680px) {
+  .mt-inner :is(.mt-story-hero, .mt-exp-hero, div.hero) {
+    width: 100vw !important; max-width: 100vw !important; margin-left: calc(50% - 50vw) !important; margin-right: calc(50% - 50vw) !important;
+  }
+}
 .mt-sec .mt-inner > * { min-width: 0; }
 
 /* ── Header ───────────────────────────────────────────────────── */
