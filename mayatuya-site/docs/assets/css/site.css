@@ -47,14 +47,14 @@ p { margin: 0 0 1.75em; }
 /* ── Page sections (one per former Elementor container) ───────── */
 /* Padding comes from per-section variables; --mt-gutter guarantees a minimum side margin on small screens */
 :root { --mt-gutter: 0px; }
-@media (max-width: 1200px) { :root { --mt-gutter: 24px; } }
-@media (max-width: 600px)  { :root { --mt-gutter: 20px; } }
+@media (max-width: 1200px) { :root { --mt-gutter: 16px; } }
+@media (max-width: 600px)  { :root { --mt-gutter: 12px; } }
 .mt-sec {
   padding: var(--pt, 10px) max(var(--pr, 10px), var(--mt-gutter)) var(--pb, 10px) max(var(--pl, 10px), var(--mt-gutter));
 }
 .mt-sec .mt-inner {
   display: flex; flex-direction: column; gap: 20px;   /* Elementor's default container gap */
-  width: 100%; max-width: 1140px; margin: 0 auto;
+  width: 100%; max-width: 1200px; margin: 0 auto;
 }
 .mt-sec.mt-full .mt-inner { max-width: none; }
 .mt-sec .mt-inner > * { min-width: 0; }
