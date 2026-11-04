@@ -148,7 +148,7 @@ def render_form(fid, page):
     out = [f'<form class="mt-form" method="POST" action="{esc(cfg["form_endpoint"])}" '
            f'data-success="{esc(f["success"])}"' + (f' data-redirect="{esc(f["redirect"])}"' if f.get('redirect') else '') + f' data-error="{esc(ERRORS[lang])}" data-mail="{esc(cfg["email"])}">']
     out += [f'<input type="hidden" name="{k}" value="{esc(v)}">' for k, v in hidden.items()]
-    out.append('<input type="checkbox" name="botcheck" class="mt-hp" tabindex="-1" autocomplete="off" aria-hidden="true">')
+    out.append('<input type="checkbox" name="botcheck" class="mt-hp" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">')
     fields, i = f['fields'], 0
     while i < len(fields):
         x = fields[i]
