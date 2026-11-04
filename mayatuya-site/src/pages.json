@@ -405,12 +405,29 @@
   "description": "A calm, human-first guide to Campeche for slow, confident travel. Full English and Spanish editions in one PDF."
  },
  {
+  "id": "product-merida-guide-en",
+  "lang": "en",
+  "url": "/product/merida-travel-guide/",
+  "content": "product-merida-guide-en.html",
+  "title": "Mérida Travel Guide — First Edition (EN + ES) | Maya Tuya",
+  "description": "A calm, human-first guide to Mérida for slow, confident travel. Full English and Spanish editions in one purchase."
+ },
+ {
   "id": "campeche-guide-download-en",
   "lang": "en",
   "url": "/campeche-guide-download/",
   "content": "campeche-guide-download-en.html",
   "title": "Your Campeche Guide — Download | Maya Tuya",
   "description": "Download the Campeche Destination Guide, First Edition, in English and Español.",
+  "noindex": true
+ },
+ {
+  "id": "merida-guide-download-en",
+  "lang": "en",
+  "url": "/merida-guide-download/",
+  "content": "merida-guide-download-en.html",
+  "title": "Your Mérida Guide — Download | Maya Tuya",
+  "description": "Download the Mérida Destination Guide, First Edition, in English and Español.",
   "noindex": true
  },
  {

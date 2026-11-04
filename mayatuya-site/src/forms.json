@@ -727,7 +727,7 @@
     "required": true,
     "placeholder": "",
     "type": "number",
-    "min": "2",
+    "min": "3",
     "max": "10"
    },
    {
@@ -839,7 +839,7 @@
     "required": true,
     "placeholder": "",
     "type": "number",
-    "min": "2",
+    "min": "3",
     "max": "10"
    },
    {

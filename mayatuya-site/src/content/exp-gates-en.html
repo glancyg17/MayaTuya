@@ -137,15 +137,6 @@
 }
 </style>
 
-<div id="mtexp2-modal">
-  <div id="mtexp2-modal-inner">
-    <button id="mtexp2-modal-close" onclick="document.getElementById('mtexp2-modal').classList.remove('open')">✕ Close</button>
-    <span id="mtexp2-modal-title">Book this experience.</span>
-    <span id="mtexp2-modal-sub">Fill in the short form and we'll confirm availability personally. No automated response.</span>
-    {{form:13}}
-  </div>
-</div>
-
 <div id="mtexp2">
 
   
@@ -161,9 +152,7 @@
         <span class="hero-sub">An evening walk through the spine of Campeche's historic centre — Calle 59, the city walls at dusk, the mercado, and a three-course meal with the best view in the city. Then drinks and Lotería Campechana — the most popular game in Campeche, played for over 130 years.</span>
       </div>
       <div class="hero-right">
-        <span class="price-num">$185</span>
-        <span class="price-label">USD per person</span>
-        <span class="price-incl">All-inclusive</span>
+        <span class="price-num" style="font-size:clamp(18px,2.4vw,26px);letter-spacing:.04em;">Available soon</span>
       </div>
     </div>
   </div>
@@ -185,7 +174,7 @@
 
     
     <div class="section">
-      <span class="sec-eyebrow">Everything covered in your price</span>
+      <span class="sec-eyebrow">Everything included</span>
       <span class="sec-title">What's included.</span>
       <ul class="inc-list"><li class="inc-item">Guided evening walk through the historic centre — Calle 59, both city gates, the walls at dusk</li><li class="inc-item">A visit to Ópalos Mexicanos — silver and gemstone artisans with 15 years of craft</li><li class="inc-item">An included souvenir piece from the collection</li><li class="inc-item">Pass through the Mercado Principal as the city winds down</li><li class="inc-item">Three-course dinner on the balcony at Casa Vieja del Rio</li><li class="inc-item">Welcome Margarita Campechana on arrival</li><li class="inc-item">Lotería Campechana — cards, calls, and as many rounds as you want</li><li class="inc-item">Nothing to pay on the day</li></ul>
     </div>
@@ -201,11 +190,9 @@
 
     
     <div class="book">
-      <span class="sec-eyebrow" style="color:var(--gold);opacity:.75;">$185 USD · per person · all-inclusive · min. 2</span>
-      <span class="book-title">Book this experience.</span>
-      <span class="book-sub">Fill in the short form and we'll confirm availability personally. No automated response.</span>
-      <button class="book-btn" onclick="document.getElementById('mtexp2-modal').classList.add('open')">Check availability</button>
-      <span class="book-note">Or write directly: hola@mayatuya.com · +52 938 184 2944</span>
+      <span class="book-title">Available soon.</span>
+      <span class="book-sub">This experience isn't open for booking yet. Write to us and we'll let you know when it is.</span>
+      <span class="book-note">hola@mayatuya.com · +52 938 184 2944</span>
     </div>
 
     
@@ -295,9 +282,6 @@
 
   auto = setInterval(function(){ gotoSlide(idx+1); }, 4500);
 
-  document.getElementById('mtexp2-modal').addEventListener('click', function(e){
-    if (e.target === this) this.classList.remove('open');
-  });
 })();
 </script>
 </div>

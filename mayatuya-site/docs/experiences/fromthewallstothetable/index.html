@@ -359,32 +359,6 @@
 <div class="mt-inner">
 
 
-<div id="mtexp-modal">
-  <div id="mtexp-modal-inner">
-    <button id="mtexp-modal-close" onclick="document.getElementById('mtexp-modal').classList.remove('open')">✕ Close</button>
-    <span id="mtexp-modal-title">Book this experience.</span>
-    <span id="mtexp-modal-sub">Fill in the short form and we'll confirm availability personally. No automated response.</span>
-    
-<form class="mt-form" method="POST" action="https://api.web3forms.com/submit" data-success="Thank you, [Name]. We&#x27;ll confirm availability and get back to you personally within 24 hours — by email and WhatsApp. If you have any urgent questions: hola@mayatuya.com or +52 938 184 2944." data-error="We could not send your message. Please write to us directly at" data-mail="hola@mayatuya.com">
-<input type="hidden" name="access_key" value="PLACEHOLDER_WEB3FORMS_ACCESS_KEY">
-<input type="hidden" name="subject" value="[MT booking] From the Walls to the Table (EN)">
-<input type="hidden" name="from_name" value="Maya Tuya website">
-<input type="hidden" name="form_id" value="11">
-<input type="hidden" name="page_language" value="en">
-<input type="hidden" name="page_url" value="https://new.mayatuya.com/experiences/fromthewallstothetable/">
-<input type="checkbox" name="botcheck" class="mt-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<div class="mt-row"><div class="mt-field"><label class="mt-label" for="f11-first_name">First Name</label><input type="text" id="f11-first_name" name="first_name" autocomplete="given-name" placeholder="Enter Your First Name"></div><div class="mt-field"><label class="mt-label" for="f11-last_name">Last Name</label><input type="text" id="f11-last_name" name="last_name" autocomplete="family-name" placeholder="Enter Your Last Name"></div></div>
-<div class="mt-field"><label class="mt-label mt-req" for="f11-email">Email</label><input type="email" id="f11-email" name="email" autocomplete="email" placeholder="Email Address" required></div>
-<div class="mt-field"><label class="mt-label mt-req" for="f11-phone">Phone / WhatsApp</label><input type="tel" id="f11-phone" name="phone" autocomplete="tel" required></div>
-<input type="hidden" name="experience" value="From the Walls to the Table">
-<div class="mt-field"><label class="mt-label mt-req" for="f11-preferred_date">Preferred date</label><input type="date" id="f11-preferred_date" name="preferred_date" required></div>
-<div class="mt-field"><label class="mt-label mt-req" for="f11-guests">Number of People</label><input type="number" id="f11-guests" name="guests" inputmode="numeric" min="2" max="10" required></div>
-<div class="mt-field"><label class="mt-label" for="f11-heard_from">How did you hear about us?</label><select id="f11-heard_from" name="heard_from"><option value="">Select</option><option value="Google">Google</option><option value="GetYourGuide">GetYourGuide</option><option value="Airbnb Experiences">Airbnb Experiences</option><option value="From a friend">From a friend</option><option value="A.I. (ChatGPT/Claude/Gemini...etc)">A.I. (ChatGPT/Claude/Gemini...etc)</option><option value="Other">Other</option></select></div>
-<div class="mt-field"><label class="mt-label" for="f11-message">Questions or special requests</label><textarea id="f11-message" name="message"></textarea></div>
-<button type="submit" class="mt-form-btn">Check Availability</button>
-<p class="mt-form-status" role="alert"></p></form>  </div>
-</div>
-
 <div id="mtexp">
 
   
@@ -400,9 +374,7 @@
         <span class="hero-sub">A curated morning inside Campeche's walled city — private chocolate workshop, the UNESCO historic centre, handmade jewellery from a local artisan, and an all-inclusive organic brunch. Nothing to pay on the day.</span>
       </div>
       <div class="hero-right">
-        <span class="price-num">$185</span>
-        <span class="price-label">USD per person</span>
-        <span class="price-incl">All-inclusive</span>
+        <span class="price-num" style="font-size:clamp(18px,2.4vw,26px);letter-spacing:.04em;">Available soon</span>
       </div>
     </div>
   </div>
@@ -423,7 +395,7 @@
 
     
     <div class="section">
-      <span class="sec-eyebrow">Everything covered in your price</span>
+      <span class="sec-eyebrow">Everything included</span>
       <span class="sec-title">What's included.</span>
       <ul class="inc-list"><li class="inc-item">Private chocolate workshop with a local producer</li><li class="inc-item">Guided stories through the UNESCO historic centre</li><li class="inc-item">A visit with a local jewellery artisan</li><li class="inc-item">Organic brunch — order anything on the menu</li><li class="inc-item">All entrance fees and tastings</li><li class="inc-item">Nothing to pay on the day</li></ul>
     </div>
@@ -440,17 +412,15 @@
     
     <div class="section">
       <span class="sec-eyebrow">Practical details</span>
-      <span class="sec-title">Before you book.</span>
-      <div><div class="know-row"><span class="know-key">Price</span><span class="know-val">$185 USD per person · minimum 2 · maximum 6</span></div><div class="know-row"><span class="know-key">Duration</span><span class="know-val">Full morning · approx. 9:00am – 2:00pm</span></div><div class="know-row"><span class="know-key">Group</span><span class="know-val">Private · your group only · no strangers added</span></div><div class="know-row"><span class="know-key">Language</span><span class="know-val">English · with Spanish where it matters</span></div><div class="know-row"><span class="know-key">Transport</span><span class="know-val">Not included · fixed fare shared at booking · no surprises</span></div><div class="know-row"><span class="know-key">Cancellation</span><span class="know-val">Full refund if cancelled 48hrs+ before · 50% within 48hrs</span></div></div>
+      <span class="sec-title">Good to know.</span>
+      <div><div class="know-row"><span class="know-key">Capacity</span><span class="know-val">Minimum 2 · maximum 6</span></div><div class="know-row"><span class="know-key">Duration</span><span class="know-val">Full morning · approx. 9:00am – 2:00pm</span></div><div class="know-row"><span class="know-key">Group</span><span class="know-val">Private · your group only · no strangers added</span></div><div class="know-row"><span class="know-key">Language</span><span class="know-val">English · with Spanish where it matters</span></div><div class="know-row"><span class="know-key">Transport</span><span class="know-val">Not included · fixed fare shared at booking · no surprises</span></div><div class="know-row"><span class="know-key">Cancellation</span><span class="know-val">Full refund if cancelled 48hrs+ before · 50% within 48hrs</span></div></div>
     </div>
 
     
     <div class="book">
-      <span class="sec-eyebrow" style="color:var(--gold);opacity:.75;">$185 USD · per person · all-inclusive · min. 2</span>
-      <span class="book-title">Book this experience.</span>
-      <span class="book-sub">Fill in the short form and we'll confirm availability personally. No automated response.</span>
-      <button class="book-btn" onclick="document.getElementById('mtexp-modal').classList.add('open')">Check availability</button>
-      <span class="book-note">Or write directly: hola@mayatuya.com · +52 938 184 2944</span>
+      <span class="book-title">Available soon.</span>
+      <span class="book-sub">This experience isn't open for booking yet. Write to us and we'll let you know when it is.</span>
+      <span class="book-note">hola@mayatuya.com · +52 938 184 2944</span>
     </div>
 
     
@@ -568,10 +538,6 @@
   // Auto-advance
   auto = setInterval(function(){ gotoSlide(idx + 1); }, 4500);
 
-  // Close modal on backdrop click
-  document.getElementById('mtexp-modal').addEventListener('click', function(e) {
-    if (e.target === this) this.classList.remove('open');
-  });
 })();
 </script>
 </div>
