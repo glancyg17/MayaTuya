@@ -348,6 +348,8 @@ def main():
         rules = []
         for frm, to in redirects.items():
             rules += [f'{frm.rstrip("/")} {to} 301', f'{frm} {to} 301']
+        if not STAGING:   # old WordPress sitemaps now point at ours
+            rules += ['/wp-sitemap.xml /sitemap.xml 301', '/wp-sitemap-* /sitemap.xml 301']
         write(OUT / '_redirects', '\n'.join(rules) + '\n')
         hdr = ['/*', '  X-Content-Type-Options: nosniff', '  Referrer-Policy: strict-origin-when-cross-origin', '  X-Frame-Options: SAMEORIGIN']
         if STAGING:

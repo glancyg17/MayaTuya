@@ -28,7 +28,7 @@ Glancy works on **Windows**: `python build.py` crashes at its final `print` (the
 - Preview locally: `python build.py --serve` → http://localhost:8000
 - Check before finishing: `python build.py` (read every `note:` / `todo:` line) and `python tools/qa_sweep.py` (needs `pip install playwright && playwright install chromium`). Today `qa_sweep` should only report the known-missing images on the Gates pages (see Open items); anything else is a regression.
 - `python build.py --check-release` is **expected to fail** until the launch items are done. Don't "fix" it by weakening the checks.
-- **Branches:** work on a branch for anything bigger than a typo. Merging to `main` deploys immediately to staging (fine while the site is noindex). Before go-live, use PRs and check the branch preview.
+- **Branches:** work on a branch for anything bigger than a typo. Merging to `main` deploys to production (the site is live), so check the branch preview first and merge only on Glancy's approval.
 - You **cannot see Workers Build status** from here. After a merge, tell Glancy to check the `mayatuya` Worker → Deployments for the build on that commit.
 - Local tools (pymupdf, playwright, Chromium) were installed outside the repo — don't add them as dependencies.
 
@@ -105,11 +105,12 @@ Keep **private** things out of this public repo: investors, partner financial te
 
 ## Hosting, staging and live
 
-- Cloudflare account Worker name: **`mayatuya`** (must match `name` in `wrangler.jsonc`). Staging: **https://new.mayatuya.com** (custom domain) and https://mayatuya.presentame-online.workers.dev. Repo is connected to Workers Builds (Cloudflare GitHub app authorised); pushes to `main` build and deploy.
-- `config.json`: `"hosting": "cloudflare"`, `"mode": "staging"`. Staging makes **every page `noindex`**, uses `new.mayatuya.com` for canonicals, sets `X-Robots-Tag: noindex, nofollow`, writes `robots.txt` Disallow, and writes **no sitemap**.
+- Cloudflare account Worker name: **`mayatuya`** (must match `name` in `wrangler.jsonc`). Canonical host: **https://mayatuya.com** (apex). `new.mayatuya.com` and the `*.workers.dev` URLs still serve the same build but `worker.js` marks them `X-Robots-Tag: noindex`. Repo is connected to Workers Builds (Cloudflare GitHub app authorised); pushes to `main` build and deploy.
+- `config.json`: `"hosting": "cloudflare"`, `"mode": "live"` (set at go-live, Nov 2026). Live mode: indexable pages are `index, follow`; pages flagged `noindex` in `pages.json` (acuerdo, bienvenido, download, legal, aliado-en-proceso) stay `noindex, follow` and out of the sitemap; canonicals, `sitemap.xml` and `robots.txt` use the apex. `"mode": "staging"` still exists as a switch (every page noindex, `new.` canonicals, Disallow, no sitemap).
+- `worker.js` (in front of the static assets, `run_worker_first`): 301s `www.mayatuya.com` → apex, and adds noindex on any non-apex host. It only sees `www` traffic once `www` is attached to the Worker in Cloudflare (a DNS/custom-domain change — Glancy's call).
 - Cloudflare facts: `_redirects` / `_headers` are read from `docs/`; real 301s for old WordPress URLs. `/about` → `/about/` is a **307** (Cloudflare's trailing-slash handling) — acceptable.
-- **The live production site is still WordPress on mayatuya.com. Do not touch it.**
-- **Never, without Glancy's explicit go-ahead:** set `"mode": "live"`; point `mayatuya.com` / `www` at the Worker; add, change or delete any DNS record; merge risky changes straight to `main`; disable or delete anything in Cloudflare or GitHub. In particular never touch **MX, SPF/DKIM/TXT, autodiscover, apex or www records** — email and the live WordPress site depend on them. (The only DNS change so far was removing the old `new` CNAME.)
+- Old WordPress sitemaps (`/wp-sitemap.xml`, `/wp-sitemap-*`) 301 to `/sitemap.xml` (generated in live mode).
+- **Never, without Glancy's explicit go-ahead:** point `www` at the Worker; add, change or delete any DNS record; merge risky changes straight to `main`; disable or delete anything in Cloudflare or GitHub. In particular never touch **MX, SPF/DKIM/TXT, autodiscover, apex or www records** — email depends on them.
 
 ## SEO and indexing
 

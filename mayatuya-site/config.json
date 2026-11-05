@@ -1,6 +1,6 @@
 {
   "hosting": "cloudflare",
-  "mode": "staging",
+  "mode": "live",
   "domain": "https://mayatuya.com",
   "staging_domain": "https://new.mayatuya.com",
   "site_name": "Maya Tuya",
