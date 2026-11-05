@@ -4,7 +4,12 @@
   "name": "mayatuya",
   "main": "./worker.js",
   "compatibility_date": "2026-11-04",
-  "routes": [{ "pattern": "new.mayatuya.com", "custom_domain": true }],
+  // Custom domains attached to this Worker. mayatuya.com is the canonical host; www redirects to it (worker.js).
+  "routes": [
+    { "pattern": "mayatuya.com", "custom_domain": true },
+    { "pattern": "www.mayatuya.com", "custom_domain": true },
+    { "pattern": "new.mayatuya.com", "custom_domain": true }
+  ],
   "workers_dev": true,
   "preview_urls": true,
   "assets": {
