@@ -11,3 +11,6 @@ node_modules/
 # Local source media (downloaded by tools/fetch_media.py; build copies only what pages use into docs/)
 media_src/*
 !media_src/README.md
+
+# The generated sitemap is a deployed file, not a WordPress export
+!docs/sitemap.xml
